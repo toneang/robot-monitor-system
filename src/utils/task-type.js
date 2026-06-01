@@ -1,3 +1,5 @@
+// 把任务类型转换成前端显示类型
+// 把模型选择转换成后端真正需要的参数
 const DISPLAY_TASK_TYPE_LABELS = {
   find: 'find',
   notify: 'notify',
@@ -18,19 +20,19 @@ const BACKEND_TYPE_TO_DISPLAY_TYPE = {
   rule: 'find',
   random: 'find'
 };
-
+// 如果任务没有明确 type，或者 type 映射不上，就会根据 description 文本内容猜类型
 const DISPLAY_TASK_TYPE_PATTERNS = [
   {
     code: 'notify',
-    pattern: /(notify|inform|tell|remind|提醒|通知)/i
+    pattern: /(notify|inform|tell|remind)/i
   },
   {
     code: 'inspect',
-    pattern: /(inspect|check|patrol|scan|environment|巡检|检查)/i
+    pattern: /(inspect|check|patrol|scan|environment)/i
   },
   {
     code: 'deliver',
-    pattern: /(deliver|bring|give|send|take.*to|送|交付|拿给|给我)/i
+    pattern: /(deliver|bring|give|send|take.*to)/i
   }
 ];
 
@@ -99,7 +101,13 @@ export function normalizeDisplayTaskType(displayType) {
 
   return '';
 }
-
+// 平衡随机
+// 用一个“bag”机制：
+//   先拿一个 bag（袋子）
+//   从袋子里取第一个 model
+//   取完就从 bag 里移除
+//   bag 空了再重新洗牌生成
+// 这样能保证 3 个候选模型都会轮到，不会连续很多次都抽中同一个。
 export function resolveBackendTaskModel(modelValue) {
   if (modelValue === 'random') {
     return drawBalancedRandomBackendModel();

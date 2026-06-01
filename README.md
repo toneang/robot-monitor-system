@@ -193,6 +193,7 @@ docker run -p 8080:80 robot-monitor
 - `POST /api/task/add` - 创建任务
 - `GET /api/task/list` - 获取任务列表
 - `GET /api/task/status/:id` - 获取任务状态
+- `POST /api/task/update_status` - 直接更新机器人侧任务状态（请求体：`{ id, status }`）
 - `POST /api/task/control/:id` - 控制任务（暂停/恢复/终止）
 - `DELETE /api/task/delete/:id` - 删除任务
 

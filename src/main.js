@@ -13,6 +13,7 @@ import { EnvMonitorService } from './services/env-monitor.service.js';
 import { VideoStreamService } from './services/video.service.js';
 import { TaskConfirmService } from './services/task-confirm.service.js';
 import { OnlineStatusService } from './services/online-status.service.js';
+import taskFormLockService from './services/task-form-lock.service.js';
 import { authService } from './services/auth.service.js';
 import apiService from './services/api.service.js';
 import storageService from './services/storage.service.js';
@@ -36,6 +37,8 @@ class RobotMonitorApp {
     this.selectedTaskId = null;
     this.isAppRunning = false;
     this.listenersSetup = false;
+    this.taskSyncInFlight = false;
+    this.taskFormLockInitialized = false;
     this.environmentChat = null;
     this.faceRegistrationModal = null;
     this.knowledgeGraphModal = null;
@@ -129,7 +132,9 @@ class RobotMonitorApp {
 
       // 启动服务
       this.initVideoStream();
+      await taskFormLockService.refresh();
       this.startStatusPolling();
+      taskService.startRepublishTimer();
       this.cleanupStaleLocalTasks();
       await this.loadTasks();
       
@@ -188,6 +193,7 @@ class RobotMonitorApp {
           clearInterval(this.statusUpdateInterval);
           this.statusUpdateInterval = null;
       }
+      taskService.stopRepublishTimer();
 
       // 切换视图
       const appView = document.getElementById('app-view');
@@ -352,6 +358,7 @@ class RobotMonitorApp {
       this.showToast(message, type);
     });
     this.onlineStatusService = new OnlineStatusService();
+    this.setupTaskFormLockControls();
   }
   
   /**
@@ -598,6 +605,61 @@ class RobotMonitorApp {
     }
   }
 
+  setupTaskFormLockControls() {
+    if (this.taskFormLockInitialized) return;
+    this.taskFormLockInitialized = true;
+
+    taskFormLockService.start();
+    taskFormLockService.onChange((state) => {
+      this.updateTaskFormLockUI(state);
+    });
+
+    const toggle = document.getElementById('taskFormLockToggle');
+    if (toggle) {
+      toggle.addEventListener('change', async () => {
+        const user = authService.getUser();
+        if (!user || user.role !== 'admin') {
+          this.updateTaskFormLockUI(taskFormLockService.getState());
+          return;
+        }
+
+        try {
+          const state = await taskFormLockService.setState(toggle.checked, user.username);
+          this.updateTaskFormLockUI(state);
+        } catch (error) {
+          console.warn('Failed to update task form lock state:', error);
+          this.updateTaskFormLockUI(taskFormLockService.getState());
+          this.showToast('Failed to update task form lock', 'error');
+        }
+      });
+    }
+
+    this.updateTaskFormLockUI(taskFormLockService.getState());
+  }
+
+  updateTaskFormLockUI(state = taskFormLockService.getState()) {
+    const toggle = document.getElementById('taskFormLockToggle');
+    const status = document.getElementById('taskFormLockStatus');
+    const meta = document.getElementById('taskFormLockMeta');
+
+    if (toggle) {
+      toggle.checked = !!state.enabled;
+    }
+
+    if (status) {
+      status.textContent = state.enabled ? 'On' : 'Off';
+      status.className = state.enabled
+        ? 'text-xs font-bold uppercase tracking-wide text-amber-700'
+        : 'text-xs font-bold uppercase tracking-wide text-gray-500';
+    }
+
+    if (meta) {
+      meta.textContent = state.updatedAt
+        ? `Last updated by ${state.updatedBy || 'admin'} at ${new Date(state.updatedAt).toLocaleString()}`
+        : 'Default: locked';
+    }
+  }
+
   /**
    * 设置抓取控制
    */
@@ -649,11 +711,15 @@ class RobotMonitorApp {
         const normX = imageX / displayedWidth;
         const normY = imageY / displayedHeight;
 
-        const executingTask = document.querySelector('.task-item[data-task-status="executing"]');
+        const executingTask = Array.from(document.querySelectorAll('.task-item')).find(taskItem =>
+          taskService.isCurrentTaskStatus(taskItem?.dataset?.taskStatus)
+          && ['executing', 'running', 'processing'].includes(taskService.normalizeStatus(taskItem?.dataset?.taskStatus))
+        );
+
         const opLabel = isGrasp ? 'pick' : 'place';
         let confirmMsg = `Are you sure you want to ${opLabel} at this position?`;
         if (executingTask) {
-          confirmMsg += '\n\nWarning: There is a task currently executing. Continuing will terminate the current task and pause all pending tasks.';
+          confirmMsg += '\n\nWarning: There is a task currently executing. Continuing will terminate the current task.';
         }
         if (!confirm(confirmMsg)) return;
 
@@ -666,17 +732,6 @@ class RobotMonitorApp {
           } catch (err) {
             console.error('Failed to terminate task', err);
           }
-
-          const pendingTasks = document.querySelectorAll('.task-item[data-task-status="pending"]');
-          pendingTasks.forEach(async (task) => {
-            const pTaskId = task.dataset.taskId;
-            try {
-              await apiService.controlTask(pTaskId, 'pause');
-              eventBus.emit('task:status-update', { taskId: pTaskId, status: 'paused' });
-            } catch (e) {
-              console.error(`Failed to pause pending task ${pTaskId}`, e);
-            }
-          });
         }
 
         console.log(`Click coordinates (normalized): (${normX.toFixed(4)}, ${normY.toFixed(4)})`);
@@ -736,8 +791,8 @@ class RobotMonitorApp {
 
   async updateAllStatus() {
     try {
-      // Check Global Task Status
-      this.updateGlobalTaskStatus();
+      const tasks = await this.syncTasksFromServer();
+      await this.updateGlobalTaskStatus(Array.isArray(tasks) ? tasks : null);
 
       // Use single call to get full status
       const data = await apiService.getFullStatus();
@@ -771,11 +826,13 @@ class RobotMonitorApp {
     }
   }
 
-  async updateGlobalTaskStatus() {
+  async updateGlobalTaskStatus(tasks = null) {
       try {
-          const currentTasks = await taskService.getCurrentTasks();
+          const currentTasks = Array.isArray(tasks)
+            ? tasks.filter(task => ['executing', 'running', 'processing'].includes(String(task?.status || '').toLowerCase()))
+            : await taskService.getCurrentTasks();
           // Filter for active tasks
-          const runningTask = currentTasks.find(t => ['executing', 'running', 'processing'].includes(t.status));
+          const runningTask = currentTasks.find(t => ['executing', 'running', 'processing'].includes(String(t.status || '').toLowerCase()));
           
           const statusText = document.getElementById('globalStatusText');
           const statusCard = document.getElementById('globalStatusCard');
@@ -891,17 +948,7 @@ class RobotMonitorApp {
    */
   cleanupStaleLocalTasks() {
     const localTasks = storageService.getTasks() || [];
-    const SUBMITTING_TIMEOUT_MS = 2 * 60 * 1000;
-    const cleanedTasks = localTasks.filter(task => {
-      const status = String(task.status || '').toLowerCase();
-      if (status === 'submitting') {
-        const createdAt = new Date(task.timestamp || task.create_time || 0).getTime();
-        if (createdAt > 0 && Date.now() - createdAt > SUBMITTING_TIMEOUT_MS) {
-          return false;
-        }
-      }
-      return true;
-    });
+    const cleanedTasks = localTasks;
     if (cleanedTasks.length < localTasks.length) {
       storageService.saveTasks(cleanedTasks);
       console.log(`Cleaned up ${localTasks.length - cleanedTasks.length} stale local task(s)`);
@@ -912,26 +959,56 @@ class RobotMonitorApp {
    * 加载任务列表
    */
   async loadTasks() {
+    await this.syncTasksFromServer();
+  }
+
+  async syncTasksFromServer() {
+    if (this.taskSyncInFlight) {
+      return null;
+    }
+
+    this.taskSyncInFlight = true;
+    const previouslySelectedTaskId = this.selectedTaskId;
+
     try {
-      const tasks = await taskService.getAllTasks();
+      const tasks = await taskService.getAllTasks({ includeLocalInFlight: false });
+      taskService.reconcilePolling(tasks);
+
       if (this.taskTimeline) {
         this.taskTimeline.render(tasks);
       }
-      
-      // 启动正在执行或待执行任务的轮询
-      tasks.forEach(task => {
-        if (task.status === 'executing' || task.status === 'pending') {
-          taskService.startPolling(task.id);
-        }
-      });
 
-      // 更新管理员统计信息
       this.updateAdminStats(tasks);
-
-      console.log(`Loaded ${tasks.length} tasks`);
+      await this.restoreSelectedTask(previouslySelectedTaskId);
+      console.log(`Synced ${tasks.length} tasks from server`);
+      return tasks;
     } catch (error) {
-      console.error('Failed to load tasks:', error);
+      console.error('Failed to sync tasks:', error);
+      return null;
+    } finally {
+      this.taskSyncInFlight = false;
     }
+  }
+
+  async restoreSelectedTask(taskId) {
+    if (!taskId) {
+      return;
+    }
+
+    const taskItem = document.querySelector(`.task-item[data-task-id="${taskId}"]`);
+    if (!taskItem) {
+      this.selectedTaskId = null;
+      this.hideTaskDetail();
+      return;
+    }
+
+    const taskCard = taskItem.querySelector('.task-card');
+    if (taskCard) {
+      taskCard.classList.add('active');
+    }
+
+    this.selectedTaskId = taskId;
+    await this.renderTaskDetail(taskItem);
   }
   
   /**
@@ -954,29 +1031,31 @@ class RobotMonitorApp {
       this.updateOnlineUsersUI(payload);
     });
 
+    eventBus.on('task:republished', ({ count }) => {
+      if (!count) return;
+      const message = count === 1
+        ? 'A previous submission failed. Your task is being resent now.'
+        : `Previous submissions failed. ${count} of your tasks are being resent now.`;
+      this.showToast(message, 'info');
+    });
+
     // 监听任务状态更新，处理评分弹窗
-    eventBus.on('task:status-update', async ({ taskId, status }) => {
-        // 如果是管理员，任何状态更新都刷新统计面板 (需要重新 fetch full list 以准确统计)
+    eventBus.on('task:status-update', async ({ taskId, status, message }) => {
         const currentUser = authService.getUser();
+        const normalizedStatus = String(status || '').toLowerCase().trim();
+        const isTerminalStatus = taskService.isTerminalStatus(normalizedStatus);
+
         if (currentUser && currentUser.role === 'admin') {
-             // 可以做一个防抖，这里简单起见，如果不频繁触发还可以
-             // 但 status-update 可能会很频繁。建议这里只做局部更新或者延迟刷新
-             // 为了简化，我们假设每次状态变更都触发一次轻量级更新
-             // 但由于需要全量数据来 count，我们尝试如果不 fetch full list 而是维护本地 state
-             // 鉴于 storageService 已经存了，我们可以尝试从 taskService.getAllTasks() 拿（它有缓存策略如果实现的话，但现在它每次都 fetch）
-             // 简单的：调用 loadTasks，但这会重绘 timeline。
-             // 优化方案：专门添加 updateStatsFromService
-             const updatedTasks = await taskService.getAllTasks();
+             const updatedTasks = storageService.getTasks() || [];
              this.updateAdminStats(updatedTasks);
         }
 
-        if (status === 'completed' || status === 'finish' || status === 'success' || status === 'failed' || status === 'fail' || status === 'finished') {
-            const tasks = await taskService.getAllTasks();
-            const task = tasks.find(t => t.id === taskId);
+        if (isTerminalStatus) {
+            const task = storageService.getTask(taskId);
             const currentUser = authService.getUser();
-            
+
             // 如果是当前用户创建的任务，且未评价，弹出评分窗口
-            const hasValidRating = task.rating && typeof task.rating === 'object' && Object.keys(task.rating).length > 0;
+            const hasValidRating = task?.rating && typeof task.rating === 'object' && Object.keys(task.rating).length > 0;
             if (task && currentUser && task.creator === currentUser.username && !hasValidRating) {
                 // 延迟弹出
                 setTimeout(() => {
@@ -986,12 +1065,16 @@ class RobotMonitorApp {
                 }, 1000);
             }
         }
-        
-        // 如果当前详情页正在显示该任务，需要刷新详情 (例如状态变了)
+
+        // 如果当前详情页正在显示该任务，只做轻量更新；终态再完整刷新
         if (this.selectedTaskId === taskId) {
            const taskItem = document.querySelector(`.task-item[data-task-id="${taskId}"]`);
            if (taskItem) {
-               this.renderTaskDetail(taskItem);
+               if (isTerminalStatus) {
+                   await this.renderTaskDetail(taskItem);
+               } else {
+                   this.updateSelectedTaskDetail(taskId, taskItem, { status, message });
+               }
            }
         }
     });
@@ -1017,20 +1100,23 @@ class RobotMonitorApp {
   async renderTaskDetail(taskItem) {
     const emptyDetail = document.getElementById('emptyTaskDetail');
     const detailForm = document.getElementById('taskDetailForm');
-    
+
     if (emptyDetail) emptyDetail.classList.add('hidden');
     if (detailForm) detailForm.classList.remove('hidden');
-    
+
     // 填充基本信息
     const taskId = taskItem.dataset.taskId;
     const serial = taskItem.dataset.taskSerial;
     // const taskType = taskItem.dataset.taskTitle.split('：')[0];
     const taskType = taskItem.dataset.taskDisplayType || taskItem.dataset.taskTitle.split('：')[0];
-    
+
     // 获取完整任务数据以显示更多详情 (如评分)
-    const tasks = await taskService.getAllTasks();
-    const detailData = tasks.find(t => t.id === taskId) || {};
-    
+    let detailData = storageService.getTask(taskId) || {};
+    if (!detailData.id || !detailData.creator || detailData.rating === undefined || detailData.subtasks === undefined) {
+      const tasks = await taskService.getAllTasks();
+      detailData = tasks.find(t => t.id === taskId) || detailData;
+    }
+
     document.getElementById('detailTaskTitle').textContent = `#${serial} ${taskItem.dataset.taskTitle}`;
     document.getElementById('detailTaskType').textContent = taskType;
     document.getElementById('detailTaskModel').textContent = getTaskModelLabel(detailData);
@@ -1043,7 +1129,7 @@ class RobotMonitorApp {
     document.getElementById('detailUseMemory').innerHTML = useMemory === '1'
       ? '<span class="text-success">Enabled</span>'
       : '<span class="text-gray-400">Disabled</span>';
-    
+
     // 设置优先级显示
     const priority = taskItem.dataset.taskPriority;
     let priorityHTML = '';
@@ -1055,18 +1141,17 @@ class RobotMonitorApp {
       priorityHTML = '<span class="text-gray-600">low</span>';
     }
     document.getElementById('detailTaskPriority').innerHTML = priorityHTML;
-    
+
     // 设置状态显示
-    const status = taskItem.dataset.taskStatus;
+    const status = detailData.status || taskItem.dataset.taskStatus;
     this.updateStatusBadge(status);
 
     const currentUser = authService.getUser();
     const detailTaskIdRow = document.getElementById('detailTaskIdRow');
     const detailTaskId = document.getElementById('detailTaskId');
-    const isAdmin = currentUser && currentUser.role === 'admin';
 
     if (detailTaskIdRow) {
-      detailTaskIdRow.classList.toggle('hidden', !isAdmin);
+      detailTaskIdRow.classList.remove('hidden');
     }
     if (detailTaskId) {
       detailTaskId.textContent = detailData.id || taskId || '-';
@@ -1084,7 +1169,7 @@ class RobotMonitorApp {
     // ==========================================
     // 子任务与评分逻辑 (Requested Feature)
     // ==========================================
-    
+
     // 显示子任务统计 (如果有)
     const subtaskStats = document.getElementById('subtaskStats');
     if (detailData.subtasks && detailData.subtasks.length > 0) {
@@ -1093,7 +1178,7 @@ class RobotMonitorApp {
         const completed = detailData.subtasks.filter(s => s.status === 'completed').length;
         const processing = detailData.subtasks.filter(s => s.status === 'processing').length;
         const pending = detailData.subtasks.filter(s => s.status === 'pending').length;
-        
+
         document.getElementById('subtaskTotal').textContent = total;
         document.getElementById('subtaskCompleted').textContent = completed;
         document.getElementById('subtaskProcessing').textContent = processing;
@@ -1101,12 +1186,12 @@ class RobotMonitorApp {
     } else {
         subtaskStats.classList.add('hidden');
     }
-    
+
     // 处理评价显示
     const ratingSection = document.getElementById('ratingSection');
     const ratedView = document.getElementById('ratedView');
     const unratedView = document.getElementById('unratedView');
-    
+
     // 只有已完成/失败的任务才显示评价区块
     if (status === 'completed' || status === 'finished' || status === 'failed' || detailData.rating) {
         ratingSection.classList.remove('hidden');
@@ -1253,6 +1338,32 @@ class RobotMonitorApp {
     this.renderActionButtons(taskId, status, detailData.creator);
   }
   
+  updateSelectedTaskDetail(taskId, taskItem, updates = {}) {
+    const detailForm = document.getElementById('taskDetailForm');
+    if (!detailForm || detailForm.classList.contains('hidden')) {
+      return;
+    }
+
+    const cachedTask = storageService.getTask(taskId) || {};
+    const resolvedStatus = updates.status !== undefined
+      ? updates.status
+      : (cachedTask.status ?? taskItem?.dataset?.taskStatus);
+    const resolvedCreator = cachedTask.creator || taskItem?.dataset?.taskCreator || 'Unknown';
+
+    if (taskItem && resolvedStatus !== undefined) {
+      taskItem.dataset.taskStatus = resolvedStatus;
+    }
+
+    this.updateStatusBadge(resolvedStatus);
+    this.renderActionButtons(taskId, resolvedStatus, resolvedCreator);
+
+    const modifyBtn = document.getElementById('modifyStatusBtn');
+    const currentUser = authService.getUser();
+    if (modifyBtn && currentUser?.role === 'admin') {
+      modifyBtn.onclick = () => this.showStatusEditor(taskId, resolvedStatus);
+    }
+  }
+
   /**
    * 更新状态徽章
    */

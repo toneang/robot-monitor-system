@@ -1,5 +1,6 @@
 import eventBus from '../core/event-bus.js';
 import apiService from './api.service.js';
+import storageService from './storage.service.js';
 
 const AUTH_USER_KEY = 'robot_monitor_user';
 const AUTH_SESSION_KEY = 'robot_monitor_session_id';
@@ -88,6 +89,7 @@ class AuthService {
     async login(username, password, role) {
         try {
             // 调用 API 进行登录
+            const previousUsername = this.currentUser?.username || '';
             
             let user;
             let loginResponse;
@@ -116,6 +118,10 @@ class AuthService {
 
             if (!user.loginTime) {
                 user.loginTime = new Date().toISOString();
+            }
+
+            if (previousUsername && previousUsername !== user.username) {
+                storageService.clearAll();
             }
 
             const resolvedSessionId = user.session_id || loginResponse?.session_id || '';
@@ -168,6 +174,7 @@ class AuthService {
      */
     logout() {
         const logoutPayload = this.buildPresencePayload();
+        storageService.clearAll();
         this.clearLocalAuth();
         eventBus.emit('auth:logout');
 

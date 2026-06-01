@@ -162,7 +162,9 @@ export class TaskTimeline {
    * 渲染任务列表
    */
   render(tasks) {
-    const visibleTasks = (tasks || []).filter(task => this.shouldRenderTask(task));
+    const visibleTasks = (tasks || []).filter(task =>
+      this.shouldRenderTask(task) && this.matchesCurrentFilter(task)
+    );
     this.renderBaseContainer();
     this.resetSerials();
     
@@ -201,11 +203,13 @@ export class TaskTimeline {
            data-task-create-time="${task.create_time}"
            data-task-use-memory="${task.use_memory || '0'}"`;
     
+    const showMessage = String(task.status || '').toLowerCase().trim() === 'executing';
+    const visibleMessage = showMessage ? (task.message || '') : '';
     const messageHtml = `
-      <div class="task-message-container ${task.message ? 'block' : 'hidden'} mb-3">
+      <div class="task-message-container ${visibleMessage ? 'block' : 'hidden'} mb-3">
         <div class="bg-blue-50 border border-blue-100/50 rounded-md p-2 text-xs text-blue-700 flex items-start space-x-2">
           <i class="fa fa-info-circle mt-0.5 opacity-80"></i>
-          <span class="task-message-text block min-w-0 flex-1 leading-relaxed break-words line-clamp-1">${task.message || ''}</span>
+          <span class="task-message-text block min-w-0 flex-1 leading-relaxed break-words line-clamp-1">${visibleMessage}</span>
           <button type="button" class="task-message-toggle hidden" aria-expanded="false" title="Expand message">^</button>
         </div>
       </div>
@@ -380,23 +384,25 @@ export class TaskTimeline {
       this.setTaskMessageExpanded(taskItem, !isExpanded);
     });
 
-    this.refreshTaskMessage(taskItem, taskItem.querySelector('.task-message-text')?.textContent || '');
+    this.refreshTaskMessage(
+      taskItem,
+      taskItem.querySelector('.task-message-text')?.textContent || '',
+      taskItem.dataset.taskStatus
+    );
   }
 
-  refreshTaskMessage(taskItem, message, preserveExpanded = true) {
+  refreshTaskMessage(taskItem, message, status) {
     const msgContainer = taskItem.querySelector('.task-message-container');
     const msgText = taskItem.querySelector('.task-message-text');
     const toggleBtn = taskItem.querySelector('.task-message-toggle');
     if (!msgContainer || !msgText || !toggleBtn) return;
 
+    const normalizedStatus = String(status || taskItem.dataset.taskStatus || '').toLowerCase().trim();
     const normalizedMessage = typeof message === 'string' ? message : '';
-    const previousExpanded = preserveExpanded && toggleBtn.dataset.expanded === 'true';
+    const canShow = normalizedStatus === 'executing' && !!normalizedMessage;
+    const previousExpanded = toggleBtn.dataset.expanded === 'true';
 
-    if (normalizedMessage) {
-      msgText.textContent = normalizedMessage;
-      msgContainer.classList.remove('hidden');
-      msgContainer.classList.add('block');
-    } else {
+    if (!canShow) {
       msgText.textContent = '';
       msgContainer.classList.add('hidden');
       msgContainer.classList.remove('block');
@@ -404,6 +410,10 @@ export class TaskTimeline {
       this.setTaskMessageExpanded(taskItem, false);
       return;
     }
+
+    msgText.textContent = normalizedMessage;
+    msgContainer.classList.remove('hidden');
+    msgContainer.classList.add('block');
 
     const canExpand = this.canExpandTaskMessage(msgText);
     toggleBtn.classList.toggle('hidden', !canExpand);
@@ -472,36 +482,36 @@ export class TaskTimeline {
   updateTaskStatus({ taskId, status, message  }) {
     const taskItem = this.container.querySelector(`.task-item[data-task-id="${taskId}"]`);
     if (!taskItem) return;
-    
+
     taskItem.dataset.taskStatus = status;
 
     // 更新消息显示
     if (message !== undefined) {
-      this.refreshTaskMessage(taskItem, message);
+      this.refreshTaskMessage(taskItem, message, status);
     }
-    
+
     const { dotColor, type, iconClass, statusLabel, statusClass } = this.getTaskStyles(status);
-    
+
     const dot = taskItem.querySelector('.timeline-dot');
     const icon = dot.querySelector('i');
     const statusText = taskItem.querySelector('.task-status-text');
-    
+
     dot.className = `timeline-dot ${dotColor}`;
     icon.className = `${iconClass} text-white text-sm`;
-    
+
     if (statusText) {
       statusText.textContent = statusLabel;
       statusText.className = `task-status-text text-xs px-1.5 py-0.5 rounded ml-auto ${statusClass}`;
     }
-    
+
     taskItem.dataset.type = type;
-    
+
     // 应用当前筛选
     taskItem.classList.toggle('hidden', !this.matchesCurrentFilter({
       creator: taskItem.dataset.taskCreator,
       status
     }, type));
-    
+
     // 更新全局系统状态
     this.updateSystemGlobalStatus();
   }

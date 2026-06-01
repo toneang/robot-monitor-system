@@ -6,6 +6,7 @@ import eventBus from '../../core/event-bus.js';
 import { graphService } from '../../services/graph.service.js';
 import { DateTimePicker } from './datetime-picker.js';
 import { resolveBackendTaskModel } from '../../utils/task-type.js';
+import taskFormLockService from '../../services/task-form-lock.service.js';
 
 /**
  * 任务表单组件
@@ -13,6 +14,7 @@ import { resolveBackendTaskModel } from '../../utils/task-type.js';
 export class TaskForm {
   constructor(formElement) {
     this.form = formElement;
+    this.lockSubscription = null;
     this.init();
   }
   
@@ -33,14 +35,28 @@ export class TaskForm {
     if (taskModelSelect) {
       taskModelSelect.addEventListener('change', this.updateUseMemoryState.bind(this));
     }
+
+    taskFormLockService.start();
+    this.lockSubscription = taskFormLockService.onChange(() => {
+      this.applyTaskFormLockState();
+    });
+
+    eventBus.on('auth:login', () => {
+      this.applyTaskFormLockState();
+    });
+    eventBus.on('auth:logout', () => {
+      this.applyTaskFormLockState();
+    });
+
     this.updateUseMemoryState();
+    this.applyTaskFormLockState();
   }
   
   async handleSubmit(e) {
     e.preventDefault();
 
-    const taskType = document.getElementById('taskType').value;
-    const taskModel = document.getElementById('taskModel')?.value || 'random';
+    const taskType = this.getEffectiveTaskType();
+    const taskModel = this.getEffectiveTaskModel();
     const taskDesc = document.getElementById('taskDesc').value;
     const taskLocation = document.getElementById('taskLocation').value;
     const taskTime = this.dateTimePicker ? this.dateTimePicker.getValue() : '';
@@ -174,6 +190,7 @@ export class TaskForm {
       this.form.reset();
       if (this.dateTimePicker) this.dateTimePicker.reset();
       this.updateUseMemoryState();
+      this.applyTaskFormLockState();
 
       // 更新状态为pending
       console.log(`[TaskForm] 任务创建成功，更新状态为 pending`);
@@ -228,6 +245,78 @@ export class TaskForm {
     taskModelHint.textContent = hintMap[taskModelSelect.value] || hintMap.random;
   }
 
+  getTaskFormLockState() {
+    return taskFormLockService.getState();
+  }
+
+  shouldEnforceLock() {
+    const currentUser = authService.getUser();
+    return !!this.getTaskFormLockState().enabled && currentUser?.role !== 'admin';
+  }
+
+  getEffectiveTaskType() {
+    if (this.shouldEnforceLock()) {
+      return 'find';
+    }
+
+    return document.getElementById('taskType')?.value || '';
+  }
+
+  getEffectiveTaskModel() {
+    if (this.shouldEnforceLock()) {
+      return 'random';
+    }
+
+    return document.getElementById('taskModel')?.value || 'random';
+  }
+
+  applyTaskFormLockState() {
+    const isLockedForUser = this.shouldEnforceLock();
+    const taskTypeField = document.getElementById('taskTypeField');
+    const taskTypeSelect = document.getElementById('taskType');
+    const taskModelField = document.getElementById('taskModelField');
+    const taskModelSelect = document.getElementById('taskModel');
+    const taskModelHint = document.getElementById('taskModelHint');
+
+    if (!taskTypeField || !taskTypeSelect || !taskModelField || !taskModelSelect || !taskModelHint) {
+      return;
+    }
+
+    if (isLockedForUser) {
+      if (!taskTypeSelect.dataset.previousValue && taskTypeSelect.value && taskTypeSelect.value !== 'find') {
+        taskTypeSelect.dataset.previousValue = taskTypeSelect.value;
+      }
+      if (!taskModelSelect.dataset.previousValue && taskModelSelect.value && taskModelSelect.value !== 'random') {
+        taskModelSelect.dataset.previousValue = taskModelSelect.value;
+      }
+
+      taskTypeSelect.value = 'find';
+      taskTypeField.classList.add('hidden');
+
+      taskModelSelect.value = 'random';
+      taskModelSelect.disabled = true;
+      taskModelSelect.classList.add('bg-gray-100', 'text-gray-500', 'cursor-not-allowed');
+      this.updateUseMemoryState();
+      return;
+    }
+
+    taskTypeField.classList.remove('hidden');
+    taskModelSelect.disabled = false;
+    taskModelSelect.classList.remove('bg-gray-100', 'text-gray-500', 'cursor-not-allowed');
+
+    const previousTaskType = taskTypeSelect.dataset.previousValue;
+    if (previousTaskType && taskTypeSelect.value === 'find') {
+      taskTypeSelect.value = previousTaskType;
+    }
+
+    const previousTaskModel = taskModelSelect.dataset.previousValue;
+    if (previousTaskModel && taskModelSelect.value === 'random') {
+      taskModelSelect.value = previousTaskModel;
+    }
+
+    this.updateUseMemoryState();
+  }
+  
   showError(message) {
     alert(message);
   }

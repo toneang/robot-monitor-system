@@ -2,7 +2,6 @@ import apiService from '../../services/api.service.js';
 import eventBus from '../../core/event-bus.js';
 import { authService } from '../../services/auth.service.js';
 import { getDisplayTaskTypeLabel } from '../../utils/task-type.js';
-import { getTaskModelLabel } from '../../utils/task-model.js';
 
 /**
  * 评分弹窗组件
@@ -17,7 +16,6 @@ export class RatingModal {
     this.skipBtn = document.getElementById('skipRatingBtn');
     this.taskTypeEl = document.getElementById('ratingTaskType');
     this.taskDescriptionEl = document.getElementById('ratingTaskDescription');
-    this.taskModelEl = document.getElementById('ratingTaskModel');
 
     this.categories = ['personalization', 'functional', 'personalized', 'intent', 'completion', 'improvement'];
     this.currentRatings = {};
@@ -135,35 +133,27 @@ export class RatingModal {
   }
 
   renderTaskTypeDetail(task, loading = false) {
-    if (!this.taskTypeEl || !this.taskDescriptionEl || !this.taskModelEl) {
+    if (!this.taskTypeEl || !this.taskDescriptionEl) {
       return;
     }
 
     if (loading) {
       this.taskTypeEl.textContent = 'Loading...';
       this.taskDescriptionEl.textContent = '-';
-      this.taskModelEl.textContent = 'model:-';
       return;
     }
 
     if (!task) {
       this.taskTypeEl.textContent = '-';
       this.taskDescriptionEl.textContent = '-';
-      this.taskModelEl.textContent = 'model:-';
       return;
     }
 
     const displayType = getDisplayTaskTypeLabel(task) || '-';
     const description = String(task.description || task.desc || '').trim() || '-';
-    const model = this.resolveTaskModelLabel(task);
 
     this.taskTypeEl.textContent = displayType;
     this.taskDescriptionEl.textContent = description;
-    this.taskModelEl.textContent = `model:${model}`;
-  }
-
-  resolveTaskModelLabel(task) {
-    return getTaskModelLabel(task);
   }
 
   /**

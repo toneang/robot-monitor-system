@@ -191,6 +191,19 @@ class ApiService {
     });
   }
 
+  async getTaskFormLockConfig() {
+    return this.request(`${API_CONFIG.dbUrl}${API_CONFIG.endpoints.db_taskFormLock}?t=${Date.now()}`, {
+      cache: 'no-store'
+    });
+  }
+
+  async updateTaskFormLockConfig(enabled, updatedBy = '') {
+    return this.request(`${API_CONFIG.dbUrl}${API_CONFIG.endpoints.db_taskFormLock}`, {
+      method: 'POST',
+      body: JSON.stringify({ enabled, updated_by: updatedBy })
+    });
+  }
+
   async registerFace(username, imageBlob) {
     const formData = new FormData();
     formData.append('username', username);
@@ -216,6 +229,13 @@ class ApiService {
     return this.request(`${API_CONFIG.robotUrl}${API_CONFIG.endpoints.taskControl}${taskId}`, {
       method: 'POST',
       body: JSON.stringify({ action })
+    });
+  }
+
+  async updateRobotTaskStatus(taskId, status) {
+    return this.request(`${API_CONFIG.robotUrl}${API_CONFIG.endpoints.updateTaskStatus}`, {
+      method: 'POST',
+      body: JSON.stringify({ id: taskId, status })
     });
   }
   

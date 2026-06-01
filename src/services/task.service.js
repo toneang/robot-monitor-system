@@ -11,6 +11,148 @@ import { authService } from './auth.service.js';
 class TaskService {
   constructor() {
     this.activePolls = {}; // 存储活跃的轮询定时器
+    this.republishTimer = null;
+    this.republishInFlight = false;
+    this.republishIntervalMs = 10 * 60 * 1000;
+  }
+
+  normalizeStatus(status) {
+    return String(status || '').toLowerCase().trim();
+  }
+
+  isTerminalStatus(status) {
+    return ['completed', 'finish', 'finished', 'success', 'failed', 'fail'].includes(this.normalizeStatus(status));
+  }
+
+  isSubmitState(status) {
+    return ['submitting', 'submiting'].includes(this.normalizeStatus(status));
+  }
+
+  isCurrentTaskStatus(status) {
+    return ['executing', 'processing', 'running', 'paused'].includes(this.normalizeStatus(status));
+  }
+
+  isPendingTaskStatus(status) {
+    return ['pending', 'submitting', 'submiting'].includes(this.normalizeStatus(status));
+  }
+
+  isHistoryTaskStatus(status) {
+    return this.isTerminalStatus(status);
+  }
+
+  isPollingStatus(status) {
+    return ['pending', 'executing', 'processing', 'running'].includes(this.normalizeStatus(status));
+  }
+
+
+  isCurrentTaskStatus(status) {
+    return ['executing', 'processing', 'running', 'paused'].includes(this.normalizeStatus(status));
+  }
+
+  isPendingTaskStatus(status) {
+    return ['pending', 'submitting', 'submiting'].includes(this.normalizeStatus(status));
+  }
+
+  isHistoryTaskStatus(status) {
+    return this.isTerminalStatus(status);
+  }
+
+  filterTasksByBucket(tasks = [], bucket) {
+    switch (bucket) {
+      case 'current':
+        return (tasks || []).filter(task => this.isCurrentTaskStatus(task?.status));
+      case 'pending':
+        return (tasks || []).filter(task => this.isPendingTaskStatus(task?.status));
+      case 'history':
+        return (tasks || []).filter(task => this.isHistoryTaskStatus(task?.status));
+      default:
+        return tasks || [];
+    }
+  }
+
+  extractTaskList(response) {
+    if (Array.isArray(response)) {
+      return response;
+    }
+
+    return Array.isArray(response?.data) ? response.data : [];
+  }
+
+  getRepublishCandidates(tasks = [], username = '') {
+    const normalizedUsername = this.normalizeUsername(username);
+    return (tasks || []).filter(task => {
+      if (!this.isSubmitState(task?.status)) return false;
+      if (!normalizedUsername) return false;
+      return this.matchesCreator(task, normalizedUsername);
+    });
+  }
+
+  startRepublishTimer() {
+    if (this.republishTimer) return;
+
+    this.republishTimer = setInterval(() => {
+      this.republishSubmittingTasks();
+    }, this.republishIntervalMs);
+  }
+
+  stopRepublishTimer() {
+    if (this.republishTimer) {
+      clearInterval(this.republishTimer);
+      this.republishTimer = null;
+    }
+    this.republishInFlight = false;
+  }
+
+  async republishSubmittingTasks() {
+    if (this.republishInFlight || !authService.isAuthenticated()) {
+      return [];
+    }
+
+    const currentUser = authService.getUser();
+    const username = currentUser?.username || '';
+    if (!username) {
+      return [];
+    }
+
+    this.republishInFlight = true;
+
+    try {
+      const tasks = await this.getMyTasks(username);
+      const candidates = this.getRepublishCandidates(tasks, username);
+
+      if (!candidates.length) {
+        return [];
+      }
+
+      const republishedTasks = [];
+
+      for (const task of candidates) {
+        try {
+          const payload = { ...task, status: 'submitting' };
+          const result = await apiService.createTask(payload);
+
+          if (result?.code === 200) {
+            republishedTasks.push(task);
+            storageService.updateTask(task.id, { status: 'submitting' });
+            this.startPolling(task.id);
+          }
+        } catch (error) {
+          console.warn(`[TaskService] Failed to republish task ${task.id}:`, error);
+        }
+      }
+
+      if (republishedTasks.length) {
+        eventBus.emit('task:republished', {
+          username,
+          count: republishedTasks.length,
+          taskIds: republishedTasks.map(task => task.id)
+        });
+      }
+
+      return republishedTasks;
+    } finally {
+      this.republishInFlight = false;
+    }
   }
 
   isManualStatusLocked(taskId) {
@@ -18,19 +160,70 @@ class TaskService {
     return !!task?.manualStatusLocked;
   }
 
-  applyManualStatusLock(taskId, status, message) {
-    const updates = {
-      status,
-      manualStatusLocked: true,
-      manualStatusUpdatedAt: new Date().toISOString()
-    };
+  setLocalTaskState(taskId, { status, message, manualStatusLocked } = {}) {
+    const updates = {};
+
+    if (status !== undefined) {
+      updates.status = status;
+    }
 
     if (message !== undefined) {
       updates.message = message;
     }
 
-    storageService.updateTask(taskId, updates);
+    if (manualStatusLocked !== undefined) {
+      updates.manualStatusLocked = manualStatusLocked;
+      updates.manualStatusUpdatedAt = manualStatusLocked ? new Date().toISOString() : null;
+    }
+
+    if (Object.keys(updates).length > 0) {
+      storageService.updateTask(taskId, updates);
+    }
+  }
+
+  emitTaskStatusUpdate(taskId, status, message, source) {
+    eventBus.emit('task:status-update', { taskId, status, message, source });
+  }
+
+  syncTaskStateToFrontend(taskId, status, message, options = {}) {
+    const currentTask = storageService.getTask(taskId) || {};
+    const resolvedStatus = status !== undefined ? status : currentTask.status;
+    const resolvedMessage = message !== undefined ? message : currentTask.message;
+
+    this.setLocalTaskState(taskId, {
+      status: resolvedStatus,
+      message,
+      manualStatusLocked: options.manualStatusLocked
+    });
+
+    if (options.stopPolling || !this.isPollingStatus(resolvedStatus)) {
+      this.stopPolling(taskId);
+    } else if (this.isPollingStatus(resolvedStatus)) {
+      this.startPolling(taskId);
+    }
+
+    const statusChanged = resolvedStatus !== currentTask.status;
+    const messageChanged = message !== undefined && resolvedMessage !== currentTask.message;
+    const lockChanged = options.manualStatusLocked !== undefined && options.manualStatusLocked !== currentTask.manualStatusLocked;
+
+    if (statusChanged || messageChanged || lockChanged || options.forceEmit) {
+      this.emitTaskStatusUpdate(taskId, resolvedStatus, resolvedMessage, options.source);
+    }
+  }
+
+  applyManualStatusLock(taskId, status, message) {
+    this.setLocalTaskState(taskId, {
+      status,
+      message,
+      manualStatusLocked: true
+    });
     this.stopPolling(taskId);
+  }
+
+  releaseManualStatusLock(taskId) {
+    this.setLocalTaskState(taskId, {
+      manualStatusLocked: false
+    });
   }
 
   mergeLocalTaskMetadata(tasks) {
@@ -79,26 +272,18 @@ class TaskService {
   }
 
   filterExpiredSubmittingTasks(tasks) {
-    const SUBMITTING_TIMEOUT_MS = 2 * 60 * 1000;
-    return (tasks || []).filter(task => {
-      const status = String(task.status || '').toLowerCase();
-      if (status === 'submitting') {
-        const createdAt = new Date(task.timestamp || task.create_time || 0).getTime();
-        if (createdAt > 0 && Date.now() - createdAt > SUBMITTING_TIMEOUT_MS) {
-          return false;
-        }
-      }
-      return true;
-    });
+    return tasks || [];
   }
 
   getLocalInFlightTasks(serverTaskIds = new Set(), predicate = null) {
-    const inFlightStatuses = new Set(['submitting', 'pending', 'executing', 'processing', 'running', 'paused']);
     const localTasks = this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
 
     return localTasks.filter(task => {
       if (serverTaskIds.has(task.id)) return false;
-      if (!inFlightStatuses.has(String(task.status || '').toLowerCase())) return false;
+      const isInFlight = this.isPendingTaskStatus(task?.status)
+        || this.isCurrentTaskStatus(task?.status)
+        || this.isPollingStatus(task?.status);
+      if (!isInFlight) return false;
       if (typeof predicate === 'function' && !predicate(task)) return false;
       return true;
     });
@@ -111,31 +296,42 @@ class TaskService {
       return tB - tA;
     });
   }
-  
-    /**
+
+  getCachedTasksByBucket(bucket) {
+    const cachedTasks = this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
+    return this.sortTasksByCreateTime(this.filterTasksByBucket(cachedTasks, bucket));
+  }
+
+  /**
    * 获取所有任务
    */
-    async getAllTasks() {
+  async getAllTasks(options = {}) {
+      const includeLocalInFlight = options.includeLocalInFlight !== false;
       try {
         const response = await apiService.getAllTasks();
         // 兼容 response 直接为数组 或 { data: [...] } 的情况
-        const tasks = Array.isArray(response) ? response : (response && response.data ? response.data : []);
+        const tasks = this.extractTaskList(response);
         const tasksWithLocalOverrides = this.mergeLocalTaskMetadata(tasks);
-  
-        // 远端部署后可能出现接口返回延迟：保护本地刚创建、尚未被服务端返回的任务不被覆盖
-        const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => task.id));
-        const localInFlightTasks = this.getLocalInFlightTasks(serverTaskIds);
-        const mergedTasks = tasksWithLocalOverrides.concat(localInFlightTasks);
-  
-        console.log(`[TaskService] Fetched ${tasks.length} tasks from API, merged ${localInFlightTasks.length} local in-flight task(s)`);
+
+        let mergedTasks = tasksWithLocalOverrides;
+        if (includeLocalInFlight) {
+          // 远端部署后可能出现接口返回延迟：保护本地刚创建、尚未被服务端返回的任务不被覆盖
+          const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => task.id));
+          const localInFlightTasks = this.getLocalInFlightTasks(serverTaskIds);
+          mergedTasks = tasksWithLocalOverrides.concat(localInFlightTasks);
+          console.log(`[TaskService] Fetched ${tasks.length} tasks from API, merged ${localInFlightTasks.length} local in-flight task(s)`);
+        } else {
+          console.log(`[TaskService] Fetched ${tasks.length} tasks from API without local in-flight merge`);
+        }
+
         // 按创建时间倒序排序
         this.sortTasksByCreateTime(mergedTasks);
-        
+
         // 回写本地缓存
         if (mergedTasks.length > 0) {
           storageService.saveTasks(mergedTasks);
         }
-        
+
         return mergedTasks;
       } catch (error) {
         console.error('Failed to fetch all tasks:', error);
@@ -143,6 +339,7 @@ class TaskService {
         return this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
       }
     }
+
 
   async getMyTasks(username) {
     const normalizedUsername = String(username || '').trim();
@@ -180,10 +377,10 @@ class TaskService {
   async getPendingTasks() {
     try {
       const response = await apiService.getPendingTasks();
-      return this.mergeLocalTaskMetadata(response && response.data ? response.data : []);
+      return this.mergeLocalTaskMetadata(this.extractTaskList(response));
     } catch (error) {
       console.error('Failed to fetch pending tasks:', error);
-      return [];
+      return this.getCachedTasksByBucket('pending');
     }
   }
 
@@ -193,10 +390,10 @@ class TaskService {
   async getCurrentTasks() {
     try {
       const response = await apiService.getCurrentTasks();
-      return this.mergeLocalTaskMetadata(response && response.data ? response.data : []);
+      return this.mergeLocalTaskMetadata(this.extractTaskList(response));
     } catch (error) {
       console.error('Failed to fetch current tasks:', error);
-      return [];
+      return this.getCachedTasksByBucket('current');
     }
   }
 
@@ -206,10 +403,10 @@ class TaskService {
   async getHistoryTasks() {
     try {
       const response = await apiService.getHistoryTasks();
-      return this.mergeLocalTaskMetadata(response && response.data ? response.data : []);
+      return this.mergeLocalTaskMetadata(this.extractTaskList(response));
     } catch (error) {
       console.error('Failed to fetch history tasks:', error);
-      return [];
+      return this.getCachedTasksByBucket('history');
     }
   }
 
@@ -222,17 +419,48 @@ class TaskService {
         const currentUser = authService.getUser();
         return currentUser?.username ? this.getMyTasks(currentUser.username) : [];
       }
-      case 'history':
-        return this.getHistoryTasks();
-      case 'current':
-        return this.getCurrentTasks();
+      case 'history': {
+        const tasks = await this.getAllTasks();
+        return this.filterTasksByBucket(tasks, 'history');
+      }
+      case 'current': {
+        const tasks = await this.getAllTasks();
+        return this.filterTasksByBucket(tasks, 'current');
+      }
       case 'pending':
-      case 'future':
-        return this.getPendingTasks();
+      case 'future': {
+        const tasks = await this.getAllTasks();
+        return this.filterTasksByBucket(tasks, 'pending');
+      }
       case 'all':
       default:
         return this.getAllTasks();
     }
+  }
+
+  async getPersistedTask(taskId) {
+    try {
+      return await apiService.getTaskDetail(taskId);
+    } catch (error) {
+      console.warn(`Failed to fetch persisted task ${taskId}:`, error);
+      return null;
+    }
+  }
+
+  async syncPersistedTerminalStatus(taskId, source = 'terminal-status-sync') {
+    const persistedTask = await this.getPersistedTask(taskId);
+    if (!persistedTask || !this.isTerminalStatus(persistedTask.status)) {
+      return null;
+    }
+
+    this.syncTaskStateToFrontend(taskId, persistedTask.status, persistedTask.message, {
+      manualStatusLocked: true,
+      stopPolling: true,
+      forceEmit: true,
+      source
+    });
+
+    return persistedTask;
   }
   
   /**
@@ -249,6 +477,26 @@ class TaskService {
     this.activePolls[taskId] = setInterval(() => {
       this.checkTaskStatus(taskId);
     }, API_CONFIG.polling.interval);
+  }
+
+  reconcilePolling(tasks = []) {
+    const activeTaskIds = new Set(
+      (tasks || [])
+        .filter(task => this.isPollingStatus(task?.status))
+        .map(task => String(task.id))
+    );
+
+    Object.keys(this.activePolls).forEach(taskId => {
+      if (!activeTaskIds.has(String(taskId))) {
+        this.stopPolling(taskId);
+      }
+    });
+
+    (tasks || []).forEach(task => {
+      if (this.isPollingStatus(task?.status)) {
+        this.startPolling(task.id);
+      }
+    });
   }
   
   /**
@@ -270,6 +518,12 @@ class TaskService {
       return;
     }
 
+    const cachedTask = storageService.getTask(taskId);
+    if (this.isTerminalStatus(cachedTask?.status)) {
+      this.stopPolling(taskId);
+      return;
+    }
+
     try {
       const data = await apiService.getTaskStatus(taskId);
       if (this.isManualStatusLocked(taskId)) {
@@ -280,29 +534,42 @@ class TaskService {
       console.log(`[TaskService] Polled status for task ${taskId}:`, data);
       const status = data.status || data.data?.status;
       const message = data.message || data.data?.message;
+
+      const persistedTerminalTask = await this.syncPersistedTerminalStatus(taskId);
+      if (persistedTerminalTask) {
+        return;
+      }
       
       if (status) {
         // 1. 获取当前本地状态进行比较
         const currentTask = storageService.getTask(taskId);
+        if (this.isTerminalStatus(currentTask?.status)) {
+          this.stopPolling(taskId);
+          return;
+        }
+        // TODO 状态只有
         const statusChanged = currentTask && currentTask.status !== status;
         const messageChanged = currentTask && currentTask.message !== message;
         
         // 2. 更新 UI 和 本地缓存
         if (statusChanged || messageChanged) {
           console.log(`[TaskService] 准备更新任务 ${taskId} 状态为:`, status, '消息:', message);
-          storageService.updateTask(taskId, { status, message });
+          this.setLocalTaskState(taskId, { status, message });
 
           // 3. 仅更新数据库任务状态（id, status）
           if (statusChanged) {
-            // 3. 仅更新数据库任务状态（id, status）
-            await this.updateTaskStatus(taskId, status);
+            try {
+              await this.updateTaskStatus(taskId, status);
+            } catch (updateError) {
+              console.warn(`Failed to persist polled status for task ${taskId}:`, updateError);
+            }
           }
 
-          eventBus.emit('task:status-update', { taskId, status, message });
+          this.emitTaskStatusUpdate(taskId, status, message, 'polling');
         }
         
         // 如果任务完成或失败，停止轮询
-        if (status === 'completed' || status === 'failed' || status === 'finished') {
+        if (this.isTerminalStatus(status)) {
           this.stopPolling(taskId); // (updateTaskStatus 已在上一步调用)
         }
       }
@@ -315,23 +582,30 @@ class TaskService {
    * 创建新任务
    */
   async createTask(taskData) {
+    const user = authService.getUser();
+    console.log('[TaskService] Current user when creating task:', user);
     // 自动补充创建者信息
     if (!taskData.creator) {
-        const user = authService.getUser();
-        taskData.creator = user ? user.username : 'Unknown';
+      taskData.creator = user ? user.username : 'Unknown';
     }
-    
+
+    // 自动补充创建者身份信息（student / teacher 等）
+    if (!taskData.creator_identity) {
+      taskData.creator_identity = user?.identity || 'Unknown';
+    }
+    console.log('identity', taskData.creator_identity)
+
     // 先保存到本地缓存
     storageService.addTask(taskData);
-    
+    console.log('[TaskService] createTask payload:', JSON.stringify(taskData, null, 2));
     try {
       // 1. 传给机器人执行
       const result = await apiService.createTask(taskData);
-      
+
       if (result.code === 200) {
         // 2. 提交到数据库 (机器人接口调用成功后)
         await this.persistTask(taskData);
-        
+
         // 3. 开始轮询任务状态
         this.startPolling(taskData.id);
       }
@@ -416,16 +690,46 @@ class TaskService {
    */
   async updateTaskStatus(taskId, status) {
     try {
-      await apiService.updateTaskStatus(taskId, status);
+      return await apiService.updateTaskStatus(taskId, status);
     } catch (error) {
       console.warn('Failed to update task status in database:', error);
+      throw error;
+    }
+  }
+
+  async updateRobotTaskStatus(taskId, status) {
+    try {
+      return await apiService.updateRobotTaskStatus(taskId, status);
+    } catch (error) {
+      console.warn('Failed to update task status in robot:', error);
+      throw error;
     }
   }
 
   async overrideTaskStatus(taskId, status, message) {
-    await this.updateTaskStatus(taskId, status);
-    this.applyManualStatusLock(taskId, status, message);
-    eventBus.emit('task:status-update', { taskId, status, message, source: 'manual-override' });
+    const persistedTerminalTask = await this.syncPersistedTerminalStatus(taskId, 'manual-override-skip');
+    if (persistedTerminalTask) {
+      return persistedTerminalTask;
+    }
+
+    await this.updateRobotTaskStatus(taskId, status);
+    const result = await this.updateTaskStatus(taskId, status);
+
+    if (this.isTerminalStatus(status)) {
+      this.applyManualStatusLock(taskId, status, message);
+    } else {
+      this.releaseManualStatusLock(taskId);
+      this.syncTaskStateToFrontend(taskId, status, message, {
+        manualStatusLocked: false,
+        stopPolling: false,
+        forceEmit: true,
+        source: 'manual-override'
+      });
+      return result;
+    }
+
+    this.emitTaskStatusUpdate(taskId, status, message, 'manual-override');
+    return result;
   }
   
   /**

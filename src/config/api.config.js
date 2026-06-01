@@ -39,7 +39,7 @@ export const API_CONFIG = {
     taskRate: '/api/task/rate',
     // 数据库相关
     persistTask: '/api/task/persist',// add
-    updateTaskStatus: '/api/task/update_status', // 仅更新状态
+    updateTaskStatus: '/api/task/update_status', // 机器人端：仅更新任务状态
     getAllTasks: '/api/task/list',
     getPendingTasks: '/api/task/pending',
     getCurrentTasks: '/api/task/current',
@@ -68,6 +68,7 @@ export const API_CONFIG = {
     db_logout: '/db/auth/logout',
     db_heartbeat: '/db/auth/heartbeat',
     db_onlineUsers: '/db/auth/online-users',
+    db_taskFormLock: '/db/system/task-form-lock',
     faceRegister: '/api/auth/face_register',
     faceRecognize: '/api/video/recognize_face',
 

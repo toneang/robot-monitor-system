@@ -3,7 +3,6 @@ import { authService } from './auth.service.js';
 import taskService from './task.service.js';
 import storageService from './storage.service.js';
 
-const ACTIVE_TASK_STATUSES = new Set(['executing', 'running', 'processing']);
 
 export class EnvMonitorService {
     constructor(modal) {
@@ -60,7 +59,7 @@ export class EnvMonitorService {
             }
         }
 
-        const activeTask = tasks.find(task => ACTIVE_TASK_STATUSES.has(this.normalizeTaskValue(task?.status).toLowerCase()));
+        const activeTask = tasks.find(task => taskService.isCurrentTaskStatus(task?.status));
         return this.normalizeTaskValue(activeTask?.creator);
     }
 
@@ -71,7 +70,7 @@ export class EnvMonitorService {
         }
 
         const taskId = this.normalizeTaskValue(payload?.taskId);
-        const currentTasks = await taskService.getCurrentTasks();
+        const currentTasks = await taskService.getAllTasks();
         const ownerFromCurrentTasks = this.findTaskOwner(currentTasks, taskId);
         if (ownerFromCurrentTasks) {
             return ownerFromCurrentTasks;
