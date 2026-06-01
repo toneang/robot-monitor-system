@@ -14,6 +14,8 @@ class TaskService {
     this.republishTimer = null;
     this.republishInFlight = false;
     this.republishIntervalMs = 10 * 60 * 1000;
+    this._polledStatusCache = new Map(); // 内存中记录轮询状态，替代 localStorage 缓存
+    this._taskListCache = []; // 当前任务列表的内存缓存，供 detail 面板使用
   }
 
   normalizeStatus(status) {
@@ -133,7 +135,7 @@ class TaskService {
 
           if (result?.code === 200) {
             republishedTasks.push(task);
-            storageService.updateTask(task.id, { status: 'submitting' });
+            this._polledStatusCache.set(task.id, { status: 'submitting', message: null });
             this.startPolling(task.id);
           }
         } catch (error) {
@@ -156,28 +158,36 @@ class TaskService {
   }
 
   isManualStatusLocked(taskId) {
-    const task = storageService.getTask(taskId);
-    return !!task?.manualStatusLocked;
+    const prefs = storageService.getTaskUiPref(taskId);
+    return !!prefs?.manualStatusLocked;
   }
 
   setLocalTaskState(taskId, { status, message, manualStatusLocked } = {}) {
-    const updates = {};
-
-    if (status !== undefined) {
-      updates.status = status;
-    }
-
-    if (message !== undefined) {
-      updates.message = message;
-    }
+    // 状态不再写入 localStorage 的任务列表，仅写入 UI 偏好存储
+    const prefUpdates = {};
 
     if (manualStatusLocked !== undefined) {
-      updates.manualStatusLocked = manualStatusLocked;
-      updates.manualStatusUpdatedAt = manualStatusLocked ? new Date().toISOString() : null;
+      prefUpdates.manualStatusLocked = manualStatusLocked;
+      prefUpdates.manualStatusUpdatedAt = manualStatusLocked ? new Date().toISOString() : null;
     }
 
-    if (Object.keys(updates).length > 0) {
-      storageService.updateTask(taskId, updates);
+    // manualStatusLocked 场景下，status 和 message 作为锁定值写入 UI 偏好
+    if (manualStatusLocked === true) {
+      if (status !== undefined) {
+        prefUpdates.status = status;
+      }
+      if (message !== undefined) {
+        prefUpdates.message = message;
+      }
+    }
+
+    if (Object.keys(prefUpdates).length > 0) {
+      storageService.setTaskUiPref(taskId, prefUpdates);
+    }
+
+    // 更新内存中的轮询缓存
+    if (status !== undefined) {
+      this._polledStatusCache.set(taskId, { status, message });
     }
   }
 
@@ -186,15 +196,23 @@ class TaskService {
   }
 
   syncTaskStateToFrontend(taskId, status, message, options = {}) {
-    const currentTask = storageService.getTask(taskId) || {};
-    const resolvedStatus = status !== undefined ? status : currentTask.status;
-    const resolvedMessage = message !== undefined ? message : currentTask.message;
+    const cached = this._polledStatusCache.get(taskId) || {};
+    const resolvedStatus = status !== undefined ? status : cached.status;
+    const resolvedMessage = message !== undefined ? message : cached.message;
 
-    this.setLocalTaskState(taskId, {
-      status: resolvedStatus,
-      message,
-      manualStatusLocked: options.manualStatusLocked
-    });
+    // 仅在 manualStatusLocked 场景下写入 UI 偏好存储
+    if (options.manualStatusLocked !== undefined) {
+      this.setLocalTaskState(taskId, {
+        status: resolvedStatus,
+        message,
+        manualStatusLocked: options.manualStatusLocked
+      });
+    }
+
+    // 更新内存缓存
+    if (status !== undefined) {
+      this._polledStatusCache.set(taskId, { status, message });
+    }
 
     if (options.stopPolling || !this.isPollingStatus(resolvedStatus)) {
       this.stopPolling(taskId);
@@ -202,9 +220,9 @@ class TaskService {
       this.startPolling(taskId);
     }
 
-    const statusChanged = resolvedStatus !== currentTask.status;
-    const messageChanged = message !== undefined && resolvedMessage !== currentTask.message;
-    const lockChanged = options.manualStatusLocked !== undefined && options.manualStatusLocked !== currentTask.manualStatusLocked;
+    const statusChanged = resolvedStatus !== cached.status;
+    const messageChanged = message !== undefined && resolvedMessage !== cached.message;
+    const lockChanged = options.manualStatusLocked !== undefined;
 
     if (statusChanged || messageChanged || lockChanged || options.forceEmit) {
       this.emitTaskStatusUpdate(taskId, resolvedStatus, resolvedMessage, options.source);
@@ -212,49 +230,52 @@ class TaskService {
   }
 
   applyManualStatusLock(taskId, status, message) {
-    this.setLocalTaskState(taskId, {
+    // 仅写入 UI 偏好存储，不写入任务状态缓存
+    storageService.setTaskUiPref(taskId, {
       status,
       message,
-      manualStatusLocked: true
+      manualStatusLocked: true,
+      manualStatusUpdatedAt: new Date().toISOString()
     });
     this.stopPolling(taskId);
   }
 
   releaseManualStatusLock(taskId) {
-    this.setLocalTaskState(taskId, {
+    storageService.setTaskUiPref(taskId, {
       manualStatusLocked: false
     });
   }
 
   mergeLocalTaskMetadata(tasks) {
-    const localTasks = storageService.getTasks() || [];
-    const localTaskMap = new Map(localTasks.map(task => [task.id, task]));
+    const uiPrefs = storageService.getUiPrefs();
 
     return (tasks || []).map(task => {
-      const localTask = localTaskMap.get(task.id);
-      if (!localTask) {
+      const taskPrefs = uiPrefs[task.id];
+      if (!taskPrefs) {
         return task;
       }
 
       const mergedTask = { ...task };
 
-      if (localTask.display_type) {
-        mergedTask.display_type = localTask.display_type;
+      // UI 偏好字段：本地优先
+      if (taskPrefs.display_type) {
+        mergedTask.display_type = taskPrefs.display_type;
       }
 
-      if (localTask.model_selection) {
-        mergedTask.model_selection = localTask.model_selection;
+      if (taskPrefs.model_selection) {
+        mergedTask.model_selection = taskPrefs.model_selection;
       }
 
-      if (localTask.model) {
-        mergedTask.model = localTask.model;
+      if (taskPrefs.model) {
+        mergedTask.model = taskPrefs.model;
       }
 
-      if (localTask.manualStatusLocked) {
-        mergedTask.status = localTask.status || task.status;
-        mergedTask.message = localTask.message !== undefined ? localTask.message : task.message;
+      // status/message: DB 优先，仅 manualStatusLocked 时使用本地锁定值
+      if (taskPrefs.manualStatusLocked) {
+        mergedTask.status = taskPrefs.status || task.status;
+        mergedTask.message = taskPrefs.message !== undefined ? taskPrefs.message : task.message;
         mergedTask.manualStatusLocked = true;
-        mergedTask.manualStatusUpdatedAt = localTask.manualStatusUpdatedAt || null;
+        mergedTask.manualStatusUpdatedAt = taskPrefs.manualStatusUpdatedAt || null;
       }
 
       return mergedTask;
@@ -272,18 +293,37 @@ class TaskService {
   }
 
   filterExpiredSubmittingTasks(tasks) {
-    return tasks || [];
+    const now = Date.now();
+    const maxAgeMs = 30 * 1000; // 30 秒超时
+    return (tasks || []).filter(task => {
+      if (!this.isSubmitState(task?.status)) return true;
+      try {
+        const createdTime = new Date(task.create_time || task.timestamp || 0).getTime();
+        return (now - createdTime) < maxAgeMs;
+      } catch {
+        return false;
+      }
+    });
   }
 
   getLocalInFlightTasks(serverTaskIds = new Set(), predicate = null) {
+    const maxAgeMs = 30 * 1000; // 30 秒内的本地任务才参与 in-flight 合并
     const localTasks = this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
+    const now = Date.now();
 
     return localTasks.filter(task => {
-      if (serverTaskIds.has(task.id)) return false;
+      if (serverTaskIds.has(String(task.id))) return false;
       const isInFlight = this.isPendingTaskStatus(task?.status)
         || this.isCurrentTaskStatus(task?.status)
         || this.isPollingStatus(task?.status);
       if (!isInFlight) return false;
+      // 时间阈值守卫：超过 30 秒的本地孤儿任务丢弃
+      try {
+        const createdTime = new Date(task.create_time || task.timestamp || 0).getTime();
+        if ((now - createdTime) > maxAgeMs) return false;
+      } catch {
+        return false;
+      }
       if (typeof predicate === 'function' && !predicate(task)) return false;
       return true;
     });
@@ -298,7 +338,7 @@ class TaskService {
   }
 
   getCachedTasksByBucket(bucket) {
-    const cachedTasks = this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
+    const cachedTasks = this.filterExpiredSubmittingTasks(this._taskListCache);
     return this.sortTasksByCreateTime(this.filterTasksByBucket(cachedTasks, bucket));
   }
 
@@ -316,7 +356,7 @@ class TaskService {
         let mergedTasks = tasksWithLocalOverrides;
         if (includeLocalInFlight) {
           // 远端部署后可能出现接口返回延迟：保护本地刚创建、尚未被服务端返回的任务不被覆盖
-          const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => task.id));
+          const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => String(task.id)));
           const localInFlightTasks = this.getLocalInFlightTasks(serverTaskIds);
           mergedTasks = tasksWithLocalOverrides.concat(localInFlightTasks);
           console.log(`[TaskService] Fetched ${tasks.length} tasks from API, merged ${localInFlightTasks.length} local in-flight task(s)`);
@@ -327,16 +367,14 @@ class TaskService {
         // 按创建时间倒序排序
         this.sortTasksByCreateTime(mergedTasks);
 
-        // 回写本地缓存
-        if (mergedTasks.length > 0) {
-          storageService.saveTasks(mergedTasks);
-        }
+        // 仅缓存到内存，不再写入 localStorage（DB 是唯一权威数据源）
+        this._taskListCache = mergedTasks;
 
         return mergedTasks;
       } catch (error) {
         console.error('Failed to fetch all tasks:', error);
-        // API 不可用时，返回本地缓存，但过滤掉超时的 submitting 任务
-        return this.filterExpiredSubmittingTasks(storageService.getTasks() || []);
+        // API 不可用时，返回内存缓存，但过滤掉超时的 submitting 任务
+        return this.filterExpiredSubmittingTasks(this._taskListCache);
       }
     }
 
@@ -351,7 +389,7 @@ class TaskService {
       const response = await apiService.getMyTasks(normalizedUsername);
       const tasks = Array.isArray(response) ? response : (response && response.data ? response.data : []);
       const tasksWithLocalOverrides = this.mergeLocalTaskMetadata(tasks);
-      const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => task.id));
+      const serverTaskIds = new Set(tasksWithLocalOverrides.map(task => String(task.id)));
       const localInFlightTasks = this.getLocalInFlightTasks(
         serverTaskIds,
         task => this.matchesCreator(task, normalizedUsername)
@@ -363,11 +401,18 @@ class TaskService {
     } catch (error) {
       console.error('Failed to fetch my tasks:', error);
       return this.sortTasksByCreateTime(
-        this.filterExpiredSubmittingTasks(storageService.getTasks() || []).filter(task =>
+        this.filterExpiredSubmittingTasks(this._taskListCache).filter(task =>
           this.matchesCreator(task, normalizedUsername)
         )
       );
     }
+  }
+
+  /**
+   * 从内存缓存获取单个任务（供详情面板使用，避免依赖 localStorage）
+   */
+  getCachedTask(taskId) {
+    return this._taskListCache.find(t => String(t.id) === String(taskId)) || null;
   }
   
 
@@ -518,8 +563,8 @@ class TaskService {
       return;
     }
 
-    const cachedTask = storageService.getTask(taskId);
-    if (this.isTerminalStatus(cachedTask?.status)) {
+    const cachedStatus = this._polledStatusCache.get(taskId);
+    if (this.isTerminalStatus(cachedStatus?.status)) {
       this.stopPolling(taskId);
       return;
     }
@@ -539,38 +584,41 @@ class TaskService {
       if (persistedTerminalTask) {
         return;
       }
-      
+
       if (status) {
-        // 1. 获取当前本地状态进行比较
-        const currentTask = storageService.getTask(taskId);
-        if (this.isTerminalStatus(currentTask?.status)) {
+        // 使用内存缓存判断状态变化（不再依赖 localStorage）
+        const previousStatus = cachedStatus?.status;
+        const previousMessage = cachedStatus?.message;
+
+        if (this.isTerminalStatus(previousStatus)) {
           this.stopPolling(taskId);
           return;
         }
-        // TODO 状态只有
-        const statusChanged = currentTask && currentTask.status !== status;
-        const messageChanged = currentTask && currentTask.message !== message;
-        
-        // 2. 更新 UI 和 本地缓存
-        if (statusChanged || messageChanged) {
-          console.log(`[TaskService] 准备更新任务 ${taskId} 状态为:`, status, '消息:', message);
-          this.setLocalTaskState(taskId, { status, message });
 
-          // 3. 仅更新数据库任务状态（id, status）
-          if (statusChanged) {
-            try {
-              await this.updateTaskStatus(taskId, status);
-            } catch (updateError) {
-              console.warn(`Failed to persist polled status for task ${taskId}:`, updateError);
-            }
+        const statusChanged = previousStatus && previousStatus !== status;
+        const messageChanged = previousMessage !== message;
+
+        // 更新内存缓存（不写 localStorage）
+        this._polledStatusCache.set(taskId, { status, message });
+
+        // 将机器人状态中转到 DB（DB 是唯一权威数据源）
+        if (statusChanged) {
+          console.log(`[TaskService] 任务 ${taskId} 状态变更: ${previousStatus} -> ${status}`);
+          try {
+            await this.updateTaskStatus(taskId, status);
+          } catch (updateError) {
+            console.warn(`Failed to relay polled status to DB for task ${taskId}:`, updateError);
           }
+        }
 
+        // 驱动 UI 实时更新
+        if (statusChanged || messageChanged) {
           this.emitTaskStatusUpdate(taskId, status, message, 'polling');
         }
-        
-        // 如果任务完成或失败，停止轮询
+
+        // 到达终态，停止轮询
         if (this.isTerminalStatus(status)) {
-          this.stopPolling(taskId); // (updateTaskStatus 已在上一步调用)
+          this.stopPolling(taskId);
         }
       }
     } catch (error) {
@@ -595,8 +643,6 @@ class TaskService {
     }
     console.log('identity', taskData.creator_identity)
 
-    // 先保存到本地缓存
-    storageService.addTask(taskData);
     console.log('[TaskService] createTask payload:', JSON.stringify(taskData, null, 2));
     try {
       // 1. 传给机器人执行
@@ -606,7 +652,17 @@ class TaskService {
         // 2. 提交到数据库 (机器人接口调用成功后)
         await this.persistTask(taskData);
 
-        // 3. 开始轮询任务状态
+        // 3. DB persist 成功后写入 UI 偏好（不在 localStorage 缓存 status）
+        const { display_type, model_selection, model } = taskData;
+        if (display_type || model_selection || model) {
+          storageService.setTaskUiPref(taskData.id, {
+            display_type: display_type || '',
+            model_selection: model_selection || '',
+            model: model || ''
+          });
+        }
+
+        // 4. 开始轮询任务状态
         this.startPolling(taskData.id);
       }
       return result;
@@ -623,10 +679,11 @@ class TaskService {
     try {
       const result = await apiService.controlTask(taskId, action);
       if (result.code === 200) {
-        const newStatus = action === 'pause' ? 'paused' : 
+        const newStatus = action === 'pause' ? 'paused' :
                          action === 'resume' ? 'executing' : 'failed';
         eventBus.emit('task:status-update', { taskId, status: newStatus });
-        storageService.updateTask(taskId, { status: newStatus });
+        // 更新内存缓存
+        this._polledStatusCache.set(taskId, { status: newStatus, message: null });
       }
       return result;
     } catch (error) {
@@ -640,30 +697,28 @@ class TaskService {
    */
   async deleteTask(taskId) {
     try {
-      // 获取当前任务状态
-      const task = storageService.getTask(taskId);
-      const status = task ? task.status : null;
-      
-      // 如果任务状态不是 'failed' 或 'finish' (即正在进行或等待中)，则需要在机器人端删除
-      // 注意：这里包含了 'completed' 作为已完成状态，根据实际情况可能也视为 finish
-      // 假设 'failed', 'finish', 'completed' 都是终止状态
+      // 从内存缓存获取当前任务状态
+      const cachedStatus = this._polledStatusCache.get(taskId);
+      const status = cachedStatus ? cachedStatus.status : null;
+
+      // 如果任务状态不是终止状态，则需要在机器人端删除
       const isTerminalState = ['failed', 'finish', 'completed'].includes(status);
-      
+
       if (status && !isTerminalState) {
           try {
               await apiService.deleteTaskInRobot(taskId);
           } catch (e) {
               console.warn(`Failed to delete task ${taskId} from robot:`, e);
-              // 根据需求，可能即使机器人端删除失败也要尝试数据库删除，
-              // 或者在这里中断。暂且继续，以免任务卡死无法删除。
           }
       }
 
       // 总是从数据库删除
       const result = await apiService.deleteTaskInDb(taskId);
-      
+
       if (result.code === 200) {
+        this._polledStatusCache.delete(taskId);
         storageService.deleteTask(taskId);
+        storageService.deleteTaskUiPref(taskId);
         this.stopPolling(taskId);
         eventBus.emit('task:deleted', { taskId });
       }

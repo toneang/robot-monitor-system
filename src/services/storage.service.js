@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'robot_monitor_tasks';
+const UI_PREFS_KEY = 'robot_monitor_ui_prefs';
 
 class StorageService {
   /**
@@ -62,6 +63,7 @@ class StorageService {
    */
   clearAll() {
     localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(UI_PREFS_KEY);
   }
   
   /**
@@ -70,6 +72,58 @@ class StorageService {
   getTask(taskId) {
     const tasks = this.getTasks();
     return tasks.find(t => t.id === taskId);
+  }
+
+  // ==================== UI 偏好存储 (与任务状态缓存分离) ====================
+
+  /**
+   * 获取所有 UI 偏好
+   */
+  getUiPrefs() {
+    try {
+      const prefs = localStorage.getItem(UI_PREFS_KEY);
+      return prefs ? JSON.parse(prefs) : {};
+    } catch (error) {
+      console.error('Failed to read UI prefs from localStorage:', error);
+      return {};
+    }
+  }
+
+  /**
+   * 保存所有 UI 偏好
+   */
+  saveUiPrefs(prefs) {
+    try {
+      localStorage.setItem(UI_PREFS_KEY, JSON.stringify(prefs));
+    } catch (error) {
+      console.error('Failed to save UI prefs to localStorage:', error);
+    }
+  }
+
+  /**
+   * 获取单个任务的 UI 偏好
+   */
+  getTaskUiPref(taskId) {
+    const prefs = this.getUiPrefs();
+    return prefs[taskId] || null;
+  }
+
+  /**
+   * 设置单个任务的 UI 偏好
+   */
+  setTaskUiPref(taskId, prefUpdates) {
+    const prefs = this.getUiPrefs();
+    prefs[taskId] = { ...(prefs[taskId] || {}), ...prefUpdates };
+    this.saveUiPrefs(prefs);
+  }
+
+  /**
+   * 删除单个任务的 UI 偏好
+   */
+  deleteTaskUiPref(taskId) {
+    const prefs = this.getUiPrefs();
+    delete prefs[taskId];
+    this.saveUiPrefs(prefs);
   }
 }
 

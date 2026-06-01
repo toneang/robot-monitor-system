@@ -178,11 +178,11 @@ export class TaskForm {
     };
     
     try {
-      // 触发事件，让UI先渲染
+      // 触发事件，让UI先渲染 (status: submitting)
       console.log(`[TaskForm] 派发任务创建事件，任务ID: ${taskId}，状态: submitting`);
       eventBus.emit('task:created', payload);
-      
-      // 提交到后端
+
+      // 提交到后端（DB persist 在 taskService 内部处理，仅成功后写 UI 偏好）
       console.log(`[TaskForm] 开始提交任务到后端...`);
       await taskService.createTask(payload);
       

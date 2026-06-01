@@ -947,11 +947,22 @@ class RobotMonitorApp {
    * 清理本地缓存中过期的 submitting 任务
    */
   cleanupStaleLocalTasks() {
+    // 清理过期的 submitting 任务（localStorage 中残留的旧缓存）
     const localTasks = storageService.getTasks() || [];
-    const cleanedTasks = localTasks;
-    if (cleanedTasks.length < localTasks.length) {
-      storageService.saveTasks(cleanedTasks);
-      console.log(`Cleaned up ${localTasks.length - cleanedTasks.length} stale local task(s)`);
+    const now = Date.now();
+    const maxAgeMs = 60 * 1000; // 1 分钟
+    const validTasks = localTasks.filter(task => {
+      if (!taskService.isSubmitState(task?.status)) return true;
+      try {
+        const createdTime = new Date(task.create_time || task.timestamp || 0).getTime();
+        return (now - createdTime) < maxAgeMs;
+      } catch {
+        return false;
+      }
+    });
+    if (validTasks.length < localTasks.length) {
+      storageService.saveTasks(validTasks);
+      console.log(`Cleaned up ${localTasks.length - validTasks.length} stale local submitting task(s)`);
     }
   }
 
@@ -1046,12 +1057,12 @@ class RobotMonitorApp {
         const isTerminalStatus = taskService.isTerminalStatus(normalizedStatus);
 
         if (currentUser && currentUser.role === 'admin') {
-             const updatedTasks = storageService.getTasks() || [];
+             const updatedTasks = taskService._taskListCache || [];
              this.updateAdminStats(updatedTasks);
         }
 
         if (isTerminalStatus) {
-            const task = storageService.getTask(taskId);
+            const task = taskService.getCachedTask(taskId) || {};
             const currentUser = authService.getUser();
 
             // 如果是当前用户创建的任务，且未评价，弹出评分窗口
@@ -1111,10 +1122,11 @@ class RobotMonitorApp {
     const taskType = taskItem.dataset.taskDisplayType || taskItem.dataset.taskTitle.split('：')[0];
 
     // 获取完整任务数据以显示更多详情 (如评分)
-    let detailData = storageService.getTask(taskId) || {};
+    // DB 是唯一权威数据源，从内存缓存获取
+    let detailData = taskService.getCachedTask(taskId) || {};
     if (!detailData.id || !detailData.creator || detailData.rating === undefined || detailData.subtasks === undefined) {
       const tasks = await taskService.getAllTasks();
-      detailData = tasks.find(t => t.id === taskId) || detailData;
+      detailData = tasks.find(t => String(t.id) === String(taskId)) || detailData;
     }
 
     document.getElementById('detailTaskTitle').textContent = `#${serial} ${taskItem.dataset.taskTitle}`;
@@ -1344,7 +1356,7 @@ class RobotMonitorApp {
       return;
     }
 
-    const cachedTask = storageService.getTask(taskId) || {};
+    const cachedTask = taskService.getCachedTask(taskId) || {};
     const resolvedStatus = updates.status !== undefined
       ? updates.status
       : (cachedTask.status ?? taskItem?.dataset?.taskStatus);
