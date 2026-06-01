@@ -45,6 +45,10 @@ coverage/
 *.temp
 ~*
 
+# Chatbot config (contains secrets)
+chatbot/config.py
+chatbot/__pycache__/
+
 # Debug
 .vscode/launch.json
 .vscode/settings.json
