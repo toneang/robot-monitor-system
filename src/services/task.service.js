@@ -513,11 +513,11 @@ class TaskService {
    */
   startPolling(taskId) {
     if (this.activePolls[taskId]) return;
-    if (this.isManualStatusLocked(taskId)) return;
-    
+    if (this.isManualStatusLocked(taskId)) return; // 什么叫手动锁定？
+
     // 立即检查一次
     this.checkTaskStatus(taskId);
-    
+
     // 设置定时轮询
     this.activePolls[taskId] = setInterval(() => {
       this.checkTaskStatus(taskId);
@@ -543,7 +543,7 @@ class TaskService {
       }
     });
   }
-  
+
   /**
    * 停止轮询任务状态
    */
@@ -553,7 +553,7 @@ class TaskService {
       delete this.activePolls[taskId];
     }
   }
-  
+
   /**
    * 检查任务状态
    */
@@ -576,7 +576,6 @@ class TaskService {
         return;
       }
 
-      console.log(`[TaskService] Polled status for task ${taskId}:`, data);
       const status = data.status || data.data?.status;
       const message = data.message || data.data?.message;
 
@@ -595,21 +594,41 @@ class TaskService {
           return;
         }
 
-        const statusChanged = previousStatus && previousStatus !== status;
-        const messageChanged = previousMessage !== message;
-
-        // 更新内存缓存（不写 localStorage）
-        this._polledStatusCache.set(taskId, { status, message });
+        // 首次轮询无缓存时也应视为变更（!previousStatus）
+        const statusChanged = !previousStatus || previousStatus !== status;
+        const messageChanged = !previousMessage || previousMessage !== message;
+        const isTerminalStatus = this.isTerminalStatus(status);
 
         // 将机器人状态中转到 DB（DB 是唯一权威数据源）
         if (statusChanged) {
-          console.log(`[TaskService] 任务 ${taskId} 状态变更: ${previousStatus} -> ${status}`);
           try {
-            await this.updateTaskStatus(taskId, status);
+            await this.updateTaskStatus(taskId, status, message);
           } catch (updateError) {
+            if (updateError?.status === 403 || updateError?.data?.error?.type === 'permission_error') {
+              console.error(`[TaskService] Failed to sync robot status to DB for task ${taskId}:`, {
+                polledStatus: status,
+                responseStatus: updateError?.status,
+                responseData: updateError?.data,
+              });
+            }
             console.warn(`Failed to relay polled status to DB for task ${taskId}:`, updateError);
+            if (isTerminalStatus) {
+              return;
+            }
           }
         }
+
+        // 仅消息变化时，将新消息追加到 DB 的 execution_log（不改变状态）
+        if (messageChanged && !statusChanged) {
+          try {
+            await this.updateTaskStatus(taskId, status, message);
+          } catch (updateError) {
+            console.warn(`Failed to relay polled message to DB for task ${taskId}:`, updateError);
+          }
+        }
+
+        // 更新内存缓存（不写 localStorage）
+        this._polledStatusCache.set(taskId, { status, message });
 
         // 驱动 UI 实时更新
         if (statusChanged || messageChanged) {
@@ -617,7 +636,7 @@ class TaskService {
         }
 
         // 到达终态，停止轮询
-        if (this.isTerminalStatus(status)) {
+        if (isTerminalStatus) {
           this.stopPolling(taskId);
         }
       }
@@ -652,7 +671,13 @@ class TaskService {
         // 2. 提交到数据库 (机器人接口调用成功后)
         await this.persistTask(taskData);
 
-        // 3. DB persist 成功后写入 UI 偏好（不在 localStorage 缓存 status）
+        // 3. 机器人已接受，更新 DB 状态为 pending
+        await this.updateTaskStatus(taskData.id, 'pending');
+
+        // 4. 种子内存缓存，确保后续轮询能检测到状态变化
+        this._polledStatusCache.set(taskData.id, { status: 'pending', message: null });
+
+        // 5. DB persist 成功后写入 UI 偏好（不在 localStorage 缓存 status）
         const { display_type, model_selection, model } = taskData;
         if (display_type || model_selection || model) {
           storageService.setTaskUiPref(taskData.id, {
@@ -743,9 +768,9 @@ class TaskService {
   /**
    * 仅更新任务状态到数据库
    */
-  async updateTaskStatus(taskId, status) {
+  async updateTaskStatus(taskId, status, message) {
     try {
-      return await apiService.updateTaskStatus(taskId, status);
+      return await apiService.updateTaskStatus(taskId, status, message);
     } catch (error) {
       console.warn('Failed to update task status in database:', error);
       throw error;

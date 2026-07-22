@@ -35,6 +35,8 @@ Desktop.ini
 .cache/
 .parcel-cache/
 .eslintcache
+__pycache__/
+*.pyc
 
 # Testing
 coverage/
@@ -43,7 +45,11 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
+.tmp_*
 ~*
+
+# Database
+*.db
 
 # Chatbot config (contains secrets)
 chatbot/config.py

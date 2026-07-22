@@ -585,8 +585,21 @@
                         <div class="text-center py-4 text-gray-500 no-tasks-message">No Tasks</div>
                     </div>
                 </div>
+
+                <!-- Unrated Tasks Panel -->
+                <div id="unratedTasksPanel" class="bg-white rounded-lg p-4 card-shadow mt-4 hidden">
+                    <h2 class="text-lg font-bold mb-3 flex items-center">
+                        <i class="fa fa-star-half-o text-warning mr-2"></i>
+                        Tasks Pending Rating
+                    </h2>
+                    <div id="unratedTasksList" class="max-h-[300px] overflow-y-auto space-y-2">
+                    </div>
+                    <div id="unratedTasksEmpty" class="text-center py-4 text-gray-400 text-sm">
+                        All tasks have been rated
+                    </div>
+                </div>
             </div>
-            
+
             <!-- Right column: Task Details (4 columns) -->
             <div class="lg:col-span-4">
                 <!-- Task details card -->
@@ -679,6 +692,14 @@
                              </div>
                         </div>
 
+                        <!-- Execution Log -->
+                        <div id="detailExecutionLogSection" class="border-t border-gray-200 pt-3 hidden">
+                            <h3 class="text-sm font-bold text-gray-700 mb-2 flex items-center">
+                                <i class="fa fa-list-alt text-blue-500 mr-2"></i>Execution Log
+                            </h3>
+                            <div id="detailExecutionLogEntries" class="max-h-[200px] overflow-y-auto space-y-1.5 text-xs"></div>
+                        </div>
+
                         <!-- Rating Information -->
                         <div id="ratingSection" class="border-t border-gray-200 pt-4 hidden">
                             <h3 class="text-sm font-bold text-gray-700 mb-3 flex items-center">
@@ -718,98 +739,89 @@
 
     <!-- Rating Modal -->
     <div id="ratingModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-            <div class="mt-3 text-center">
-                <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
-                    <i class="fa fa-check text-green-600 text-xl"></i>
-                </div>
-                <h3 class="text-lg leading-6 font-medium text-gray-900 mt-2">Mission Completed!</h3>
-                <div class="mt-2 px-7 py-3">
-                    <p class="text-sm text-gray-500 mb-4">How was the robot's performance?</p>
+        <div class="relative top-20 mx-auto p-5 border w-[800px] max-w-[90vw] shadow-lg rounded-md bg-white">
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Left Column: Task Info + Rating Form -->
+                <div class="flex-1 md:w-1/2 pr-0 md:pr-3 md:border-r border-gray-200">
+                    <div class="text-center">
+                        <div class="mx-auto flex items-center justify-center h-10 w-10 rounded-full bg-green-100">
+                            <i class="fa fa-check text-green-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-base leading-6 font-medium text-gray-900 mt-1">Mission Completed!</h3>
+                        <p class="text-xs text-gray-500 mt-1 mb-3">How was the robot's performance?</p>
+                    </div>
 
-                    <div class="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 text-left">
+                    <div class="mb-3 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 text-left">
                         <p id="ratingTaskType" class="text-sm font-medium text-gray-800">-</p>
                         <p id="ratingTaskDescription" class="mt-1 text-sm text-gray-600 break-words">-</p>
                         <p id="ratingTaskModel" class="mt-1 text-xs text-gray-500">model:-</p>
                     </div>
 
                     <!-- Multi-Dimension Rating -->
-                    <div class="space-y-3 mb-4 text-left">
-                        <!-- Personalization Level -->
+                    <div class="space-y-2 mb-3 text-left">
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Personalization Level</label>
                             <div class="flex gap-1" id="rating-personalization">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalization" data-rating="5"></i>
                             </div>
                         </div>
-
-                        <!-- Functional Correctness -->
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Functional Correctness</label>
                             <div class="flex gap-1" id="rating-functional">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="functional" data-rating="5"></i>
                             </div>
                         </div>
-
-                        <!-- Personalized Correctness -->
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Personalized Correctness</label>
                             <div class="flex gap-1" id="rating-personalized">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="personalized" data-rating="5"></i>
                             </div>
                         </div>
-
-                        <!-- Intent Understanding -->
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Intent Understanding</label>
                             <div class="flex gap-1" id="rating-intent">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="intent" data-rating="5"></i>
                             </div>
                         </div>
-
-                        <!-- Auto Completion -->
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Auto Completion</label>
                             <div class="flex gap-1" id="rating-completion">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="completion" data-rating="5"></i>
                             </div>
                         </div>
-
-                        <!-- Robot Improvement -->
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Robot Improvement</label>
                             <div class="flex gap-1" id="rating-improvement">
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="1"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="2"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="3"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="4"></i>
-                                <i class="fa fa-star text-xl text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="5"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="1"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="2"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="3"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="4"></i>
+                                <i class="fa fa-star text-lg text-gray-300 cursor-pointer hover:text-yellow-400 transition-colors" data-category="improvement" data-rating="5"></i>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Questions -->
-                    <div class="text-left space-y-3 mb-4">
+
+                    <div class="text-left space-y-2 mb-3">
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Did it meet your expectations?</label>
                             <select id="ratingExpectation" class="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50">
@@ -820,17 +832,28 @@
                         </div>
                         <div>
                             <label class="block text-xs font-medium text-gray-700 mb-1">Additional Comments</label>
-                            <textarea id="ratingComment" rows="3" class="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" placeholder="Any feedback?"></textarea>
+                            <textarea id="ratingComment" rows="2" class="w-full text-sm border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" placeholder="Any feedback?"></textarea>
                         </div>
                     </div>
+
+                    <div class="flex flex-col gap-2">
+                        <button id="submitRatingBtn" class="px-4 py-2 bg-primary text-white text-sm font-medium rounded-md w-full shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary">
+                            Submit Feedback
+                        </button>
+                        <button id="skipRatingBtn" class="px-4 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-md w-full shadow-sm hover:bg-gray-200 focus:outline-none">
+                            Skip
+                        </button>
+                    </div>
                 </div>
-                <div class="items-center px-4 py-3">
-                    <button id="submitRatingBtn" class="px-4 py-2 bg-primary text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary">
-                        Submit Feedback
-                    </button>
-                    <button id="skipRatingBtn" class="mt-2 px-4 py-2 bg-gray-100 text-gray-700 text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-200 focus:outline-none">
-                        Skip
-                    </button>
+
+                <!-- Right Column: Execution Log -->
+                <div class="flex-1 md:w-1/2 pl-0 md:pl-3 text-left">
+                    <h4 class="text-sm font-bold text-gray-700 mb-2 flex items-center gap-1">
+                        <i class="fa fa-list-alt text-blue-500"></i> Execution Log
+                    </h4>
+                    <div id="executionLogEntries" class="max-h-[420px] overflow-y-auto space-y-1.5 text-xs">
+                        <p class="text-gray-400 italic">Loading...</p>
+                    </div>
                 </div>
             </div>
         </div>

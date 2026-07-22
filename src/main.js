@@ -353,11 +353,16 @@ class RobotMonitorApp {
     // 初始化环境检查模态框
     this.envCheckModal = new EnvCheckModal();
     this.envMonitorService = new EnvMonitorService(this.envCheckModal);
+    this.envMonitorService.setOnConfirmedCallback(() => {
+      // 环境检查确认后，弹出等待中的评分问卷
+      this._showPendingRatings();
+    });
     this.taskConfirmModal = new TaskConfirmModal();
     this.taskConfirmService = new TaskConfirmService(this.taskConfirmModal, (message, type) => {
       this.showToast(message, type);
     });
     this.onlineStatusService = new OnlineStatusService();
+    this._pendingRatingTaskIds = new Set(); // 等待环境检查确认后再弹评分的任务
     this.setupTaskFormLockControls();
   }
   
@@ -990,6 +995,7 @@ class RobotMonitorApp {
       }
 
       this.updateAdminStats(tasks);
+      this.updateUnratedTasksPanel(tasks);
       await this.restoreSelectedTask(previouslySelectedTaskId);
       console.log(`Synced ${tasks.length} tasks from server`);
       return tasks;
@@ -1065,15 +1071,23 @@ class RobotMonitorApp {
             const task = taskService.getCachedTask(taskId) || {};
             const currentUser = authService.getUser();
 
-            // 如果是当前用户创建的任务，且未评价，弹出评分窗口
+            // 如果是当前用户创建的任务，且未评价，放入等待队列
             const hasValidRating = task?.rating && typeof task.rating === 'object' && Object.keys(task.rating).length > 0;
             if (task && currentUser && task.creator === currentUser.username && !hasValidRating) {
-                // 延迟弹出
+                this._pendingRatingTaskIds.add(taskId);
+                // 延迟检查：如果环境检查弹窗存在，等它确认后再弹评分
                 setTimeout(() => {
-                    if (this.ratingModal) {
-                        this.ratingModal.open(taskId);
+                    if (!this._pendingRatingTaskIds.has(taskId)) return;
+                    const envModal = document.getElementById('envCheckModal');
+                    const isEnvCheckVisible = envModal && !envModal.classList.contains('hidden');
+                    if (!isEnvCheckVisible) {
+                        this._pendingRatingTaskIds.delete(taskId);
+                        if (this.ratingModal) {
+                            this.ratingModal.open(taskId);
+                        }
                     }
-                }, 1000);
+                    // 如果环境检查弹窗正在显示，等 onConfirmedCallback 触发 _showPendingRatings
+                }, 1500);
             }
         }
 
@@ -1199,6 +1213,51 @@ class RobotMonitorApp {
         subtaskStats.classList.add('hidden');
     }
 
+    // 渲染执行日志
+    const execLogSection = document.getElementById('detailExecutionLogSection');
+    const execLogEntries = document.getElementById('detailExecutionLogEntries');
+    if (execLogSection && execLogEntries) {
+      let logEntries = [];
+      if (detailData && detailData.execution_log) {
+        try {
+          logEntries = typeof detailData.execution_log === 'string'
+            ? JSON.parse(detailData.execution_log)
+            : detailData.execution_log;
+        } catch (e) {
+          logEntries = [];
+        }
+      }
+      if (logEntries.length) {
+        execLogSection.classList.remove('hidden');
+        const statusColorMap = {
+          pending: 'border-gray-300', executing: 'border-blue-400', processing: 'border-blue-400',
+          running: 'border-blue-400', paused: 'border-yellow-400', finished: 'border-green-400',
+          completed: 'border-green-400', failed: 'border-red-400', fail: 'border-red-400',
+        };
+        const statusBadgeMap = {
+          pending: 'bg-gray-100 text-gray-600', executing: 'bg-blue-100 text-blue-700',
+          processing: 'bg-blue-100 text-blue-700', running: 'bg-blue-100 text-blue-700',
+          paused: 'bg-yellow-100 text-yellow-700', finished: 'bg-green-100 text-green-700',
+          completed: 'bg-green-100 text-green-700', failed: 'bg-red-100 text-red-700',
+          fail: 'bg-red-100 text-red-700',
+        };
+        execLogEntries.innerHTML = logEntries.map(entry => {
+          const s = String(entry.status || '').toLowerCase();
+          const borderColor = statusColorMap[s] || 'border-gray-300';
+          const badgeClass = statusBadgeMap[s] || 'bg-gray-100 text-gray-600';
+          return `
+            <div class="border-l-2 ${borderColor} pl-2 py-1">
+              <div class="text-gray-400 text-[10px]">${entry.timestamp || ''}</div>
+              <span class="inline-block px-1 py-0.5 rounded text-[10px] font-medium ${badgeClass}">${entry.status || 'unknown'}</span>
+              <div class="text-gray-600 mt-0.5">${entry.message || ''}</div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        execLogSection.classList.add('hidden');
+      }
+    }
+
     // 处理评价显示
     const ratingSection = document.getElementById('ratingSection');
     const ratedView = document.getElementById('ratedView');
@@ -1259,6 +1318,23 @@ class RobotMonitorApp {
                     dimensionRatings.appendChild(row);
                 }
             });
+
+            const editRatingBtnId = 'editRatingBtn';
+            const oldEditRatingBtn = document.getElementById(editRatingBtnId);
+            if (oldEditRatingBtn) oldEditRatingBtn.remove();
+
+            if (authService.isAdmin()) {
+                const editRatingBtn = document.createElement('button');
+                editRatingBtn.id = editRatingBtnId;
+                editRatingBtn.className = 'mb-3 text-xs text-primary hover:text-primary/80 transition-colors inline-flex items-center';
+                editRatingBtn.innerHTML = '<i class="fa fa-pencil mr-1"></i> Edit Feedback';
+                editRatingBtn.addEventListener('click', () => {
+                    if (this.ratingModal) {
+                        this.ratingModal.openManually(taskId, detailData.rating);
+                    }
+                });
+                dimensionRatings.parentNode.insertBefore(editRatingBtn, dimensionRatings.nextSibling);
+            }
 
             // 显示符合预期情况
             const commentSection = document.getElementById('commentSection');
@@ -1568,6 +1644,89 @@ class RobotMonitorApp {
     if (detailForm) detailForm.classList.add('hidden');
   }
   
+  /**
+   * 渲染未评分任务列表
+   */
+  updateUnratedTasksPanel(tasks) {
+    const panel = document.getElementById('unratedTasksPanel');
+    const listEl = document.getElementById('unratedTasksList');
+    const emptyEl = document.getElementById('unratedTasksEmpty');
+    if (!panel || !listEl) return;
+
+    const currentUser = authService.getUser();
+    if (!currentUser) {
+      panel.classList.add('hidden');
+      return;
+    }
+
+    // 筛选：当前用户创建的终态任务中，未评分的
+    const unratedTasks = (tasks || []).filter(task => {
+      if (task.creator !== currentUser.username) return false;
+      if (!taskService.isTerminalStatus(task?.status)) return false;
+      const hasValidRating = task?.rating && typeof task.rating === 'object' && Object.keys(task.rating).length > 0;
+      return !hasValidRating;
+    });
+
+    if (unratedTasks.length === 0) {
+      panel.classList.add('hidden');
+      return;
+    }
+
+    panel.classList.remove('hidden');
+    listEl.innerHTML = '';
+    if (emptyEl) emptyEl.classList.add('hidden');
+
+    unratedTasks.forEach(task => {
+      const sid = (task.id || '').substring(0, 8);
+      const desc = (task.description || 'No description').substring(0, 40);
+      const statusLabel = {
+        finished: 'Finished', completed: 'Completed', failed: 'Failed', fail: 'Failed'
+      }[task.status] || task.status;
+      const statusColor = task.status === 'failed' ? 'text-red-500' : 'text-green-500';
+
+      const createTime = task.create_time || '-';
+      const execTime = task.execute_time || task.create_time || '-';
+
+      const item = document.createElement('div');
+      item.className = 'flex items-center justify-between p-2 rounded-md border border-gray-100 hover:bg-gray-50 cursor-pointer transition-colors';
+      item.innerHTML = `
+        <div class="flex-1 min-w-0">
+          <p class="text-sm text-gray-800 truncate" title="${task.description}">${desc}</p>
+          <p class="text-xs text-gray-400">#${sid} · <span class="${statusColor}">${statusLabel}</span> · Created: ${createTime.substring(0, 16)} · Execute: ${execTime.substring(0, 16)}</p>
+        </div>
+        <button class="rate-task-btn ml-2 px-3 py-1 text-xs rounded-md bg-warning text-white hover:bg-warning/90 transition-colors shrink-0">
+          <i class="fa fa-star mr-1"></i>Rate
+        </button>
+      `;
+
+      item.addEventListener('click', (e) => {
+        if (e.target.closest('.rate-task-btn')) return; // button handles its own click
+        if (this.ratingModal) this.ratingModal.openManually(task.id);
+      });
+
+      const rateBtn = item.querySelector('.rate-task-btn');
+      rateBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (this.ratingModal) this.ratingModal.openManually(task.id);
+      });
+
+      listEl.appendChild(item);
+    });
+  }
+
+  /**
+   * 环境检查确认后，弹出所有等待中的评分问卷
+   */
+  _showPendingRatings() {
+    const taskIds = [...this._pendingRatingTaskIds];
+    this._pendingRatingTaskIds.clear();
+    taskIds.forEach(taskId => {
+      if (this.ratingModal) {
+        this.ratingModal.open(taskId);
+      }
+    });
+  }
+
   /**
    * 显示提示信息
    */

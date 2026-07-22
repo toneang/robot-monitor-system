@@ -16,10 +16,12 @@ export class RatingModal {
     this.skipBtn = document.getElementById('skipRatingBtn');
     this.taskTypeEl = document.getElementById('ratingTaskType');
     this.taskDescriptionEl = document.getElementById('ratingTaskDescription');
+    this.executionLogEntries = document.getElementById('executionLogEntries');
 
     this.categories = ['personalization', 'functional', 'personalized', 'intent', 'completion', 'improvement'];
     this.currentRatings = {};
     this.currentTaskId = null;
+    this.isEditMode = false;
     this.skippedTaskIds = new Set();
     this.taskDetailRequestId = 0;
 
@@ -65,23 +67,20 @@ export class RatingModal {
   /**
    * 打开评分弹窗
    */
-  open(taskId) {
+  open(taskId, existingRating = null) {
     // 如果弹窗已打开且是同一个任务，不重复初始化（防止轮询重复触发时清空已填写的内容）
     if (this.currentTaskId === taskId && !this.modal.classList.contains('hidden')) {
       return;
     }
     // 如果该任务已跳过，不再弹出
-    if (this.skippedTaskIds.has(taskId)) {
+    if (!existingRating && this.skippedTaskIds.has(taskId)) {
       return;
     }
     this.currentTaskId = taskId;
-    this.categories.forEach(cat => {
-      this.currentRatings[cat] = 0;
-      this.highlightStars(cat, 0);
-    });
-    this.commentInput.value = '';
-    this.expectationInput.value = 'yes';
+    this.isEditMode = !!existingRating;
+    this.resetForm(existingRating);
     this.renderTaskTypeDetail(null, true);
+    this.updateSubmitButtonLabel();
     this.modal.classList.remove('hidden');
     this.loadTaskTypeDetail(taskId);
   }
@@ -89,9 +88,48 @@ export class RatingModal {
   /**
    * 手动打开（从"添加问卷"按钮调用，跳过 skip 检查）
    */
-  openManually(taskId) {
+  openManually(taskId, existingRating = null) {
     this.skippedTaskIds.delete(taskId);
-    this.open(taskId);
+    this.open(taskId, existingRating);
+  }
+
+  resetForm(existingRating = null) {
+    this.categories.forEach(cat => {
+      this.currentRatings[cat] = 0;
+      this.highlightStars(cat, 0);
+    });
+    this.commentInput.value = '';
+    this.expectationInput.value = 'yes';
+
+    if (existingRating) {
+      this.prefillRating(existingRating);
+    }
+  }
+
+  prefillRating(rating) {
+    const fieldMap = {
+      personalization: 'personalization_level',
+      functional: 'score_functional_correctness',
+      personalized: 'score_personalized_correctness',
+      intent: 'score_intent_understanding',
+      completion: 'score_auto_completion',
+      improvement: 'score_robot_improvement'
+    };
+
+    Object.entries(fieldMap).forEach(([category, field]) => {
+      const score = Number(rating[field] || 0);
+      if (score >= 1 && score <= 5) {
+        this.setRating(category, score);
+      }
+    });
+
+    this.commentInput.value = rating.comment || '';
+    this.expectationInput.value = rating.expectation || 'yes';
+  }
+
+  updateSubmitButtonLabel() {
+    if (!this.submitBtn) return;
+    this.submitBtn.innerText = this.isEditMode ? 'Update Feedback' : 'Submit Feedback';
   }
 
   /**
@@ -105,6 +143,8 @@ export class RatingModal {
     this.modal.classList.add('hidden');
     this.renderTaskTypeDetail(null, false);
     this.currentTaskId = null;
+    this.isEditMode = false;
+    this.updateSubmitButtonLabel();
   }
 
   async loadTaskTypeDetail(taskId) {
@@ -154,6 +194,72 @@ export class RatingModal {
 
     this.taskTypeEl.textContent = displayType;
     this.taskDescriptionEl.textContent = description;
+    this.renderExecutionLog(task);
+  }
+
+  renderExecutionLog(task) {
+    if (!this.executionLogEntries) return;
+
+    let logEntries = [];
+    if (task && task.execution_log) {
+      try {
+        logEntries = typeof task.execution_log === 'string'
+          ? JSON.parse(task.execution_log)
+          : task.execution_log;
+      } catch (e) {
+        logEntries = [];
+      }
+    }
+
+    if (!logEntries.length) {
+      this.executionLogEntries.innerHTML = '<p class="text-gray-400 italic text-xs">No execution data available</p>';
+      return;
+    }
+
+    this.executionLogEntries.innerHTML = logEntries.map(entry => {
+      const time = entry.timestamp || '';
+      const status = entry.status || 'unknown';
+      const message = entry.message || '';
+      const borderColor = this.getLogStatusColor(status);
+      const badgeClass = this.getLogStatusBadge(status);
+      return `
+        <div class="border-l-2 ${borderColor} pl-2 py-1">
+          <div class="text-gray-400 text-[10px]">${time}</div>
+          <span class="inline-block px-1 py-0.5 rounded text-[10px] font-medium ${badgeClass}">${status}</span>
+          <div class="text-gray-600 mt-0.5">${message}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  getLogStatusColor(status) {
+    const map = {
+      pending: 'border-gray-300',
+      executing: 'border-blue-400',
+      processing: 'border-blue-400',
+      running: 'border-blue-400',
+      paused: 'border-yellow-400',
+      finished: 'border-green-400',
+      completed: 'border-green-400',
+      failed: 'border-red-400',
+      fail: 'border-red-400',
+    };
+    return map[String(status).toLowerCase()] || 'border-gray-300';
+  }
+
+  getLogStatusBadge(status) {
+    const map = {
+      pending: 'bg-gray-100 text-gray-600',
+      executing: 'bg-blue-100 text-blue-700',
+      processing: 'bg-blue-100 text-blue-700',
+      running: 'bg-blue-100 text-blue-700',
+      paused: 'bg-yellow-100 text-yellow-700',
+      finished: 'bg-green-100 text-green-700',
+      completed: 'bg-green-100 text-green-700',
+      failed: 'bg-red-100 text-red-700',
+      fail: 'bg-red-100 text-red-700',
+    };
+    return map[String(status).toLowerCase()] || 'bg-gray-100 text-gray-600';
   }
 
   /**
@@ -193,8 +299,9 @@ export class RatingModal {
     }
 
     const originalText = this.submitBtn.innerText;
+    const wasEditMode = this.isEditMode;
     this.submitBtn.disabled = true;
-    this.submitBtn.innerText = 'Submitting...';
+    this.submitBtn.innerText = wasEditMode ? 'Updating...' : 'Submitting...';
 
     try {
       const user = authService.getUser();
@@ -209,6 +316,7 @@ export class RatingModal {
         comment: this.commentInput.value,
         expectation: this.expectationInput.value,
         submitted_by: user ? user.username : 'Anonymous',
+        submitted_role: user ? user.role : 'user',
         submitted_at: new Date().toISOString()
       };
 
@@ -220,7 +328,7 @@ export class RatingModal {
       eventBus.emit('task:rated', data);
 
       this.close(false);
-      alert('Thank you for your feedback!');
+      alert(wasEditMode ? 'Feedback updated successfully!' : 'Thank you for your feedback!');
 
     } catch (error) {
       console.error('Failed to submit rating:', error);

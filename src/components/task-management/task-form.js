@@ -5,7 +5,7 @@ import { authService } from '../../services/auth.service.js';
 import eventBus from '../../core/event-bus.js';
 import { graphService } from '../../services/graph.service.js';
 import { DateTimePicker } from './datetime-picker.js';
-import { resolveBackendTaskModel } from '../../utils/task-type.js';
+import { resolveBackendTaskModel, getDisplayTaskTypeLabel } from '../../utils/task-type.js';
 import taskFormLockService from '../../services/task-form-lock.service.js';
 
 /**
@@ -159,6 +159,11 @@ export class TaskForm {
       // 不阻塞任务创建，只是机器人画像信息为空
     }
 
+    // 锁定时不强制 display_type='find'，根据实际描述推断显示类型
+    const displayType = this.shouldEnforceLock()
+      ? getDisplayTaskTypeLabel({ type: resolvedTaskType, display_type: '' }, taskDesc)
+      : taskType;
+
     const payload = {
       id: taskId,
       type: resolvedTaskType,
@@ -168,7 +173,7 @@ export class TaskForm {
       execute_time: taskTime || '',
       use_memory: resolvedUseMemory,
       model: resolvedTaskModel,
-      display_type: taskType,
+      display_type: displayType,
       model_selection: resolvedModelSelection,
       status: 'submitting',
       create_time: createTime,

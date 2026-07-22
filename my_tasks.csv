@@ -1,0 +1,1201 @@
+id,type,description,location,priority,execute_time,creator,status,model
+6dabffdc-e3c9-4f1d-9fca-f473322e0724,custom,find an orange,,medium,2026-05-11 09:07:26,aaa,pending,vlm-mem
+0c80b470-1eb9-4897-95c3-688111fd2dee,custom,what time is it,,low,2026-05-11 09:27:17,aaa,pending,vlm
+a450ba7b-42d1-4984-bb19-0cc21bb53127,custom,notify student taoshida to have a meeting in the 511 conference room,,low,2026-05-11 09:38:49,aaa,pending,rule
+f4bf9a22-3e61-4096-949d-bad55e6238f9,custom,deliver some food for Okng,,high,2026-05-11 09:44:15,aaa,pending,vlm-mem
+0caa30e5-b04e-449a-984d-e745116d7764,custom,find zkm,,low,2026-05-11 09:50:42,aaa,pending,vlm
+69d99354-1078-4ee2-949a-8a0159e76e66,custom,please help me deliver the a banana to student wyj,,low,2026-05-11 10:27:50,aaa,pending,vlm-mem
+d9b69176-ecc9-413b-b2aa-fd320d7bb76e,custom,go to the snack area and pick up an apple,,low,2026-05-11 11:51:50,aaa,pending,rule
+0d72d7e1-08dc-4708-90c1-214b0ac8aef2,custom,deliver some food for taoshida,,high,2026-05-11 11:58:20,aaa,pending,vlm
+1a094fcd-213f-4718-86e4-79af04a3d734,custom,Explore the office and find the snack area,,high,2026-05-11 14:05:23,aaa,pending,vlm
+b95bbed4-f79d-4cd5-9c41-94dbc818d83d,custom,Pick Vitasoy chocolate soya drink and place it on the table,,medium,2026-05-11 14:10:04,aaa,pending,rule
+2acd8bc7-4b12-40d5-a601-04790fa1ea70,custom,pick up a chocolate marked with Snickers for me,,low,2026-05-11 14:13:19,aaa,pending,vlm-mem
+1fbe4b6d-176d-4a52-aa0c-f9daf9145085,custom,"Go to workstation 506J, check if the monitor is on, then come back and tell taoshida the result",,medium,2026-05-11 14:15:09,aaa,pending,vlm
+4dc78b50-4517-48e9-907a-5efc6b235b19,custom,look for a bottle of water,,high,2026-05-11 14:19:53,aaa,pending,rule
+6baf0ebf-47e9-4fd3-8118-b091f8eec77f,custom,find zsx,,low,2026-05-11 14:25:01,aaa,pending,vlm-mem
+9d610143-84e9-49d3-8b1f-a6b4d8bc1357,custom,"Find zsx and taoshida, tell them there's a PPT they need to make",,low,2026-05-11 14:29:27,aaa,pending,rule
+d19ceb9f-c961-471f-896d-4196aee15064,custom,could you give me something to eat?,,low,2026-05-11 14:34:57,aaa,pending,rule
+6bba07e1-0365-4156-9c9e-57287ca6a190,custom,deliver some food for zkm,,high,2026-05-11 14:37:56,aaa,pending,vlm-mem
+561e26db-1d8c-4f3c-8731-6e1c8b988429,custom,"Go to workstation 506J, check if the monitor is on, then come back and tell Okng the result",,low,2026-05-11 14:50:07,aaa,pending,vlm
+9e96c3a6-0e49-4380-afb4-88a3e027e951,custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-11 14:50:27,aaa,pending,rule
+f3cd2164-d66f-4867-8f53-838f6b68f056,custom,Explore the office and find the snack area,,low,2026-05-11 14:53:15,aaa,pending,vlm-mem
+b1260492-7ac0-4ac0-a4be-8e1e178d56cd,custom,go home,,high,2026-05-11 15:17:01,aaa,pending,vlm
+af266de5-cb2c-4a7a-90a8-6d0bc3fcb67a,custom,Find taoshida.,,low,2026-05-11 15:20:50,aaa,pending,vlm
+97c835d4-b656-48c3-912e-ea94b09e119a,custom,find Vitasoy chocolate soya drink,,low,2026-05-11 15:21:18,aaa,pending,rule
+1c479881-c44c-443d-ae54-f7213220f2e9,custom,deliver some food for Okng,,low,2026-05-11 15:22:21,aaa,pending,vlm
+4a3e7a0f-1e24-4c94-9fe1-9e730cde9706,custom,Find zsx.,,low,2026-05-11 15:36:51,aaa,pending,vlm-mem
+3595c3ae-d00d-4a58-914e-af076e9b0664,custom,help me get my favorite fruit,,low,2026-05-11 15:57:54,aaa,pending,vlm-mem
+2e0beb40-74b5-44cb-aa33-b622c7e24ce4,custom,give me Oreo original flavor sandwich cookie box,,medium,2026-05-11 16:11:48,aaa,pending,vlm
+d69e42be-9874-44eb-8da3-ddadbc92c1f1,custom,come to find Okng,,low,2026-05-11 16:16:52,aaa,pending,rule
+ba982f9a-ad75-4788-b6ea-9740e78cdaa0,custom,look for Vitasoy chocolate soya drink,,high,2026-05-11 16:20:12,aaa,pending,vlm
+6fe8baba-0152-4499-a1ca-cc74502def47,custom,say goodbye,,low,2026-05-11 16:33:28,aaa,pending,vlm-mem
+111c43f3-c049-4a3c-8be8-ce864eef6d7f,custom,please go to the snack area to pick up red packaged cake for me,,medium,2026-05-11 16:37:12,aaa,pending,rule
+25ac01ad-2cc2-400e-979b-90d0be61215b,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-11 16:42:10,aaa,pending,vlm-mem
+3f43ca94-a028-4d9b-993f-acc410f1d350,custom,please help me deliver the a banana to student yyw,,medium,2026-05-11 16:51:24,aaa,pending,vlm
+4e5f5cf9-371a-46b6-95ac-b7fdfd7c79a7,custom,Explore the office and find the snack area,,low,2026-05-11 17:01:11,aaa,pending,vlm
+2d360e9a-d373-4777-a7ae-52bee5abf7e7,custom,go to the snack area and pick up red packaged cake,,low,2026-05-11 17:12:28,aaa,pending,vlm
+579228d8-c4d1-4981-adce-c3cfb72680e2,custom,pick up a chocolate marked with Snickers for me,,low,2026-05-11 17:23:32,aaa,pending,rule
+b9ac6f86-e26c-4934-a6b9-d63eca13b189,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-11 17:24:23,aaa,pending,vlm
+db4c71ab-345c-41dd-92b7-bca5dfcd5806,custom,say hello,,low,2026-05-11 17:49:11,aaa,pending,vlm-mem
+d5e52fc2-7f97-4b41-b12a-01ec5864424d,custom,"Find Okng and yyw, tell them there's a PPT they need to make",,medium,2026-05-11 18:00:22,aaa,pending,vlm-mem
+8fb8685e-952b-41ff-93bb-1b0f0a0530c4,custom,give me red packaged cake,,low,2026-05-11 18:02:29,aaa,pending,vlm-mem
+79a6b39b-c8b0-45ba-b35c-c38ed151d81a,custom,help me get Orion Shuyuan non-fried potato chips,,medium,2026-05-11 18:12:28,aaa,pending,vlm-mem
+991d846d-e9f2-4fb3-b326-90dcf22631cc,custom,Inspect the current environment.,,low,2026-05-11 18:19:00,aaa,pending,vlm
+e23d6123-d3da-4af5-af9c-14c48866d162,custom,pick up an apple for Okng,,low,2026-05-11 18:20:02,aaa,pending,vlm-mem
+fa317bcd-2cd0-4146-a4bc-758f4be2621e,custom,pick up a chocolate marked with Snickers for me,,low,2026-05-11 18:42:44,aaa,pending,rule
+295bc692-dd1a-4b66-8e6a-88246885b870,custom,find a chocolate marked with Snickers,,medium,2026-05-11 18:43:25,aaa,pending,rule
+c27970e4-9a7a-4c94-918b-12092bcb4971,custom,help me get my favorite fruit,,low,2026-05-11 18:58:56,aaa,pending,vlm
+87590baf-b561-4029-a9d7-5be7407a33db,custom,"Find zkm and zsx, tell them there's a PPT they need to make",,low,2026-05-11 19:11:04,aaa,pending,vlm
+f06686aa-db2a-4198-a597-7c86b5caa205,custom,pick up Oreo original flavor sandwich cookie box for me,,low,2026-05-11 19:23:04,aaa,pending,rule
+f5373fe3-0734-4c08-9d97-082ddf3b89bc,custom,pick up coca-cola for me,,high,2026-05-11 19:33:14,aaa,pending,rule
+d953f21b-8252-47ea-ba71-4cc3734cbe62,custom,say hello to yyw,,high,2026-05-11 20:56:29,aaa,pending,vlm
+aeb9d712-775a-466a-95ed-16506f0f697d,custom,look for Vitasoy chocolate soya drink,,low,2026-05-12 09:22:31,aaa,pending,vlm
+e1dbbf69-aaaf-4b91-abb7-09358c56c247,custom,help me get my favorite fruit,,low,2026-05-12 09:23:53,aaa,pending,rule
+639bbf1a-e7e3-46dd-b3ab-c0be35e4bfc7,custom,find Okng and say hello,,low,2026-05-12 09:31:07,aaa,pending,vlm-mem
+bbed188d-f84f-4bc5-9a46-07b41f1a331a,custom,explore the office,,low,2026-05-12 09:36:19,aaa,pending,vlm-mem
+7a614b96-a5db-4f03-9e7c-5049a9838444,custom,find yyw,,low,2026-05-12 09:39:25,aaa,pending,vlm
+f23a7268-28c9-467b-92aa-a6efeba5bd78,custom,Find taoshida.,,low,2026-05-12 09:50:57,aaa,pending,vlm-mem
+6cab78f1-19c0-4e58-be17-722917a10e29,custom,help me get my favorite fruit,,low,2026-05-12 09:52:39,aaa,pending,vlm-mem
+c9b590c6-fd26-42b4-8594-e67a2cada79f,custom,please go to the snack area to pick up a bottle of water for me,,high,2026-05-12 09:59:24,aaa,pending,vlm
+7349f4ff-b9e6-44b1-be72-133fabc52f11,custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,high,2026-05-12 10:01:29,aaa,pending,vlm
+e54b1566-4660-4097-b59f-9cf6446e0cbe,custom,deliver some food for wyj,,low,2026-05-12 10:22:52,aaa,pending,rule
+042d01ed-f178-4c0b-acc0-d6a83a477f1e,custom,say goodbye,,low,2026-05-12 10:42:13,aaa,pending,vlm
+4fe01baa-8c9e-46d7-8b64-d5cd2a395d1a,custom,notify teacher zsx to have a meeting in the 511 conference room,,low,2026-05-12 14:00:38,aaa,pending,vlm
+8ca63d71-474f-408e-a7bd-da6bddefb2c2,custom,tell me a joke,,low,2026-05-12 14:16:56,aaa,pending,rule
+23a0a74f-139d-4766-b35e-eb844325417a,custom,help me get an apple,,medium,2026-05-12 14:18:50,aaa,pending,vlm
+b597e610-5fee-4731-b37a-bf64fbd98a3e,custom,give me a banana,,low,2026-05-12 14:28:44,aaa,pending,vlm
+9a4b2e06-9abf-4028-b885-84e6a8fb434f,custom,give me Orion Shuyuan non-fried potato chips,,low,2026-05-12 14:46:13,aaa,pending,rule
+c8e030b6-2198-4157-9438-2a755e980cb6,custom,pick up a banana for me,,low,2026-05-12 14:50:21,aaa,pending,vlm
+cc7de201-6c40-4725-8301-219b446fd546,custom,what time is it,,low,2026-05-12 14:52:00,aaa,pending,vlm
+78e5cf68-9496-464e-8b4f-00e9271fcc54,custom,could you help me find an apple,,medium,2026-05-12 15:01:28,aaa,pending,vlm
+1550d3c1-d294-4ee5-b9e3-23950a89859a,custom,pick up red packaged cake and place it to wyj's desk,,high,2026-05-12 15:04:21,aaa,pending,vlm-mem
+4034bfff-98a8-48c2-b399-28253ef74611,custom,"Can you check if yyw is at his workstation, then come back and let me know?",,medium,2026-05-12 15:15:24,aaa,pending,rule
+0df82f19-61de-4223-b69d-01e3f2420e30,custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,high,2026-05-12 15:33:28,aaa,pending,vlm
+3b4b4617-2821-42fc-8379-172aee74d956,custom,"Can you check if yyw is at his workstation, then come back and let me know?",,medium,2026-05-12 15:34:57,aaa,pending,rule
+fa3c5edb-3baa-4137-ae14-a8bcff2e0927,custom,deliver some food for zsx,,high,2026-05-12 15:43:52,aaa,pending,rule
+bcf8720f-840b-47ec-9250-a1b909929552,custom,Explore the office and find the snack area,,medium,2026-05-12 15:55:23,aaa,pending,rule
+2693499d-e96a-47f6-bfc5-8d62c5e3b5a5,custom,find Okng and say hello,,high,2026-05-12 15:55:50,aaa,pending,rule
+920ccdb3-a95e-4217-8757-28d59a134b85,custom,say hello to zkm,,low,2026-05-12 16:07:25,aaa,pending,vlm-mem
+d07e46d7-ba1f-413c-986d-f955eca59fc7,custom,say hello,,low,2026-05-12 16:17:02,aaa,pending,vlm-mem
+441830b5-34ae-4b9a-8a39-414d0e44a914,custom,please go to the snack area to pick up an orange for me,,high,2026-05-12 16:22:50,aaa,pending,vlm
+f890be8f-5a74-440b-807d-23494a01111d,custom,say hello to zkm,,low,2026-05-12 16:37:09,aaa,pending,rule
+1c180624-346c-4782-82e6-a1f035488618,custom,please help me deliver the an apple to student zsx,,medium,2026-05-12 16:43:43,aaa,pending,vlm
+216652f9-cbc7-4376-b104-d60d59a1cb33,custom,Find Okng.,,low,2026-05-12 17:02:47,aaa,pending,vlm-mem
+14c062f5-0fd2-4df2-9c04-a3352f3ef57d,custom,what time is it,,low,2026-05-12 17:21:35,aaa,pending,rule
+0411ab54-db94-49fa-b1fb-5d41196efb3c,custom,help me get my favorite fruit,,low,2026-05-12 17:28:03,aaa,pending,rule
+2ab5d88b-74c0-4eca-8fce-9be1cf89ed8b,custom,where is wyj,,low,2026-05-12 17:35:44,aaa,pending,vlm-mem
+acac09e7-acbd-4d92-8612-9d920d52b673,custom,"A bottle of water, please.",,low,2026-05-12 17:43:01,aaa,pending,rule
+f9e0c96e-8ce3-4d78-8480-384932e942fc,custom,"Can you check if zsx is at his workstation, then come back and let me know?",,medium,2026-05-12 18:20:49,aaa,pending,vlm-mem
+b4fbb9ee-aa6e-4cc0-9eb8-6b6e8327a230,custom,could you give me something to eat?,,medium,2026-05-12 18:24:46,aaa,pending,vlm
+0eba36cb-1dc1-436e-8cd4-de78d6b4c4b6,custom,help me get my favorite fruit,,low,2026-05-12 18:31:30,aaa,pending,vlm-mem
+c9e6aff2-8642-4f53-9eb1-618d8d0c7abb,custom,choose a red color fruit and deliver it to wyj,,high,2026-05-12 18:36:21,aaa,pending,rule
+380eb624-1337-4fa8-a203-a2d0d803826b,custom,Explore the office and find the snack area,,high,2026-05-12 18:43:07,aaa,pending,rule
+7a62a4cb-32d6-4a78-8d65-921ccaf41f4d,custom,pick up a bottle of water for me,,medium,2026-05-12 18:47:50,aaa,pending,rule
+515d6c56-af66-4889-a3dd-48a7acd64b74,custom,give me an orange,,low,2026-05-12 18:48:01,aaa,pending,vlm
+2b38e45c-89df-48cd-bcb0-f3de46aa49de,custom,Inspect the current environment.,,low,2026-05-12 18:52:56,aaa,pending,vlm
+0381828e-c331-49b5-85d3-2f3aa1acbf18,custom,where is Okng,,medium,2026-05-12 18:55:51,aaa,pending,rule
+98ed2da6-6128-4f15-bb2e-510f111d23f0,custom,could you give me something to eat?,,high,2026-05-12 19:09:20,aaa,pending,vlm-mem
+dd51c490-8c30-4033-b983-19e64766e28c,custom,"Can you check if zkm is at his workstation, then come back and let me know?",,high,2026-05-12 19:51:39,aaa,pending,rule
+2d708964-23b7-436c-bba5-9db71c6d6a79,custom,say goodbye,,low,2026-05-12 20:16:47,aaa,pending,vlm-mem
+6bf4196e-b798-47e6-8817-afc5d6ab81b3,custom,choose a red color fruit and deliver it to yyw,,medium,2026-05-12 20:43:23,aaa,pending,vlm
+a3aab953-727f-4d43-a371-caceab77fe66,custom,find zsx,,low,2026-05-12 20:51:09,aaa,pending,vlm-mem
+a313833b-4b08-4d84-8d27-43720f82109a,custom,pick up a bottle of water for me,,low,2026-05-13 09:18:31,aaa,pending,rule
+ea3c94fd-e198-4f39-bec3-f5723e69a1e6,custom,Check the environment.,,medium,2026-05-13 09:39:25,aaa,pending,vlm
+415731ed-f69c-459f-a595-38388c802c15,custom,Explore the office and find the snack area,,low,2026-05-13 09:49:18,aaa,pending,vlm
+93d7d33a-14d2-4a3c-b0d3-ec079e8f5d78,custom,pick up Oreo original flavor sandwich cookie box for zsx,,low,2026-05-13 10:19:11,aaa,pending,rule
+6a2610df-8b16-40a6-8519-45dd6c73b4b7,custom,pick up coca-cola for wyj,,high,2026-05-13 10:22:54,aaa,pending,vlm
+239903eb-feb2-4eff-8297-f05eeb61c9dc,custom,pick up red packaged cake for me,,high,2026-05-13 10:36:20,aaa,pending,vlm
+1e1f4f7e-a2d0-4b12-aee3-609b24e79fc1,custom,say hello,,low,2026-05-13 10:41:37,aaa,pending,rule
+d07fae27-285c-4d0c-bddc-d49fe37c4cce,custom,"A bottle of water, please.",,high,2026-05-13 10:47:13,aaa,pending,vlm
+b0d976eb-2cd7-4cb7-99be-dc5944b265be,custom,find a banana,,low,2026-05-13 10:49:34,aaa,pending,rule
+c8c30df0-8455-419a-9b14-f99292d83eda,custom,what time is it,,low,2026-05-13 10:49:56,aaa,pending,vlm-mem
+d0fe8556-4ada-44a5-a969-eec8a42da565,custom,give me coca-cola,,low,2026-05-13 11:05:05,aaa,pending,rule
+779a5af5-cc09-4e2e-b9f6-c51b805cd835,custom,Find yyw.,,low,2026-05-13 11:11:34,aaa,pending,vlm
+bc8537e2-2ed5-4520-8287-7d37bc3f1989,custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,medium,2026-05-13 11:12:44,aaa,pending,vlm
+dd68b49c-cc36-43be-aa61-ade964a3a2cf,custom,Explore the office and find the snack area,,low,2026-05-13 11:17:40,aaa,pending,vlm-mem
+acb87453-c712-4ae7-8c56-20f41a46531f,custom,Explore the office and find the snack area,,low,2026-05-13 11:17:52,aaa,pending,vlm-mem
+f418010b-87b0-4ba1-bb9a-1cf503acce23,custom,help me get my favorite fruit,,low,2026-05-13 11:28:54,aaa,pending,rule
+d493df2b-045a-40d1-97e2-9dd64946e9fc,custom,tell me a joke,,low,2026-05-13 11:31:29,aaa,pending,rule
+5a63e07d-10b9-45d1-85a3-3c1e57eab202,custom,deliver some food for taoshida,,low,2026-05-13 11:44:17,aaa,pending,rule
+3d707d9c-467d-4e7f-855e-423641e062da,custom,"A bottle of water, please.",,low,2026-05-13 11:54:30,aaa,pending,vlm-mem
+3e618776-5826-486b-8b09-1b6a8228e220,custom,say hello,,low,2026-05-13 11:57:43,aaa,pending,rule
+3e17e717-0d7c-4cf7-b9c1-fb043f4ae2ec,custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,low,2026-05-13 11:58:08,aaa,pending,vlm
+45aaf80f-e701-4ad6-8427-410ffa1ff6a0,custom,come to find taoshida,,low,2026-05-13 14:00:18,aaa,pending,vlm
+e8cf1921-740e-485c-8bf3-4c8a6b0deccf,custom,pick up an orange and place it to yyw's desk,,low,2026-05-13 14:19:53,aaa,pending,vlm-mem
+91d4059c-ca94-4d63-b945-48637ef02243,custom,notify student wyj to have a meeting in the 511 conference room,,low,2026-05-13 14:54:47,aaa,pending,vlm
+d66012e0-d2d5-480b-84e6-0fe3688b6d75,custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,high,2026-05-13 15:16:06,aaa,pending,vlm-mem
+3a0fc470-06c1-4632-a7d8-eb35dd7e0ca1,custom,find coca-cola,,low,2026-05-13 15:20:05,aaa,pending,vlm-mem
+e125cda5-27f6-4f7f-8fc4-b4305441b01e,custom,pick up a bottle of water and place it to taoshida's desk,,medium,2026-05-13 15:31:16,aaa,pending,vlm
+a19436a2-48e8-404e-903f-763844b4b068,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-13 15:44:51,aaa,pending,rule
+47b7002f-0a61-475e-96f9-20a4b88fae8c,custom,choose a red color fruit and deliver it to wyj,,low,2026-05-13 15:48:18,aaa,pending,vlm
+b787789e-0628-4f0b-9016-e305f0aa65b7,custom,go to the snack area and pick up an apple,,low,2026-05-13 16:01:15,aaa,pending,vlm
+f7f94b68-b92c-4fa8-ab73-86dc5d6964cb,custom,say goodbye,,low,2026-05-13 16:11:17,aaa,pending,vlm
+236df760-0d0c-4a98-b8f7-057f60ffd152,custom,find taoshida and say hello,,medium,2026-05-13 16:33:50,aaa,pending,vlm-mem
+aed0922c-96e4-4601-99b1-002b692244ee,custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-05-13 16:47:12,aaa,pending,vlm-mem
+0c54f0bb-45f4-4126-a541-e67cc9e25a08,custom,deliver some food for zkm,,low,2026-05-13 16:51:04,aaa,pending,rule
+df65b1bb-5347-4bf9-9556-c11a9da16426,custom,notify student taoshida to have a meeting in the 511 conference room,,medium,2026-05-13 17:00:58,aaa,pending,vlm
+99dd2f18-5031-473a-bdf9-e1bb432c3df9,custom,help me get my favorite fruit,,high,2026-05-13 17:36:16,aaa,pending,vlm-mem
+3c8d44d3-ac63-4fc4-9487-6960bb3a42cf,custom,Inspect the current environment.,,medium,2026-05-13 17:41:41,aaa,pending,rule
+06f191ae-e80f-4a9c-8bb4-25d0901d2e6f,custom,bring an orange to taoshida,,high,2026-05-13 17:47:32,aaa,pending,vlm-mem
+40e8a84f-8cce-4da9-8b8e-26f80b276506,custom,Pick Orion Shuyuan non-fried potato chips and place it on the table,,medium,2026-05-13 17:57:31,aaa,pending,rule
+20922202-4bc4-4f6a-9353-ea7eda70a2e5,custom,find Okng,,low,2026-05-13 18:02:46,aaa,pending,vlm
+878b15ed-6702-4800-a50d-a05407a85514,custom,Inspect the current environment.,,low,2026-05-13 18:10:23,aaa,pending,vlm
+b8499e40-c472-4ccd-8d26-159d0effedad,custom,go home,,low,2026-05-13 18:14:46,aaa,pending,vlm-mem
+8ff1b14e-5029-44fd-9bb3-9634dffc8fe8,custom,give me an apple,,low,2026-05-13 18:16:44,aaa,pending,vlm
+72229fb8-a767-4891-a4bd-a0ef21e996a4,custom,bring an apple to wyj,,low,2026-05-13 18:27:58,aaa,pending,vlm-mem
+7f4e89a8-07f9-45b8-953f-d6fae23f6f80,custom,Explore the office and find the snack area,,low,2026-05-13 18:28:30,aaa,pending,vlm
+cd585e2e-7fa2-49df-9e05-483294452fa7,custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zkm the result",,medium,2026-05-13 18:45:58,aaa,pending,rule
+8e25bdef-dbec-4a46-a91f-5c4ce1d88982,custom,"A bottle of water, please.",,medium,2026-05-13 19:28:59,aaa,pending,vlm-mem
+1a75614b-76c9-4e83-8bd2-bb873d7665af,custom,pick up Oreo original flavor sandwich cookie box for me,,medium,2026-05-13 19:35:14,aaa,pending,rule
+53be1327-111c-4e3b-9672-da1e069ecedf,custom,say hello,,low,2026-05-13 20:11:50,aaa,pending,rule
+79b881ec-e5c3-44ac-bbaa-b94a6224a853,custom,help me get a bottle of water,,medium,2026-05-13 20:35:59,aaa,pending,vlm
+5d9e4462-069b-4a28-93f3-91d732dbe318,custom,pick up Vitasoy chocolate soya drink and place it to zsx's desk,,medium,2026-05-14 09:08:25,aaa,pending,vlm-mem
+a09cc35d-39a7-4d5a-befd-38308a2121ae,custom,choose a red color fruit and deliver it to zkm,,medium,2026-05-14 09:27:18,aaa,pending,rule
+7a1de65c-8ac0-4969-81b4-49e76ebd14ec,custom,pick up coca-cola for yyw,,low,2026-05-14 09:32:45,aaa,pending,vlm-mem
+e25c4a39-bd2b-4010-82b3-3394f1ff75e2,custom,pick up a banana for zkm,,high,2026-05-14 09:53:12,aaa,pending,vlm-mem
+c45522c7-dbc7-45d7-830e-90917509f191,custom,please help me deliver the a bottle of water to student taoshida,,low,2026-05-14 10:00:44,aaa,pending,vlm
+d22981e9-bdcf-49ad-b8f4-d73a341b6e41,custom,deliver some food for Okng,,medium,2026-05-14 10:35:06,aaa,pending,rule
+4a9bc9b7-11cf-40c9-a169-693818c83d20,custom,Find zkm.,,low,2026-05-14 11:00:18,aaa,pending,vlm
+fd24cb89-fb28-4792-a20c-337a7f8df001,custom,find taoshida,,low,2026-05-14 11:45:40,aaa,pending,vlm
+455b42a1-8b05-4054-9338-1a464a588dd3,custom,come to find wyj,,low,2026-05-14 11:52:38,aaa,pending,vlm-mem
+47ca72a2-13e8-43e0-b59a-5e8cc1ec9c8b,custom,could you give me something to eat?,,low,2026-05-14 11:57:52,aaa,pending,vlm
+e85c284c-dfb3-4500-a15c-49aae78814b1,custom,Find Okng.,,low,2026-05-14 14:01:22,aaa,pending,vlm
+08c3ea45-0df0-4478-bc4c-f562da5d587a,custom,help me get my favorite fruit,,medium,2026-05-14 14:07:28,aaa,pending,rule
+4258bfe4-e009-45a1-b0e0-676516eaef0b,custom,where is Okng,,low,2026-05-14 14:23:46,aaa,pending,vlm
+3dd657c9-562c-40d8-9f58-ef2153917701,custom,help me get a chocolate marked with Snickers,,low,2026-05-14 14:24:17,aaa,pending,vlm-mem
+f77410ec-3e00-4e44-b9b7-935651184f96,custom,pick up a chocolate marked with Snickers and place it to zsx's desk,,medium,2026-05-14 14:31:00,aaa,pending,vlm
+696da699-ebc1-4f4f-ba50-41b76ec93bdd,custom,please go to the snack area to pick up a banana for me,,low,2026-05-14 14:33:45,aaa,pending,vlm
+26136b77-6aa2-42fc-b43c-79f254b1fde5,custom,please help me deliver the Oreo original flavor sandwich cookie box to student wyj,,high,2026-05-14 14:42:15,aaa,pending,rule
+db529269-5078-41c5-8fb7-2dbcc793b0fb,custom,find yyw,,low,2026-05-14 14:47:17,aaa,pending,vlm-mem
+62cf1d35-247f-4cec-af73-fe6219e7d1d0,custom,pick up red packaged cake for zsx,,high,2026-05-14 14:56:10,aaa,pending,vlm
+f488f912-1c1f-4cb4-9d7f-69dac1d39b68,custom,pick up an orange for zsx,,high,2026-05-14 14:57:18,aaa,pending,vlm
+54047d8a-e472-49f5-9db7-7357b349de12,custom,could you give me something to eat?,,low,2026-05-14 15:07:41,aaa,pending,vlm
+a380802b-1060-4a0d-9eba-3350559712b7,custom,Pick Vitasoy chocolate soya drink and place it on the table,,low,2026-05-14 15:13:56,aaa,pending,vlm-mem
+f31b2351-7262-4da3-9195-55b43c615892,custom,choose a red color fruit and deliver it to Okng,,low,2026-05-14 15:51:14,aaa,pending,vlm-mem
+eabaf0b9-c9f9-4482-848e-d948ae564b02,custom,help me get my favorite fruit,,low,2026-05-14 15:54:43,aaa,pending,vlm-mem
+faf11b6a-f301-4674-a963-3f0090dabf3f,custom,look for an apple,,low,2026-05-14 16:05:59,aaa,pending,vlm-mem
+fda010fe-0da1-4954-8344-8ba412e2c1ff,custom,say hello,,medium,2026-05-14 16:06:20,aaa,pending,vlm
+a92b90b1-76ef-4d01-9362-ac11345a1366,custom,look for a chocolate marked with Snickers,,medium,2026-05-14 16:27:17,aaa,pending,vlm
+b590404c-1c04-49be-af9d-50c4813a3138,custom,"A bottle of water, please.",,low,2026-05-14 16:27:45,aaa,pending,vlm
+21b1f2b4-8f06-4e48-9164-df7c8ba35965,custom,could you help me find an orange,,low,2026-05-14 16:49:48,aaa,pending,rule
+05c3b4af-ad2b-4711-9dc0-a7fb203e67ff,custom,say goodbye,,low,2026-05-14 16:50:34,aaa,pending,vlm
+4e50d3b6-04d7-49ba-a835-6a231b2a9c7f,custom,please go to the snack area to pick up red packaged cake for me,,low,2026-05-14 16:52:38,aaa,pending,vlm-mem
+b8b2d797-8b0e-48e3-8ebe-217ebcbd8bd6,custom,find Okng and say hello,,low,2026-05-14 17:00:17,aaa,pending,vlm-mem
+2f581efd-5940-4508-a9f1-3bddd783d4df,custom,help me get red packaged cake,,high,2026-05-14 17:06:29,aaa,pending,rule
+15bf325b-73dd-4f19-aa29-2c32b31921d4,custom,find wyj and say hello,,high,2026-05-14 17:13:21,aaa,pending,vlm
+14815bce-1ad6-4717-b50c-730bad56a169,custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-14 17:28:50,aaa,pending,vlm
+63a6b749-2e0f-440c-8389-5a8df0fa6754,custom,help me get a bottle of water,,low,2026-05-14 17:46:24,aaa,pending,rule
+bc952ab5-4d6f-401d-998c-b1f9772ca7bf,custom,Explore the office and find the snack area,,low,2026-05-14 17:50:37,aaa,pending,rule
+d21fcb3e-1e1b-425b-8e8a-dd5b6e202df9,custom,pick up a banana for Okng,,low,2026-05-14 18:02:02,aaa,pending,rule
+523ed736-e8cb-4676-b6ec-277ef4805466,custom,notify student taoshida to have a meeting in the 511 conference room,,low,2026-05-14 18:07:46,aaa,pending,vlm
+ccb07bd0-7932-4427-9e05-9f47ccc4a87d,custom,"Can you check if yyw is at his workstation, then come back and let me know?",,medium,2026-05-14 18:12:33,aaa,pending,vlm-mem
+48cad8ef-1d42-4925-8659-93fb07ce3b92,custom,choose a red color fruit and deliver it to taoshida,,medium,2026-05-14 18:21:05,aaa,pending,rule
+2d7db15f-a917-4b02-aac8-671113772f1e,custom,find zkm,,medium,2026-05-14 18:22:03,aaa,pending,vlm
+58f66f5b-05a7-421c-823c-d7ef1af40558,custom,go home,,low,2026-05-14 18:24:12,aaa,pending,vlm-mem
+3a8b1ed6-bd28-44c8-9d0a-befdb1ab10bf,custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,medium,2026-05-14 18:32:12,aaa,pending,vlm
+e4bc680c-a296-4182-afbd-5494d6717455,custom,pick up a banana for taoshida,,low,2026-05-14 18:43:10,aaa,pending,rule
+088d9e94-fbc8-472e-a636-51e202ac10bb,custom,notify student zkm to have a meeting in the 511 conference room,,high,2026-05-14 18:46:05,aaa,pending,vlm-mem
+b1af0db2-fa91-4a9c-bd14-71ebc04e2c7f,custom,go home,,low,2026-05-14 19:31:18,aaa,pending,rule
+b24562c7-3777-4bef-a696-5489a483c6f3,custom,say goodbye,,medium,2026-05-14 20:01:31,aaa,pending,rule
+8f7eb7e1-fece-4fc9-aff6-4cf378271288,custom,"A bottle of water, please.",,medium,2026-05-14 20:18:29,aaa,pending,vlm
+332e3194-893e-4300-a694-626a81660f45,custom,say goodbye,,low,2026-05-14 20:30:06,aaa,pending,vlm
+d58fad24-2f78-498c-8b8b-5f98e83de51d,custom,"Hand me the mouse, would you?",,medium,2026-05-15 09:01:30,aaa,pending,vlm
+0fe40b73-50e2-4de8-b1e8-c0a1af78670b,custom,"Get me my favorite fruit, you know, the healthy kind, maybe a banana?",,high,2026-05-15 09:19:56,aaa,pending,rule
+c3cc8d31-e531-4398-a61c-c8dc61d3a623,custom,"Check if there's a blue cup on the table in conference room 123, then come back and let me know.",,high,2026-05-15 10:45:40,aaa,pending,rule
+ae5e32db-512f-4d27-939d-f625e0a3d83c,custom,Find a green cup.,,low,2026-05-15 10:56:28,aaa,pending,vlm-mem
+c1b94813-8c1c-453f-a720-26fc9a47316f,custom,Can you check if yyw is at his desk and if the black game controller is there? Report back.,,high,2026-05-15 11:11:31,aaa,pending,rule
+e301dd74-a7c4-4058-b233-a2232ec957ea,custom,"Find taoshida and zsx, then tell them there's a meeting at 3 PM in room 511.",,high,2026-05-15 11:15:19,aaa,pending,rule
+03294f0c-e434-4f31-8d3f-1dfb43288e38,custom,"Explore the office, find the snack area, and bring back a coca-cola if they have it.",,high,2026-05-15 11:31:58,aaa,pending,rule
+24e47b3a-a68b-480b-8a1a-040432cdb2ca,custom,Pick up an apple and put it on my desk.,,medium,2026-05-15 11:36:39,aaa,pending,vlm-mem
+99841e8d-b0d0-44d9-8ef8-b2f04b64aa25,custom,Search for a black game controller.,,medium,2026-05-15 11:45:21,aaa,pending,vlm
+19a9c78b-7442-4f1e-8f88-d92a1d514024,custom,Deliver this Oreo original flavor sandwich cookie box to student zkm at workstation 308.,,medium,2026-05-15 14:03:37,aaa,pending,vlm
+349b9938-e49f-424d-812b-50fe848d9bcb,custom,Pick up a banana for me.,,low,2026-05-15 14:10:00,aaa,pending,rule
+28dbfb0a-0ce3-4062-95b7-543363cdfb16,custom,"Get me something sweet to snack on, like Oreo original flavor sandwich cookie box.",,medium,2026-05-15 14:16:53,aaa,pending,rule
+247fcdc6-dbb0-40f6-99d2-689796a40553,custom,Find a colorful fruit - I'm thinking orange or red apple - and give it to taoshida.,,medium,2026-05-15 14:37:17,aaa,pending,vlm-mem
+e4a17aab-d5fa-4aac-a3af-ac980101fad2,custom,Grab a chocolate marked with Snickers from the snack area.,,medium,2026-05-15 14:43:04,aaa,pending,rule
+7164c3b5-8e09-4ebe-aca5-41e1691438db,custom,Where's zsx?,,low,2026-05-15 14:46:02,aaa,pending,vlm-mem
+c7371e0d-0f15-4ff4-8ec4-30c8e45b8bc1,custom,"I'm thirsty. Get me a drink, preferably Krima jasmine milk green tea.",,medium,2026-05-15 14:48:49,aaa,pending,rule
+063c828d-bafa-4413-81fb-83b3a9f777a5,custom,"Go to workstation 506L and see if zkm is there. If yes, tell him to call me.",,medium,2026-05-15 15:00:02,aaa,pending,vlm
+04d0e91f-8989-4cb3-bd4b-fa8df2551408,custom,Check the rest area for any unoccupied seat and come tell me if there is one.,,high,2026-05-15 15:02:28,aaa,pending,vlm
+9980f149-219b-4f29-aaa8-c83e4a659a4e,custom,"I'm sooo hungry! Can you find me a food that's both healthy and filling? Maybe a fruit first, then a snack.",,high,2026-05-15 15:02:46,aaa,pending,vlm
+ada5c558-c8f7-4307-bfa1-0a39f380f2f8,custom,Find taoshida and tell him I'm waiting.,,low,2026-05-15 15:02:55,aaa,pending,vlm
+62bcadc7-80b9-4f79-9c5e-7ef3f52569b2,custom,Please help me deliver a bottle of water to Okng in the rest area.,,medium,2026-05-15 15:03:55,aaa,pending,rule
+9fbd0453-e252-418d-9a4e-19080da2f07c,custom,Look for a red packaged cake and give it to me.,,low,2026-05-15 15:07:01,aaa,pending,rule
+92278164-73f3-4d4d-8052-f0fb7c89d863,custom,Explore the conference room 511.,,low,2026-05-15 15:07:46,aaa,pending,rule
+6c39a38e-43d4-46d1-b32b-4772e769bcb7,custom,Help me get a red apple.,,medium,2026-05-15 15:07:55,aaa,pending,vlm
+4d064205-45d1-49b0-98dd-fd0b093c33fe,custom,Could you check the environment around the snack area?,,low,2026-05-15 15:11:43,aaa,pending,vlm
+20d1adfd-290d-4af4-ad18-9c7946264e63,custom,Is there anyone in the rest area?,,medium,2026-05-15 15:44:42,aaa,pending,rule
+a6d3275d-4a3f-4d18-90b5-be05eaf12866,custom,Go home.,,medium,2026-05-15 15:47:58,aaa,pending,vlm-mem
+036e6700-876e-4145-90a4-35c7d924bfc6,custom,Navigate to workstation 506B.,,high,2026-05-15 15:59:39,aaa,pending,rule
+bec28f6e-50f0-4125-8aa3-15475977ddd6,custom,"Find conference room 511, check if it's empty, and report back if we can use it for a meeting.",,medium,2026-05-15 16:07:47,aaa,pending,rule
+ba67b042-3ca5-4dc0-af4f-c71a0fda864c,custom,Find an orange on the table.,,medium,2026-05-15 16:15:11,aaa,pending,vlm
+ad21c3c9-767b-47f0-99a5-f69d1f9d9f80,custom,Could you pls fetch a Doubendou original flavor soy milk?,,low,2026-05-15 16:32:45,aaa,pending,vlm-mem
+2824c6ab-3c46-490e-a36e-f2939dd9e783,custom,Go to the rest area and bring me a Vitasoy chocolate soya drink.,,medium,2026-05-15 16:44:53,aaa,pending,rule
+2eba39b0-bd42-4b77-b964-837bb862e823,custom,Bring a white cup to my desk.,,low,2026-05-15 16:55:09,aaa,pending,vlm
+9d76eb3f-079c-4528-bd43-327295f6375c,custom,Check the conference room 123.,,medium,2026-05-15 16:56:11,aaa,pending,rule
+402c8c91-3bfb-4774-83f1-7a30e495997f,custom,Find wyj and say hello.,,medium,2026-05-15 16:59:13,aaa,pending,vlm-mem
+c8d11552-3b26-41f2-a6c8-8217ff9ad322,custom,Go to the rest area.,,medium,2026-05-15 17:02:57,aaa,pending,vlm
+0413e088-d710-4825-b1e7-96a1b55879d7,custom,Could you bring me that green cup?,,low,2026-05-15 17:06:04,aaa,pending,vlm-mem
+a7f50fed-3b1a-4699-b8fe-91584f7723dd,custom,Go see if Okng is at workstation 506J and say hi.,,low,2026-05-15 17:08:35,aaa,pending,vlm
+b93399c8-e6e8-423f-82ac-71cc155533d9,custom,Go to the snack area and pick up a green apple for yyw.,,medium,2026-05-15 17:21:27,aaa,pending,rule
+9a754815-8123-49fa-b536-eaf23854fa0e,custom,Look for taoshida.,,low,2026-05-15 17:40:21,aaa,pending,vlm
+d26da0b6-32a0-49cf-b4b9-f577737dc962,custom,Notify wyj to attend the meeting in 511.,,medium,2026-05-15 17:47:46,aaa,pending,vlm
+9c66d38e-638d-472a-a54c-6adc70412332,custom,"Pick up that Orion Shuyuan non-fried potato chips for me, please.",,low,2026-05-15 17:53:31,aaa,pending,vlm-mem
+863507d1-9f5f-44d5-ab6d-8e1643a1cbf4,custom,Say hello to someone nearby.,,high,2026-05-15 17:56:20,aaa,pending,vlm-mem
+6ef6f34d-4c4a-4d64-a495-4659ed69970e,custom,"If you see Vitasoy chocolate soya drink in the snack area, bring it to me; otherwise, just get me any drink.",,medium,2026-05-15 18:12:36,aaa,pending,vlm-mem
+cf08bf0c-5874-46f1-a51a-a046e7813394,custom,Go to the table and fetch the blue cup.,,medium,2026-05-15 18:23:07,aaa,pending,rule
+7595351a-aa6a-49ea-b265-db35539bc8e2,custom,Give me a bottle of water.,,low,2026-05-15 18:28:45,aaa,pending,vlm-mem
+5aa09caa-7ff5-407e-800c-8effdc022588,custom,Say 'Good morning' to the next person you see.,,medium,2026-05-15 18:29:29,aaa,pending,vlm-mem
+cc6391a5-dd8a-4007-a093-c238833df1e8,custom,Remind me in 10 minutes to stretch.,,high,2026-05-15 19:37:02,aaa,pending,vlm-mem
+a1b865ea-8565-44dc-a4d1-61fd3f9492ea,custom,"Tell me a joke, I'm bored 😴",,low,2026-05-15 19:45:16,aaa,pending,vlm
+a334aaff-6081-4cdb-9372-da6c6d392256,custom,"Go to workstation 506B, make sure zsx is there, then say 'Your lunch delivery has arrived'.",,medium,2026-05-15 19:52:55,aaa,pending,rule
+6308fb4d-e60c-4dc6-add5-fc7361ddd2c6,custom,say hello to yyw,,medium,2026-05-16 09:20:57,aaa,pending,rule
+1ffa2490-2a52-458b-95d9-d6b96bb46e0e,custom,go home,,medium,2026-05-16 09:24:42,aaa,pending,rule
+8ac7a8b7-d6a9-4145-87d6-b29b53db4a6c,custom,Look for zsx and just say hi,,medium,2026-05-16 09:28:26,aaa,pending,vlm
+a0161092-17dc-42b5-ace0-faa270c45b6e,custom,Find a chocolate marked with Snickers,,medium,2026-05-16 09:28:32,aaa,pending,vlm
+d3578a25-fbe3-4ff0-973d-b5eebda4c8cd,custom,help me get the green cup,,low,2026-05-16 09:59:21,aaa,pending,vlm
+90c1c411-75ef-4991-a893-388cda8998b5,custom,"pick up a bottle of water and bring it to me, but first check if zsx needs anything at his desk",,high,2026-05-16 10:03:07,aaa,pending,rule
+924abf59-fbf0-4c74-bcef-efd596bb1c08,custom,Go to workstation 506J,,low,2026-05-16 10:28:39,aaa,pending,vlm-mem
+a6e146cb-28d2-4efa-a86f-627343db37f4,custom,find yyw and say hello,,low,2026-05-16 10:39:45,aaa,pending,vlm
+85e5abf9-befe-4813-815a-cbd22a4f7e1a,custom,Explore the office and see what's happening,,medium,2026-05-16 10:50:55,aaa,pending,rule
+6304e78b-5526-41b1-bd87-ac7d1fa822d6,custom,"I'm thirsty — get me a drink, something with jasmine",,medium,2026-05-16 11:20:35,aaa,pending,rule
+bbcdcf97-8b3c-428f-a358-4f6dd5fdcbda,custom,Retrieve a banana and then deliver it to the person at workstation 506L,,medium,2026-05-16 14:09:05,aaa,pending,rule
+187f603e-ff5f-41e8-9ba6-313c176729b6,custom,"I'm craving something crunchy, can you fetch me a snack from the snack area?",,medium,2026-05-16 14:09:43,aaa,pending,vlm
+724e8853-7434-4e6c-8b0b-39125a00c807,custom,What time is it?,,low,2026-05-16 14:13:03,aaa,pending,vlm
+068341b8-8b1d-4978-a329-4e787e787337,custom,go to the table and bring me the black game controller,,medium,2026-05-16 14:28:42,aaa,pending,vlm
+b05adeb2-d923-481a-b4a5-f2a1c908dfc2,custom,"Go to workstation 308, check if wyj is there, and let me know",,low,2026-05-16 14:46:07,aaa,pending,vlm
+c332721d-f7f3-4283-8cb9-be914200fba5,custom,"Go to the table, pick up the green cup, and place it on desk 506B",,low,2026-05-16 14:49:07,aaa,pending,vlm
+c43b628e-3ae8-4e47-b842-7e4693ee6451,custom,look for a banana,,low,2026-05-16 14:53:22,aaa,pending,vlm
+9694a467-ca3d-4c7d-adbc-7d2d299d95de,custom,Look for a red apple,,low,2026-05-16 15:05:28,aaa,pending,rule
+63269a15-c991-4a97-89a2-1850146f9263,custom,Could you check if there's a blue cup on desk 506L and report back?,,low,2026-05-16 15:12:02,aaa,pending,vlm
+10fb1a46-d979-4842-82e4-38b066366156,custom,"Please find zkm, greet him, and ask him to come see me",,high,2026-05-16 15:30:03,aaa,pending,vlm-mem
+11e3d848-f610-4265-bc7c-06655215ea9f,custom,"I'm really hungry right now, can you bring me something sweet?",,medium,2026-05-16 15:32:09,aaa,pending,vlm
+2e9e91c8-f930-4332-a1a1-85f64f2faebc,custom,Inspect the current environment,,low,2026-05-16 15:41:18,aaa,pending,vlm-mem
+8fa5eeda-ffd8-4850-9437-94fd66d0b21c,custom,"Find zkm and wyj, then tell them there's a team huddle at 3 PM in room 123",,medium,2026-05-16 15:41:36,aaa,pending,vlm
+11c1b128-9a1a-4de7-93b0-455a90f0dd66,custom,Search for the blue cup,,high,2026-05-16 15:47:45,aaa,pending,vlm
+7a14056d-431d-4852-ac99-12a36f5cdd76,custom,give me a Ganten drinking water bottle,,medium,2026-05-16 15:56:11,aaa,pending,vlm
+15ac4073-3f11-4553-a782-d59ca6a68282,custom,Get that Orion Shuyuan non-fried potato chips from the rest area,,high,2026-05-16 16:04:18,aaa,pending,vlm-mem
+5c2e9344-ee32-4c33-8a3e-87154810b670,custom,Notify Okng to attend a meeting in 511 conference room in 10 minutes,,high,2026-05-16 16:06:33,aaa,pending,vlm-mem
+a8d70117-5fac-448b-a846-b040df7b95ed,custom,can u find taoshida?,,high,2026-05-16 16:06:56,aaa,pending,rule
+d8cd31b5-da01-4418-8791-ea1c39d5a71f,custom,"Go to the snack area, see if there's any Oreo boxes left, and report back",,low,2026-05-16 16:33:04,aaa,pending,vlm-mem
+8074f3df-30b8-43da-a521-2e97ffd71d6f,custom,Find Okng in the office,,low,2026-05-16 16:44:42,aaa,pending,vlm
+94506dcf-296d-4763-835e-00b4a140e2c5,custom,Help me grab the banana.,,high,2026-05-16 17:07:30,aaa,pending,rule
+66db71a0-16ee-4b31-ad01-0e01de811dae,custom,Explore the office quickly and find where taoshida is hiding,,low,2026-05-16 17:27:05,aaa,pending,rule
+e25647c9-3af4-4494-a9f2-9d7d2295bf2e,custom,Check the environment.,,medium,2026-05-16 17:44:20,aaa,pending,vlm-mem
+c6a34605-f4d6-40b9-9ef8-e538466a838c,custom,please pick up the mouse on desk 506B,,medium,2026-05-16 17:53:38,aaa,pending,vlm-mem
+428a98f5-2c38-4852-b420-755706e26cea,custom,can you look for a fruit that is orange and deliver it to yyw?,,low,2026-05-16 18:00:03,aaa,pending,rule
+abb61a00-3488-49da-9fd4-95ed86f70019,custom,please pick up a red apple for me,,medium,2026-05-16 18:02:23,aaa,pending,vlm-mem
+13fefaf1-7deb-4ec9-b9ba-cf6e3fc8a6a1,custom,"Find taoshida, then say he left his black game controller at the rest area",,high,2026-05-16 18:11:21,aaa,pending,rule
+9ab41167-4491-4aed-abdc-35201aa0dc66,custom,could you please grab a bottle of water from the snack area?,,low,2026-05-16 18:11:47,aaa,pending,rule
+451b2fd8-753a-47e8-b867-531ceb963d8e,custom,go to conference room 511 and pick up the white cup if you see one,,high,2026-05-16 18:13:13,aaa,pending,rule
+89b6bd3a-60ec-49aa-b298-a5f16bf8b73d,custom,pick up an orange for me,,medium,2026-05-16 18:18:42,aaa,pending,rule
+80ba8f65-ad27-459a-b9b2-9df55e4353f2,custom,"I need a red packaged cake, can you find it?",,high,2026-05-16 18:46:05,aaa,pending,rule
+a55f96e5-0397-4816-a285-7943bad52c2a,custom,Go to the rest area,,medium,2026-05-16 18:58:53,aaa,pending,vlm-mem
+f713a627-cc51-4fc7-ada5-e8d0c2739498,custom,Head over to the snack area,,low,2026-05-16 19:00:45,aaa,pending,vlm
+f54cebce-ca22-4ef6-a6b7-fc7dccc8e7ef,custom,Could u deliver this red packaged cake to zsx at workstation 506B? Thanks!,,medium,2026-05-16 19:07:42,aaa,pending,rule
+155b6dd8-7f18-4320-bbcf-d6c3c85b9413,custom,bring me the Vitasoy chocolate soya drink,,medium,2026-05-16 19:22:28,aaa,pending,rule
+95ba0f26-3496-412c-b0c7-2b24884821ff,custom,"Find wyj, then tell her ""good luck with the presentation!""",,medium,2026-05-16 19:25:48,aaa,pending,vlm-mem
+1e9259f3-bb9f-4fa4-8fcc-f83554817cc0,custom,deliver this Oreo original flavor sandwich cookie box to student taoshida,,medium,2026-05-16 19:56:57,aaa,pending,vlm-mem
+d4ec7a0d-6545-4518-a561-784c09549847,custom,Check the conference room 123 and tell me if it's empty,,high,2026-05-16 20:08:14,aaa,pending,vlm-mem
+b08332a4-7972-4f81-a296-24eaa6cda773,custom,could you find a Doubendou original flavor soy milk and bring it here?,,high,2026-05-16 20:22:00,aaa,pending,vlm
+26fe95ea-01b2-40dd-8cfd-a80ba4f71b92,custom,go to the snack area and pick up a green apple for me,,high,2026-05-16 20:40:46,aaa,pending,rule
+207330ac-fe50-456c-8578-41b4f6ccdb91,custom,"Go to workstation 506J, check if the monitor is on, then come back and tell wyj the result",,high,2026-05-17 09:05:23,aaa,pending,vlm
+b57f0b0c-d589-4d64-a23d-921f0e3add42,custom,say goodbye,,low,2026-05-17 09:20:02,aaa,pending,vlm
+d0dd3365-8a32-42fc-a679-7c514b1229e0,custom,Pick an orange and place it on the table,,medium,2026-05-17 10:04:17,aaa,pending,vlm
+bd685661-18d9-4b79-8b09-137eaf7ae136,custom,help me get coca-cola,,low,2026-05-17 10:53:43,aaa,pending,vlm
+84e54d90-a7af-4c04-a06d-662644a04fe5,custom,pick up an orange for me,,low,2026-05-17 11:30:43,aaa,pending,rule
+c018f397-1900-4c30-8fc0-8c6f19613352,custom,Find yyw.,,low,2026-05-17 11:46:49,aaa,pending,vlm
+5d605f7b-2ae9-47e3-b0f3-5c9cd8581fc8,custom,give me Vitasoy chocolate soya drink,,low,2026-05-17 11:47:44,aaa,pending,vlm
+fb637556-bb30-48d9-8a06-5bd50edc8b40,custom,"A bottle of water, please.",,low,2026-05-17 11:57:15,aaa,pending,vlm-mem
+0df3bcd1-770d-4091-b7f5-3e4d2b47af7a,custom,"A bottle of water, please.",,high,2026-05-17 11:59:00,aaa,pending,vlm
+29644fea-7d18-4c53-b760-65875063d76e,custom,find an orange,,low,2026-05-17 11:59:54,aaa,pending,vlm-mem
+6d6c98ad-1b2d-4032-93f3-e4fce1d42c79,custom,Check the environment.,,low,2026-05-17 14:01:38,aaa,pending,rule
+84b29ff9-105e-4992-9b7b-c49028959ca6,custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,high,2026-05-17 14:02:44,aaa,pending,vlm-mem
+10662e7a-1e04-4644-8d0e-01c73af3a9cb,custom,choose a red color fruit and deliver it to taoshida,,high,2026-05-17 14:05:51,aaa,pending,vlm-mem
+23061f5f-fbac-483d-ad15-c656084713ac,custom,pick up Orion Shuyuan non-fried potato chips for me,,low,2026-05-17 14:10:42,aaa,pending,vlm
+24506d2c-516c-4879-a717-5b679ae5c659,custom,Check the environment.,,low,2026-05-17 14:14:45,aaa,pending,vlm
+497fe40d-0835-4d2a-a0a1-e9523a52a0bd,custom,Find Okng.,,low,2026-05-17 14:15:40,aaa,pending,rule
+8bcc796a-fb11-46ae-afa4-b25681005f9c,custom,bring an orange to taoshida,,low,2026-05-17 14:33:23,aaa,pending,rule
+12b1e2eb-dffe-4911-a7a3-21b8f2a1bd64,custom,"Find zkm and zsx, tell them there's a PPT they need to make",,high,2026-05-17 14:52:25,aaa,pending,vlm
+c452520c-ddba-4776-b11d-56c05a9f7cf4,custom,come to find wyj,,low,2026-05-17 14:54:12,aaa,pending,vlm-mem
+4c7a9a8a-28af-452e-b973-bbde38dc411a,custom,"Find taoshida and yyw, tell them there's a PPT they need to make",,high,2026-05-17 14:57:30,aaa,pending,rule
+c04f44fe-a8d2-4349-92eb-a762827c5fd0,custom,find a bottle of water,,medium,2026-05-17 14:57:46,aaa,pending,vlm
+5d6decd8-9a1a-41c0-a55b-329e214261a7,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-17 15:02:53,aaa,pending,vlm
+d033df37-c5a4-4bc8-94cc-8f4df8db7e4a,custom,go home,,low,2026-05-17 15:07:46,aaa,pending,vlm
+31027550-49a7-4f2a-9d2f-8ab6776a01ec,custom,notify teacher zsx to have a meeting in the 511 conference room,,medium,2026-05-17 15:26:55,aaa,pending,rule
+36c1019d-3d1d-45e0-adc9-722dbca174cb,custom,"Find zkm and taoshida, tell them there's a PPT they need to make",,medium,2026-05-17 15:31:25,aaa,pending,vlm-mem
+16ba2121-470a-476a-8a71-3806a8239ef0,custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-17 15:41:42,aaa,pending,vlm-mem
+cc511f19-7f85-4077-bc3e-b2e6431ed285,custom,explore the office,,low,2026-05-17 15:44:56,aaa,pending,rule
+e8bea972-39c6-487d-b772-daaf12629a57,custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,medium,2026-05-17 15:53:16,aaa,pending,rule
+ee9184ef-f736-4063-85b7-fb17f4cafd65,custom,could you help me find Orion Shuyuan non-fried potato chips,,low,2026-05-17 15:54:49,aaa,pending,rule
+4fa1a244-0bba-4741-b388-2fc412ef835a,custom,"Find taoshida and zkm, tell them there's a PPT they need to make",,high,2026-05-17 16:04:37,aaa,pending,vlm-mem
+f8e3b1c2-c6de-44c5-9dcb-0a02be5d33e7,custom,find coca-cola,,low,2026-05-17 16:14:00,aaa,pending,rule
+9bce8694-4a87-4549-bebd-095b8a9cd1d3,custom,help me get an apple,,low,2026-05-17 16:25:30,aaa,pending,rule
+99c17dbe-914a-4460-b770-07640bf450b3,custom,please go to the snack area to pick up coca-cola for me,,medium,2026-05-17 16:30:38,aaa,pending,rule
+3e005a22-7801-4fb0-bdb1-e9f95e5bc717,custom,come to find wyj,,medium,2026-05-17 16:34:09,aaa,pending,rule
+7b48e400-9362-4e5f-bf1c-7510b32913ed,custom,what time is it,,low,2026-05-17 16:48:12,aaa,pending,vlm-mem
+b2d59c73-eeee-4c56-bc78-55b6c3a9bad4,custom,find yyw and say hello,,medium,2026-05-17 16:53:44,aaa,pending,rule
+78ebc76c-0401-474b-8570-dd6768eee8aa,custom,go to the snack area and pick up Oreo original flavor sandwich cookie box,,medium,2026-05-17 17:03:04,aaa,pending,rule
+cb77ec86-ff65-4dc0-ab23-114b8445c699,custom,find Okng and say hello,,medium,2026-05-17 17:03:57,aaa,pending,vlm-mem
+16e29ff9-e201-44e2-a043-f14eb2423ce2,custom,go to the snack area and pick up an apple,,high,2026-05-17 17:06:12,aaa,pending,vlm
+76de0dad-f884-4736-877f-6c66252ebe80,custom,could you help me find Oreo original flavor sandwich cookie box,,medium,2026-05-17 17:06:48,aaa,pending,rule
+4761fd80-2e4d-4338-b592-659fda5e43f3,custom,choose a red color fruit and deliver it to taoshida,,low,2026-05-17 17:20:23,aaa,pending,vlm-mem
+e7fe618a-2da0-4f6a-bd27-96f7c46bb4b0,custom,could you give me something to eat?,,low,2026-05-17 17:49:45,aaa,pending,vlm-mem
+19d51cd6-cc99-4720-8f25-1dbc36052186,custom,could you give me something to eat?,,low,2026-05-17 18:40:32,aaa,pending,rule
+4de278c4-1067-4620-a776-549eaa2fa29f,custom,say hello to yyw,,high,2026-05-17 18:51:24,aaa,pending,vlm
+8f030d46-5d82-4225-b33f-8919447a770b,custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,high,2026-05-17 18:53:16,aaa,pending,vlm-mem
+7deced9c-1480-4126-92f9-c31f82e76740,custom,"Can you check if zkm is at his workstation, then come back and let me know?",,low,2026-05-17 19:15:23,aaa,pending,rule
+ce63d3b1-24e0-4da5-b37c-1c61534aa59b,custom,tell me a joke,,low,2026-05-17 19:31:52,aaa,pending,vlm
+4f11a1a0-3bd3-4ed9-9afe-3df8c54d2473,custom,find Orion Shuyuan non-fried potato chips,,low,2026-05-17 20:04:06,aaa,pending,vlm-mem
+4f0df07e-b901-4494-8e2b-46d4556b8be3,custom,help me get a bottle of water,,medium,2026-05-17 20:05:42,aaa,pending,vlm
+7d2846ce-1d77-4d40-a46c-3d6779278195,custom,go to the snack area and pick up an apple,,medium,2026-05-17 20:36:51,aaa,pending,rule
+685f62d7-2f2c-47cd-b899-107adeb73a7f,custom,"find taoshida and say ""Good morning""",,high,2026-05-18 09:00:27,aaa,pending,vlm
+7120bc66-c9f7-4930-b69d-279c5300ec32,custom,"Can you check if the red packaged cake is in the snack area? If yes, bring it to me.",,low,2026-05-18 09:04:11,aaa,pending,rule
+b6569b34-b94f-485d-9836-7b117a20aa73,custom,Notify wyj that I need the blue cup from the conference room 123 before 4 o'clock.,,low,2026-05-18 09:07:23,aaa,pending,rule
+dfb9245e-55f3-47b7-a593-0d5f748866ca,custom,I feel like something crunchy—can you find a snack like the non-fried potato chips and give it to me?,,high,2026-05-18 09:08:49,aaa,pending,vlm-mem
+0d7e6f64-3ff2-4607-ad59-5a0ca77a3b45,custom,Go to the snack area and pick up a red packaged cake.,,low,2026-05-18 09:30:34,aaa,pending,vlm-mem
+e4e9d5f0-662a-473a-af2a-e57052f4b21f,custom,"Go to the snack area, please.",,low,2026-05-18 09:42:02,aaa,pending,vlm-mem
+febbdf6f-c5ce-447d-8781-04b7a839c8c6,custom,"Check the desk, is it clean?",,medium,2026-05-18 10:05:52,aaa,pending,vlm-mem
+414c48d8-d760-44e8-ac3a-b46a48e12fec,custom,plz deliver this Ganten drinking water bottle to zsx at workstation 506J,,medium,2026-05-18 10:10:10,aaa,pending,vlm-mem
+2bc76983-53fa-43eb-9a52-7eacc8fc2164,custom,grab a blue cup for me,,low,2026-05-18 10:10:32,aaa,pending,vlm-mem
+72b198fa-37b1-4105-b397-38a7012339ea,custom,Bring the black game controller to the rest area and place it on the table.,,high,2026-05-18 10:30:24,aaa,pending,vlm-mem
+0d280a78-ba90-409d-87c5-a6aa4d568cb6,custom,Could you go check the rest area for me?,,low,2026-05-18 10:34:47,aaa,pending,vlm-mem
+1c741751-205b-4668-bf5d-d196ee9ca9ef,custom,"I need a snack, could you go to the snack area and get me the Doubendou original flavor soy milk?",,high,2026-05-18 10:55:56,aaa,pending,rule
+834b443d-752f-45c2-a517-904a7deb1db3,custom,find a chocolate marked with Snickers,,medium,2026-05-18 11:16:38,aaa,pending,vlm-mem
+729f2ea7-0e91-43f9-8e5f-9c67fb2a5044,custom,look for a red apple,,medium,2026-05-18 11:18:29,aaa,pending,rule
+1902c95a-d109-4ac2-ab3f-5f65da7915c5,custom,"I'm in a hurry, pls find the Oreo box and hand it to me at my desk.",,high,2026-05-18 11:20:12,aaa,pending,vlm
+1c89e5f7-fac0-417b-b512-8ccfb7d66620,custom,go to workstation 506J,,high,2026-05-18 11:21:45,aaa,pending,vlm-mem
+94c03435-e0a1-49f5-98de-b7e9b374d1c4,custom,"Look for a person named Okng, then tell them: ""Meeting moved to 123 at 3 PM, bring your notes.""",,high,2026-05-18 11:58:46,aaa,pending,vlm
+971cee6b-7097-4ea0-8519-d02ffe1570c9,custom,"Find yyw, zsx, and taoshida—tell them all: ""Free snacks at the rest area, grab some quickly!""",,medium,2026-05-18 14:00:26,aaa,pending,vlm
+a778eec6-a3ee-4af0-a3da-ab17a374d717,custom,Notify Okng that there's an urgent meeting in 511 right now.,,low,2026-05-18 14:10:52,aaa,pending,rule
+e76307f0-0e76-4634-8ad5-ad2f3c6a9fa1,custom,"Help me get the Orion Shuyuan non-fried potato chips, please.",,high,2026-05-18 14:25:53,aaa,pending,rule
+6aa4492a-85d6-4a68-8a1c-d673a3fc0506,custom,"I need a banana, where is it?",,high,2026-05-18 14:33:35,aaa,pending,rule
+8e5e3a33-b68f-49bc-8798-714157b002ff,custom,"Hey, give me a coca-cola!",,low,2026-05-18 14:34:52,aaa,pending,vlm-mem
+6598cdb2-ebd7-4199-94a0-3e4be921d222,custom,Find a fruit with bright color and bring it to me.,,low,2026-05-18 14:40:27,aaa,pending,rule
+43fe3fad-ffc8-4ec7-89ed-0fe6fbcaeb63,custom,Can you get me a bottle of water?,,high,2026-05-18 14:41:00,aaa,pending,vlm-mem
+86b63f7e-fb64-4cb3-a4d2-4e4e460fea12,custom,"Check if there's a green cup on the rest area table, and come back to report.",,high,2026-05-18 14:52:15,aaa,pending,vlm-mem
+f3753905-8f29-4da9-b1a5-0365fa747d3a,custom,"Navigate to conference room 511, see if anyone is there, and let me know.",,medium,2026-05-18 14:53:08,aaa,pending,vlm-mem
+e26d1458-f00c-44d8-81c6-eb7895db4fbf,custom,"hey robot, go to the rest area, pick up any cup there, and put it in the snack area. (I'm sorting mess)",,high,2026-05-18 14:58:37,aaa,pending,vlm-mem
+be59ae4f-8ee1-4bbc-bbdf-3e4a11ece902,custom,"Find wyj and zkm, then tell them: ""Lunch meeting in 15 minutes in room 123.""",,high,2026-05-18 15:15:07,aaa,pending,rule
+224dff20-6b56-4a18-a4cd-2438aa03c43a,custom,Please deliver this white cup to Okng at 506B.,,low,2026-05-18 15:18:26,aaa,pending,vlm-mem
+7bafda0c-4245-4de7-a73b-f8293418eae6,custom,"find yyw and deliver a ""hello"" from me.",,medium,2026-05-18 15:27:49,aaa,pending,vlm
+abfa526c-f212-416b-9f39-b5cd8764acef,custom,"Go to workstation 308, there's a mouse there, bring it to me.",,medium,2026-05-18 15:42:50,aaa,pending,vlm-mem
+c11862b2-70be-4ffd-8784-807aa39608da,custom,Can you locate the black game controller?,,low,2026-05-18 15:48:06,aaa,pending,vlm
+de6efc00-b531-45ab-b0c5-61fedf9bd035,custom,"I'm so hungry! Can you get me something that fills me up fast, like the Snickers marked chocolate?",,high,2026-05-18 15:51:46,aaa,pending,vlm
+beb56c92-07f9-4b97-8442-f08ebd3bed66,custom,"Gosh, I left my mouse somewhere, could you search for a mouse at workstation 506L?",,low,2026-05-18 15:52:36,aaa,pending,rule
+c4c09f40-8f37-4652-beca-9851059cd83a,custom,"Exuse me, could you locate the Krima jasmine milk green tea? I'm a bit thristy.",,high,2026-05-18 16:00:17,aaa,pending,rule
+80c36bf2-d1ba-4a90-ae60-f20efc2f6690,custom,Find zsx and just smile.,,medium,2026-05-18 16:15:00,aaa,pending,vlm-mem
+d7ce241e-8f1a-46ba-b7e9-03f63021ee45,custom,"Hey robot, explore the office real quick.",,low,2026-05-18 16:32:22,aaa,pending,rule
+8cc2f0af-8299-46b0-a51b-b023c3a7e5a3,custom,Go home now.,,low,2026-05-18 16:35:57,aaa,pending,vlm
+acc91ac9-c6fb-4d98-a474-b778e0e739df,custom,say hello to taoshida,,low,2026-05-18 16:47:56,aaa,pending,rule
+36a24337-cca0-457d-99aa-38e0f967a11a,custom,Pick up an orange and put it on the table.,,low,2026-05-18 17:00:48,aaa,pending,vlm
+0b9d2326-fcf6-4892-bb65-b8d39f1d1bf0,custom,"Find zkm and say, ""Hey, yyw wants you to check the blue cup on your desk, is it there?""",,high,2026-05-18 17:21:11,aaa,pending,vlm
+a7f010c9-c4f9-4772-942e-850c8d6a85f4,custom,find wyj,,low,2026-05-18 17:35:09,aaa,pending,rule
+c4e8df2c-bd3c-40e1-a3e9-29d5d808d7c2,custom,could you help me find the Oreo original flavor sandwich cookie box,,low,2026-05-18 17:44:38,aaa,pending,vlm-mem
+cc8c272f-e575-45a0-8e49-afdf22cc4cdf,custom,Inspect the environment around the table.,,medium,2026-05-18 18:15:14,aaa,pending,rule
+238e0b35-9a47-4b01-8305-5ce651c16a70,custom,Search for zkm.,,medium,2026-05-18 18:20:33,aaa,pending,vlm
+41c7c85e-1121-474c-8b0a-6ba22a659ee8,custom,"Go to the table, if you see a banana, pick it up for taoshida.",,medium,2026-05-18 18:23:34,aaa,pending,vlm
+b4bae651-5103-4027-8770-490effbf283a,custom,"I need a drink, but not too sweet. Maybe the Ganten water? Find it and deliver to me.",,low,2026-05-18 18:52:30,aaa,pending,vlm-mem
+a6286dbe-ca51-43b4-a891-fa10081a7e8a,custom,"I'd like a green apple, grab one for me.",,medium,2026-05-18 19:20:40,aaa,pending,vlm-mem
+6fac9ba7-d0e4-4b9d-8b06-384ee7565d12,custom,"Oh, I'm craving something sweet—can you bring the Vitasoy chocolate soya drink?",,low,2026-05-18 20:05:05,aaa,pending,vlm
+2f573a59-143c-4b3d-9810-821b4180686f,custom,"Check workstation 506B for a green apple; if it's not there, go to the snack area and bring me one instead.",,low,2026-05-18 20:23:03,aaa,pending,vlm
+3d01ae2d-cc59-46c2-96ef-e90aec57cd49,custom,Find Okng.,,low,2026-05-19 09:19:18,aaa,pending,vlm-mem
+33a51341-97b4-438f-9035-6feb41d395de,custom,deliver some food for yyw,,high,2026-05-19 09:51:45,aaa,pending,vlm
+f7c6f129-53f5-4138-a150-70b0ee704ac9,custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,high,2026-05-19 10:25:58,aaa,pending,vlm
+853eeffe-2801-4bfb-88af-1279b21b2745,custom,could you give me something to eat?,,low,2026-05-19 10:52:29,aaa,pending,vlm
+ea84fc7c-f65c-4787-a176-a2df7ec3e968,custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zkm the result",,high,2026-05-19 10:57:10,aaa,pending,vlm
+2e7f60c1-a845-47d5-a667-95c1c5e56223,custom,find Okng,,low,2026-05-19 11:18:06,aaa,pending,vlm-mem
+5d8e5a0e-1882-4e5b-bd73-121aa5fe932b,custom,"Find zkm and Okng, tell them there's a PPT they need to make",,low,2026-05-19 14:43:57,aaa,pending,rule
+d6ace61e-2a84-4233-86ca-fe7090b16df9,custom,please help me deliver the coca-cola to student zkm,,low,2026-05-19 14:46:26,aaa,pending,vlm
+8a7a676b-cfad-42e0-b372-5ddf5988f425,custom,could you help me find a bottle of water,,high,2026-05-19 14:57:44,aaa,pending,vlm
+5f88b042-93c7-4870-ac81-4a49677d31a7,custom,"Find wyj and taoshida, tell them there's a PPT they need to make",,medium,2026-05-19 15:05:06,aaa,pending,vlm
+c26e599e-f353-4506-8630-b203ddb12fe1,custom,Explore the office and find the snack area,,low,2026-05-19 15:21:53,aaa,pending,rule
+1b166a39-5d8c-40d8-a40f-6ab253009fd5,custom,bring a banana to taoshida,,medium,2026-05-19 15:26:37,aaa,pending,vlm-mem
+a2dd9caf-46cf-4c18-a968-4087c7d40757,custom,find taoshida,,low,2026-05-19 15:31:06,aaa,pending,vlm-mem
+8c1dc01f-9396-46d3-b5b7-8ad6367b06f8,custom,Find yyw.,,low,2026-05-19 15:31:14,aaa,pending,rule
+800759ef-551c-46f3-9842-f5316153ad00,custom,help me get red packaged cake,,low,2026-05-19 15:31:37,aaa,pending,vlm-mem
+539cd51f-d977-41e5-9671-f45e82beef22,custom,could you help me find a chocolate marked with Snickers,,medium,2026-05-19 15:32:04,aaa,pending,vlm
+aea6c80f-857e-46af-9ebe-80aa40011c5c,custom,Check the environment.,,low,2026-05-19 15:35:06,aaa,pending,vlm
+aaf39b51-f2c3-49b1-ab27-184056ea08ef,custom,go to the snack area and pick up coca-cola,,high,2026-05-19 15:36:59,aaa,pending,vlm
+25fc8905-ad95-4ce9-a8d3-24fc82898125,custom,"Go to workstation 506B, check if the monitor is on, then come back and tell taoshida the result",,medium,2026-05-19 15:50:10,aaa,pending,vlm-mem
+0e25a66f-f188-46e5-ba00-3aeda549c2c3,custom,find Okng and say hello,,low,2026-05-19 15:55:58,aaa,pending,rule
+f3e006c3-327a-4c62-8d28-a27676a44ec0,custom,"A bottle of water, please.",,medium,2026-05-19 16:06:20,aaa,pending,vlm-mem
+f123b19c-fb78-4de2-bbeb-71e8cf44f0d6,custom,please help me deliver the Orion Shuyuan non-fried potato chips to student taoshida,,medium,2026-05-19 16:13:21,aaa,pending,vlm-mem
+7f89edad-efd2-4c50-a15b-15bcec147fa0,custom,Explore the office and find the snack area,,medium,2026-05-19 16:14:43,aaa,pending,vlm
+5f1da950-2a66-4384-a91d-aab31af8da86,custom,Explore the office and find the snack area,,medium,2026-05-19 16:17:38,aaa,pending,vlm-mem
+d6fef68e-ce84-4f15-a7cd-9c734e7eb7db,custom,find taoshida and say hello,,medium,2026-05-19 16:34:31,aaa,pending,vlm-mem
+f9b33950-1dd3-4cd7-b291-dbc89e53ae3a,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-19 16:53:08,aaa,pending,vlm
+56ff0a65-a5ab-49a0-ac37-84a125094e47,custom,go home,,low,2026-05-19 17:07:44,aaa,pending,vlm-mem
+5b3083f8-e85c-4231-8b4d-9953774512de,custom,Pick Orion Shuyuan non-fried potato chips and place it on the table,,low,2026-05-19 17:09:24,aaa,pending,vlm
+c360556d-eeff-4f08-95da-99269a92b33b,custom,come to find zkm,,high,2026-05-19 17:12:36,aaa,pending,vlm
+996cd575-730d-4018-9e82-a30938369d4f,custom,deliver some food for Okng,,medium,2026-05-19 17:14:12,aaa,pending,rule
+184939e5-05e5-4994-beb5-366398d170ef,custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,low,2026-05-19 17:16:06,aaa,pending,vlm
+eb3ec6a2-98f9-417e-9839-46d040e451b0,custom,what time is it,,low,2026-05-19 17:16:58,aaa,pending,vlm
+136a03eb-7475-46e8-ae11-7c0c3c735ea1,custom,help me get my favorite fruit,,medium,2026-05-19 17:19:42,aaa,pending,vlm
+d49d0174-7356-4294-aeeb-fc12b7ccdf10,custom,say hello,,low,2026-05-19 17:20:05,aaa,pending,vlm
+049f8ae1-2465-41e7-9245-53a70a1e6179,custom,pick up a banana for zkm,,medium,2026-05-19 17:28:43,aaa,pending,rule
+9a6a3ef0-d326-42f0-afa2-d9f9735012e1,custom,explore the office,,medium,2026-05-19 17:33:16,aaa,pending,rule
+ebd0a17d-c693-4590-b9d7-9a12a229c00c,custom,say goodbye,,low,2026-05-19 17:36:01,aaa,pending,vlm
+28c20ce6-51d1-4ee3-92e5-7fb5812ba6c3,custom,tell me a joke,,low,2026-05-19 17:36:25,aaa,pending,vlm-mem
+2f66b499-ef3a-4c21-b0de-296c4fc91312,custom,Check the environment.,,low,2026-05-19 18:01:14,aaa,pending,vlm-mem
+add153ec-f074-4d74-83b3-a5d84b3447c2,custom,give me coca-cola,,high,2026-05-19 18:02:15,aaa,pending,rule
+d929d9b8-77ac-4b07-a751-c629bfe00a7e,custom,find Okng and say hello,,high,2026-05-19 18:03:49,aaa,pending,rule
+30211534-3b4d-408b-a875-0672de747f84,custom,could you help me find a chocolate marked with Snickers,,medium,2026-05-19 18:04:02,aaa,pending,rule
+14e2b5de-e851-448c-91c3-20f1028ad95b,custom,please help me deliver the a chocolate marked with Snickers to student taoshida,,high,2026-05-19 18:12:16,aaa,pending,rule
+e14719e3-4047-4cd7-8348-90c0ad7e6de7,custom,what time is it,,low,2026-05-19 18:13:44,aaa,pending,rule
+5a501997-2bcf-4ca4-a750-ce0652c2f25e,custom,say hello,,low,2026-05-19 18:22:14,aaa,pending,rule
+adcc5cd3-1a40-4207-9ad7-100430452555,custom,pick up Orion Shuyuan non-fried potato chips for me,,medium,2026-05-19 18:22:58,aaa,pending,rule
+e64bb04d-0260-4000-a63d-f7a1516bc759,custom,find taoshida and say hello,,medium,2026-05-19 19:41:57,aaa,pending,rule
+75325d85-36c0-48ab-976c-940c65c290b2,custom,please help me deliver the Oreo original flavor sandwich cookie box to student zsx,,medium,2026-05-19 19:57:08,aaa,pending,vlm
+b242ab0b-0e07-4b7c-8a75-53646405772e,custom,please go to the snack area to pick up red packaged cake for me,,high,2026-05-19 20:21:10,aaa,pending,vlm
+b21ed740-8197-4de8-84f9-b5203e54961f,custom,bring red packaged cake to yyw,,low,2026-05-19 20:40:49,aaa,pending,vlm
+bca1070d-32bd-4bc9-ba00-c03861af5f7c,custom,Head to the snack area.,,low,2026-05-20 10:05:12,aaa,pending,rule
+fb94d3c9-57b2-43c2-933c-601f27706609,custom,Tell me a funny joke.,,medium,2026-05-20 10:08:31,aaa,pending,rule
+a5ccacfc-626b-4171-bbac-e0089f2d8fef,custom,Find a banana.,,low,2026-05-20 10:43:13,aaa,pending,vlm-mem
+eba7b5bc-cd4f-4fab-aa8c-5b03a7044b23,custom,Go home.,,low,2026-05-20 11:03:35,aaa,pending,vlm
+16dc4ec5-f278-4276-90e8-32bc2c978c29,custom,"I'm hungryy, could you give me something to eat?",,low,2026-05-20 11:15:42,aaa,pending,vlm-mem
+5dc8234f-10a9-4d54-9e01-9c1b581319e3,custom,Explore the office and locate the snack area.,,medium,2026-05-20 11:36:07,aaa,pending,vlm
+7517ebbb-d60a-45b6-ad5e-db1850b3c8ca,custom,Go to the desk and pick up the blue cup.,,medium,2026-05-20 14:00:47,aaa,pending,vlm-mem
+50460832-134d-4d24-8801-6277f6674b30,custom,Help me get a green apple.,,medium,2026-05-20 14:03:10,aaa,pending,vlm-mem
+8d8b672d-230b-490f-bd15-bf8c6f82c1a8,custom,"Check if yyw is at his workstation, then come back and report.",,high,2026-05-20 14:07:56,aaa,pending,vlm-mem
+0551e2d8-e986-4caf-97f4-cb4b07891c70,custom,Could you find the Oreo original flavor sandwich cookie box?,,medium,2026-05-20 14:16:22,aaa,pending,rule
+9c5d84a4-a27e-4123-a7b3-6583a0453d5a,custom,"At 17:30, please remind me it's dinner time.",,low,2026-05-20 14:19:24,aaa,pending,vlm
+df810ce6-7793-4d8d-91ff-2c8fe855d898,custom,Bring me the snack with the brightest color.,,high,2026-05-20 14:27:54,aaa,pending,vlm-mem
+35a0c5b6-1a37-4051-bea6-dd01c2025546,custom,Find taoshida and say hello.,,low,2026-05-20 14:57:42,aaa,pending,vlm
+48dc7ec2-dab1-4318-895f-1379ab0f9d86,custom,Find zkm and say hi to him.,,high,2026-05-20 15:03:49,aaa,pending,rule
+27500c78-f503-49c8-aa83-b53958f77891,custom,Get me a coca-cola from the snack area.,,medium,2026-05-20 15:04:54,aaa,pending,rule
+2cdecc0a-76ce-4929-a847-880a8dddecf1,custom,"I'm starving, get me a food that can quickly ease my hunger.",,low,2026-05-20 15:06:57,aaa,pending,vlm
+57baa424-1f6e-41c9-91cf-6b881e06618d,custom,Look for Okng.,,low,2026-05-20 15:09:30,aaa,pending,vlm
+cc3eebfa-335d-4c09-be56-783b615421a2,custom,Say hello.,,low,2026-05-20 15:11:00,aaa,pending,vlm-mem
+992737e2-92ae-40e4-82c5-6da89f4e4e0d,custom,Go to the snack area and grab red packaged cake.,,medium,2026-05-20 15:19:51,aaa,pending,vlm
+b984eb0e-47fc-413c-8ebc-1b922764b663,custom,Help me find a white cup somewhere.,,medium,2026-05-20 15:24:10,aaa,pending,vlm-mem
+fc452a66-7595-4803-b5c5-a4bc6618b4a5,custom,Notify Okng to attend a meeting in conference room 511.,,high,2026-05-20 15:25:50,aaa,pending,vlm-mem
+b1a8cd1e-6fa7-4fd5-bc8f-d2a2b2acb894,custom,Please deliver the Oreo original flavor sandwich cookie box to student zkm.,,high,2026-05-20 15:31:17,aaa,pending,vlm-mem
+506466b0-572d-4bd9-9a48-b0418295c768,custom,Bring me a Ganten drinking water bottle.,,low,2026-05-20 15:32:46,aaa,pending,rule
+11875a97-d3e8-419b-8460-b7c78f00cb67,custom,Check if the rest area is empty and come tell me.,,low,2026-05-20 15:53:30,aaa,pending,vlm-mem
+893c7c5d-86bd-49a9-929c-166d1622fc33,custom,Pick a banana and place it on the table.,,high,2026-05-20 16:02:05,aaa,pending,vlm-mem
+0295a0aa-333f-48d1-8d1c-3ff2bbfffd2e,custom,"Find Okng at 308, if he's there, tell him the meeting's at 2 PM in 123.",,medium,2026-05-20 16:07:12,aaa,pending,vlm-mem
+167be2d6-b558-4015-99d4-edd04638e9ed,custom,Find wyj.,,low,2026-05-20 16:30:42,aaa,pending,vlm-mem
+20e9801e-3028-429c-94f7-674dbf104fc4,custom,Choose a red fruit and deliver it to zkm.,,low,2026-05-20 16:44:19,aaa,pending,vlm-mem
+0a4750b8-52b7-43e4-bf19-dce1476387a7,custom,Inspect the current environment.,,low,2026-05-20 16:54:58,aaa,pending,rule
+9a763deb-ae65-446b-b70a-15f3540afd9b,custom,Go to the snack area to pick up an apple for me.,,low,2026-05-20 17:04:52,aaa,pending,rule
+69b8eb26-09b9-442e-a404-527388712e9f,custom,Go to the rest area.,,high,2026-05-20 17:07:12,aaa,pending,rule
+5f80a632-b5ae-4efc-9124-89dd28ae23aa,custom,Locate a red apple.,,medium,2026-05-20 17:09:05,aaa,pending,rule
+e2a6b80f-4857-460f-bccf-946eb0983a42,custom,Retrieve the Vitasoy chocolate soya drink.,,low,2026-05-20 17:12:45,aaa,pending,vlm
+1b5299fd-9db9-4ae8-a9d3-fed7d6b07587,custom,Pick up an apple and put it on the desk.,,low,2026-05-20 17:12:51,aaa,pending,vlm
+7c191d38-36d5-43fa-8484-26a84eff8c88,custom,Say hi to wyj.,,low,2026-05-20 17:20:11,aaa,pending,vlm
+6bac1d35-c8dc-41b3-96fc-14be03192903,custom,"Find wyj, then say: 'Good afternoon, work hard'.",,high,2026-05-20 17:25:06,aaa,pending,vlm-mem
+fb8bd9ee-1e01-4a3f-930b-45d4c805c1c0,custom,Explore the workplace.,,low,2026-05-20 17:25:14,aaa,pending,vlm-mem
+f3a4fc96-b906-420a-b0cc-3e61bac76ebc,custom,"Grab a green cup for me, please.",,high,2026-05-20 17:37:00,aaa,pending,rule
+82b0da0b-f9c3-480a-894a-871423cd0005,custom,Look around the office.,,high,2026-05-20 17:43:39,aaa,pending,rule
+63098ee3-4db2-4c03-94f9-e36148207fdf,custom,Pick up a banana for me.,,low,2026-05-20 18:31:03,aaa,pending,vlm-mem
+c903dc4b-a95a-4299-9f9e-a4b74e68d723,custom,Pick up the mouse and hand it over.,,low,2026-05-20 18:37:21,aaa,pending,vlm
+cccf29fc-cd11-4fff-a6f1-0c0f0a34f8fd,custom,"Find zkm and taoshida, tell them to make a PPT and come see me at 5 o'clock.",,medium,2026-05-20 18:58:01,aaa,pending,vlm
+41a3ca29-62c1-4119-988f-efc2dd468094,custom,Move to workstation 506B.,,low,2026-05-20 19:03:17,aaa,pending,rule
+0f75a486-ed5e-4e56-af80-65d51654c510,custom,"I need the black game controller, can u fetch it?",,medium,2026-05-20 19:42:31,aaa,pending,vlm-mem
+8030c627-b42c-49d8-8ccd-fb04d65e192d,custom,"Go to workstation 506L, see if a blue cup is there, and tell me the result.",,low,2026-05-20 19:49:18,aaa,pending,vlm
+43e3d82b-7ba9-4a9e-9bb4-240c96a37ce7,custom,Help me get my favorite fruit.,,medium,2026-05-20 19:50:19,aaa,pending,vlm-mem
+fa1dca2d-966c-4fba-bd9a-11cb7670faaa,custom,"I'm super thirsty, grab a drink that isn't carbonated.",,high,2026-05-20 20:37:12,aaa,pending,vlm-mem
+916e4b57-e49d-472f-ba02-9e094849fc4f,custom,What time is it?,,low,2026-05-20 20:38:14,aaa,pending,vlm-mem
+228559af-5891-4b62-a389-c125e2796e58,custom,Search for a chocolate marked with Snickers.,,low,2026-05-20 20:54:27,aaa,pending,rule
+074b21db-c43c-4a98-9392-8b6a073cdcaf,custom,Give me a bottle of water.,,low,2026-05-20 20:56:01,aaa,pending,vlm
+8dfbe876-0f42-4513-b401-34068a28e480,custom,Find zsx.,,high,2026-05-21 09:06:21,aaa,pending,rule
+ec7e3254-1263-40ce-9845-f5f69fd9671f,custom,help me get a bottle of water,,low,2026-05-21 09:21:57,aaa,pending,vlm
+84117594-4204-430e-8649-09f7b873bf39,custom,deliver some food for zkm,,low,2026-05-21 09:40:24,aaa,pending,vlm
+b3a24906-5ba5-42c2-98dc-a3edcb9b7a68,custom,go to the snack area and pick up a chocolate marked with Snickers,,medium,2026-05-21 10:07:13,aaa,pending,vlm
+d8bade17-230e-4cbf-8c1e-797cbdc35c3d,custom,what time is it,,medium,2026-05-21 10:10:05,aaa,pending,rule
+33d59713-ebab-465b-99fb-ceb03b1df713,custom,notify student yyw to have a meeting in the 511 conference room,,low,2026-05-21 11:06:18,aaa,pending,vlm
+7cf54f64-b19b-4abd-91a7-694f376dba76,custom,deliver some food for Okng,,medium,2026-05-21 11:06:21,aaa,pending,vlm
+28927829-247b-4dc1-8be0-208486f18783,custom,find an apple,,low,2026-05-21 11:31:05,aaa,pending,rule
+fd5de971-7348-4479-a8c4-27ded3ac48e9,custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-21 11:40:37,aaa,pending,vlm-mem
+147869b8-ff98-4649-870c-a506fed25333,custom,Find zkm.,,medium,2026-05-21 11:46:32,aaa,pending,vlm
+c2c672a7-e90a-462a-b8c5-63b1268c221c,custom,go to the snack area and pick up a chocolate marked with Snickers,,high,2026-05-21 11:55:57,aaa,pending,vlm
+3c4d08db-a703-4e8e-a8ef-9fe0fdabb7b2,custom,what time is it,,low,2026-05-21 11:57:10,aaa,pending,vlm
+61ecddef-3d91-48c4-8a2b-0e741d4e5e36,custom,choose a red color fruit and deliver it to yyw,,medium,2026-05-21 14:01:36,aaa,pending,vlm
+a98cb8e0-1330-4b4c-964e-a44174369e7e,custom,where is wyj,,low,2026-05-21 14:09:22,aaa,pending,vlm-mem
+59f18d6b-2972-4783-93b2-f28ccdc63a83,custom,deliver some food for wyj,,medium,2026-05-21 14:09:51,aaa,pending,vlm-mem
+b2438574-45db-4bcd-b893-82e7574781ef,custom,find a banana,,low,2026-05-21 14:11:17,aaa,pending,vlm
+ac425f97-0616-4125-bf81-fd6ffd8372e3,custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,high,2026-05-21 14:44:39,aaa,pending,vlm-mem
+11131a5d-72cb-427a-bebd-11e0286f2905,custom,Pick a banana and place it on the table,,medium,2026-05-21 14:45:02,aaa,pending,vlm-mem
+574e7b05-4035-4523-afe4-4c5d3b3781ca,custom,"Find taoshida and zkm, tell them there's a PPT they need to make",,medium,2026-05-21 14:55:16,aaa,pending,vlm-mem
+89828181-2ad1-4642-bf20-c75de9f44e1e,custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,high,2026-05-21 15:15:45,aaa,pending,rule
+6aa284f1-50e1-4ddc-bc3a-b9e91ef05857,custom,Find wyj.,,medium,2026-05-21 15:20:42,aaa,pending,vlm
+04bee8eb-a5fb-49b1-a2a1-367b3fe05404,custom,give me a banana,,medium,2026-05-21 15:21:15,aaa,pending,vlm
+4ac137de-abb5-4ade-8bef-bdf44279641b,custom,pick up a bottle of water and place it to taoshida's desk,,medium,2026-05-21 15:21:20,aaa,pending,vlm-mem
+6d093b6a-2b1f-46b5-8ca2-ce6995ddf2b9,custom,pick up an apple and place it to zsx's desk,,low,2026-05-21 15:21:35,aaa,pending,vlm-mem
+eee830ba-fca3-4052-bb5a-5723d10a25f3,custom,Explore the office and find the snack area,,low,2026-05-21 15:35:46,aaa,pending,rule
+b41675e5-ffc3-428a-adcc-d206af959e63,custom,find wyj,,medium,2026-05-21 15:48:53,aaa,pending,vlm
+70d9b427-471d-4e17-bc08-1956dcadd25c,custom,where is yyw,,low,2026-05-21 15:51:14,aaa,pending,vlm-mem
+63d51219-8b06-4f82-bb06-b9b599789aef,custom,Check the environment.,,low,2026-05-21 15:55:26,aaa,pending,vlm
+06df7096-a648-45b3-9289-02f15c2cd85e,custom,please go to the snack area to pick up a bottle of water for me,,medium,2026-05-21 16:15:44,aaa,pending,vlm
+24a3618b-4cbd-483f-84e3-2a90871848fb,custom,"A bottle of water, please.",,medium,2026-05-21 16:37:44,aaa,pending,vlm
+d3ec4ecb-0198-4895-a012-3a95333685ac,custom,bring an orange to zsx,,low,2026-05-21 16:53:09,aaa,pending,vlm-mem
+5688d11c-aa6e-4f05-9299-2a4e49f2e762,custom,say hello to taoshida,,high,2026-05-21 16:57:45,aaa,pending,vlm-mem
+4a675868-c876-48c8-b732-9c24633ed1b5,custom,please help me deliver the Oreo original flavor sandwich cookie box to student zsx,,medium,2026-05-21 17:06:58,aaa,pending,vlm
+ca9130a0-195f-4af4-a6dc-f3fe1eead537,custom,Check the environment.,,low,2026-05-21 17:18:48,aaa,pending,vlm
+91f97b84-b871-4b2d-af6f-dd8b72374b45,custom,help me get red packaged cake,,medium,2026-05-21 17:39:04,aaa,pending,vlm-mem
+1b14c919-8dba-4dd9-bb15-d22d04d03464,custom,choose a red color fruit and deliver it to Okng,,medium,2026-05-21 17:45:03,aaa,pending,vlm
+d44dbe45-16d4-471b-8018-7bc1ef160935,custom,say hello to wyj,,low,2026-05-21 17:52:38,aaa,pending,vlm
+d95ab900-7b1b-4806-ad38-4f72e5c146cd,custom,please go to the snack area to pick up a bottle of water for me,,low,2026-05-21 17:55:36,aaa,pending,vlm
+8433a9ae-1dad-48f7-aba5-1b46b5c372e8,custom,deliver some food for Okng,,low,2026-05-21 18:02:33,aaa,pending,vlm-mem
+cf40bb76-2ae9-4f67-8e04-0d2548bf8d89,custom,Explore the office and find the snack area,,medium,2026-05-21 18:14:48,aaa,pending,rule
+e60f8ced-daac-4917-8adf-fb05b96d86e5,custom,go to the snack area and pick up red packaged cake,,medium,2026-05-21 18:23:49,aaa,pending,vlm
+97717b82-9cb5-4ef9-9edc-62179d228a05,custom,"A bottle of water, please.",,medium,2026-05-21 18:25:22,aaa,pending,vlm
+e5852b6c-0e2c-4c67-9d4d-4d12bc6b9592,custom,"A bottle of water, please.",,medium,2026-05-21 18:29:27,aaa,pending,vlm-mem
+b9b0f506-552a-4360-a2e7-62177eee77eb,custom,pick up red packaged cake for yyw,,low,2026-05-21 18:35:26,aaa,pending,vlm
+aecdf89a-6d96-4b61-944f-85424e1104e5,custom,find taoshida,,low,2026-05-21 18:44:04,aaa,pending,rule
+71679412-7d3b-4563-9221-728b80b5c214,custom,say goodbye,,medium,2026-05-21 18:55:21,aaa,pending,vlm
+b08c3ecf-76c0-4061-986f-397d9ab61976,custom,say hello,,low,2026-05-21 19:54:26,aaa,pending,vlm-mem
+04697685-89f0-4823-a80d-e952e03c27b0,custom,"Can you check if wyj is at his workstation, then come back and let me know?",,medium,2026-05-21 20:12:09,aaa,pending,rule
+35eb295b-6676-4e77-8586-66898ddf9573,custom,say hello to wyj,,high,2026-05-21 20:19:58,aaa,pending,vlm
+87ac4477-d2f5-4440-9f0e-44466ed6a82b,custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,low,2026-05-21 20:54:14,aaa,pending,vlm
+14c8060c-e833-482c-9ab7-c7d1ee5fc73e,custom,help me get my favorite fruit,,low,2026-05-22 09:19:16,aaa,pending,vlm-mem
+d5ac3253-745a-4c68-a1f4-507669611e36,custom,"A bottle of water, please.",,low,2026-05-22 09:32:35,aaa,pending,rule
+86b3ab98-425f-4109-b50b-4ddec8c7a2bd,custom,could you give me something to eat?,,high,2026-05-22 09:49:29,aaa,pending,rule
+96ddd5f8-6aef-4ebe-851f-074ae17e8b26,custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 09:50:24,aaa,pending,vlm
+705de46c-e316-4b7d-b40e-af105d9f1e1e,custom,deliver some food for Okng,,low,2026-05-22 10:00:38,aaa,pending,rule
+b98a6759-0521-4174-b2c4-6ea4e61b37ed,custom,please help me deliver the a banana to student zkm,,low,2026-05-22 10:05:22,aaa,pending,vlm
+82246b94-0639-4fff-b13f-02c09953bb7c,custom,come to find zkm,,low,2026-05-22 10:10:07,aaa,pending,vlm-mem
+2e1a0a55-a84a-4c8d-ad28-10348d9fa2ba,custom,go home,,medium,2026-05-22 10:24:18,aaa,pending,rule
+29dff074-0cd3-4151-a6bc-64e9ed856436,custom,find yyw,,low,2026-05-22 10:42:58,aaa,pending,vlm
+ceff8f0f-30ed-4f11-beb9-de4fb647811e,custom,Explore the office and find the snack area,,low,2026-05-22 11:12:36,aaa,pending,vlm
+3bf5b2a6-b2b4-460d-834b-9a7d9e25ee66,custom,look for a bottle of water,,low,2026-05-22 11:21:21,aaa,pending,rule
+ac019b24-4fac-4695-9a5d-9e85b6bfa90d,custom,choose a red color fruit and deliver it to Okng,,low,2026-05-22 11:34:19,aaa,pending,vlm-mem
+19e2c14a-4191-474a-be34-41788fccd772,custom,go to the snack area and pick up an orange,,medium,2026-05-22 14:01:59,aaa,pending,rule
+8a2d6ac7-1711-40c3-bfb0-7f2eb482b1c3,custom,say goodbye,,low,2026-05-22 14:12:26,aaa,pending,vlm-mem
+4723b67c-17ac-466d-9465-24031f181923,custom,come to find taoshida,,low,2026-05-22 14:14:19,aaa,pending,vlm
+cb27c804-6392-4821-9b45-e6fe004f276a,custom,give me coca-cola,,medium,2026-05-22 14:17:47,aaa,pending,vlm
+c00bb4da-b344-4708-85f4-0bb2042bdb25,custom,say hello to zsx,,medium,2026-05-22 14:20:30,aaa,pending,vlm-mem
+00ad803c-8e1d-4530-86e9-3fc0a4df6fe9,custom,please go to the snack area to pick up an orange for me,,high,2026-05-22 14:33:52,aaa,pending,vlm-mem
+8eae42d6-1fde-4e79-8264-5a6a1362787e,custom,Inspect the current environment.,,low,2026-05-22 14:37:18,aaa,pending,vlm
+9e2633af-b8a2-49e8-81ab-8553c8c0e09a,custom,please help me deliver the red packaged cake to student yyw,,high,2026-05-22 14:41:03,aaa,pending,vlm
+1d66e612-248f-4be2-a49e-b1e9561d29e5,custom,say hello to zkm,,low,2026-05-22 14:51:53,aaa,pending,vlm-mem
+6d96ccae-349c-4431-abc3-6afb6e373e26,custom,deliver some food for Okng,,medium,2026-05-22 14:58:40,aaa,pending,vlm
+4420f9fe-9faa-4cdd-ad34-47814e731496,custom,help me get Vitasoy chocolate soya drink,,low,2026-05-22 15:10:43,aaa,pending,vlm
+52cf850c-7c0a-41f6-8abc-44a10d455a8f,custom,go to the snack area and pick up a chocolate marked with Snickers,,high,2026-05-22 15:23:52,aaa,pending,vlm
+fed665cb-db91-4388-b25e-26c112cbe750,custom,"A bottle of water, please.",,medium,2026-05-22 15:29:36,aaa,pending,rule
+897a12cd-55c2-4b0f-88ac-6c5ffa51a17b,custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,high,2026-05-22 15:35:22,aaa,pending,rule
+d015bb6d-327c-4a03-8e68-fc1eedb467f3,custom,could you help me find coca-cola,,low,2026-05-22 15:42:38,aaa,pending,vlm
+980f86c1-98ef-469d-8807-633c56a0e27b,custom,Inspect the current environment.,,low,2026-05-22 16:04:43,aaa,pending,rule
+8a71abf4-d6b0-4d30-92db-b458c441676c,custom,pick up an orange and place it to taoshida's desk,,high,2026-05-22 16:14:10,aaa,pending,vlm
+1df9f42f-afb7-4e24-8696-dbb2bbd0444f,custom,what time is it,,low,2026-05-22 16:36:02,aaa,pending,vlm-mem
+8009ef62-bbc3-486e-aaa1-85844410955f,custom,help me get my favorite fruit,,high,2026-05-22 16:48:12,aaa,pending,rule
+0fb46364-a7e5-46cc-b0e1-e638760cf302,custom,pick up red packaged cake and place it to wyj's desk,,low,2026-05-22 16:57:02,aaa,pending,vlm
+449b186e-7344-4d55-a423-ac784c229835,custom,say hello,,low,2026-05-22 17:11:15,aaa,pending,rule
+1e9b5212-a313-4c03-b6a9-1305366a6a27,custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 17:20:46,aaa,pending,vlm-mem
+93547e9e-6e92-4069-bc36-0304aa6facf4,custom,find an orange,,low,2026-05-22 17:23:49,aaa,pending,vlm
+342e9f61-95a9-492b-9ab5-576138ebe1f0,custom,could you give me something to eat?,,low,2026-05-22 17:34:38,aaa,pending,vlm
+da5e87a9-bca8-4c85-b96d-c8c9f4cf1bca,custom,choose a red color fruit and deliver it to wyj,,low,2026-05-22 17:47:58,aaa,pending,vlm-mem
+6e22d7b1-6a8c-4cb0-bbf4-91b889cf0336,custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,high,2026-05-22 17:50:31,aaa,pending,vlm-mem
+606154d9-b0ed-4d55-8555-670a9ff7980e,custom,could you give me something to eat?,,medium,2026-05-22 18:12:52,aaa,pending,vlm-mem
+f27adc96-6bd8-4707-a17c-b908384b0da7,custom,pick up a chocolate marked with Snickers for me,,low,2026-05-22 18:14:00,aaa,pending,vlm-mem
+3eadd21c-ee68-4d6f-a918-155512a8216f,custom,"A bottle of water, please.",,low,2026-05-22 18:14:58,aaa,pending,vlm
+dc860074-ea0b-48df-a66f-f88f279b9fb2,custom,say hello,,low,2026-05-22 18:15:03,aaa,pending,vlm
+3d4ccaf1-a768-4336-8de6-af6b9151718b,custom,bring a bottle of water to zkm,,medium,2026-05-22 18:48:07,aaa,pending,vlm
+a08452e5-aa97-4554-a95c-baa2553e9c33,custom,Inspect the current environment.,,low,2026-05-22 18:55:48,aaa,pending,vlm-mem
+fa01be1e-647a-4643-9e28-816a37d14412,custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,high,2026-05-22 18:55:52,aaa,pending,vlm-mem
+7befa10a-1da4-4a3b-be5d-b910f5ffbec2,custom,find zkm,,low,2026-05-22 19:28:32,aaa,pending,vlm
+e2ab2976-c1ca-4744-aeef-30c59f834b9c,custom,please go to the snack area to pick up red packaged cake for me,,medium,2026-05-22 19:50:51,aaa,pending,rule
+2a9f981d-0633-452c-8646-7c793f82cf83,custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 20:17:44,aaa,pending,vlm-mem
+bf728b0f-0986-4ba5-aaae-28114c7c8415,custom,go to the snack area and pick up red packaged cake,,low,2026-05-22 20:32:20,aaa,pending,vlm-mem
+fa175e34-9ebf-4f11-a6fa-612b94799487,custom,Check the environment.,,low,2026-05-22 20:45:40,aaa,pending,vlm
+272961bc-1ad3-4bc9-9e06-185c5dac34c6,custom,Inspect the current environment.,,low,2026-05-23 09:03:22,aaa,pending,vlm
+982919a8-385a-45c5-a2ad-93ccb597d7de,custom,say goodbye,,low,2026-05-23 09:56:08,aaa,pending,vlm
+2078e1b6-02d7-44b8-b954-f026e567c92c,custom,what time is it,,medium,2026-05-23 10:09:51,aaa,pending,vlm
+1086cf6d-46dd-4ed1-8c87-a6e91c14b300,custom,find a chocolate marked with Snickers,,high,2026-05-23 10:17:45,aaa,pending,vlm
+ad62ca1b-a55b-4e17-8e6a-c8fd61ed4076,custom,help me get Oreo original flavor sandwich cookie box,,medium,2026-05-23 10:29:17,aaa,pending,vlm-mem
+a7d5a13a-1294-4548-b23f-8a6d4fdf2bb5,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-23 10:31:14,aaa,pending,vlm-mem
+dad5e367-2324-464e-9f9b-65d315614171,custom,Pick Orion Shuyuan non-fried potato chips and place it on the table,,low,2026-05-23 10:44:49,aaa,pending,vlm
+b09b2c9b-d989-4275-9c40-ab48d4905501,custom,"A bottle of water, please.",,medium,2026-05-23 11:01:50,aaa,pending,rule
+883ba560-6f83-415f-a972-97640452e657,custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zkm the result",,medium,2026-05-23 11:24:43,aaa,pending,rule
+89c25a58-543f-492d-af1f-77b6b02cbb71,custom,pick up a bottle of water for Okng,,medium,2026-05-23 11:34:55,aaa,pending,vlm
+2e1de9de-87fe-45c4-879f-f4bbf5f11459,custom,could you give me something to eat?,,medium,2026-05-23 11:39:20,aaa,pending,rule
+8cf14e42-1e20-4a59-b9d1-c2f9e1fbdc8e,custom,help me get my favorite fruit,,medium,2026-05-23 14:07:19,aaa,pending,vlm-mem
+28067cf5-c842-4a89-9245-d8ada1b8b0ba,custom,Inspect the current environment.,,low,2026-05-23 14:09:06,aaa,pending,vlm
+f914a563-15f2-4eb1-85c0-283ab399bd6c,custom,pick up Oreo original flavor sandwich cookie box for me,,medium,2026-05-23 14:32:12,aaa,pending,rule
+7827fa85-cd3b-4364-9213-1acc0ba679cc,custom,tell me a joke,,low,2026-05-23 14:36:07,aaa,pending,vlm-mem
+1c766004-d356-492a-9405-5687eabd5f9b,custom,Find yyw.,,low,2026-05-23 15:04:07,aaa,pending,vlm
+f4ca62ef-a86b-4612-a2fe-630f5cec2189,custom,"A bottle of water, please.",,high,2026-05-23 15:04:38,aaa,pending,vlm
+1c49bdc3-1d4a-4d0c-bc03-a4a76f27dd81,custom,"Can you check if wyj is at his workstation, then come back and let me know?",,low,2026-05-23 15:05:42,aaa,pending,vlm
+b75a7a97-94fb-4362-8615-807da7a643c1,custom,deliver some food for yyw,,high,2026-05-23 15:08:38,aaa,pending,rule
+1b10b903-bd1f-47c4-a9ed-f2649ef3d19d,custom,Find taoshida.,,medium,2026-05-23 15:11:44,aaa,pending,vlm-mem
+d0576196-09aa-44e2-a07a-401d7953f568,custom,pick up an apple and place it to taoshida's desk,,medium,2026-05-23 15:19:48,aaa,pending,rule
+4a6f28e8-d2c5-4fdf-85bc-da35d2f21f8d,custom,bring an orange to wyj,,low,2026-05-23 15:28:41,aaa,pending,vlm-mem
+2aa5b301-7291-4fd2-9f89-98caaca98a4e,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-23 15:31:09,aaa,pending,rule
+3234931a-56b4-4dab-a82f-b0990fe1bc0e,custom,help me get a bottle of water,,medium,2026-05-23 15:40:42,aaa,pending,vlm-mem
+c0ba1d23-d260-4850-bbca-d7f03a3eeaab,custom,please help me deliver the a bottle of water to student yyw,,low,2026-05-23 15:45:13,aaa,pending,vlm
+0a4469a9-a190-4863-a84f-f6acbbfce3b2,custom,"Go to workstation 506J, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-23 16:00:02,aaa,pending,vlm-mem
+92d2918c-ca3a-4052-9fcf-73266d839b6f,custom,come to find yyw,,low,2026-05-23 16:00:12,aaa,pending,vlm-mem
+74fba7de-a22e-4f63-8745-3cc109df22f2,custom,"Can you check if yyw is at his workstation, then come back and let me know?",,low,2026-05-23 16:07:16,aaa,pending,rule
+a53db5b8-0d1a-4928-b327-cb50e8b8b283,custom,"Go to workstation 308, check if the monitor is on, then come back and tell Okng the result",,high,2026-05-23 16:18:16,aaa,pending,vlm
+f4053d7f-64ac-4802-ab2c-7ce0b0261bb9,custom,find Okng,,low,2026-05-23 16:31:02,aaa,pending,rule
+99312500-6220-417e-9f69-cf71fd3058b0,custom,find taoshida and say hello,,low,2026-05-23 16:50:53,aaa,pending,vlm-mem
+fcd3edb8-3308-461f-a995-e74345ec0e7b,custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,medium,2026-05-23 17:03:34,aaa,pending,rule
+725073d2-cbc3-4073-843d-84bbfacfa646,custom,pick up a banana for me,,low,2026-05-23 17:06:43,aaa,pending,rule
+9bc0b809-bc47-4330-8323-d0638beeeb54,custom,bring red packaged cake to taoshida,,medium,2026-05-23 17:20:22,aaa,pending,vlm-mem
+cff09e72-3f6d-497f-ad1c-873808dc8e9e,custom,help me get red packaged cake,,medium,2026-05-23 17:29:27,aaa,pending,rule
+b2914750-0872-4276-b9f5-e040c8de36ad,custom,Check the environment.,,high,2026-05-23 17:49:01,aaa,pending,rule
+41cdadd1-9b52-487f-a1a4-65b721238c1c,custom,notify student wyj to have a meeting in the 511 conference room,,medium,2026-05-23 17:52:55,aaa,pending,vlm-mem
+26a4c693-cdb8-4742-b4c2-a5012dddea33,custom,where is zsx,,low,2026-05-23 17:55:34,aaa,pending,vlm-mem
+99d4bdb1-76ea-418a-a0d0-8579206371ed,custom,could you give me something to eat?,,low,2026-05-23 17:56:07,aaa,pending,rule
+27ca9c06-e1af-4eaa-8e4d-d5389d2a273c,custom,find zsx,,medium,2026-05-23 18:11:36,aaa,pending,vlm
+76c43722-8ebf-4a4b-9756-2e2449cc5911,custom,help me get coca-cola,,low,2026-05-23 18:16:50,aaa,pending,vlm
+016366ab-967f-4492-ba77-38704e028c72,custom,help me get a banana,,high,2026-05-23 18:18:48,aaa,pending,rule
+241cb1e8-ab22-46de-831f-fb5d1ff8f736,custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-23 18:51:27,aaa,pending,vlm-mem
+3cf2148c-ea54-4c65-9629-cc29e0f6953c,custom,please go to the snack area to pick up coca-cola for me,,high,2026-05-23 18:56:55,aaa,pending,vlm-mem
+e07f3c6e-c6bd-4e10-b977-6120eaac39d0,custom,notify student yyw to have a meeting in the 511 conference room,,high,2026-05-23 19:27:53,aaa,pending,vlm
+c2ab995c-c34b-4122-950c-31e719701cb7,custom,"Can you check if Okng is at his workstation, then come back and let me know?",,medium,2026-05-23 19:31:45,aaa,pending,vlm-mem
+4c78b89a-fceb-4a4a-8954-3a26385b031d,custom,where is yyw,,low,2026-05-23 19:45:13,aaa,pending,vlm-mem
+ab436c66-f002-40cb-8e3f-77283cb506d8,custom,what time is it,,low,2026-05-23 20:00:53,aaa,pending,vlm
+1e689186-797f-4e71-bc56-4fad4453d4b7,custom,"Find taoshida and wyj, tell them there's a PPT they need to make",,medium,2026-05-23 20:19:51,aaa,pending,vlm
+15a9f777-3400-4269-b615-6ca96dbf7a61,custom,could you give me something to eat?,,medium,2026-05-23 20:49:04,aaa,pending,vlm
+c9acb713-0e94-4c98-9ffc-284ac228c441,custom,find Okng and say hello,,low,2026-05-24 09:03:47,aaa,pending,rule
+4379b80e-9dc0-40bb-8aaf-92f670c5d52c,custom,please help me deliver the a bottle of water to student zsx,,medium,2026-05-24 09:36:09,aaa,pending,vlm
+f4f22552-2058-455c-a91c-5cf8a903fb6d,custom,say hello,,low,2026-05-24 09:46:43,aaa,pending,vlm
+555e13fc-0a40-4e6d-aa23-489d2ec63272,custom,Inspect the current environment.,,high,2026-05-24 09:46:47,aaa,pending,vlm-mem
+8dd11749-3345-4810-ba9f-7944e15633bd,custom,what time is it,,medium,2026-05-24 09:48:54,aaa,pending,rule
+dfe5cd2e-168e-4153-8596-d8341a81f8e1,custom,Explore the office and find the snack area,,high,2026-05-24 10:20:12,aaa,pending,rule
+e17f0691-2444-41eb-bac4-c5c4ab7ff1b4,custom,choose a red color fruit and deliver it to yyw,,low,2026-05-24 10:46:03,aaa,pending,vlm
+a1a55526-5787-451a-8f7f-e7903fce088b,custom,where is yyw,,low,2026-05-24 11:00:14,aaa,pending,vlm-mem
+521e352d-5d22-4d7a-b0b7-f56bfd458cb9,custom,help me get my favorite fruit,,low,2026-05-24 11:03:30,aaa,pending,vlm-mem
+4757297a-35d5-4127-8b91-a559bca69c49,custom,"Go to workstation 506L, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-24 11:10:07,aaa,pending,vlm
+cca776e5-3360-43af-992d-59440545733d,custom,look for Oreo original flavor sandwich cookie box,,low,2026-05-24 11:11:45,aaa,pending,vlm
+3482b1a6-1719-419b-a802-b4debde99ff7,custom,could you give me something to eat?,,high,2026-05-24 11:36:29,aaa,pending,vlm-mem
+a4f62045-455d-43b2-a576-e354ea460218,custom,say hello,,high,2026-05-24 11:38:42,aaa,pending,vlm-mem
+668466e9-8599-46eb-90a3-77956cd9f986,custom,pick up Oreo original flavor sandwich cookie box for me,,low,2026-05-24 11:51:07,aaa,pending,vlm-mem
+d3d037c0-1503-4f75-9f26-6cc7a3ba13e9,custom,look for Vitasoy chocolate soya drink,,high,2026-05-24 14:25:52,aaa,pending,vlm
+c0367677-cb8f-4916-9b13-6c671fd467f4,custom,Check the environment.,,low,2026-05-24 14:31:28,aaa,pending,vlm-mem
+20c09ca5-6f53-48f7-94a5-9c5dd9e14231,custom,what time is it,,low,2026-05-24 14:35:32,aaa,pending,vlm-mem
+a4773aa7-d377-401a-8e00-7df8ebd1c5f2,custom,Pick a chocolate marked with Snickers and place it on the table,,medium,2026-05-24 14:41:03,aaa,pending,vlm
+24fc7050-985a-4f1f-99ec-406f626cb9a1,custom,pick up an orange and place it to Okng's desk,,high,2026-05-24 14:45:49,aaa,pending,rule
+db470fa8-4970-4c4d-9f1d-598f9685b3ac,custom,pick up Orion Shuyuan non-fried potato chips for me,,low,2026-05-24 14:51:04,aaa,pending,vlm-mem
+0bc48cd1-7f8a-4359-9767-2287a6e6629d,custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-24 15:12:31,aaa,pending,vlm
+1be939bb-c9a4-4161-99bf-59e921a3fa45,custom,"Go to workstation 506B, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-24 15:16:19,aaa,pending,vlm
+1e807a9f-32e1-4bd2-9ad4-857250fba180,custom,Inspect the current environment.,,low,2026-05-24 15:29:15,aaa,pending,rule
+18f86d03-2111-4189-a894-3965d21ff128,custom,say hello to wyj,,medium,2026-05-24 15:31:16,aaa,pending,rule
+63433ba9-896d-48cf-bb15-117173fff37e,custom,pick up a bottle of water for me,,medium,2026-05-24 15:52:54,aaa,pending,vlm-mem
+7e5cc0b3-296d-457f-a4e7-23ebe2dd9acb,custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-05-24 15:55:28,aaa,pending,vlm
+cd990787-c754-4a48-8492-9978c5434451,custom,help me get my favorite fruit,,high,2026-05-24 15:59:59,aaa,pending,vlm-mem
+7bfbf64b-2a63-498e-9818-861bf49a8281,custom,pick up a banana for taoshida,,low,2026-05-24 16:02:20,aaa,pending,vlm
+33761887-d067-4752-b02b-8050e2181f23,custom,Explore the office and find the snack area,,low,2026-05-24 16:04:50,aaa,pending,rule
+479b6462-c92e-496a-8bff-c40efa7264eb,custom,"Can you check if wyj is at his workstation, then come back and let me know?",,high,2026-05-24 16:06:40,aaa,pending,vlm-mem
+86029f5e-9196-4576-998d-75629fde3612,custom,say hello to taoshida,,low,2026-05-24 16:17:52,aaa,pending,vlm
+020baefb-d01d-43fa-bc4a-e95e49fe9e54,custom,please help me deliver the Vitasoy chocolate soya drink to student yyw,,low,2026-05-24 16:20:00,aaa,pending,vlm-mem
+7a9896b4-8ff8-4c66-b3bc-7cb2a531991f,custom,pick up an apple and place it to Okng's desk,,medium,2026-05-24 16:35:30,aaa,pending,vlm-mem
+7d0f7864-ab1d-4acb-8cb0-86c388a1c130,custom,go home,,low,2026-05-24 16:36:27,aaa,pending,vlm
+0babdab3-672d-42bb-872c-f89e60d7db5b,custom,help me get an orange,,low,2026-05-24 16:54:50,aaa,pending,rule
+50a247f5-607e-45ee-8a59-74a9fdb03c74,custom,bring red packaged cake to Okng,,low,2026-05-24 16:55:14,aaa,pending,rule
+cebf43bb-e653-4d27-8e22-114b57240ad6,custom,Check the environment.,,low,2026-05-24 17:12:27,aaa,pending,vlm-mem
+435d35ea-56b0-4196-a5e1-6e64aed6fd04,custom,Explore the office and find the snack area,,low,2026-05-24 17:12:50,aaa,pending,vlm
+0ae2bf68-4bb6-4a1d-ba63-5f3d5a860c53,custom,"Find zkm and wyj, tell them there's a PPT they need to make",,low,2026-05-24 17:16:12,aaa,pending,vlm
+ec5135e3-92ec-4434-ada1-5384e2aeddf8,custom,say hello,,low,2026-05-24 17:40:02,aaa,pending,rule
+4c184545-590f-4ad4-bf14-12080a2c031f,custom,Inspect the current environment.,,low,2026-05-24 17:49:17,aaa,pending,rule
+20c70855-28fc-4586-9011-7421b3a7e2be,custom,pick up red packaged cake for me,,high,2026-05-24 18:02:40,aaa,pending,rule
+fa002eb4-6211-4e03-a89e-4204ec20c63c,custom,Explore the office and find the snack area,,high,2026-05-24 18:06:19,aaa,pending,vlm
+6b017ad4-edf4-470e-824a-9f50b0c02ec3,custom,deliver some food for yyw,,high,2026-05-24 18:09:36,aaa,pending,vlm-mem
+cc4349c3-d431-4965-b64e-7232122d69a6,custom,pick up a chocolate marked with Snickers for me,,high,2026-05-24 18:17:54,aaa,pending,vlm-mem
+e5c76b96-26cd-4c5f-8cee-20386f672102,custom,go home,,low,2026-05-24 18:18:11,aaa,pending,vlm-mem
+c83e4a48-ab54-4dcb-8d77-b0ce208d3e7a,custom,give me Oreo original flavor sandwich cookie box,,high,2026-05-24 18:21:24,aaa,pending,vlm-mem
+0f01cb07-b472-49c0-bd37-8a3711586a92,custom,could you give me something to eat?,,medium,2026-05-24 18:24:25,aaa,pending,vlm-mem
+25d8eb2a-411a-413d-b59d-bdc4bb17aac8,custom,Pick an apple and place it on the table,,low,2026-05-24 18:24:41,aaa,pending,vlm
+0f03fe79-f949-4c11-abfa-451c3ba2a2e0,custom,bring coca-cola to wyj,,low,2026-05-24 18:57:53,aaa,pending,vlm-mem
+3b8f58e6-d6bd-45c0-bbad-5d2d41f81e8a,custom,pick up a chocolate marked with Snickers and place it to zsx's desk,,low,2026-05-25 09:07:54,aaa,pending,vlm-mem
+96204bb7-619e-4333-85d6-92a5ff788e26,custom,say goodbye,,low,2026-05-25 09:50:38,aaa,pending,rule
+bd41b825-b80f-4b08-b46a-264fbb0821ca,custom,help me get my favorite fruit,,low,2026-05-25 10:39:14,aaa,pending,vlm-mem
+12682fd8-c205-4d8b-a95a-13230db55ec1,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-25 10:40:35,aaa,pending,vlm-mem
+5e7e979d-1e51-41c6-ae8b-b524b78f32e5,custom,go to the snack area and pick up a banana,,medium,2026-05-25 11:03:07,aaa,pending,vlm
+31d9eb6e-c676-4d3a-850c-ec89f32862e5,custom,"Can you check if wyj is at his workstation, then come back and let me know?",,high,2026-05-25 11:06:00,aaa,pending,vlm
+6207abe5-a3a9-4543-9ad7-c46b925609bb,custom,choose a red color fruit and deliver it to Okng,,low,2026-05-25 11:10:00,aaa,pending,rule
+3e08190f-3c07-4756-965f-a365b38c2ce2,custom,Pick Vitasoy chocolate soya drink and place it on the table,,medium,2026-05-25 11:16:12,aaa,pending,vlm-mem
+5062b0be-c7e0-4dec-bee4-16b9f6189212,custom,go to the snack area and pick up red packaged cake,,low,2026-05-25 11:16:16,aaa,pending,vlm-mem
+4c9a0195-d2d3-4ad8-a4bc-18ee8aa0e3b5,custom,bring a chocolate marked with Snickers to Okng,,low,2026-05-25 11:25:05,aaa,pending,vlm-mem
+5f520f36-513e-4396-8c6c-346a6c3eb12c,custom,could you give me something to eat?,,low,2026-05-25 11:38:21,aaa,pending,vlm-mem
+aedb9a06-8359-4407-95fd-e06168e0369d,custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,medium,2026-05-25 14:00:08,aaa,pending,rule
+d434d316-4f35-4659-9a44-ada40a6f5e85,custom,choose a red color fruit and deliver it to zsx,,low,2026-05-25 14:00:36,aaa,pending,vlm-mem
+e32e5363-dfb8-4fe3-b2e1-60111632f22f,custom,notify student taoshida to have a meeting in the 511 conference room,,medium,2026-05-25 14:06:36,aaa,pending,vlm
+42f34313-e30c-4b8b-918e-a168e70b0cc0,custom,say hello,,medium,2026-05-25 14:13:24,aaa,pending,vlm
+0fb68ae1-684a-48f5-9a12-1c697b10a8b3,custom,pick up Oreo original flavor sandwich cookie box for wyj,,low,2026-05-25 14:49:25,aaa,pending,vlm
+4332c6e5-9aac-41df-bd14-c1d193974764,custom,pick up coca-cola for zkm,,low,2026-05-25 14:51:44,aaa,pending,vlm-mem
+c8e1f94d-b32d-422d-bc43-4e056ab18e44,custom,go home,,low,2026-05-25 15:13:32,aaa,pending,rule
+cf388870-238d-4d75-af26-9228e735c097,custom,pick up Vitasoy chocolate soya drink for me,,low,2026-05-25 15:14:01,aaa,pending,rule
+14822f43-1c66-454c-9ca9-0ed0f3edb051,custom,could you help me find a bottle of water,,low,2026-05-25 15:39:23,aaa,pending,vlm
+09933742-ef8d-487d-827c-4dab8d366de0,custom,"Find Okng and wyj, tell them there's a PPT they need to make",,high,2026-05-25 15:40:03,aaa,pending,vlm
+9f747836-ea3d-43b0-a364-dcc44911fdb1,custom,notify student taoshida to have a meeting in the 511 conference room,,high,2026-05-25 15:50:04,aaa,pending,rule
+708c9b41-b3e3-4f73-bf17-b8b608e63950,custom,bring red packaged cake to zkm,,low,2026-05-25 16:25:50,aaa,pending,rule
+5ee61178-d9a4-4608-bbe8-44a43643c5da,custom,"A bottle of water, please.",,low,2026-05-25 16:35:40,aaa,pending,vlm
+32b737ee-e0f1-48b0-8893-e69cbf17e164,custom,help me get a bottle of water,,low,2026-05-25 16:45:09,aaa,pending,vlm
+59bfc112-f7f5-46ff-8788-4684dfc59e15,custom,"Can you check if yyw is at his workstation, then come back and let me know?",,low,2026-05-25 16:50:01,aaa,pending,rule
+7a41ae22-fda9-48d6-9903-aa90b028997a,custom,what time is it,,medium,2026-05-25 16:53:59,aaa,pending,vlm
+cfc8caaf-2363-4271-b5ef-29ffb8af5f42,custom,Explore the office and find the snack area,,low,2026-05-25 16:55:12,aaa,pending,vlm
+b0e4122b-4f9f-4375-b7ce-fc36977c2103,custom,choose a red color fruit and deliver it to Okng,,high,2026-05-25 17:06:05,aaa,pending,rule
+9e03e39f-b6b9-4585-a07a-2e5b7f329109,custom,Find Okng.,,medium,2026-05-25 17:22:40,aaa,pending,vlm
+bf5b27b7-43dc-4485-b7d4-620a2185da04,custom,tell me a joke,,low,2026-05-25 17:23:32,aaa,pending,vlm-mem
+c74331cf-22ed-46a8-8ddd-1399f499f342,custom,pick up Vitasoy chocolate soya drink and place it to Okng's desk,,medium,2026-05-25 17:40:42,aaa,pending,rule
+c2e1015a-25c2-4acd-8d99-55fd43e84847,custom,"A bottle of water, please.",,medium,2026-05-25 17:41:31,aaa,pending,vlm
+8bbace92-b6a6-4924-be93-aa4084e28534,custom,find yyw,,low,2026-05-25 17:46:37,aaa,pending,vlm-mem
+d75fa2bc-7dda-486c-b3cb-561adc934dc4,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-25 17:56:38,aaa,pending,rule
+89e177cd-30af-458e-89e9-08480f547c4c,custom,could you help me find a banana,,low,2026-05-25 17:59:33,aaa,pending,vlm-mem
+8098368c-e617-4387-91d7-ec74790a8363,custom,find Okng,,low,2026-05-25 18:02:19,aaa,pending,vlm-mem
+cd71b893-d6d6-4631-b761-bf92960ee9ad,custom,explore the office,,low,2026-05-25 18:11:37,aaa,pending,vlm
+53284f61-111f-49bb-90b5-9928ff587df1,custom,tell me a joke,,low,2026-05-25 18:13:33,aaa,pending,vlm
+b0cf6e6b-50ec-46bf-9118-159d5844c409,custom,say goodbye,,low,2026-05-25 18:14:07,aaa,pending,rule
+a20d2594-1ace-48b5-af24-1febf3776a7a,custom,explore the office,,low,2026-05-25 18:18:21,aaa,pending,rule
+b2624552-3e6c-4dbc-a883-e32b00602e2a,custom,find Orion Shuyuan non-fried potato chips,,low,2026-05-25 18:20:32,aaa,pending,vlm-mem
+41cd6e58-440a-437a-9955-78de08248eab,custom,"A bottle of water, please.",,low,2026-05-25 18:21:41,aaa,pending,rule
+ea161f13-2210-4f92-bf54-9df10925f67b,custom,"A bottle of water, please.",,low,2026-05-25 18:28:33,aaa,pending,vlm
+c4515e02-0d0c-4a26-8065-1703c3581cd1,custom,"Go to workstation 506B, check if the monitor is on, then come back and tell yyw the result",,high,2026-05-25 18:29:08,aaa,pending,vlm-mem
+8f213370-7c9b-46f9-8f93-0c0ca8efb392,custom,deliver some food for Okng,,low,2026-05-25 18:31:56,aaa,pending,vlm
+7595e77c-43b1-4f8c-ba5d-c3cb228659d5,custom,what time is it,,low,2026-05-25 18:51:03,aaa,pending,vlm
+7c277d4b-bb30-40a5-9432-b6c3e4adb928,custom,give me Orion Shuyuan non-fried potato chips,,medium,2026-05-25 18:58:50,aaa,pending,rule
+8735cdf7-0618-47f1-9b19-8d685f9f72db,custom,Find zsx.,,low,2026-05-25 19:22:56,aaa,pending,rule
+a35df262-68a7-4cbd-bdee-b679d3a3306d,custom,pick up a banana for yyw,,high,2026-05-25 20:15:05,aaa,pending,rule
+c1b68d70-13ec-4681-85c8-f476d8e384ea,custom,Say hello to zkm.,,low,2026-05-26 09:03:00,aaa,pending,vlm
+1d501d93-e681-44df-a7b8-3cb2b93e6d95,custom,"Go to workstation 506L, check if zsx is there, then come back and let me know.",,high,2026-05-26 09:13:36,aaa,pending,vlm
+a101f655-2744-4fda-9119-45fb500c0b28,custom,Locate an orange.,,low,2026-05-26 09:30:04,aaa,pending,rule
+466f9c5b-d317-4ee7-8c0b-bf0ceddf35b0,custom,Find a red apple.,,low,2026-05-26 09:43:09,aaa,pending,vlm
+dd3378d3-7d65-4f58-8731-3e531b3bfdf8,custom,Go to the rest area.,,low,2026-05-26 10:08:47,aaa,pending,vlm-mem
+822c3205-a041-437f-ad1f-07bc80eb843b,custom,Please hand me the white cup.,,medium,2026-05-26 10:29:48,aaa,pending,rule
+8887c06f-f113-4d5b-87e6-7725315268f5,custom,Notify taoshida to attend a meeting in conference room 123 at 3 PM.,,high,2026-05-26 11:21:53,aaa,pending,rule
+ab7b44dc-ece3-45de-8fcf-617db0ce424f,custom,Help me get a coca-cola.,,low,2026-05-26 11:46:47,aaa,pending,vlm-mem
+84dbe136-52d5-4ae9-acb7-664b0299e2fb,custom,I'm starving! Can you grab me something sweet and deliver it?,,low,2026-05-26 14:10:11,aaa,pending,vlm-mem
+c5b0aad1-4a33-4129-bc2f-a408e5597c5c,custom,Grab the Oreo original flavor sandwich cookie box.,,low,2026-05-26 14:12:48,aaa,pending,vlm-mem
+7d532beb-9108-4962-926c-c4257b52fa5d,custom,"Get me a Vitasoy chocolate soya drink, please.",,low,2026-05-26 14:41:29,aaa,pending,rule
+96c00935-8d10-41f8-8446-e6bad5414e4a,custom,Go to conference room 511.,,low,2026-05-26 14:46:02,aaa,pending,rule
+24258bc4-f96f-4f90-acb1-2ea3af3a6620,custom,"I'm dying of thirst, could you find Doubendou original flavor soy milk and bring it to zkm?",,high,2026-05-26 14:54:04,aaa,pending,rule
+68eb7e90-e5b6-4fe5-9cd7-e94df8c1c91b,custom,"Find zkm and wyj, urgently tell them there's a document to review and ask them to see me.",,low,2026-05-26 15:00:09,aaa,pending,rule
+a7d7ce52-dd93-4281-9e2b-07cadbaf4ef2,custom,Could you bring me a Doubendou original flavor soy milk?,,low,2026-05-26 15:03:52,aaa,pending,rule
+f84c40d4-a6f8-4294-a604-5e9721b7af4d,custom,Go home.,,medium,2026-05-26 15:11:27,aaa,pending,vlm-mem
+aa554404-22ed-40d8-8ffc-30d3986aa28d,custom,Find taoshida and say good morning.,,high,2026-05-26 15:16:30,aaa,pending,rule
+d05ae853-2309-4ae2-8dca-de40e65b88db,custom,Head over to desk.,,medium,2026-05-26 15:23:25,aaa,pending,rule
+520be6b1-6fff-4db1-8dd1-138a56e55f6a,custom,Help me get my favorite fruit.,,medium,2026-05-26 15:27:26,aaa,pending,vlm-mem
+6da5a57f-5c24-4fe1-9570-a46bc764dbca,custom,Search for a green cup.,,low,2026-05-26 15:30:18,aaa,pending,vlm
+11d5f0ee-e592-4ebd-817a-9e85852fe757,custom,Navigate to the snack area.,,high,2026-05-26 15:32:35,aaa,pending,rule
+07c3a70d-d485-4b8f-9939-286fc4c43fee,custom,Pick up a green apple for me.,,low,2026-05-26 15:36:59,aaa,pending,rule
+d9d740ad-0123-44d5-a569-9e83df1142f6,custom,Bring over the blue cup.,,high,2026-05-26 15:37:00,aaa,pending,vlm
+a6459732-a9d4-4c89-b30b-23d688ad0446,custom,Look for a black game controller.,,low,2026-05-26 15:46:53,aaa,pending,vlm
+11b3f8f7-ba6b-4646-be18-6bd169100e6c,custom,Could you fetch a mouse for me?,,high,2026-05-26 15:50:43,aaa,pending,vlm
+fd606875-03e4-4fa3-bc4d-a9aae2417e79,custom,Explore the offce a bit.,,low,2026-05-26 16:04:44,aaa,pending,vlm
+f3d72fd1-2bb0-4b14-b024-30e1dd824ab7,custom,"Go to workstation 506J, check if there is a blue cup on the desk, then tell me the result.",,medium,2026-05-26 16:11:36,aaa,pending,vlm
+2395a46b-6c3c-49c1-ac63-5018941716f1,custom,Pick up a chocolate marked with Snickers and give it to me.,,medium,2026-05-26 16:15:13,aaa,pending,vlm
+adc4bec7-2108-49df-8683-3e3533775025,custom,"Can you locate taoshida and tell her 'Lunch time, let's go'?",,medium,2026-05-26 16:20:25,aaa,pending,vlm-mem
+1ec7d710-41b2-4b23-932a-14ca10fa867e,custom,Could you find yyw and say hello?,,high,2026-05-26 16:42:50,aaa,pending,rule
+915c8530-d931-4e39-a30e-a77abafca690,custom,Give me a bottle of watr.,,medium,2026-05-26 16:52:10,aaa,pending,rule
+025988d5-b565-484a-a88d-2b913f806372,custom,"I need a Krima jasmine milk green tea, get it for me.",,low,2026-05-26 16:53:36,aaa,pending,rule
+da1d1226-765e-440a-94bd-18db0e5dd492,custom,Grab a banana and place it on the table.,,low,2026-05-26 17:01:31,aaa,pending,rule
+3fe9bb8e-097e-48ff-884b-b49c4d40edd9,custom,"Could you go to the snack area, see if any Oreo original flavor sandwich cookie box is left, and report back?",,high,2026-05-26 17:18:28,aaa,pending,vlm
+10a77c6e-daac-4a83-a54c-37cbe3d45e50,custom,go to the rest area and bring me a bottle of watter.,,high,2026-05-26 17:18:42,aaa,pending,rule
+4de691af-fa1f-447c-a724-73c1ae178de9,custom,Go to the snack area to pick up a green apple for me.,,medium,2026-05-26 17:20:43,aaa,pending,vlm-mem
+f05f27ae-125e-4eab-8674-e4379179249b,custom,"Could you chek the environment, please?",,high,2026-05-26 17:38:58,aaa,pending,vlm-mem
+eaf362c0-c8a1-4707-bf9b-67f46ab15cc6,custom,"Pick up the red packaged cake for me, please.",,medium,2026-05-26 17:42:14,aaa,pending,rule
+0c7395c4-25e3-4040-b11d-f651098c46af,custom,"I need a refreshing drink, find a Krima jasmine milk green tea and bring it to Okng.",,medium,2026-05-26 17:56:15,aaa,pending,rule
+0ec45dff-8a4f-46a6-a35e-09f2a2220281,custom,Check if there's any red package cake in the snack area and report back.,,low,2026-05-26 18:01:22,aaa,pending,vlm-mem
+c64504b8-c106-4823-8592-555974b56f2f,custom,"Find yyw, then say to him: 'Good job on the project today, keep it up!'",,low,2026-05-26 18:11:01,aaa,pending,vlm
+6969f54f-72be-424a-bf89-a057dbf4a51a,custom,Notify student wyj to come to office 506B immediately.,,high,2026-05-26 18:17:02,aaa,pending,rule
+b7a322ef-e73c-4a8d-8c16-1a3057886a27,custom,Inspect the current environment.,,low,2026-05-26 18:26:05,aaa,pending,vlm
+44be3eba-099b-46a9-ac0d-4ef278afe30e,custom,Go to workstation 506B.,,low,2026-05-26 18:43:32,aaa,pending,vlm
+3907da27-ca60-4fa1-9bbb-f45d884e661a,custom,Please deliver this red apple to yyw.,,high,2026-05-26 18:52:42,aaa,pending,vlm-mem
+772081c7-b7be-418d-a97b-3b4ec9fda96d,custom,Can you tell me a joke?,,medium,2026-05-26 19:17:24,aaa,pending,vlm-mem
+7eabd569-6e08-4a0b-897f-06c4c6c93ab4,custom,"Explore the office, find the mouse, and deliver it to yyw.",,medium,2026-05-26 19:17:58,aaa,pending,rule
+3148dcf9-cd1c-42e6-b3db-1f2849dfb85e,custom,Go to the snack area and pick up Orion Shuyuan non-fried potato chips.,,medium,2026-05-26 19:25:52,aaa,pending,rule
+3a1de8d8-d715-4e92-ab22-a2592fe575e6,custom,What time is it?,,low,2026-05-26 19:30:10,aaa,pending,rule
+943911e8-e656-40d7-9858-780189b67629,custom,Find Okng and just say hi.,,low,2026-05-26 20:26:14,aaa,pending,rule
+5840656f-2e97-4221-82ad-23a56c9d4eb2,custom,"Go to conference room 511 and check if it's empty, then report back.",,medium,2026-05-27 09:12:14,aaa,pending,rule
+3b39b1c2-3b36-4d7e-a2cb-7bf4b894bc25,custom,"deliver the green cup to student yyw at 506L, but first fill it with water from the rest area, if you can.",,high,2026-05-27 09:16:12,aaa,pending,vlm
+a2b03791-2e18-4b7d-8442-1c1611f7c594,custom,"I need a pick-me-up—get me a chocolate marked with Snickers, but only if it's near the snack area, otherwise just a banana.",,low,2026-05-27 10:18:57,aaa,pending,rule
+cdea4e77-4721-4219-afaf-040bcd96332a,custom,help me get my favrite fruit—a red apple if possible,,high,2026-05-27 10:36:53,aaa,pending,rule
+4cbaf85a-bf4d-44a8-847e-d5763697293f,custom,"Pick up the mouse from the snack area and deliver it to Okng, she's beiing waiting.",,medium,2026-05-27 10:47:50,aaa,pending,vlm-mem
+469649c0-a7b5-4660-ae63-77bbcab2d33b,custom,Pick up the blue cup from table and give it to Okng.,,low,2026-05-27 10:49:14,aaa,pending,rule
+92ba0660-5e82-4654-abf9-8a92a20bf867,custom,where is a bottle of water?,,low,2026-05-27 11:04:02,aaa,pending,rule
+0c258fdd-5115-4df4-85ef-9160a55b96d1,custom,"say hi to zkm, then ask him if he's ready for the demo",,high,2026-05-27 11:45:33,aaa,pending,vlm
+3b429119-1b44-4db4-9189-3452dfca675d,custom,I'm hungry—can you get me food that will quickly fill me up? Maybe a red packaged cake.,,low,2026-05-27 11:56:07,aaa,pending,vlm
+9e3663e4-fa71-42c6-a288-ed374d6f8f04,custom,"Check the environment near the table by 506J, I left my mouse there, see if it's still around.",,medium,2026-05-27 11:56:37,aaa,pending,vlm
+466738b7-8474-4792-9bdc-1b9f81418320,custom,say hello to yyw,,medium,2026-05-27 14:04:52,aaa,pending,rule
+d7b84558-e010-4c5a-90cd-ecd1e8f3c75f,custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-27 14:38:35,aaa,pending,vlm
+2a2bccc4-7b41-4077-a461-10b9cb7d9289,custom,"Go to the rest area and see if it's tidy, then come back and tell me.",,medium,2026-05-27 14:39:19,aaa,pending,vlm
+f27e8d14-0d6c-4b2d-b7b4-a2a50be14a93,custom,Help me locate a black game controller.,,medium,2026-05-27 14:44:32,aaa,pending,vlm-mem
+cc4d9331-1c16-4b51-99b9-0b65a0d62974,custom,find a green apple,,medium,2026-05-27 14:47:07,aaa,pending,vlm-mem
+85d024fd-9bb6-4920-b649-329e6c24059a,custom,go home,,low,2026-05-27 14:49:03,aaa,pending,rule
+8d7febef-1fc8-4970-a828-352d49f3c583,custom,"Go to the snack area, pick up a banana for me, and a coca-cola for zsx, then bring them here.",,medium,2026-05-27 15:13:07,aaa,pending,vlm
+ad2e0ebe-aea1-4c66-a0cd-4135e6c5f0bd,custom,Tell me a joke while you're at it.,,medium,2026-05-27 15:28:22,aaa,pending,vlm-mem
+76a3f088-6d80-4141-bf29-5fb7afb988f5,custom,Please deliver a Vitasoy chocolate soya drink to zkm at workstation 506L.,,high,2026-05-27 15:32:12,aaa,pending,rule
+db977524-28d8-469d-ae36-2405d63ac2d0,custom,"Can you locate the Oreo box? I hide it somewhere in the rest area, bring it please.",,high,2026-05-27 15:34:57,aaa,pending,vlm-mem
+780361a2-43ca-4ff7-8d86-76acab8ffc83,custom,"Go to workstation 506B, check if a blue cup is there, and if so, bring it to me.",,medium,2026-05-27 15:39:34,aaa,pending,vlm
+31932597-8239-410b-bd6f-6681278be6d3,custom,"deliver this chocolate marked with Snickers to student yyw, would ya?",,medium,2026-05-27 15:47:18,aaa,pending,vlm
+e666bd14-51a3-4ae5-92c5-299f0ea2f998,custom,"Hey robot, I'm starving—get me a snack from the snack area, your choice!",,high,2026-05-27 15:55:23,aaa,pending,rule
+14cdb670-27fc-44d3-aac2-15a039a90fdb,custom,grab that Orion Shuyuan non-fried potato chips and hand it over,,low,2026-05-27 16:06:45,aaa,pending,rule
+0f1979a0-2633-4f87-8eca-0a2394c90e1a,custom,Find wyj and tell her I said hi.,,low,2026-05-27 16:08:26,aaa,pending,vlm
+2399fd82-d88e-4f59-bc04-0990cdfa0ec6,custom,Could you please bring me that Oreo original flavor sandwich cookie box from the cupboard?,,high,2026-05-27 16:12:44,aaa,pending,rule
+69efdef8-f947-4da5-9c2c-8e37917c027e,custom,"Check the conference room 511 and see if the white cup is on the table, then tell me who's there.",,high,2026-05-27 16:13:12,aaa,pending,vlm-mem
+ddb1399a-6fde-4c6a-ab04-ec73639aee3b,custom,"I need to find taoshida, he might be near 123, can you locate him and give him this green cup?",,low,2026-05-27 16:16:40,aaa,pending,rule
+729b248c-f2ec-4b45-9b5d-a2e528805125,custom,"Help me find taoshida and zsx, then notify them to meet in conference room 123 at 4:30.",,medium,2026-05-27 16:17:52,aaa,pending,vlm
+4fb2559e-4e04-495a-a3af-6337cc073b3a,custom,I'm feeling snacky—grab me that red packaged cake,,low,2026-05-27 16:26:10,aaa,pending,vlm-mem
+ac089f83-ca0b-495c-b0c0-e5b3c225f922,custom,Go to workstation 506B.,,low,2026-05-27 16:33:23,aaa,pending,rule
+b4dd62cd-344b-40b9-a2e8-214bef66e76a,custom,Can you find zkm?,,low,2026-05-27 16:33:29,aaa,pending,rule
+971d0cec-0136-400a-9ce4-3126b958ae00,custom,go to the snack area and see if there are any Doubendou original flavor soy milk left,,high,2026-05-27 16:37:36,aaa,pending,rule
+3415c0ec-3553-4804-a026-599e85f2e98e,custom,"Grab a red apple and a green apple, put them on the desk in 308.",,high,2026-05-27 16:49:06,aaa,pending,vlm-mem
+8d89f547-2a1e-4847-a83e-802a62efb719,custom,explore the office and find where the black game controller is,,medium,2026-05-27 17:06:25,aaa,pending,rule
+48a3df99-8960-41d4-ab94-092e40877a9d,custom,"Find a Doubendou original flavor soy milk, I could really use a boost.",,low,2026-05-27 17:06:48,aaa,pending,vlm
+b555ea1d-51ae-470a-84e5-a2febc8cdf65,custom,say hello to everyone at the snack area,,low,2026-05-27 17:16:26,aaa,pending,vlm
+c103cc6d-0b93-4883-8a93-1021c51fdb96,custom,"look for taoshida and zkm, then tell them lunch is in the rest area now",,high,2026-05-27 17:18:25,aaa,pending,vlm
+1c6984b2-30ce-493b-b83e-6366e000112f,custom,"I'm thirsty, bring me somthing to drink, maybe a Ganten water bottle?",,low,2026-05-27 17:22:35,aaa,pending,vlm-mem
+5a4e72e2-b766-4758-acfd-7e44baee818f,custom,Could you check the environment around the rest area?,,high,2026-05-27 17:34:52,aaa,pending,vlm
+8177479e-28e5-4d1f-8636-469bd304bed0,custom,"I feel drowsy—bring me a Krima jasmine milk green tea, stat!",,low,2026-05-27 17:37:49,aaa,pending,rule
+d6f92ce1-328d-43d8-97f1-e8c74dfcade1,custom,Explore the office.,,low,2026-05-27 17:56:30,aaa,pending,rule
+03206c97-5e9e-495b-9e30-12a80e1a1003,custom,find yyw and tell her I'll be late for the briefing in 511,,low,2026-05-27 18:05:28,aaa,pending,rule
+f7f1e541-13d1-45a7-880b-d4e724329db1,custom,"Look for a banana, please.",,low,2026-05-27 18:14:32,aaa,pending,vlm
+5cde2a31-7ff9-4b73-85c3-dd5897fed7e6,custom,"I need a coca-cola from the snack area, could you pick it up for me?",,low,2026-05-27 18:26:49,aaa,pending,vlm-mem
+e3bde925-5ff7-4768-bddb-a116de31d594,custom,"Check if there's a mouse at workstation 506L, and let me know.",,low,2026-05-27 19:09:20,aaa,pending,vlm
+de20cae4-5f17-4c8e-b859-be51ab32dce8,custom,"Navigate to 506J, find Okng, and remind her to check her email.",,low,2026-05-27 19:12:05,aaa,pending,vlm-mem
+54caa587-5a42-44f8-817e-4ab3702f3053,custom,remind me at 5pm to head to the meeting in 511,,low,2026-05-27 19:25:40,aaa,pending,vlm-mem
+eb5a6905-5534-4296-9b85-718e550b269e,custom,Go to the desk near 308 and see if a white cup is there.,,high,2026-05-27 19:55:19,aaa,pending,vlm-mem
+bf9a20ee-9c2b-43ac-b859-5a87e74f33e1,custom,"Find zsx and say 'Meeting at 3pm in 123, be there or be square!'",,low,2026-05-27 20:13:02,aaa,pending,vlm-mem
+769aeb42-400c-490d-a7fe-39b21b0cbaea,custom,help me get my favorite fruit,,low,2026-05-28 09:16:34,aaa,pending,vlm
+87d65e75-2b1b-4390-8728-8f9e6aae992c,custom,pick up a bottle of water for zkm,,medium,2026-05-28 10:22:22,aaa,pending,vlm
+cb4913b7-8017-4e5f-9e8a-59b76d1a8190,custom,what time is it,,low,2026-05-28 11:30:59,aaa,pending,vlm
+3b342d3b-cf4f-4cf3-8aee-30712a7d2c4a,custom,go home,,low,2026-05-28 11:35:25,aaa,pending,vlm
+d3d04188-f05d-47c6-bd4d-294d921236f2,custom,look for an apple,,low,2026-05-28 14:11:35,aaa,pending,rule
+eb24b426-20f9-431e-8cf7-baee9b8284a4,custom,come to find taoshida,,low,2026-05-28 14:12:04,aaa,pending,vlm
+78b5cec6-fac3-495b-81af-f231b04dbea4,custom,please help me deliver the a banana to student wyj,,medium,2026-05-28 14:20:16,aaa,pending,rule
+93959593-bd98-4d53-8148-ad6faee8015f,custom,Find zsx.,,low,2026-05-28 14:26:57,aaa,pending,vlm-mem
+79064322-3c87-49e7-a3b7-873a97160190,custom,what time is it,,low,2026-05-28 14:31:28,aaa,pending,vlm
+6344c1cc-8a33-4835-b4a4-2f1af6133e2d,custom,help me get my favorite fruit,,low,2026-05-28 14:34:08,aaa,pending,rule
+97e576dd-0f0f-47f4-943c-1bc9cff7356e,custom,"Go to workstation 506L, check if the monitor is on, then come back and tell yyw the result",,high,2026-05-28 14:35:00,aaa,pending,vlm-mem
+ac1114e9-0144-41c4-a867-be6c71709993,custom,pick up a banana for me,,high,2026-05-28 14:42:13,aaa,pending,vlm-mem
+dcf7f88a-3507-4eb5-aa19-c01757276ed6,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-28 14:44:15,aaa,pending,vlm
+e8cdbe81-1149-4ca7-802e-372460c8bff4,custom,Pick coca-cola and place it on the table,,medium,2026-05-28 14:44:31,aaa,pending,rule
+d326dedc-f41e-4162-8d40-42c74f0d37cd,custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-28 14:46:52,aaa,pending,vlm
+58ee6435-677d-4c58-b170-db06de674099,custom,"Go to workstation 506L, check if the monitor is on, then come back and tell yyw the result",,medium,2026-05-28 14:47:53,aaa,pending,vlm
+58bed5f4-541f-4a66-8662-6bf9b30c089d,custom,Inspect the current environment.,,low,2026-05-28 14:51:06,aaa,pending,vlm-mem
+eb38ba5a-c7ff-426e-a6ed-d82b5b3a8217,custom,explore the office,,low,2026-05-28 14:54:09,aaa,pending,vlm-mem
+68e2eac8-cc2a-43fe-9674-3f9a6258b34f,custom,bring a banana to zsx,,low,2026-05-28 14:55:25,aaa,pending,rule
+6791c979-46b0-4c9c-b8c7-2a1cac695af2,custom,"A bottle of water, please.",,high,2026-05-28 15:02:41,aaa,pending,rule
+1f1ccb3e-5026-4f86-8cb7-f8e06a76e58c,custom,go to the snack area and pick up Vitasoy chocolate soya drink,,medium,2026-05-28 15:11:31,aaa,pending,vlm-mem
+6134948c-ed01-4215-aed1-dd73ff2d4841,custom,find zkm and say hello,,medium,2026-05-28 16:03:21,aaa,pending,vlm
+ecb82685-203c-4da6-8abf-32214d07bb9e,custom,say hello,,low,2026-05-28 16:22:53,aaa,pending,vlm
+d258d299-f1fd-4c02-9a78-3009df737932,custom,please go to the snack area to pick up an orange for me,,high,2026-05-28 16:26:57,aaa,pending,vlm
+60f6b985-3a06-48ab-aa90-f7050d0f622a,custom,could you help me find a chocolate marked with Snickers,,high,2026-05-28 16:27:42,aaa,pending,vlm
+13400ae8-7a30-40be-ad2b-3f39f5303ce3,custom,find Oreo original flavor sandwich cookie box,,high,2026-05-28 16:31:16,aaa,pending,vlm-mem
+f909a67c-2efd-40f5-a503-294188ca7cf7,custom,find taoshida and say hello,,high,2026-05-28 16:36:17,aaa,pending,vlm-mem
+1bc07eac-7008-4c2e-a312-b4f62d47045b,custom,find Vitasoy chocolate soya drink,,low,2026-05-28 16:51:18,aaa,pending,rule
+0981bf3d-b702-42a5-b8f5-b6e2040f8d18,custom,"A bottle of water, please.",,low,2026-05-28 16:55:05,aaa,pending,vlm-mem
+8903650f-3615-402c-83ec-95086459e53d,custom,could you give me something to eat?,,medium,2026-05-28 16:55:24,aaa,pending,vlm-mem
+a330d5ed-2a81-45f0-a5ba-424b1a13ed8f,custom,go home,,medium,2026-05-28 16:57:34,aaa,pending,rule
+3a533828-0ed0-4560-a664-1c76958d7f10,custom,choose a red color fruit and deliver it to yyw,,low,2026-05-28 17:03:38,aaa,pending,vlm-mem
+d91a4f49-0b55-48fa-8efe-c6a014100703,custom,look for an apple,,high,2026-05-28 17:03:50,aaa,pending,vlm
+99ec8bfb-441e-4c83-8203-4326f733622e,custom,Pick coca-cola and place it on the table,,medium,2026-05-28 17:09:14,aaa,pending,rule
+1a119385-9607-4604-94e0-f297c5296427,custom,find a bottle of water,,low,2026-05-28 17:14:07,aaa,pending,vlm
+cd9aa838-9e62-4879-905c-092fe2dd6321,custom,give me Vitasoy chocolate soya drink,,low,2026-05-28 17:19:09,aaa,pending,vlm
+b448bc8f-f862-44ac-b59d-d1ba94d1cc44,custom,"A bottle of water, please.",,high,2026-05-28 17:42:00,aaa,pending,vlm
+ea6803c6-cebf-4543-b777-c2afc48d88e3,custom,could you give me something to eat?,,low,2026-05-28 17:43:31,aaa,pending,rule
+868ca243-e6bb-4222-8264-6b1aacacb198,custom,please go to the snack area to pick up coca-cola for me,,low,2026-05-28 17:49:59,aaa,pending,vlm-mem
+c3e833a7-8955-4410-8310-12f6178ac79d,custom,pick up an orange and place it to Okng's desk,,low,2026-05-28 17:52:50,aaa,pending,rule
+e4f224ef-54e6-4353-8bc2-df41f4788e01,custom,pick up coca-cola for taoshida,,low,2026-05-28 17:57:08,aaa,pending,rule
+0a95b3fc-b971-4b35-a8f4-2953b8114652,custom,please help me deliver the coca-cola to student yyw,,low,2026-05-28 18:02:53,aaa,pending,vlm-mem
+e93494e4-b8f3-47c8-92da-cc9c0904c33b,custom,choose a red color fruit and deliver it to yyw,,low,2026-05-28 18:12:29,aaa,pending,vlm
+fcb8848c-f202-453d-8cdb-8d474923647e,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-28 18:47:42,aaa,pending,rule
+48d25592-d419-404d-be10-708b9107d086,custom,find yyw,,high,2026-05-28 18:53:45,aaa,pending,rule
+25c01489-c111-4a7d-9799-cc81b485ef60,custom,give me Orion Shuyuan non-fried potato chips,,medium,2026-05-28 18:54:19,aaa,pending,vlm
+75940a19-f16c-441a-8903-7b4f704a792c,custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-28 18:55:47,aaa,pending,rule
+04c828c0-acc5-4bf8-9286-b1081b865c99,custom,choose a red color fruit and deliver it to Okng,,medium,2026-05-28 19:14:13,aaa,pending,rule
+4ec5bc1b-c846-4253-9850-5a13a9394e56,custom,bring an apple to zsx,,medium,2026-05-28 19:57:18,aaa,pending,vlm-mem
+e6d5e3a3-f40f-4baa-afbb-008543cba9cd,custom,choose a red color fruit and deliver it to yyw,,high,2026-05-28 20:13:05,aaa,pending,vlm
+39f4f35f-dd64-48b1-bd6d-5106498fdf64,custom,look for coca-cola,,low,2026-05-29 09:48:14,aaa,pending,vlm-mem
+e8ebf29b-dfd6-4c5d-850d-235928381e0f,custom,notify student zkm to have a meeting in the 511 conference room,,medium,2026-05-29 09:55:16,aaa,pending,vlm-mem
+15e8c44d-75a4-4497-a152-768e64731fb1,custom,Explore the office and find the snack area,,medium,2026-05-29 10:21:11,aaa,pending,vlm-mem
+987e61fb-76e9-439e-83f0-fdcf1cd8a376,custom,"Find yyw and zsx, tell them there's a PPT they need to make",,medium,2026-05-29 10:50:26,aaa,pending,rule
+2534ad10-5a26-48ad-a1a4-ab42f992a371,custom,find zsx,,low,2026-05-29 11:00:36,aaa,pending,vlm-mem
+f418ccc2-64f0-4c7d-8d65-1ec620d1de0e,custom,Explore the office and find the snack area,,low,2026-05-29 11:13:50,aaa,pending,vlm
+ee8f087a-c1dd-40fd-955d-744b373a9e2b,custom,where is Okng,,low,2026-05-29 11:38:28,aaa,pending,vlm
+c3e3a0e3-eb5f-479b-ac93-44c1e0d0f840,custom,say goodbye,,low,2026-05-29 14:08:56,aaa,pending,rule
+e2d8c41f-2497-4d49-8167-5345b2ea9b94,custom,go home,,low,2026-05-29 14:28:58,aaa,pending,vlm-mem
+1cc02772-7d32-4305-ba0d-914f512d5afe,custom,pick up Vitasoy chocolate soya drink and place it to wyj's desk,,medium,2026-05-29 14:29:31,aaa,pending,rule
+b3b318e4-fede-4a36-838d-ed9d9862b9fb,custom,please help me deliver the a bottle of water to student wyj,,high,2026-05-29 14:38:44,aaa,pending,vlm
+bcf64292-98d0-453a-a3d6-f672ca3bc38b,custom,"Go to workstation 308, check if the monitor is on, then come back and tell taoshida the result",,high,2026-05-29 14:57:06,aaa,pending,vlm
+d7303053-d0c2-45f1-8bcc-989d53250a58,custom,look for Orion Shuyuan non-fried potato chips,,medium,2026-05-29 14:59:40,aaa,pending,vlm
+979b1324-ee31-4c1d-bd53-c2e5c2a0235a,custom,bring a chocolate marked with Snickers to Okng,,medium,2026-05-29 15:03:19,aaa,pending,vlm-mem
+679250b2-5258-4dd6-ae93-1303a88d2a97,custom,Check the environment.,,medium,2026-05-29 15:11:53,aaa,pending,rule
+5b546de1-1fcf-45ae-9595-1075981fb650,custom,what time is it,,low,2026-05-29 15:17:58,aaa,pending,vlm-mem
+cacc8085-4fc2-4f67-a5eb-efdc5549785b,custom,please go to the snack area to pick up coca-cola for me,,high,2026-05-29 15:18:33,aaa,pending,vlm
+346ff32a-16c7-487a-a989-70936afd2b8d,custom,go home,,low,2026-05-29 15:19:03,aaa,pending,rule
+3fc59468-bcd1-429b-8c93-cd5227a6b9ba,custom,find zsx,,high,2026-05-29 15:20:51,aaa,pending,vlm
+05a8e87a-80eb-484a-87fe-a0393e0ea92d,custom,"Can you check if zsx is at his workstation, then come back and let me know?",,medium,2026-05-29 15:30:46,aaa,pending,rule
+fce808ca-8521-4bee-9662-7a1f1c97ee4a,custom,say hello,,low,2026-05-29 15:32:22,aaa,pending,vlm-mem
+8942b8b9-167b-47f5-953c-99ba4aeb5855,custom,could you give me something to eat?,,medium,2026-05-29 15:47:49,aaa,pending,vlm
+d814d155-20cd-4a95-8d9e-87019a931a11,custom,could you help me find Orion Shuyuan non-fried potato chips,,medium,2026-05-29 15:52:21,aaa,pending,rule
+ddc05f6b-7ece-41c8-aab1-ca9e5f8ffe7b,custom,bring red packaged cake to Okng,,medium,2026-05-29 15:52:29,aaa,pending,vlm
+8d45161d-f5f1-49e8-b9ae-57e0189b8b39,custom,pick up a banana for me,,low,2026-05-29 15:58:01,aaa,pending,rule
+7877f9ce-ba4b-4a2a-a527-1a1be348c560,custom,help me get an orange,,low,2026-05-29 16:01:59,aaa,pending,vlm-mem
+8639969d-6eac-4fef-9e43-3f6372e421a6,custom,deliver some food for zsx,,low,2026-05-29 16:10:29,aaa,pending,vlm-mem
+b5eccf68-0dd7-4356-9915-488e76c29385,custom,find Okng and say hello,,medium,2026-05-29 16:15:20,aaa,pending,vlm-mem
+97aead92-ce88-4cad-ab84-6b3f89af05e6,custom,"A bottle of water, please.",,low,2026-05-29 16:37:22,aaa,pending,rule
+e0fd5ba0-afa4-4acc-bbbd-edac8c19a93a,custom,find zkm and say hello,,medium,2026-05-29 16:41:19,aaa,pending,rule
+408c54da-0b21-4ec6-a60d-defd4de8d3eb,custom,choose a red color fruit and deliver it to zsx,,low,2026-05-29 16:48:12,aaa,pending,vlm-mem
+40b944a8-c84e-4721-a40e-441ac711b71c,custom,say goodbye,,low,2026-05-29 16:55:12,aaa,pending,vlm-mem
+70422f14-eed8-4ba3-b344-9acc2bf85b60,custom,help me get my favorite fruit,,medium,2026-05-29 17:02:50,aaa,pending,rule
+027f4414-ff0b-41ee-a484-2506e8aaf303,custom,"A bottle of water, please.",,medium,2026-05-29 17:15:37,aaa,pending,vlm
+701d75d2-9484-4d1e-8175-48a48d452aca,custom,could you help me find red packaged cake,,low,2026-05-29 17:15:43,aaa,pending,rule
+3e23942f-4f7a-481e-8a91-be1ca8c2e9c1,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-29 17:21:26,aaa,pending,vlm-mem
+41cd0635-d947-4cfa-a153-fbe53775b424,custom,"A bottle of water, please.",,high,2026-05-29 17:21:36,aaa,pending,vlm
+adb95fcf-ecdd-4cab-9b1e-428db873e660,custom,help me get a bottle of water,,high,2026-05-29 17:34:39,aaa,pending,vlm-mem
+565db940-71cd-4a9e-9d39-b41a4328fedc,custom,come to find wyj,,high,2026-05-29 17:50:49,aaa,pending,vlm-mem
+e892d825-2f09-4589-87d2-6621f51b0a51,custom,help me get an orange,,low,2026-05-29 17:53:31,aaa,pending,rule
+752de19c-51c3-40b2-b777-0d0fb87e10ba,custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,low,2026-05-29 17:56:47,aaa,pending,rule
+d36d4562-83c8-48b4-8fae-ca08ceec9864,custom,say hello to wyj,,low,2026-05-29 18:01:34,aaa,pending,vlm
+78227e90-bcf4-418c-b913-f7acefe5c02a,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-29 18:05:08,aaa,pending,vlm
+53bdcef1-182c-45c7-abc0-88cfcc734318,custom,could you give me something to eat?,,high,2026-05-29 18:09:52,aaa,pending,vlm
+505bbedb-da9b-4788-8323-8e984a351c9a,custom,Check the environment.,,low,2026-05-29 18:16:43,aaa,pending,rule
+78b80b99-0fbc-4548-85ca-230fa885b99b,custom,"Find wyj and zkm, tell them there's a PPT they need to make",,high,2026-05-29 18:45:43,aaa,pending,vlm
+b0838870-8418-4114-8408-fcd1291fad77,custom,give me an orange,,low,2026-05-29 19:14:53,aaa,pending,vlm
+f01f78ce-1ef1-4932-a2b3-702611d92ce9,custom,"Find zkm and Okng, tell them there's a PPT they need to make",,medium,2026-05-29 20:03:33,aaa,pending,rule
+8a4b6312-6ca2-43c9-be82-3f226b21941e,custom,Inspect the current environment.,,low,2026-05-29 20:46:38,aaa,pending,rule
+05bcdf06-4c40-42cb-a520-4d6e8dc93900,custom,choose a red color fruit and deliver it to taoshida,,low,2026-05-29 20:49:51,aaa,pending,vlm
+0402b1a3-1df1-46bf-bacc-94a2706bfc7d,custom,go to conference room 511,,low,2026-05-30 09:20:19,aaa,pending,rule
+7501cd39-48df-44cd-b18c-3c6054789583,custom,go to the table and see if there's a black game controller,,medium,2026-05-30 09:27:30,aaa,pending,vlm-mem
+d39e82fa-9456-4077-b353-6fdbf4808b76,custom,Help me bring over the food with the brightest color.,,medium,2026-05-30 09:32:42,aaa,pending,vlm-mem
+01e928f7-66b2-4bb6-9252-54ba11755bd3,custom,help me get an orange,,low,2026-05-30 09:49:49,aaa,pending,rule
+5a56eac3-eb22-4857-add6-9025edba7582,custom,go to the snack area to pick up a green apple for me,,medium,2026-05-30 10:13:09,aaa,pending,vlm
+b224d260-33f7-4dff-a32f-effea42e9038,custom,I need to send a message to wyj: please meet me at the snack area. Go find wyj and tell them.,,medium,2026-05-30 10:17:00,aaa,pending,vlm-mem
+42cac0e0-733c-4485-b26f-5a33cafa5707,custom,"Find zkm and taoshida, tell them there's a PPT they need to make, and ask them to come see me at 5 o'clock",,low,2026-05-30 10:20:07,aaa,pending,vlm-mem
+8c89de4b-be70-4434-bc4d-a85bd7028752,custom,give me a bottle of water,,medium,2026-05-30 10:34:02,aaa,pending,vlm-mem
+b25da6c3-8c5e-4c7c-8bbd-7dbe81e57dbf,custom,find taoshida and say hello,,high,2026-05-30 10:39:44,aaa,pending,rule
+5eb5578b-ffcb-4770-9c6b-a80a7a24eb8d,custom,go home,,medium,2026-05-30 10:44:14,aaa,pending,rule
+3d09733d-484f-49b2-bf8c-cf36a1159160,custom,say hello to wyj and ask how they are,,low,2026-05-30 11:46:01,aaa,pending,rule
+8e5a6b83-458a-4537-85e0-457204394044,custom,tell me a joke,,low,2026-05-30 11:54:23,aaa,pending,vlm
+27fbd5fa-1892-4db4-bba5-1df8ab0b555b,custom,"Explore the office, find the rest area, and see if there's any drink left",,high,2026-05-30 14:00:25,aaa,pending,vlm
+0572709f-194d-4f71-884f-32a67d081f9e,custom,inspect the rest area,,low,2026-05-30 14:08:46,aaa,pending,vlm-mem
+0d72316f-2533-46e0-9bb7-65c9e25643cc,custom,find taoshida and tell them to prepare for the meeting at 3pm in 123,,medium,2026-05-30 14:19:54,aaa,pending,vlm
+2394c564-7423-4d14-bd60-2b272af31f1e,custom,bring a Ganten drinking water bottle to the rest area,,low,2026-05-30 14:27:08,aaa,pending,vlm-mem
+4494afe8-7aee-4079-9e43-e59af6c9b0c9,custom,what time is it,,low,2026-05-30 14:28:07,aaa,pending,rule
+28cdfb92-3c0f-4c58-bf8d-11994e16c037,custom,go to the snack area and pick up red packaged cake,,high,2026-05-30 14:33:32,aaa,pending,vlm
+4ff3bbdb-e14a-4206-b5f9-a2d5e2aeb78e,custom,find a banana,,low,2026-05-30 14:39:30,aaa,pending,vlm-mem
+2060fdbf-99f1-4478-926a-dd9285da00ba,custom,find zsx and tell them hello,,high,2026-05-30 14:50:59,aaa,pending,vlm
+ee98bfc7-f556-45da-97ef-11be83f5cba1,custom,could you bring some fruit? I'm a bit peckish,,low,2026-05-30 15:19:19,aaa,pending,vlm
+6fd09d6e-1a26-4832-9b63-bc1e095b9290,custom,could you find a chocolate marked with Snickers?,,low,2026-05-30 15:25:14,aaa,pending,vlm-mem
+c0c9e08b-278c-426f-a12f-a911f8aa56b3,custom,Check the environment.,,high,2026-05-30 15:32:39,aaa,pending,rule
+d4e769cd-c1c2-4acb-9d51-e0bdd43627a2,custom,"check if yyw has a mouse at their desk, then tell me",,high,2026-05-30 15:35:10,aaa,pending,rule
+bcab05ed-b673-4482-a810-6cfca11236d1,custom,please deliver this Oreo original flavor sandwich cookie box to student zkm,,low,2026-05-30 15:39:36,aaa,pending,vlm
+f5128b5a-cd35-407f-b84e-afc7a1b20e14,custom,find Okng,,low,2026-05-30 15:46:14,aaa,pending,vlm
+6bc20bc6-0d87-4999-b008-a216d4b04862,custom,remind me at 17:30: time for dinner,,low,2026-05-30 15:54:30,aaa,pending,vlm-mem
+f184a256-bfc3-4b71-b727-976e0a558d8b,custom,can you locate a green cup?,,low,2026-05-30 16:11:11,aaa,pending,vlm
+49dae3ac-49c2-4358-a2fd-53ef4097b46a,custom,choose a red color fruit and deliver it to zkm,,medium,2026-05-30 16:25:49,aaa,pending,vlm
+3a9092bc-5fef-454a-baf4-aff19d97f5df,custom,say hello,,low,2026-05-30 16:29:16,aaa,pending,rule
+201c4b1a-5d56-4c87-a4c0-167c838e3542,custom,pick up a white cup and place it on the desk,,low,2026-05-30 16:42:00,aaa,pending,vlm-mem
+70f59354-1733-48ca-98b8-a7068bb450c4,custom,navigate to workstation 506B,,low,2026-05-30 16:42:19,aaa,pending,vlm-mem
+de8b8b82-0b98-4852-b298-19fed4bf4596,custom,pick up a banana for me,,medium,2026-05-30 16:57:04,aaa,pending,rule
+d8da6575-5686-4996-a8e3-9fbe7fb7827b,custom,"I need a Doubendou original flavor soy milk, please",,low,2026-05-30 17:02:08,aaa,pending,vlm
+2efcac18-e387-42bb-a6a8-a5ea2cf41cad,custom,help me get my favorite drink (hint: it's coca-cola),,low,2026-05-30 17:05:58,aaa,pending,rule
+7860783b-501f-4b34-946c-7ea85e6fdbae,custom,fetch me the Oreo original flavor sandwich cookie box,,low,2026-05-30 17:27:37,aaa,pending,vlm
+239e6ab7-3d35-4fea-8dc6-6eba3f223f90,custom,please get a Krima jasmine milk green tea for me,,medium,2026-05-30 17:30:23,aaa,pending,vlm
+a3473dfc-980b-47cb-ad9a-1d8e2a90b32c,custom,where is the black game controller?,,low,2026-05-30 17:40:04,aaa,pending,vlm-mem
+482e3373-5db4-406d-a4d1-09acb6d1fb51,custom,"Find wyj, then say to them: 'Good afternoon, work hard'",,low,2026-05-30 17:45:23,aaa,pending,rule
+cf864be5-97e6-451c-a681-8f632e285d0e,custom,"Go to workstation 506L, check if there is a blue cup there, then report back",,medium,2026-05-30 17:45:49,aaa,pending,vlm
+5553c89d-de5c-412c-a990-38647258a47d,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-30 17:49:20,aaa,pending,vlm-mem
+5aeefc42-4f6b-41f8-8e9a-86e766b4cb12,custom,explore the snack area,,medium,2026-05-30 17:51:50,aaa,pending,rule
+cf3f866f-1663-4a96-ae17-0642302133cf,custom,"Can you check if wyj is at workstation 506J, then come back and let me know?",,high,2026-05-30 17:56:53,aaa,pending,vlm-mem
+f79a6c23-3f18-47fb-8275-ea04aa05b39b,custom,"go to 308 and find a Vitasoy chocolate soya drink, then bring it to me",,low,2026-05-30 17:58:11,aaa,pending,rule
+3eedf629-7547-4ec4-8147-d76a984fe58c,custom,say hi to yyw,,medium,2026-05-30 18:00:59,aaa,pending,vlm-mem
+e3fffd6c-befa-427d-9787-e5e95d85ed41,custom,find a mouse and give it to me,,low,2026-05-30 18:27:01,aaa,pending,vlm
+acc469e0-46d8-41f9-95b6-9c2fa7bc8b28,custom,look for a red apple,,low,2026-05-30 18:37:12,aaa,pending,vlm
+c23b0ecc-be5b-4644-9be2-0ec25d2d2b64,custom,"I need a green apple, could you grab one?",,low,2026-05-30 18:47:15,aaa,pending,vlm
+7f959977-0fe6-42c7-9bb0-92a05de9bedd,custom,notify student Okng to have a meeting in the 511 conference room,,medium,2026-05-30 18:48:35,aaa,pending,vlm
+a3aea194-f93a-4f9f-bcd8-c5bf946e3d53,custom,pick up the blue cup from workstation 506L,,low,2026-05-30 20:48:50,aaa,pending,rule
+9694c1bd-ee67-43c2-aeb4-5b20b2dae95a,custom,go to the rest area pls,,medium,2026-05-31 09:09:47,aaa,pending,vlm
+c8d2c138-1159-4724-89ca-f33e07f77139,custom,Help me bring over the drink with the most vibrant packaging from the snack area.,,low,2026-05-31 09:20:26,aaa,pending,vlm
+d52661d4-da51-44a6-97a2-052dfe5870df,custom,check the snack area and come back fast,,low,2026-05-31 09:21:10,aaa,pending,vlm
+5fc23503-8e23-456d-ba0d-02c9da879770,custom,tell me a joke while you wander around,,high,2026-05-31 09:22:59,aaa,pending,vlm
+034c6b11-bbf8-4532-a494-d3b761407d25,custom,"Find zsx and taoshida, tell them there's a meeting in 511 at 3 PM, and they need to bring their laptops.",,medium,2026-05-31 10:31:01,aaa,pending,vlm-mem
+5e70fada-f537-4224-8827-be8ab86a200f,custom,"I'm really thirsty, could you get me any cold drink from the snack area except coca-cola?",,low,2026-05-31 10:33:56,aaa,pending,vlm-mem
+2814fb61-4492-484b-aa21-617b4465996c,custom,"Go to the rest area, locate a Vitasoy chocolate soya drink, and deliver it to yyw at 506B.",,high,2026-05-31 10:57:50,aaa,pending,vlm-mem
+84ee276b-e425-4f9e-adec-75804a6f1386,custom,"I'll be off work at 18:00, remind me to have a break then.",,high,2026-05-31 11:20:50,aaa,pending,rule
+af084ee3-c3a3-483a-80aa-cf60230a6735,custom,Notify Okng to attend the meeting in conference room 123 right now.,,low,2026-05-31 11:25:32,aaa,pending,vlm
+7755b8bc-6b22-48a3-9374-94852d0205d2,custom,look for the black game controller,,medium,2026-05-31 14:01:41,aaa,pending,vlm
+0e07516c-fd47-4fcb-9b31-b5814b5119b8,custom,go home now,,high,2026-05-31 14:05:37,aaa,pending,vlm
+a59210fb-2c9a-4734-8cc0-ece9460747ce,custom,Could you help me find the Oreo original flavor sandwich cookie box?,,high,2026-05-31 14:07:07,aaa,pending,vlm
+28c2c102-e268-4b94-980b-7e206fdac0da,custom,"help me get that mouse over there, it's black",,low,2026-05-31 14:12:38,aaa,pending,rule
+de77010a-b74a-4388-a628-d9a279e312df,custom,Can you locate the white cup and put it on the table?,,high,2026-05-31 14:20:43,aaa,pending,vlm-mem
+214e0255-bdb6-46e2-b936-9fbf2de8572d,custom,"Go to workstation 308, see if there is a black game controller there, then come report back.",,high,2026-05-31 14:20:55,aaa,pending,vlm-mem
+8a4321a0-00f5-41ed-be11-df5d21d80d72,custom,please deliver the Orion Shuyuan non-fried potato chips to student zkm at workstation 506B,,high,2026-05-31 14:31:45,aaa,pending,vlm
+62088455-0ad2-4310-a094-e837c2d46219,custom,Find the blue cup and bring it to me.,,high,2026-05-31 14:36:38,aaa,pending,rule
+1c431e90-cf25-49b0-9a62-a5f6b617ea50,custom,Find Doubendou original flavor soy milk and give it to taoshida.,,low,2026-05-31 14:39:45,aaa,pending,vlm-mem
+63da2e80-c5ac-472f-91ff-3ccd60f11589,custom,Please retrieve a Vitasoy chocolate soya drink from the rest area.,,low,2026-05-31 14:49:07,aaa,pending,vlm-mem
+354839e7-ab3e-40e2-85f7-6e7791bb5b4b,custom,go to the table near 308 and pick up the black game controller for zsx,,low,2026-05-31 14:53:44,aaa,pending,rule
+f5357e1a-b817-443f-82b1-b2e1bec36ea6,custom,give me a coca-cola,,medium,2026-05-31 15:03:50,aaa,pending,rule
+a324871d-72c9-4560-b88f-fcbf55005505,custom,find yyw and say hello,,low,2026-05-31 15:17:10,aaa,pending,rule
+daa8673f-1754-45c3-b95d-9f3ea103d48b,custom,"I'm starving, can you get me something filling? Maybe the red packaged cake or the chocolate marked with Snickers.",,high,2026-05-31 15:19:02,aaa,pending,rule
+5c3ee341-1634-4f8a-88d8-1e7bf9b59e4f,custom,"inspect the environment, I want to know if it's tidy",,high,2026-05-31 15:23:47,aaa,pending,rule
+3db414e2-ba3d-4ef6-b1a9-c8fc627a7871,custom,Pick up a red apple and deliver it to the rest area for me.,,high,2026-05-31 15:27:51,aaa,pending,vlm
+fc630e6e-37ed-4254-bac8-285f5f4f8677,custom,"say hello to Okng, and bring me a water bottle on your way back",,medium,2026-05-31 15:35:41,aaa,pending,vlm
+70a6fee8-717c-41c1-ad59-e57af5abadc8,custom,"Look for zkm, if you find him, ask him to bring the mouse to the rest area.",,high,2026-05-31 15:43:42,aaa,pending,rule
+11e306eb-e15d-4e3e-afbf-c5f77447050d,custom,say good morning to everyone in the office,,medium,2026-05-31 15:52:35,aaa,pending,vlm
+4607edd8-b321-4f5a-8581-996a3cafdea2,custom,"Find wyj and tell her: ""You're needed in 511 immediately, please.""",,low,2026-05-31 16:00:52,aaa,pending,rule
+54848d35-eaeb-4874-be01-cfa8b54c3e4c,custom,explore the office for any red objects,,high,2026-05-31 16:04:08,aaa,pending,vlm-mem
+171a1e5b-55ee-4fe1-8c7c-eaac412b30fd,custom,"I'm a bit peckish, could you get me some Orion Shuyuan non-fried potato chips?",,medium,2026-05-31 16:16:35,aaa,pending,vlm-mem
+09c6cb0e-fd86-4042-ad37-c572159f5189,custom,Help me grab that chocolate marked with Snickers from the snack area.,,low,2026-05-31 16:18:41,aaa,pending,vlm-mem
+b30979ff-8b95-4de6-b768-fd1b9227b470,custom,"Explore the office, find a banana, and then find taoshida and give it to him with the message: ""This is from the robot.""",,high,2026-05-31 16:22:04,aaa,pending,vlm-mem
+37df1f71-1204-42e0-8f4e-7e98dba9439a,custom,pick up a banana for me,,low,2026-05-31 16:24:05,aaa,pending,vlm
+9559326e-4b02-43de-ad2f-abcee865ee32,custom,choose a fruit that's not an apple and deliver it to taoshida's desk,,medium,2026-05-31 16:28:25,aaa,pending,vlm-mem
+9f314d12-168a-4b99-9ff4-beaab3fb57ce,custom,can u find a green apple?,,low,2026-05-31 16:35:25,aaa,pending,rule
+3ae9e6c0-71f3-41eb-ac6d-4771ed830804,custom,Could you please find a green cup and hand it to wyj?,,high,2026-05-31 16:39:11,aaa,pending,vlm-mem
+e5226089-9463-460b-be0e-29cbb0cbf339,custom,say hello to zkm,,low,2026-05-31 17:01:42,aaa,pending,vlm
+a3021436-b708-41e7-81c9-d163c7d00672,custom,"go to the snack area to pick up a green apple for me, and don't forget it!",,high,2026-05-31 17:14:28,aaa,pending,rule
+641fbfc5-0b25-4420-832c-23a1aebb7377,custom,find wyj,,medium,2026-05-31 17:31:42,aaa,pending,rule
+0309e868-c0d9-4d04-86d3-4394f0b3e1d5,custom,"get me a Krima jasmine milk green tea, I'm thirsty",,low,2026-05-31 18:24:46,aaa,pending,vlm
+a91cd750-c85e-42ab-8c95-f8d0fcd32899,custom,"Can you check if yyw is at his workstation 506L, then come back and tell me the result?",,high,2026-05-31 18:31:13,aaa,pending,vlm-mem
+5c604538-166d-43df-b8b2-e6be7e8be561,custom,head over to workstation 506J,,high,2026-05-31 18:36:19,aaa,pending,rule
+a8cb7c11-c87b-4975-9f76-f3082388a035,custom,navigate to the 511 conference room,,low,2026-05-31 18:38:13,aaa,pending,rule
+47c83049-a980-4a45-a405-64e6c5b5e91e,custom,"Check if there are any cups at workstation 506J, and tell me which colors are present.",,medium,2026-05-31 19:40:14,aaa,pending,rule
+a1552ced-7233-4391-9289-5a6d6ce11649,custom,"I need a Ganten drinking water bottle, can you fetch it?",,high,2026-05-31 19:42:44,aaa,pending,rule
+4c9c3078-565e-4ce4-9601-1a7b1cfe3570,custom,locate a bottle of water,,medium,2026-05-31 19:51:41,aaa,pending,rule
+7f98fffe-cd69-4fdd-9f14-6e40e78f7934,custom,Pick up an orange and place it on my desk,,low,2026-05-31 20:01:10,aaa,pending,vlm
+c9fcdaa7-72dd-4956-80fb-893a6361dccc,custom,where is taoshida right now,,high,2026-05-31 20:05:21,aaa,pending,vlm-mem
+2c149acc-634c-4bfb-adce-d08933046610,custom,go to the snack area and grab the red packaged cake,,medium,2026-05-31 20:09:05,aaa,pending,vlm-mem
+a09db6a4-96c8-4ac4-8255-4b4b57447a4d,custom,Pick coca-cola and place it on the table,,medium,2026-06-01 09:18:07,aaa,pending,rule
+7e8afdb8-d50b-4e39-a3ee-eb23301158fb,custom,find a chocolate marked with Snickers,,medium,2026-06-01 09:38:51,aaa,pending,vlm-mem
+4179dbf5-0b70-4759-9ca2-454aa20a3737,custom,go home,,low,2026-06-01 09:42:19,aaa,pending,rule
+c672305f-d9a4-43ab-8a1b-2f666d21c94a,custom,Check the environment.,,low,2026-06-01 10:30:07,aaa,pending,rule
+1e3bbe7d-5aad-4b11-b20b-7e976caf0fc5,custom,Check the environment.,,low,2026-06-01 11:23:27,aaa,pending,vlm-mem
+2dfadb2b-d9c6-48a9-91b2-fdcfc81280fd,custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-06-01 11:37:24,aaa,pending,rule
+59ab2286-003b-4ccf-8cf7-64931dbce155,custom,pick up a banana for zsx,,high,2026-06-01 11:38:55,aaa,pending,vlm-mem
+c5de3f45-0638-4cfd-9abc-1d28033d7f5c,custom,help me get my favorite fruit,,medium,2026-06-01 14:00:31,aaa,pending,rule
+366e1aa4-7aac-46fe-b28e-a72882128bbf,custom,Inspect the current environment.,,low,2026-06-01 14:08:32,aaa,pending,vlm-mem
+a42b5e78-cd5a-42d1-83e5-87db755220e8,custom,Explore the office and find the snack area,,low,2026-06-01 14:10:24,aaa,pending,rule
+24daf56a-91bc-4a1c-91a7-01f603bf4cfb,custom,"Can you check if zsx is at his workstation, then come back and let me know?",,low,2026-06-01 14:12:02,aaa,pending,vlm
+8a1d261a-86c2-450c-a86c-98240bff93c3,custom,help me get red packaged cake,,low,2026-06-01 14:22:23,aaa,pending,vlm
+9851b223-bdca-4ee9-96a9-90031abfa09d,custom,help me get my favorite fruit,,low,2026-06-01 14:28:54,aaa,pending,vlm-mem
+de2370da-b0f8-4e53-be0d-17fe1f7b32f3,custom,"Find Okng and yyw, tell them there's a PPT they need to make",,low,2026-06-01 14:38:08,aaa,pending,rule
+2df5d0e5-44ab-4494-98fb-eb52074f92cc,custom,pick up red packaged cake for taoshida,,low,2026-06-01 14:41:27,aaa,pending,vlm-mem
+2a0ec4b2-aadd-4d05-a1d1-dfb6b6955cf3,custom,say hello to zsx,,low,2026-06-01 14:41:32,aaa,pending,rule
+f7eee555-def9-428b-a1e3-d054c374a29c,custom,"Find Okng and taoshida, tell them there's a PPT they need to make",,high,2026-06-01 14:56:49,aaa,pending,vlm
+7bfda838-8fb0-486f-8245-df6d2ebc3409,custom,Explore the office and find the snack area,,medium,2026-06-01 15:09:09,aaa,pending,vlm
+16974179-794f-4ae6-92a5-a39742f3cccf,custom,go to the snack area and pick up red packaged cake,,low,2026-06-01 15:12:58,aaa,pending,vlm-mem
+26997e60-4dcc-4315-a440-0d9939a5bbfe,custom,"Find taoshida and zsx, tell them there's a PPT they need to make",,medium,2026-06-01 15:22:59,aaa,pending,vlm-mem
+8dd2a6e6-81f8-4ea6-b5d0-be7473c3f2f0,custom,Check the environment.,,low,2026-06-01 15:37:56,aaa,pending,vlm-mem
+1ab7bd16-d574-4759-ae3d-ead59d5fd578,custom,give me an apple,,low,2026-06-01 15:38:57,aaa,pending,rule
+21a349cb-19e4-4d3f-bf52-787afe67809b,custom,help me get my favorite fruit,,low,2026-06-01 15:40:22,aaa,pending,rule
+a63e6715-cf69-4e3f-b9ff-8c68a3edb8f7,custom,Pick an apple and place it on the table,,low,2026-06-01 15:53:56,aaa,pending,vlm-mem
+2c278f09-f38b-43a8-b45f-daa25401437f,custom,"Can you check if Okng is at his workstation, then come back and let me know?",,high,2026-06-01 16:09:45,aaa,pending,vlm
+c7633f14-42e5-4fdc-96e3-3b502699285a,custom,notify student zkm to have a meeting in the 511 conference room,,medium,2026-06-01 16:18:03,aaa,pending,rule
+272bd2e8-a6e0-464a-8cfe-7c8aa61dc6cb,custom,bring red packaged cake to zkm,,medium,2026-06-01 16:20:26,aaa,pending,rule
+70f84671-45e5-4d0a-8a54-f3ad52d1d7e3,custom,go home,,medium,2026-06-01 16:36:12,aaa,pending,rule
+74532e0c-7f59-4479-84fa-a58b8b13ba81,custom,explore the office,,low,2026-06-01 17:03:20,aaa,pending,rule
+fa2812aa-6f08-4bed-8e54-8a2f92101c0c,custom,find Oreo original flavor sandwich cookie box,,high,2026-06-01 17:07:20,aaa,pending,vlm
+b6a9f1c6-6eb0-4ba1-81df-e92c2020ad84,custom,go to the snack area and pick up an apple,,medium,2026-06-01 17:11:05,aaa,pending,vlm
+f5678ed5-2611-484a-a0cf-f57b5d4734b6,custom,pick up an apple and place it to taoshida's desk,,low,2026-06-01 17:27:13,aaa,pending,rule
+2a8afe4f-54bb-4eb0-9434-17a9c385d490,custom,go to the snack area and pick up a banana,,low,2026-06-01 17:37:37,aaa,pending,vlm
+6cfeabd8-126b-4ee0-ab71-903ea35c67cc,custom,pick up an apple and place it to zsx's desk,,low,2026-06-01 17:37:44,aaa,pending,vlm
+70b57868-ad38-4c49-bfce-532ed1750c49,custom,say goodbye,,medium,2026-06-01 17:38:06,aaa,pending,vlm-mem
+733a53de-55f3-45ae-9236-a1c5d7f02856,custom,help me get a banana,,medium,2026-06-01 17:44:07,aaa,pending,vlm-mem
+d071d7b9-d35d-48ba-acdc-f644190fd7dd,custom,explore the office,,low,2026-06-01 17:44:12,aaa,pending,vlm
+0ca64599-1a60-4a71-9726-f10cbdbac731,custom,bring Vitasoy chocolate soya drink to taoshida,,medium,2026-06-01 17:48:28,aaa,pending,vlm
+cac9acef-9da4-46ec-9246-1dcce462d2ac,custom,pick up red packaged cake for taoshida,,medium,2026-06-01 18:08:22,aaa,pending,vlm
+ff02b9eb-3803-404f-b676-020fbbb7820c,custom,say hello to zsx,,low,2026-06-01 18:09:54,aaa,pending,rule
+5dbc5bd9-ad06-430b-a5ba-8112cbb5aea0,custom,Find taoshida.,,low,2026-06-01 18:23:43,aaa,pending,vlm
+6b955783-e233-4f32-a3b5-22e3443ce7df,custom,Explore the office and find the snack area,,low,2026-06-01 18:28:52,aaa,pending,rule
+c7c450d2-4940-4ac9-ab56-fb5156ff969b,custom,look for coca-cola,,low,2026-06-01 18:37:40,aaa,pending,vlm-mem
+7f9cd526-7911-487b-90aa-59ac2fc62bb9,custom,help me get my favorite fruit,,low,2026-06-01 18:45:04,aaa,pending,rule
+3195f8e0-070e-42cc-91ba-8a0c5becadcd,custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-06-01 18:46:30,aaa,pending,vlm-mem
+91b27bca-5b30-4ae3-bb58-81568c680df6,custom,choose a red color fruit and deliver it to taoshida,,medium,2026-06-01 18:46:42,aaa,pending,vlm
+477d1844-8989-4cbf-a306-a6b1036f70b9,custom,choose a red color fruit and deliver it to taoshida,,high,2026-06-01 18:53:17,aaa,pending,vlm-mem
+b119d677-0a82-460a-a8ad-33c7badd6370,custom,Find yyw.,,low,2026-06-01 19:16:01,aaa,pending,vlm-mem
+0dd8b7b9-7c9e-448c-8202-72361db0dceb,custom,say hello,,low,2026-06-01 20:25:27,aaa,pending,vlm
+8aeee2b2-4d37-4a3d-8fcc-d696eb45ec31,custom,help me get Orion Shuyuan non-fried potato chips,,medium,2026-06-01 20:45:37,aaa,pending,rule
+6142001d-4403-4516-a376-b56afc46ce32,custom,"Hello robot, could you please find taoshida and ask her to join the stand-up?",,medium,2026-06-02 09:04:58,aaa,pending,vlm-mem
+65375ffd-3bf4-411c-8830-627a19972181,custom,Please go and see whether Okng is in conference room 511.,,low,2026-06-02 09:06:54,aaa,pending,rule
+3c9b369c-7225-447a-b9a5-cf4834ba3c88,custom,Please navigate to the rest area and come straight back.,,low,2026-06-02 09:14:20,aaa,pending,rule
+b432fb14-6d25-4112-88bf-9610f0334e89,custom,Check if the conference room 123 is free and come back.,,high,2026-06-02 09:21:34,aaa,pending,vlm-mem
+2dec1d1f-137d-44ae-ab1e-b91afaf8f7cc,custom,I’m craving something crunchy — pick up the Orion Shuyuan non-fried potato chips.,,medium,2026-06-02 09:56:36,aaa,pending,vlm-mem
+0477bf3a-a25a-49f4-83d1-bc189688f8e6,custom,Pick up a Vitasoy chocolate soya drink and give it to student zkm.,,medium,2026-06-02 10:01:50,aaa,pending,vlm-mem
+1e1b935a-5bce-4acb-b9a0-73ac5fe4da90,custom,"pick up two items: a red apple and a banana, then bring them to me.",,medium,2026-06-02 10:38:21,aaa,pending,vlm
+228da693-f1f8-4aac-8a36-eaa2ba0b6d12,custom,"Find taoshida and zkm, let them know the server is down.",,low,2026-06-02 11:01:10,aaa,pending,vlm
+d0aeb774-a788-4b9f-944d-3a7c43cecc7e,custom,find wyj and tell him “Lunch meeting moved to 1pm”,,high,2026-06-02 11:02:55,aaa,pending,vlm
+bd7d8f3d-0747-44b5-83cc-7492ec74e11d,custom,I need something refreshing — pick up a Krima jasmine milk green tea for me.,,low,2026-06-02 11:06:41,aaa,pending,vlm-mem
+c8c7a2c7-6bd3-4294-bbcb-64655d338d1d,custom,Go find an orange and place it on the table.,,high,2026-06-02 11:30:28,aaa,pending,vlm
+4d671ecf-cdd3-41fb-a9fd-29eaed411ca9,custom,Go home after you check that the main door is locked.,,high,2026-06-02 11:32:49,aaa,pending,vlm
+4ed2c69d-95e4-4a67-91cf-af3e34c519ce,custom,Please deliver this coca-cola to taoshida.,,low,2026-06-02 11:37:39,aaa,pending,rule
+0972a449-d4a6-4ab6-81ba-2d219462d272,custom,"Oreo original flavor sandwich cookie box is my favorite, any chance you can grab it for me?",,medium,2026-06-02 11:52:38,aaa,pending,rule
+d7017853-f852-4cbd-b37f-773d9e878b41,custom,"Explore the office, look for a banana.",,low,2026-06-02 14:02:54,aaa,pending,vlm-mem
+414a6a61-8e84-4b0b-a26c-20d4c6544aec,custom,Help me carry the Orion Shuyuan non-fried potato chips to the conference room 511.,,high,2026-06-02 14:11:42,aaa,pending,vlm-mem
+971560ff-8f12-4d6f-9a54-2292db20d0b8,custom,Go to workstation 506J and find a mouse.,,low,2026-06-02 14:19:13,aaa,pending,vlm-mem
+9705d970-c9c7-4bff-8265-c4579b63d1fb,custom,"Find the snack area, and tell me if there are any fruits left.",,low,2026-06-02 14:25:22,aaa,pending,rule
+04c80309-c49c-4bc7-82d7-083100d6427e,custom,"Hey robot, come here and tell me a joke.",,low,2026-06-02 14:49:56,aaa,pending,vlm-mem
+356d466b-7dde-4bd0-a7fe-3a3719c664cb,custom,deliver this Ganten water bottle to the person sitting at 506L.,,high,2026-06-02 14:55:18,aaa,pending,rule
+6c3e3f4c-142d-403b-8afe-c32a4255b8f6,custom,Look for a black game controller on the desk.,,medium,2026-06-02 15:00:57,aaa,pending,rule
+cc8d55a2-a930-42ca-9850-d8c6bbd56811,custom,"Navigate to workstation 506B, look for wyj, say “hi” and come back.",,medium,2026-06-02 15:04:44,aaa,pending,vlm-mem
+32ee9b3a-da75-4ca2-af95-b3dd03b90ac4,custom,Find the red packaged cake in the snack area and deliver it to zsx.,,high,2026-06-02 15:28:17,aaa,pending,rule
+587a0163-4165-4856-b204-23d22be9c313,custom,"Go to the snack area, see if there’s any Doubendou original flavor soy milk left.",,low,2026-06-02 15:28:42,aaa,pending,vlm-mem
+fa7dd704-63f7-4591-a67f-9b5f09eea912,custom,say hello,,medium,2026-06-02 15:31:16,aaa,pending,vlm-mem
+9aa92c8b-763a-4b11-8bb6-0d882c18651c,custom,notify Okng to attend the budget review in room 123 at 3pm.,,low,2026-06-02 15:32:14,aaa,pending,vlm
+8639370f-5eb7-4f3c-a15f-d84022e8c8c0,custom,"search for a bottle of water, I’m feeling dizzy.",,low,2026-06-02 15:34:36,aaa,pending,rule
+a80a9e55-b7cc-4603-be57-ce27e5a82d97,custom,What time is it?,,low,2026-06-02 15:45:38,aaa,pending,vlm-mem
+ee4026d3-5ab1-4c15-8a32-32c38faf1f8f,custom,Could u please grab me a green cup?,,medium,2026-06-02 15:48:18,aaa,pending,vlm
+09391f14-0264-4257-a294-13a7f5a1944e,custom,could you remind me in 5 minutes that I have to call IT support?,,high,2026-06-02 15:50:36,aaa,pending,rule
+93b2a33c-0433-4e1e-9b54-43d039459c8a,custom,"I’m so hungry, can you pick up anything that’s red and edible?",,low,2026-06-02 15:52:09,aaa,pending,vlm
+afd387f2-f2c7-4355-bfce-fa3d320cdc9b,custom,"Go to workstation 308, check for a blue cup, and if it’s not there, just come back.",,high,2026-06-02 16:29:44,aaa,pending,rule
+d4679b3c-66c4-4f9a-84ad-b82640e06d29,custom,"Please go to 506L, see if there’s a black game controller, then come tell me.",,high,2026-06-02 16:46:37,aaa,pending,vlm-mem
+f49cae0c-9615-4050-a32c-f318eed240e4,custom,I’d prefer a green fruit — find one and bring it.,,high,2026-06-02 16:46:59,aaa,pending,vlm-mem
+0d1162fa-8984-496d-b230-c1f9c84105d3,custom,Can you check the environment near the snack area? Is it messy?,,low,2026-06-02 17:11:16,aaa,pending,rule
+4321f923-f0ad-49d9-bfad-d64e2651ff7b,custom,Please locate a white cup in the kitchen area.,,low,2026-06-02 17:28:15,aaa,pending,vlm-mem
+f98daae9-4c73-42d0-a035-7f06d62ea35b,custom,grab the blue cup from the table and bring it to me.,,low,2026-06-02 17:35:23,aaa,pending,vlm
+5db55130-60ac-471f-96b9-9673b24ccd42,custom,"Go to the rest area, spot a banana, and report its colour.",,low,2026-06-02 17:35:28,aaa,pending,vlm
+6c9676ae-cd05-49b8-b1ae-8b802b2f5281,custom,go home,,medium,2026-06-02 17:41:27,aaa,pending,vlm
+b930ac24-671c-4629-b96d-87d393899d49,custom,find Okng and ask if he’s ready for the 2pm demo,,low,2026-06-02 17:51:45,aaa,pending,vlm
+5e85fab3-a783-4f96-8ac0-cc04cc16979a,custom,"Look for a red apple, I need a snack.",,medium,2026-06-02 18:12:56,aaa,pending,vlm-mem
+9bdca682-9f49-4009-b2f5-c77f9301edaf,custom,"I’m thirsty, is there any Ganten drinking water bottle near the rest area?",,medium,2026-06-02 18:13:59,aaa,pending,vlm
+e738461b-8096-44ea-a337-1d6d29fcbb3f,custom,"Go to workstation 308, check if a mouse is there, and report back.",,high,2026-06-02 18:18:48,aaa,pending,rule
+002a19cb-eaa4-43d1-a0d4-d24e8f70a544,custom,Help me get a chocolate marked with Snickers.,,low,2026-06-02 18:25:21,aaa,pending,vlm
+026a9761-bf04-4869-9737-df2941812b0c,custom,Could you check whether zsx is at his workstation 506L?,,low,2026-06-02 18:26:31,aaa,pending,vlm-mem
+b9a183ef-2768-4344-8d58-775edea710d3,custom,Can you locate the green cup and put it on the desk near 506J?,,low,2026-06-02 18:30:41,aaa,pending,rule
+29dba5e4-8faf-45a8-a05e-0caa036bb3c7,custom,Where’s the Oreo original flavor sandwich cookie box? Can you fetch it?,,low,2026-06-02 18:48:37,aaa,pending,vlm-mem
+754d6b28-1e5a-43a2-9120-f9ddc6b74933,custom,I need a quick energy boost — search for a Snickers chocolate.,,low,2026-06-02 18:49:50,aaa,pending,vlm-mem
+06fbef30-357f-49a2-aabd-410d8e40e8bf,custom,"Find yyw and say: “Your parcel arrived, it’s at reception.”",,low,2026-06-02 20:08:29,aaa,pending,vlm-mem
+d67ebae8-71a8-4ab8-9d79-dc9e2dbaf22b,custom,Tell me if yyw is in the office right now.,,high,2026-06-02 20:24:50,aaa,pending,rule
+e5e5f7d8-2517-4f0f-86a1-98222eea0188,custom,"Find wyj, then say to them: 'Good afternoon, work hard'",,medium,2026-06-03 09:07:08,aaa,pending,vlm-mem
+3341d645-3f9f-4f5b-8951-534c834b4780,custom,help me get my favorite fruit,,medium,2026-06-03 09:34:22,aaa,pending,rule
+402cfee6-dfb7-42d8-904e-cb8d2e95c758,custom,Pick a banana and place it on the desk,,high,2026-06-03 10:22:51,aaa,pending,rule
+e5fceb86-0124-4715-8605-b42338d56248,custom,"Pick up a coca-cola for me, please",,low,2026-06-03 10:22:53,aaa,pending,vlm-mem
+55836e2c-de89-4ac0-8c46-bf67995575b3,custom,check the environment at workstation 308,,medium,2026-06-03 11:03:39,aaa,pending,rule
+f31d5ee9-7195-415f-b3dc-b213141f5a8e,custom,find an orange,,low,2026-06-03 11:35:56,aaa,pending,vlm
+cb7b59c7-4e08-457e-9c6c-86c0dcb66c47,custom,what's the status of the rest area?,,low,2026-06-03 11:36:30,aaa,pending,rule
+5a918b92-9e9c-4568-8c03-6ecaebdfd370,custom,head to desk,,low,2026-06-03 11:36:46,aaa,pending,vlm-mem
+9b6714fb-2a98-41e0-a79a-9a7844d56f26,custom,"Check if the rest area has any people, then tell me who's there",,medium,2026-06-03 11:41:17,aaa,pending,vlm-mem
+2679fdfe-58cd-4dbc-a32a-fbafdc437f84,custom,go to conference room 511,,low,2026-06-03 11:54:25,aaa,pending,vlm
+1b5d8c74-67f5-49a7-8103-59b395bd3136,custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-06-03 14:13:43,aaa,pending,vlm
+3c55ac9c-c806-4afd-ae63-e2d7feedc322,custom,help me locate the Oreo original flavor sandwich cookie box and bring it,,high,2026-06-03 14:14:57,aaa,pending,vlm-mem
+ab7c4abe-4957-4217-8283-e0655b524bf1,custom,Go to the rest area and grab a green apple,,medium,2026-06-03 14:15:59,aaa,pending,vlm-mem
+fb5ad49b-5360-4daf-b295-d400119f36a0,custom,Go to the snack area,,low,2026-06-03 14:19:17,aaa,pending,rule
+8288c4a8-f290-4193-99dc-0c286f4924fa,custom,search for the red packaged cake,,high,2026-06-03 14:23:19,aaa,pending,vlm
+1982a9bc-f566-4f24-a63d-6dacbdef19f3,custom,"I'm parched, get me a drink",,medium,2026-06-03 14:32:40,aaa,pending,rule
+bd10838c-e108-4bb0-8bf5-28671a684fac,custom,find Okng and greet him,,high,2026-06-03 14:41:51,aaa,pending,rule
+6913be2c-53f0-427d-a4ab-10afc79aaed5,custom,Could you get me a banana?,,medium,2026-06-03 14:43:43,aaa,pending,vlm
+b4b17a3f-0dde-4b5b-8cdd-212b962de10c,custom,please go to the snack area and pick up a banana for me,,medium,2026-06-03 14:46:46,aaa,pending,vlm
+d4893a3a-72a4-4972-8ebc-c1a4db4c7c69,custom,Please fetch the Krima jasmine milk green tea from the table,,low,2026-06-03 15:00:32,aaa,pending,vlm-mem
+0f02b12a-1989-4d86-b88e-71e83bf699dd,custom,Look for a red apple,,high,2026-06-03 15:04:13,aaa,pending,vlm
+7906528c-b7f2-40e8-91ae-e7ef553b45c4,custom,what time is it?,,low,2026-06-03 15:07:41,aaa,pending,vlm-mem
+4768c09c-c390-463f-b2a6-a690ab8e266f,custom,bring me the white cup,,high,2026-06-03 15:23:16,aaa,pending,vlm-mem
+d5a1316e-63cd-43cd-8743-23847399aaee,custom,Find the blue cup,,medium,2026-06-03 15:24:16,aaa,pending,vlm
+2edf3789-a012-43c3-89fe-0712e8c8618b,custom,where's the mouse?,,medium,2026-06-03 15:26:45,aaa,pending,rule
+499317a7-4522-4d3c-ad1a-bfa23a807e7d,custom,deliver this red apple to zkm,,low,2026-06-03 15:34:36,aaa,pending,rule
+de753b71-4a0b-4a7e-87d0-c08e95a36f58,custom,can you locate yyw?,,low,2026-06-03 15:52:37,aaa,pending,vlm-mem
+c3c82adf-e41c-4d73-83d1-d78755df5805,custom,choose a red color fruit and deliver it to zkm,,low,2026-06-03 15:54:39,aaa,pending,vlm-mem
+a6788758-d390-4cdf-a4f9-9a31ed33b4b4,custom,Explore the office and report to me all the locations where you see a green cup,,medium,2026-06-03 15:55:29,aaa,pending,rule
+d059cb95-4ec7-4e75-b936-06f7134e8186,custom,"I'd like a Vitasoy chocolate soya drink, get it",,low,2026-06-03 15:55:32,aaa,pending,vlm-mem
+01c7ac04-f4fa-4cf0-bc10-76ba730f30b2,custom,Find Okng and tell him to prepare the presentation for tomorrow,,medium,2026-06-03 16:08:38,aaa,pending,vlm
+98a42f54-5d02-4633-9144-a64aa033de7e,custom,"Can you check if yyw is at his workstation, and then come back and let me know?",,low,2026-06-03 16:09:08,aaa,pending,vlm-mem
+106fbc53-f3e1-4982-97c2-1ca39fafedcf,custom,Give me a bottle of water,,high,2026-06-03 16:10:11,aaa,pending,vlm-mem
+942af0b1-2ede-475b-8bf8-e8a0404e8db6,custom,"Go to workstation 506L, check if there is a blue cup there, then come back and tell me the result",,medium,2026-06-03 16:22:17,aaa,pending,vlm
+675dcbf1-7b2b-43bf-82a0-c5a250b01317,custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-06-03 16:23:33,aaa,pending,vlm
+e7abb97d-da4a-4872-82a7-ee974b86dc9c,custom,could you give me something to eat?,,medium,2026-06-03 16:25:15,aaa,pending,rule
+03a509d3-4e3a-4e11-a0f6-31666560d523,custom,Help me grab an apple,,medium,2026-06-03 16:29:38,aaa,pending,rule
+a96e798f-5715-41b9-bf6e-7979b2e8225f,custom,locate a Ganten drinking water bottle,,low,2026-06-03 16:39:44,aaa,pending,vlm-mem
+3ec31b82-4860-4eb9-9ecd-add8a168349e,custom,"Find zkm and taoshida, tell them there's a PPT they need to make, and ask them to come see me at 5 o'clock",,medium,2026-06-03 16:46:44,aaa,pending,vlm
+6bf5b215-8ba5-406e-8566-2710a839e0c4,custom,"I'll be off at 17:30, remind me then about dinner",,low,2026-06-03 17:11:26,aaa,pending,rule
+7c72b088-5e9f-4aec-80e5-7b86d9e8a9ca,custom,Get me that red packaged cake from the snack area,,low,2026-06-03 17:11:33,aaa,pending,vlm-mem
+c091cab2-777e-4fae-9436-3053dac753dc,custom,"Please go get me a drink, I'm feeling dehydrated, maybe something with jasmine",,low,2026-06-03 17:20:02,aaa,pending,vlm
+3708575a-49ac-41dc-bcaf-6bc0b7f567db,custom,Can you bring me the Doubendou original flavor soy milk?,,medium,2026-06-03 17:20:48,aaa,pending,rule
+cd583c80-7ac4-43b4-bd8f-193226d83790,custom,"Go to conference room 123, see if it's occupied, and come back",,medium,2026-06-03 17:30:34,aaa,pending,vlm
+a58f81c7-6531-4bc0-83ff-733ed6e6b59e,custom,Say hello to zkm for me,,low,2026-06-03 17:40:41,aaa,pending,vlm-mem
+7e142722-8348-4358-ada6-03dadffc8248,custom,say hi to wyj,,high,2026-06-03 18:01:05,aaa,pending,rule
+7cd3d12c-057d-4870-a8fc-b24f1a5ae3e6,custom,Find taoshida and say hello,,low,2026-06-03 18:11:46,aaa,pending,vlm
+7e4e138f-6fe6-4dce-aa90-a44eb63344c0,custom,I need to find a black game controller,,low,2026-06-03 18:12:44,aaa,pending,rule
+701ec2cb-c699-426a-ab7f-5603b7c64c70,custom,Go to the snack area and pick up the Orion Shuyuan non-fried potato chips,,low,2026-06-03 18:20:00,aaa,pending,vlm-mem
+da02e164-bd3e-4fbd-bdae-64e38fcd4f73,custom,Help me bring over the food with the brightest color.,,low,2026-06-03 19:31:48,aaa,pending,rule

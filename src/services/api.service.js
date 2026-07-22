@@ -258,10 +258,14 @@ class ApiService {
     });
   }
 
-  async updateTaskStatus(taskId, status) {
+  async updateTaskStatus(taskId, status, message) {
+    const body = { id: taskId, status };
+    if (message !== undefined && message !== null) {
+      body.message = message;
+    }
     return this.request(`${API_CONFIG.dbUrl}${API_CONFIG.endpoints.db_updateTaskStatus}`, {
       method: 'POST',
-      body: JSON.stringify({ id: taskId, status })
+      body: JSON.stringify(body)
     });
   }
   

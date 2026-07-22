@@ -11,14 +11,23 @@ export class EnvMonitorService {
         this.isPolling = false;
         this.lastMessage = null;
         this.lastContextKey = 'global';
+        this._onConfirmedCallback = null;
         // 注册确认回调，记录已读消息
         if (this.modal && typeof this.modal.setOnConfirm === 'function') {
             this.modal.setOnConfirm(() => {
                 if (this.lastMessage) {
                     localStorage.setItem(this.getAcknowledgedStorageKey(this.lastContextKey), this.lastMessage);
                 }
+                // 环境检查确认后，触发回调（如弹出评分问卷）
+                if (typeof this._onConfirmedCallback === 'function') {
+                    this._onConfirmedCallback();
+                }
             });
         }
+    }
+
+    setOnConfirmedCallback(callback) {
+        this._onConfirmedCallback = callback;
     }
 
     getAcknowledgedStorageKey(contextKey = 'global') {

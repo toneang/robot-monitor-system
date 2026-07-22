@@ -187,7 +187,11 @@ function setRandomModelBag(bag) {
 function inferDisplayTaskType(type, description) {
   const normalizedType = String(type || '').trim().toLowerCase();
   if (normalizedType && BACKEND_TYPE_TO_DISPLAY_TYPE[normalizedType]) {
-    return BACKEND_TYPE_TO_DISPLAY_TYPE[normalizedType];
+    const mapped = BACKEND_TYPE_TO_DISPLAY_TYPE[normalizedType];
+    // 'find' 是兜底值，允许描述中的关键词（notify/deliver/inspect）覆盖
+    if (mapped !== 'find') {
+      return mapped;
+    }
   }
 
   const normalizedDescription = String(description || '').trim();

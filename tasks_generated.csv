@@ -1,0 +1,1201 @@
+type,description,location,priority,execute_time,creator,status,model
+custom,notify student zsx to have a meeting in the 511 conference room,,high,2026-05-11 09:07:27,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-05-11 09:29:01,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to taoshida,,medium,2026-05-11 09:52:44,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,high,2026-05-11 09:58:46,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-11 10:19:48,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-11 10:20:50,aaa,pending,rule
+custom,pick up coca-cola for me,,medium,2026-05-11 10:34:48,aaa,pending,vlm
+custom,"Can you check if yyw is at his workstation, then come back and let me know?",,high,2026-05-11 10:58:01,aaa,pending,vlm
+custom,please help me deliver the red packaged cake to student zkm,,high,2026-05-11 11:30:41,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-11 11:44:57,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-05-11 14:05:09,aaa,pending,vlm
+custom,where is zkm,,low,2026-05-11 14:05:56,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-11 14:18:20,aaa,pending,vlm
+custom,give me an apple,,low,2026-05-11 14:50:40,aaa,pending,vlm-mem
+custom,say hello to zkm,,medium,2026-05-11 14:54:18,aaa,pending,vlm-mem
+custom,Find Okng.,,medium,2026-05-11 14:54:52,aaa,pending,rule
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-05-11 15:02:07,aaa,pending,vlm
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-11 15:07:20,aaa,pending,rule
+custom,go home,,medium,2026-05-11 15:10:10,aaa,pending,rule
+custom,"Find wyj and taoshida, tell them there's a PPT they need to make",,high,2026-05-11 15:11:04,aaa,pending,vlm
+custom,"A bottle of water, please.",,high,2026-05-11 15:11:42,aaa,pending,vlm-mem
+custom,give me Vitasoy chocolate soya drink,,low,2026-05-11 15:12:20,aaa,pending,rule
+custom,pick up Vitasoy chocolate soya drink for taoshida,,high,2026-05-11 15:13:47,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-11 15:16:30,aaa,pending,vlm
+custom,notify student wyj to have a meeting in the 511 conference room,,medium,2026-05-11 15:42:45,aaa,pending,rule
+custom,bring red packaged cake to yyw,,medium,2026-05-11 15:55:07,aaa,pending,vlm
+custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,high,2026-05-11 15:59:56,aaa,pending,vlm-mem
+custom,give me Vitasoy chocolate soya drink,,low,2026-05-11 16:05:13,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-11 16:06:51,aaa,pending,vlm-mem
+custom,give me coca-cola,,high,2026-05-11 16:31:32,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,low,2026-05-11 16:43:49,aaa,pending,vlm
+custom,go to the snack area and pick up red packaged cake,,low,2026-05-11 16:49:44,aaa,pending,vlm-mem
+custom,"Can you check if wyj is at his workstation, then come back and let me know?",,medium,2026-05-11 17:00:18,aaa,pending,vlm-mem
+custom,pick up a banana and place it to zkm's desk,,low,2026-05-11 17:02:16,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,low,2026-05-11 17:03:28,aaa,pending,rule
+custom,pick up a chocolate marked with Snickers for me,,high,2026-05-11 17:15:52,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-11 17:16:51,aaa,pending,vlm-mem
+custom,say goodbye,,low,2026-05-11 17:26:06,aaa,pending,vlm
+custom,look for red packaged cake,,high,2026-05-11 17:33:16,aaa,pending,vlm-mem
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,medium,2026-05-11 17:39:06,aaa,pending,vlm
+custom,find taoshida and say hello,,medium,2026-05-11 17:51:07,aaa,pending,vlm
+custom,deliver some food for yyw,,high,2026-05-11 18:13:29,aaa,pending,vlm
+custom,find a banana,,low,2026-05-11 18:16:16,aaa,pending,vlm
+custom,give me an apple,,low,2026-05-11 18:38:04,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-11 18:43:30,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-11 18:48:18,aaa,pending,vlm
+custom,tell me a joke,,medium,2026-05-11 18:53:39,aaa,pending,rule
+custom,please go to the snack area to pick up an apple for me,,medium,2026-05-11 19:05:55,aaa,pending,vlm-mem
+custom,Pick an orange and place it on the table,,medium,2026-05-11 20:13:37,aaa,pending,vlm
+custom,notify student zsx to have a meeting in the 511 conference room,,low,2026-05-11 20:56:15,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-12 09:14:20,aaa,pending,vlm-mem
+custom,pick up an orange for taoshida,,high,2026-05-12 09:25:54,aaa,pending,rule
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell Okng the result",,low,2026-05-12 09:51:35,aaa,pending,rule
+custom,come to find taoshida,,medium,2026-05-12 10:06:33,aaa,pending,vlm-mem
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-12 10:12:49,aaa,pending,rule
+custom,where is zkm,,low,2026-05-12 10:30:03,aaa,pending,rule
+custom,Inspect the current environment.,,high,2026-05-12 10:38:38,aaa,pending,rule
+custom,Find yyw.,,low,2026-05-12 10:56:46,aaa,pending,vlm
+custom,go home,,medium,2026-05-12 11:47:31,aaa,pending,rule
+custom,Explore the office and find the snack area,,high,2026-05-12 14:04:50,aaa,pending,vlm-mem
+custom,notify student taoshida to have a meeting in the 511 conference room,,low,2026-05-12 14:29:07,aaa,pending,rule
+custom,give me an orange,,low,2026-05-12 14:31:37,aaa,pending,rule
+custom,find a banana,,high,2026-05-12 14:32:54,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-05-12 14:38:06,aaa,pending,rule
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-12 14:42:21,aaa,pending,vlm-mem
+custom,pick up a bottle of water and place it to zkm's desk,,medium,2026-05-12 14:44:16,aaa,pending,vlm-mem
+custom,give me Oreo original flavor sandwich cookie box,,medium,2026-05-12 15:07:52,aaa,pending,rule
+custom,please go to the snack area to pick up an orange for me,,medium,2026-05-12 15:10:06,aaa,pending,vlm-mem
+custom,say goodbye,,medium,2026-05-12 15:18:57,aaa,pending,vlm
+custom,come to find wyj,,medium,2026-05-12 15:25:27,aaa,pending,rule
+custom,Pick a bottle of water and place it on the table,,high,2026-05-12 15:38:34,aaa,pending,vlm
+custom,"Find zsx and Okng, tell them there's a PPT they need to make",,high,2026-05-12 15:45:17,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-05-12 16:11:20,aaa,pending,rule
+custom,could you help me find Oreo original flavor sandwich cookie box,,high,2026-05-12 16:23:16,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-12 16:41:18,aaa,pending,vlm
+custom,give me Oreo original flavor sandwich cookie box,,low,2026-05-12 16:51:56,aaa,pending,vlm-mem
+custom,please help me deliver the Vitasoy chocolate soya drink to student zsx,,medium,2026-05-12 16:54:24,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-05-12 16:54:38,aaa,pending,vlm-mem
+custom,give me a banana,,low,2026-05-12 16:59:36,aaa,pending,vlm
+custom,help me get a chocolate marked with Snickers,,medium,2026-05-12 17:00:49,aaa,pending,vlm
+custom,find Orion Shuyuan non-fried potato chips,,low,2026-05-12 17:08:24,aaa,pending,vlm-mem
+custom,pick up Orion Shuyuan non-fried potato chips for me,,low,2026-05-12 17:12:13,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-12 17:23:05,aaa,pending,vlm
+custom,bring Oreo original flavor sandwich cookie box to wyj,,high,2026-05-12 17:28:12,aaa,pending,vlm
+custom,say goodbye,,low,2026-05-12 17:32:39,aaa,pending,vlm
+custom,find Okng and say hello,,high,2026-05-12 17:33:08,aaa,pending,rule
+custom,Check the environment.,,low,2026-05-12 18:02:06,aaa,pending,vlm-mem
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-12 18:06:15,aaa,pending,vlm-mem
+custom,go to the snack area and pick up coca-cola,,low,2026-05-12 18:21:00,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-12 18:21:27,aaa,pending,rule
+custom,bring Vitasoy chocolate soya drink to wyj,,low,2026-05-12 18:30:17,aaa,pending,rule
+custom,pick up a banana and place it to taoshida's desk,,medium,2026-05-12 18:39:32,aaa,pending,rule
+custom,say hello to wyj,,medium,2026-05-12 18:39:49,aaa,pending,rule
+custom,could you help me find a bottle of water,,medium,2026-05-12 18:46:47,aaa,pending,rule
+custom,help me get an orange,,medium,2026-05-12 18:50:13,aaa,pending,vlm-mem
+custom,find yyw and say hello,,low,2026-05-12 18:51:02,aaa,pending,rule
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-12 18:58:47,aaa,pending,vlm-mem
+custom,find yyw,,low,2026-05-12 19:22:19,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-12 19:39:30,aaa,pending,rule
+custom,say hello to zkm,,low,2026-05-12 20:08:24,aaa,pending,rule
+custom,notify student zkm to have a meeting in the 511 conference room,,low,2026-05-13 09:28:12,aaa,pending,vlm
+custom,find zkm and say hello,,medium,2026-05-13 09:46:54,aaa,pending,rule
+custom,find wyj and say hello,,low,2026-05-13 10:06:09,aaa,pending,rule
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-13 10:09:04,aaa,pending,vlm-mem
+custom,say goodbye,,low,2026-05-13 10:32:05,aaa,pending,vlm-mem
+custom,find taoshida and say hello,,medium,2026-05-13 10:40:45,aaa,pending,vlm
+custom,go home,,low,2026-05-13 10:54:22,aaa,pending,vlm-mem
+custom,find Oreo original flavor sandwich cookie box,,medium,2026-05-13 11:22:15,aaa,pending,vlm-mem
+custom,please help me deliver the an apple to student zkm,,low,2026-05-13 11:37:42,aaa,pending,vlm-mem
+custom,say hello to zsx,,medium,2026-05-13 11:43:32,aaa,pending,vlm-mem
+custom,pick up Oreo original flavor sandwich cookie box for me,,medium,2026-05-13 11:54:52,aaa,pending,rule
+custom,please go to the snack area to pick up an apple for me,,medium,2026-05-13 14:01:19,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-05-13 14:05:38,aaa,pending,rule
+custom,Explore the office and find the snack area,,low,2026-05-13 14:06:33,aaa,pending,rule
+custom,choose a red color fruit and deliver it to zkm,,low,2026-05-13 14:14:10,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-13 14:20:22,aaa,pending,vlm
+custom,go home,,low,2026-05-13 14:21:14,aaa,pending,vlm
+custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,high,2026-05-13 14:22:37,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-13 14:39:16,aaa,pending,vlm
+custom,say hello to wyj,,medium,2026-05-13 15:14:03,aaa,pending,vlm-mem
+custom,notify student zsx to have a meeting in the 511 conference room,,high,2026-05-13 15:17:13,aaa,pending,rule
+custom,help me get Vitasoy chocolate soya drink,,high,2026-05-13 15:23:38,aaa,pending,rule
+custom,bring red packaged cake to yyw,,medium,2026-05-13 15:37:42,aaa,pending,vlm
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell yyw the result",,high,2026-05-13 15:45:30,aaa,pending,vlm-mem
+custom,pick up Oreo original flavor sandwich cookie box for wyj,,low,2026-05-13 15:51:12,aaa,pending,vlm
+custom,"Find zsx and zkm, tell them there's a PPT they need to make",,low,2026-05-13 16:02:22,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-13 16:10:18,aaa,pending,vlm
+custom,help me get red packaged cake,,low,2026-05-13 16:12:11,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,low,2026-05-13 16:15:17,aaa,pending,vlm
+custom,pick up an apple for zsx,,medium,2026-05-13 16:26:59,aaa,pending,rule
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,high,2026-05-13 16:52:18,aaa,pending,rule
+custom,"Find taoshida and Okng, tell them there's a PPT they need to make",,high,2026-05-13 16:56:32,aaa,pending,rule
+custom,Check the environment.,,medium,2026-05-13 17:14:41,aaa,pending,rule
+custom,choose a red color fruit and deliver it to taoshida,,low,2026-05-13 17:15:42,aaa,pending,vlm-mem
+custom,pick up Oreo original flavor sandwich cookie box for zkm,,medium,2026-05-13 17:17:33,aaa,pending,vlm
+custom,bring a chocolate marked with Snickers to Okng,,medium,2026-05-13 17:23:06,aaa,pending,vlm
+custom,pick up red packaged cake and place it to Okng's desk,,high,2026-05-13 17:41:45,aaa,pending,vlm-mem
+custom,Check the environment.,,medium,2026-05-13 17:48:12,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-05-13 17:51:42,aaa,pending,vlm-mem
+custom,find Okng,,low,2026-05-13 17:53:44,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-13 18:02:53,aaa,pending,vlm
+custom,help me get Orion Shuyuan non-fried potato chips,,high,2026-05-13 18:13:44,aaa,pending,rule
+custom,find taoshida,,low,2026-05-13 18:21:47,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-05-13 18:25:18,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to taoshida,,low,2026-05-13 18:45:30,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-13 18:48:11,aaa,pending,rule
+custom,go home,,medium,2026-05-13 19:06:07,aaa,pending,vlm-mem
+custom,give me Orion Shuyuan non-fried potato chips,,low,2026-05-13 20:07:25,aaa,pending,rule
+custom,Find yyw.,,medium,2026-05-13 20:09:54,aaa,pending,vlm
+custom,go home,,low,2026-05-13 20:35:42,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-14 09:05:25,aaa,pending,rule
+custom,help me get my favorite fruit,,high,2026-05-14 09:06:48,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,medium,2026-05-14 09:09:32,aaa,pending,rule
+custom,"Find zkm and wyj, tell them there's a PPT they need to make",,high,2026-05-14 09:17:57,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to Okng,,low,2026-05-14 09:33:09,aaa,pending,rule
+custom,please go to the snack area to pick up Orion Shuyuan non-fried potato chips for me,,high,2026-05-14 09:33:46,aaa,pending,rule
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-14 10:09:12,aaa,pending,vlm
+custom,please help me deliver the coca-cola to student yyw,,low,2026-05-14 10:47:47,aaa,pending,vlm-mem
+custom,come to find wyj,,low,2026-05-14 10:59:51,aaa,pending,rule
+custom,explore the office,,low,2026-05-14 11:28:38,aaa,pending,rule
+custom,Find zkm.,,low,2026-05-14 11:45:25,aaa,pending,rule
+custom,could you give me something to eat?,,medium,2026-05-14 11:50:19,aaa,pending,rule
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-05-14 14:03:53,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,low,2026-05-14 14:22:37,aaa,pending,vlm
+custom,pick up a chocolate marked with Snickers for wyj,,high,2026-05-14 14:33:41,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-14 14:57:03,aaa,pending,vlm
+custom,what time is it,,low,2026-05-14 15:01:01,aaa,pending,vlm
+custom,go to the snack area and pick up Oreo original flavor sandwich cookie box,,medium,2026-05-14 15:08:43,aaa,pending,vlm
+custom,go to the snack area and pick up coca-cola,,medium,2026-05-14 15:09:58,aaa,pending,vlm
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,high,2026-05-14 15:20:27,aaa,pending,rule
+custom,Pick Orion Shuyuan non-fried potato chips and place it on the table,,medium,2026-05-14 15:21:43,aaa,pending,vlm
+custom,pick up coca-cola and place it to Okng's desk,,high,2026-05-14 15:52:39,aaa,pending,vlm-mem
+custom,deliver some food for zsx,,low,2026-05-14 16:00:11,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zkm,,medium,2026-05-14 16:03:38,aaa,pending,rule
+custom,pick up coca-cola and place it to zkm's desk,,low,2026-05-14 16:03:47,aaa,pending,rule
+custom,pick up a banana for Okng,,medium,2026-05-14 16:08:51,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-05-14 16:14:33,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-14 16:43:32,aaa,pending,rule
+custom,come to find zsx,,low,2026-05-14 17:05:29,aaa,pending,rule
+custom,find wyj,,low,2026-05-14 17:10:52,aaa,pending,vlm-mem
+custom,pick up a banana for me,,low,2026-05-14 17:11:46,aaa,pending,rule
+custom,bring coca-cola to Okng,,low,2026-05-14 17:14:58,aaa,pending,rule
+custom,"Find yyw and wyj, tell them there's a PPT they need to make",,medium,2026-05-14 17:27:03,aaa,pending,rule
+custom,go to the snack area and pick up coca-cola,,medium,2026-05-14 17:36:56,aaa,pending,rule
+custom,find yyw and say hello,,low,2026-05-14 17:53:34,aaa,pending,vlm-mem
+custom,pick up red packaged cake and place it to wyj's desk,,low,2026-05-14 18:01:11,aaa,pending,vlm
+custom,find taoshida and say hello,,medium,2026-05-14 18:03:13,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-14 18:05:24,aaa,pending,rule
+custom,please go to the snack area to pick up a banana for me,,high,2026-05-14 18:09:19,aaa,pending,vlm-mem
+custom,please help me deliver the Oreo original flavor sandwich cookie box to student zsx,,low,2026-05-14 18:10:25,aaa,pending,vlm
+custom,notify student taoshida to have a meeting in the 511 conference room,,high,2026-05-14 18:14:30,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-14 18:19:37,aaa,pending,vlm
+custom,help me get a bottle of water,,medium,2026-05-14 18:29:02,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-14 18:31:04,aaa,pending,vlm-mem
+custom,look for Oreo original flavor sandwich cookie box,,medium,2026-05-14 18:34:47,aaa,pending,vlm-mem
+custom,go to the snack area and pick up Oreo original flavor sandwich cookie box,,high,2026-05-14 18:37:01,aaa,pending,vlm-mem
+custom,pick up coca-cola for taoshida,,low,2026-05-14 18:49:59,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-14 18:53:41,aaa,pending,vlm-mem
+custom,find taoshida and say hello,,medium,2026-05-14 19:59:45,aaa,pending,rule
+custom,look for red packaged cake,,low,2026-05-14 20:14:11,aaa,pending,vlm
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell zkm the result",,high,2026-05-15 09:24:36,aaa,pending,vlm
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-15 10:33:19,aaa,pending,vlm
+custom,say hello to Okng,,low,2026-05-15 10:52:57,aaa,pending,vlm
+custom,Pick a banana and place it on the table,,low,2026-05-15 11:13:06,aaa,pending,vlm
+custom,could you give me something to eat?,,high,2026-05-15 11:41:08,aaa,pending,rule
+custom,deliver some food for Okng,,medium,2026-05-15 14:00:35,aaa,pending,rule
+custom,Check the environment.,,medium,2026-05-15 14:11:00,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-05-15 14:25:08,aaa,pending,vlm
+custom,"Can you check if wyj is at his workstation, then come back and let me know?",,low,2026-05-15 14:47:29,aaa,pending,vlm
+custom,notify student taoshida to have a meeting in the 511 conference room,,low,2026-05-15 15:13:14,aaa,pending,vlm
+custom,Explore the office and find the snack area,,medium,2026-05-15 15:20:19,aaa,pending,vlm-mem
+custom,come to find Okng,,low,2026-05-15 15:28:46,aaa,pending,rule
+custom,could you help me find a bottle of water,,low,2026-05-15 15:29:06,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-15 15:35:04,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,high,2026-05-15 15:37:24,aaa,pending,rule
+custom,Inspect the current environment.,,medium,2026-05-15 15:38:59,aaa,pending,vlm-mem
+custom,help me get an orange,,low,2026-05-15 15:39:48,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to Okng,,low,2026-05-15 15:43:42,aaa,pending,rule
+custom,choose a red color fruit and deliver it to wyj,,low,2026-05-15 15:43:57,aaa,pending,vlm-mem
+custom,find Orion Shuyuan non-fried potato chips,,low,2026-05-15 15:44:38,aaa,pending,vlm-mem
+custom,notify student zsx to have a meeting in the 511 conference room,,low,2026-05-15 15:47:02,aaa,pending,vlm
+custom,go home,,low,2026-05-15 15:49:06,aaa,pending,vlm
+custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,low,2026-05-15 16:06:00,aaa,pending,vlm
+custom,help me get my favorite fruit,,medium,2026-05-15 16:21:05,aaa,pending,vlm
+custom,bring an orange to wyj,,low,2026-05-15 16:32:10,aaa,pending,vlm-mem
+custom,what time is it,,medium,2026-05-15 16:35:26,aaa,pending,vlm
+custom,find Orion Shuyuan non-fried potato chips,,high,2026-05-15 16:42:26,aaa,pending,vlm
+custom,say hello,,low,2026-05-15 16:44:47,aaa,pending,rule
+custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,high,2026-05-15 16:48:41,aaa,pending,vlm
+custom,Find Okng.,,high,2026-05-15 17:03:26,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-15 17:15:33,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-15 17:20:23,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-15 17:23:47,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-15 17:30:57,aaa,pending,vlm
+custom,Find wyj.,,low,2026-05-15 17:36:18,aaa,pending,vlm
+custom,deliver some food for yyw,,medium,2026-05-15 17:37:36,aaa,pending,vlm
+custom,deliver some food for yyw,,medium,2026-05-15 17:43:23,aaa,pending,vlm-mem
+custom,bring a bottle of water to taoshida,,high,2026-05-15 17:43:26,aaa,pending,vlm
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell wyj the result",,high,2026-05-15 17:46:11,aaa,pending,rule
+custom,deliver some food for zsx,,high,2026-05-15 17:53:51,aaa,pending,vlm
+custom,bring Oreo original flavor sandwich cookie box to zkm,,high,2026-05-15 17:57:46,aaa,pending,vlm-mem
+custom,say hello to Okng,,medium,2026-05-15 18:07:05,aaa,pending,vlm-mem
+custom,say hello,,medium,2026-05-15 18:31:14,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zkm,,low,2026-05-15 18:31:24,aaa,pending,rule
+custom,find yyw and say hello,,low,2026-05-15 18:49:51,aaa,pending,vlm-mem
+custom,could you help me find an orange,,medium,2026-05-15 18:52:43,aaa,pending,rule
+custom,give me red packaged cake,,low,2026-05-15 18:57:19,aaa,pending,vlm
+custom,Find zsx.,,low,2026-05-15 19:39:59,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-15 20:06:54,aaa,pending,vlm-mem
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-15 20:47:50,aaa,pending,rule
+custom,go to the snack area and pick up an orange,,medium,2026-05-16 10:09:51,aaa,pending,rule
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell wyj the result",,low,2026-05-16 10:16:16,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-16 10:19:28,aaa,pending,vlm
+custom,look for Vitasoy chocolate soya drink,,low,2026-05-16 10:58:28,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-16 11:07:08,aaa,pending,rule
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell wyj the result",,medium,2026-05-16 11:20:37,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,medium,2026-05-16 14:07:27,aaa,pending,rule
+custom,choose a red color fruit and deliver it to taoshida,,medium,2026-05-16 14:11:07,aaa,pending,vlm-mem
+custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,medium,2026-05-16 14:17:04,aaa,pending,vlm
+custom,come to find taoshida,,low,2026-05-16 14:36:02,aaa,pending,vlm
+custom,help me get an orange,,medium,2026-05-16 14:43:16,aaa,pending,vlm
+custom,go home,,low,2026-05-16 14:51:32,aaa,pending,rule
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zkm the result",,high,2026-05-16 14:52:43,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-16 14:56:24,aaa,pending,vlm-mem
+custom,could you help me find red packaged cake,,low,2026-05-16 15:23:30,aaa,pending,vlm-mem
+custom,give me Oreo original flavor sandwich cookie box,,medium,2026-05-16 15:40:11,aaa,pending,vlm-mem
+custom,say hello to zsx,,low,2026-05-16 15:44:40,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-16 15:47:01,aaa,pending,vlm-mem
+custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,low,2026-05-16 16:06:28,aaa,pending,vlm
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell wyj the result",,medium,2026-05-16 16:11:37,aaa,pending,vlm-mem
+custom,say hello,,medium,2026-05-16 16:20:30,aaa,pending,rule
+custom,find yyw and say hello,,low,2026-05-16 16:23:14,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to taoshida,,high,2026-05-16 16:25:14,aaa,pending,vlm
+custom,say hello to taoshida,,low,2026-05-16 16:32:01,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-16 16:32:34,aaa,pending,rule
+custom,go home,,medium,2026-05-16 16:46:26,aaa,pending,vlm
+custom,Find zkm.,,low,2026-05-16 16:49:45,aaa,pending,vlm-mem
+custom,pick up an orange and place it to Okng's desk,,low,2026-05-16 16:50:56,aaa,pending,rule
+custom,"Find zkm and zsx, tell them there's a PPT they need to make",,low,2026-05-16 16:53:18,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zkm,,low,2026-05-16 17:04:56,aaa,pending,rule
+custom,help me get a chocolate marked with Snickers,,low,2026-05-16 17:30:43,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-05-16 17:44:13,aaa,pending,vlm-mem
+custom,find Okng and say hello,,high,2026-05-16 17:46:27,aaa,pending,vlm
+custom,"Find zsx and wyj, tell them there's a PPT they need to make",,medium,2026-05-16 17:48:19,aaa,pending,vlm-mem
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,low,2026-05-16 17:54:15,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,medium,2026-05-16 18:04:44,aaa,pending,vlm-mem
+custom,look for a banana,,low,2026-05-16 18:10:17,aaa,pending,rule
+custom,go home,,low,2026-05-16 18:10:19,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-16 18:13:15,aaa,pending,vlm
+custom,Pick an apple and place it on the table,,medium,2026-05-16 18:16:00,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-16 18:16:19,aaa,pending,vlm
+custom,find taoshida,,medium,2026-05-16 18:21:39,aaa,pending,vlm
+custom,give me coca-cola,,medium,2026-05-16 18:32:37,aaa,pending,vlm
+custom,could you give me something to eat?,,medium,2026-05-16 18:44:00,aaa,pending,vlm-mem
+custom,could you help me find Vitasoy chocolate soya drink,,low,2026-05-16 18:52:00,aaa,pending,vlm-mem
+custom,explore the office,,medium,2026-05-16 18:53:34,aaa,pending,vlm-mem
+custom,pick up coca-cola for me,,medium,2026-05-16 18:53:47,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-16 20:14:34,aaa,pending,vlm
+custom,pick up Oreo original flavor sandwich cookie box for zkm,,medium,2026-05-16 20:43:54,aaa,pending,vlm
+custom,please help me deliver the Oreo original flavor sandwich cookie box to student taoshida,,high,2026-05-16 20:51:29,aaa,pending,rule
+custom,say hello to wyj,,low,2026-05-17 09:27:50,aaa,pending,vlm
+custom,please help me deliver the a chocolate marked with Snickers to student zsx,,high,2026-05-17 09:29:04,aaa,pending,rule
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-17 09:29:25,aaa,pending,rule
+custom,choose a red color fruit and deliver it to zsx,,high,2026-05-17 09:38:55,aaa,pending,vlm
+custom,Find yyw.,,low,2026-05-17 09:42:38,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zkm,,medium,2026-05-17 10:02:19,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-17 10:36:16,aaa,pending,rule
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell Okng the result",,low,2026-05-17 10:42:53,aaa,pending,vlm
+custom,pick up Oreo original flavor sandwich cookie box and place it to wyj's desk,,medium,2026-05-17 11:05:50,aaa,pending,rule
+custom,could you give me something to eat?,,medium,2026-05-17 11:27:39,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,medium,2026-05-17 11:41:11,aaa,pending,vlm
+custom,"Find taoshida and zkm, tell them there's a PPT they need to make",,high,2026-05-17 14:16:29,aaa,pending,vlm-mem
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-17 14:25:19,aaa,pending,vlm-mem
+custom,bring Orion Shuyuan non-fried potato chips to yyw,,medium,2026-05-17 14:26:50,aaa,pending,rule
+custom,please help me deliver the red packaged cake to student zsx,,medium,2026-05-17 14:26:59,aaa,pending,vlm-mem
+custom,say hello to zsx,,low,2026-05-17 14:32:12,aaa,pending,vlm
+custom,bring a chocolate marked with Snickers to taoshida,,medium,2026-05-17 14:36:08,aaa,pending,rule
+custom,explore the office,,high,2026-05-17 14:37:47,aaa,pending,vlm-mem
+custom,deliver some food for zsx,,high,2026-05-17 14:50:25,aaa,pending,vlm
+custom,pick up a banana for taoshida,,low,2026-05-17 15:09:54,aaa,pending,rule
+custom,go to the snack area and pick up a bottle of water,,high,2026-05-17 15:13:46,aaa,pending,rule
+custom,find Oreo original flavor sandwich cookie box,,low,2026-05-17 15:17:50,aaa,pending,rule
+custom,find yyw and say hello,,low,2026-05-17 15:40:59,aaa,pending,rule
+custom,go to the snack area and pick up Oreo original flavor sandwich cookie box,,medium,2026-05-17 15:43:44,aaa,pending,vlm
+custom,go to the snack area and pick up a chocolate marked with Snickers,,high,2026-05-17 16:01:26,aaa,pending,rule
+custom,choose a red color fruit and deliver it to yyw,,low,2026-05-17 16:08:55,aaa,pending,rule
+custom,Find zkm.,,low,2026-05-17 16:17:47,aaa,pending,vlm
+custom,help me get Vitasoy chocolate soya drink,,medium,2026-05-17 16:20:40,aaa,pending,rule
+custom,help me get my favorite fruit,,medium,2026-05-17 16:29:01,aaa,pending,vlm
+custom,give me Oreo original flavor sandwich cookie box,,low,2026-05-17 16:30:30,aaa,pending,vlm
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-17 17:00:48,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-05-17 17:26:37,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-17 17:43:56,aaa,pending,rule
+custom,say hello to zsx,,medium,2026-05-17 17:58:19,aaa,pending,rule
+custom,Check the environment.,,medium,2026-05-17 18:01:21,aaa,pending,vlm-mem
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zsx the result",,low,2026-05-17 18:06:03,aaa,pending,vlm
+custom,please help me deliver the coca-cola to student yyw,,medium,2026-05-17 18:08:07,aaa,pending,vlm
+custom,what time is it,,low,2026-05-17 18:10:45,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zkm,,low,2026-05-17 18:14:09,aaa,pending,rule
+custom,deliver some food for Okng,,medium,2026-05-17 18:22:23,aaa,pending,vlm
+custom,come to find yyw,,low,2026-05-17 18:23:41,aaa,pending,vlm-mem
+custom,help me get a bottle of water,,low,2026-05-17 18:25:30,aaa,pending,vlm
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-17 18:26:36,aaa,pending,rule
+custom,say goodbye,,low,2026-05-17 18:39:15,aaa,pending,rule
+custom,tell me a joke,,low,2026-05-17 18:57:14,aaa,pending,vlm
+custom,tell me a joke,,high,2026-05-17 19:15:22,aaa,pending,vlm
+custom,help me get Vitasoy chocolate soya drink,,low,2026-05-17 19:55:50,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-17 20:12:50,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-17 20:12:52,aaa,pending,vlm
+custom,where is Okng,,medium,2026-05-17 20:38:06,aaa,pending,vlm
+custom,go to the snack area and pick up red packaged cake,,low,2026-05-18 09:34:48,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-05-18 09:38:46,aaa,pending,vlm
+custom,say hello to taoshida,,high,2026-05-18 09:44:37,aaa,pending,vlm-mem
+custom,give me an orange,,low,2026-05-18 10:03:45,aaa,pending,vlm
+custom,"Can you check if wyj is at his workstation, then come back and let me know?",,high,2026-05-18 10:34:03,aaa,pending,vlm
+custom,help me get a banana,,low,2026-05-18 10:45:32,aaa,pending,vlm
+custom,"Find wyj and Okng, tell them there's a PPT they need to make",,high,2026-05-18 11:11:03,aaa,pending,vlm
+custom,pick up coca-cola for me,,low,2026-05-18 11:30:48,aaa,pending,rule
+custom,Explore the office and find the snack area,,high,2026-05-18 11:45:11,aaa,pending,vlm-mem
+custom,notify student zkm to have a meeting in the 511 conference room,,medium,2026-05-18 11:52:56,aaa,pending,vlm
+custom,pick up an orange for Okng,,low,2026-05-18 11:58:44,aaa,pending,vlm
+custom,pick up an orange for me,,low,2026-05-18 14:09:32,aaa,pending,vlm-mem
+custom,find taoshida and say hello,,high,2026-05-18 14:16:24,aaa,pending,vlm
+custom,pick up an orange and place it to yyw's desk,,high,2026-05-18 14:17:00,aaa,pending,vlm-mem
+custom,come to find Okng,,medium,2026-05-18 14:27:07,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-18 14:27:09,aaa,pending,vlm-mem
+custom,what time is it,,medium,2026-05-18 14:31:05,aaa,pending,vlm-mem
+custom,Find yyw.,,low,2026-05-18 14:34:28,aaa,pending,vlm-mem
+custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,low,2026-05-18 14:35:02,aaa,pending,rule
+custom,Inspect the current environment.,,medium,2026-05-18 14:50:42,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-18 14:55:44,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-18 15:00:35,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-18 15:22:53,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-05-18 15:23:36,aaa,pending,vlm
+custom,say hello,,low,2026-05-18 15:46:14,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-18 16:06:30,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-18 16:50:35,aaa,pending,vlm-mem
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell taoshida the result",,high,2026-05-18 16:53:19,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,medium,2026-05-18 17:20:44,aaa,pending,vlm
+custom,deliver some food for taoshida,,low,2026-05-18 17:21:31,aaa,pending,vlm-mem
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,high,2026-05-18 17:23:35,aaa,pending,vlm
+custom,Inspect the current environment.,,medium,2026-05-18 17:42:06,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zsx,,medium,2026-05-18 17:45:13,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-18 17:53:07,aaa,pending,vlm-mem
+custom,"Find wyj and taoshida, tell them there's a PPT they need to make",,high,2026-05-18 18:09:45,aaa,pending,vlm
+custom,pick up an apple for me,,low,2026-05-18 18:15:58,aaa,pending,vlm-mem
+custom,where is yyw,,low,2026-05-18 18:18:59,aaa,pending,rule
+custom,pick up an orange for me,,low,2026-05-18 18:21:45,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-18 18:22:58,aaa,pending,vlm-mem
+custom,"Find zsx and Okng, tell them there's a PPT they need to make",,medium,2026-05-18 18:30:04,aaa,pending,vlm
+custom,please help me deliver the an apple to student yyw,,low,2026-05-18 18:30:56,aaa,pending,vlm
+custom,find yyw,,medium,2026-05-18 18:34:37,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zkm,,high,2026-05-18 18:35:49,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-18 18:37:44,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-18 18:50:11,aaa,pending,rule
+custom,help me get a bottle of water,,low,2026-05-18 18:50:57,aaa,pending,vlm-mem
+custom,Pick an apple and place it on the table,,medium,2026-05-18 18:59:53,aaa,pending,vlm
+custom,say hello to yyw,,low,2026-05-18 19:26:46,aaa,pending,vlm-mem
+custom,find yyw,,low,2026-05-18 19:29:44,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-05-18 19:48:25,aaa,pending,rule
+custom,pick up Orion Shuyuan non-fried potato chips and place it to zkm's desk,,medium,2026-05-19 10:40:45,aaa,pending,vlm
+custom,give me a chocolate marked with Snickers,,medium,2026-05-19 10:43:52,aaa,pending,vlm
+custom,give me a bottle of water,,medium,2026-05-19 10:46:32,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-19 10:48:47,aaa,pending,vlm
+custom,say hello,,medium,2026-05-19 10:49:44,aaa,pending,vlm-mem
+custom,go to the snack area and pick up an orange,,medium,2026-05-19 11:01:08,aaa,pending,vlm-mem
+custom,please help me deliver the an apple to student yyw,,high,2026-05-19 11:07:11,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-19 11:18:53,aaa,pending,vlm-mem
+custom,"Find yyw and Okng, tell them there's a PPT they need to make",,medium,2026-05-19 11:34:20,aaa,pending,rule
+custom,go to the snack area and pick up an orange,,high,2026-05-19 11:34:29,aaa,pending,rule
+custom,pick up an orange and place it to Okng's desk,,low,2026-05-19 11:40:42,aaa,pending,rule
+custom,pick up coca-cola for Okng,,medium,2026-05-19 11:42:47,aaa,pending,rule
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-05-19 14:02:12,aaa,pending,vlm-mem
+custom,deliver some food for zkm,,high,2026-05-19 14:04:12,aaa,pending,vlm-mem
+custom,"Can you check if Okng is at his workstation, then come back and let me know?",,high,2026-05-19 14:04:25,aaa,pending,vlm-mem
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell yyw the result",,high,2026-05-19 14:10:49,aaa,pending,vlm
+custom,could you give me something to eat?,,medium,2026-05-19 14:26:55,aaa,pending,vlm
+custom,say goodbye,,high,2026-05-19 14:35:30,aaa,pending,vlm
+custom,what time is it,,medium,2026-05-19 14:40:22,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to zsx,,low,2026-05-19 14:44:49,aaa,pending,vlm
+custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-19 14:45:10,aaa,pending,rule
+custom,where is wyj,,low,2026-05-19 14:50:44,aaa,pending,vlm-mem
+custom,find Okng and say hello,,medium,2026-05-19 14:55:34,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-19 14:59:05,aaa,pending,vlm-mem
+custom,help me get red packaged cake,,low,2026-05-19 15:10:51,aaa,pending,vlm-mem
+custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,high,2026-05-19 15:21:34,aaa,pending,vlm-mem
+custom,where is zkm,,low,2026-05-19 15:24:44,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-19 15:29:31,aaa,pending,vlm-mem
+custom,where is zkm,,low,2026-05-19 16:11:24,aaa,pending,vlm
+custom,deliver some food for wyj,,low,2026-05-19 16:14:08,aaa,pending,vlm-mem
+custom,Explore the office and find the snack area,,low,2026-05-19 16:32:18,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-19 16:35:01,aaa,pending,vlm-mem
+custom,say hello,,medium,2026-05-19 16:50:43,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-19 16:55:35,aaa,pending,vlm
+custom,Inspect the current environment.,,medium,2026-05-19 17:00:02,aaa,pending,vlm
+custom,where is wyj,,low,2026-05-19 17:06:46,aaa,pending,vlm-mem
+custom,notify student yyw to have a meeting in the 511 conference room,,high,2026-05-19 17:37:22,aaa,pending,vlm
+custom,say hello,,low,2026-05-19 17:41:10,aaa,pending,vlm
+custom,what time is it,,low,2026-05-19 17:44:18,aaa,pending,rule
+custom,Pick Vitasoy chocolate soya drink and place it on the table,,low,2026-05-19 18:06:49,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-19 18:09:49,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-19 18:17:53,aaa,pending,vlm
+custom,deliver some food for zkm,,low,2026-05-19 18:23:03,aaa,pending,vlm
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-05-19 18:26:24,aaa,pending,vlm
+custom,"A bottle of water, please.",,medium,2026-05-19 18:28:51,aaa,pending,vlm
+custom,give me a bottle of water,,medium,2026-05-19 18:39:26,aaa,pending,vlm
+custom,bring Orion Shuyuan non-fried potato chips to zkm,,high,2026-05-19 18:59:16,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-19 20:16:25,aaa,pending,vlm
+custom,pick up Vitasoy chocolate soya drink for taoshida,,low,2026-05-19 20:31:57,aaa,pending,vlm
+custom,explore the office,,low,2026-05-19 20:59:23,aaa,pending,rule
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,high,2026-05-20 09:33:45,aaa,pending,vlm
+custom,go home,,medium,2026-05-20 09:41:13,aaa,pending,rule
+custom,give me a bottle of water,,low,2026-05-20 09:41:49,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-20 09:56:21,aaa,pending,rule
+custom,find wyj,,low,2026-05-20 10:47:05,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to yyw,,medium,2026-05-20 11:04:51,aaa,pending,vlm-mem
+custom,pick up a bottle of water for zkm,,low,2026-05-20 11:10:41,aaa,pending,vlm-mem
+custom,pick up Orion Shuyuan non-fried potato chips for zkm,,low,2026-05-20 11:20:21,aaa,pending,vlm
+custom,what time is it,,medium,2026-05-20 11:38:16,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-05-20 14:07:38,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-20 14:10:41,aaa,pending,rule
+custom,choose a red color fruit and deliver it to wyj,,high,2026-05-20 14:27:47,aaa,pending,vlm-mem
+custom,"Can you check if wyj is at his workstation, then come back and let me know?",,medium,2026-05-20 14:32:37,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-20 14:36:21,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to taoshida,,high,2026-05-20 14:36:33,aaa,pending,vlm
+custom,come to find taoshida,,low,2026-05-20 14:46:04,aaa,pending,rule
+custom,notify student Okng to have a meeting in the 511 conference room,,medium,2026-05-20 14:50:55,aaa,pending,rule
+custom,find zkm and say hello,,medium,2026-05-20 15:04:25,aaa,pending,vlm-mem
+custom,find Okng,,medium,2026-05-20 15:11:18,aaa,pending,rule
+custom,pick up a bottle of water for Okng,,medium,2026-05-20 15:18:30,aaa,pending,vlm
+custom,pick up coca-cola for me,,low,2026-05-20 15:24:38,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-05-20 15:53:34,aaa,pending,rule
+custom,look for a chocolate marked with Snickers,,high,2026-05-20 16:10:47,aaa,pending,rule
+custom,say goodbye,,high,2026-05-20 16:16:52,aaa,pending,vlm-mem
+custom,come to find Okng,,low,2026-05-20 16:17:19,aaa,pending,vlm
+custom,help me get Orion Shuyuan non-fried potato chips,,low,2026-05-20 16:21:48,aaa,pending,rule
+custom,where is wyj,,medium,2026-05-20 16:35:06,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-20 16:35:10,aaa,pending,vlm-mem
+custom,help me get an orange,,medium,2026-05-20 16:51:45,aaa,pending,vlm
+custom,Find taoshida.,,high,2026-05-20 16:58:35,aaa,pending,rule
+custom,Pick an orange and place it on the table,,low,2026-05-20 17:01:39,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zsx,,high,2026-05-20 17:20:42,aaa,pending,vlm-mem
+custom,help me get coca-cola,,high,2026-05-20 17:21:04,aaa,pending,vlm
+custom,notify student zsx to have a meeting in the 511 conference room,,high,2026-05-20 17:26:54,aaa,pending,vlm
+custom,go to the snack area and pick up a banana,,low,2026-05-20 17:40:03,aaa,pending,vlm
+custom,look for Orion Shuyuan non-fried potato chips,,low,2026-05-20 17:41:41,aaa,pending,rule
+custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,medium,2026-05-20 17:50:59,aaa,pending,vlm-mem
+custom,find taoshida,,low,2026-05-20 18:16:40,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-20 18:18:03,aaa,pending,rule
+custom,Find yyw.,,medium,2026-05-20 18:24:22,aaa,pending,vlm
+custom,notify student Okng to have a meeting in the 511 conference room,,medium,2026-05-20 18:25:54,aaa,pending,rule
+custom,pick up Oreo original flavor sandwich cookie box for me,,low,2026-05-20 18:33:37,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to yyw,,medium,2026-05-20 18:47:09,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-20 18:48:54,aaa,pending,vlm
+custom,pick up coca-cola and place it to zkm's desk,,medium,2026-05-20 18:56:45,aaa,pending,rule
+custom,help me get a bottle of water,,low,2026-05-20 18:57:41,aaa,pending,vlm-mem
+custom,could you help me find Orion Shuyuan non-fried potato chips,,high,2026-05-20 18:59:43,aaa,pending,rule
+custom,deliver some food for Okng,,low,2026-05-20 19:21:44,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-05-20 20:07:43,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up a banana for me,,high,2026-05-20 20:52:07,aaa,pending,vlm-mem
+custom,where is taoshida,,high,2026-05-21 09:44:14,aaa,pending,vlm-mem
+custom,find a chocolate marked with Snickers,,medium,2026-05-21 09:54:42,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-21 11:03:55,aaa,pending,vlm
+custom,say hello to taoshida,,medium,2026-05-21 11:04:34,aaa,pending,rule
+custom,what time is it,,high,2026-05-21 11:07:55,aaa,pending,rule
+custom,explore the office,,high,2026-05-21 11:11:37,aaa,pending,vlm-mem
+custom,help me get Oreo original flavor sandwich cookie box,,low,2026-05-21 11:24:53,aaa,pending,vlm
+custom,what time is it,,low,2026-05-21 11:49:58,aaa,pending,rule
+custom,find zsx,,low,2026-05-21 14:02:38,aaa,pending,vlm-mem
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,high,2026-05-21 14:07:59,aaa,pending,vlm
+custom,could you help me find Vitasoy chocolate soya drink,,high,2026-05-21 14:15:47,aaa,pending,vlm-mem
+custom,help me get a banana,,low,2026-05-21 14:30:34,aaa,pending,rule
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell yyw the result",,medium,2026-05-21 14:35:02,aaa,pending,vlm
+custom,say hello to yyw,,medium,2026-05-21 14:38:32,aaa,pending,vlm-mem
+custom,tell me a joke,,medium,2026-05-21 14:57:32,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-21 15:12:09,aaa,pending,vlm-mem
+custom,Explore the office and find the snack area,,medium,2026-05-21 15:35:53,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,medium,2026-05-21 15:40:57,aaa,pending,vlm
+custom,"A bottle of water, please.",,medium,2026-05-21 15:45:21,aaa,pending,vlm-mem
+custom,give me Orion Shuyuan non-fried potato chips,,medium,2026-05-21 15:48:16,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-21 16:05:15,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-21 16:10:23,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-21 16:15:39,aaa,pending,vlm
+custom,please help me deliver the an orange to student Okng,,high,2026-05-21 16:17:55,aaa,pending,rule
+custom,Explore the office and find the snack area,,low,2026-05-21 16:28:04,aaa,pending,vlm
+custom,help me get my favorite fruit,,medium,2026-05-21 16:28:44,aaa,pending,vlm
+custom,Find zsx.,,low,2026-05-21 16:37:11,aaa,pending,vlm
+custom,"Find taoshida and wyj, tell them there's a PPT they need to make",,high,2026-05-21 16:37:14,aaa,pending,rule
+custom,"A bottle of water, please.",,medium,2026-05-21 16:50:47,aaa,pending,vlm
+custom,say hello to yyw,,low,2026-05-21 17:04:49,aaa,pending,rule
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-21 17:16:33,aaa,pending,vlm
+custom,find yyw,,medium,2026-05-21 17:23:37,aaa,pending,rule
+custom,Find wyj.,,low,2026-05-21 17:27:15,aaa,pending,rule
+custom,please help me deliver the red packaged cake to student Okng,,low,2026-05-21 17:45:19,aaa,pending,rule
+custom,could you help me find Orion Shuyuan non-fried potato chips,,low,2026-05-21 18:14:56,aaa,pending,vlm
+custom,pick up a bottle of water for zsx,,medium,2026-05-21 18:15:04,aaa,pending,vlm
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-21 18:18:28,aaa,pending,vlm-mem
+custom,please help me deliver the Vitasoy chocolate soya drink to student yyw,,high,2026-05-21 18:21:05,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-21 18:26:09,aaa,pending,rule
+custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,high,2026-05-21 18:27:37,aaa,pending,vlm-mem
+custom,deliver some food for taoshida,,high,2026-05-21 18:28:03,aaa,pending,vlm
+custom,pick up coca-cola and place it to taoshida's desk,,low,2026-05-21 18:28:23,aaa,pending,vlm
+custom,give me a banana,,medium,2026-05-21 18:30:56,aaa,pending,rule
+custom,could you help me find a chocolate marked with Snickers,,low,2026-05-21 18:41:38,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-05-21 18:50:13,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,medium,2026-05-21 19:30:53,aaa,pending,vlm
+custom,find zkm,,low,2026-05-21 19:35:23,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up an orange for me,,high,2026-05-21 20:16:34,aaa,pending,vlm
+custom,pick up an orange for zsx,,low,2026-05-21 20:42:26,aaa,pending,rule
+custom,bring an orange to zkm,,low,2026-05-21 20:59:03,aaa,pending,rule
+custom,what time is it,,low,2026-05-22 09:20:03,aaa,pending,vlm
+custom,come to find wyj,,low,2026-05-22 09:27:56,aaa,pending,vlm-mem
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell Okng the result",,high,2026-05-22 09:30:08,aaa,pending,vlm-mem
+custom,notify student zkm to have a meeting in the 511 conference room,,low,2026-05-22 10:33:50,aaa,pending,rule
+custom,where is Okng,,medium,2026-05-22 10:57:37,aaa,pending,vlm-mem
+custom,could you help me find an apple,,high,2026-05-22 11:14:48,aaa,pending,vlm
+custom,what time is it,,medium,2026-05-22 11:18:03,aaa,pending,rule
+custom,say hello,,low,2026-05-22 11:33:44,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-22 14:16:52,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to taoshida,,high,2026-05-22 14:18:42,aaa,pending,rule
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-22 14:37:58,aaa,pending,vlm
+custom,deliver some food for Okng,,high,2026-05-22 14:44:24,aaa,pending,vlm-mem
+custom,bring Oreo original flavor sandwich cookie box to yyw,,low,2026-05-22 15:08:34,aaa,pending,vlm-mem
+custom,pick up a banana for me,,low,2026-05-22 15:19:45,aaa,pending,vlm-mem
+custom,could you help me find a bottle of water,,medium,2026-05-22 15:30:07,aaa,pending,vlm
+custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 15:31:49,aaa,pending,vlm-mem
+custom,"Find Okng and zsx, tell them there's a PPT they need to make",,low,2026-05-22 15:39:13,aaa,pending,vlm-mem
+custom,go to the snack area and pick up Orion Shuyuan non-fried potato chips,,high,2026-05-22 15:42:22,aaa,pending,vlm-mem
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-22 15:50:24,aaa,pending,vlm
+custom,help me get coca-cola,,high,2026-05-22 15:51:37,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,high,2026-05-22 16:02:47,aaa,pending,vlm-mem
+custom,"Find zkm, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 16:21:36,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-22 16:26:58,aaa,pending,vlm-mem
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-22 16:35:09,aaa,pending,vlm-mem
+custom,help me get Oreo original flavor sandwich cookie box,,medium,2026-05-22 16:46:13,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,high,2026-05-22 16:49:03,aaa,pending,vlm-mem
+custom,go to the snack area and pick up Oreo original flavor sandwich cookie box,,medium,2026-05-22 16:51:33,aaa,pending,vlm-mem
+custom,say goodbye,,medium,2026-05-22 17:10:16,aaa,pending,vlm-mem
+custom,Find taoshida.,,medium,2026-05-22 17:25:51,aaa,pending,rule
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zsx the result",,low,2026-05-22 17:30:38,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-22 17:41:06,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-22 17:42:43,aaa,pending,rule
+custom,say hello to yyw,,low,2026-05-22 17:43:03,aaa,pending,rule
+custom,notify student taoshida to have a meeting in the 511 conference room,,low,2026-05-22 17:46:05,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-22 17:53:11,aaa,pending,vlm-mem
+custom,Pick coca-cola and place it on the table,,low,2026-05-22 18:06:38,aaa,pending,vlm
+custom,find zkm and say hello,,low,2026-05-22 18:07:37,aaa,pending,rule
+custom,go home,,medium,2026-05-22 18:08:24,aaa,pending,rule
+custom,what time is it,,low,2026-05-22 18:10:35,aaa,pending,vlm
+custom,pick up red packaged cake for taoshida,,low,2026-05-22 18:15:48,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,medium,2026-05-22 18:25:09,aaa,pending,rule
+custom,choose a red color fruit and deliver it to yyw,,medium,2026-05-22 18:35:01,aaa,pending,rule
+custom,could you help me find a banana,,medium,2026-05-22 18:35:37,aaa,pending,rule
+custom,find yyw and say hello,,low,2026-05-22 18:35:38,aaa,pending,vlm-mem
+custom,say goodbye,,low,2026-05-22 18:39:24,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-22 18:43:29,aaa,pending,rule
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell wyj the result",,low,2026-05-22 19:45:36,aaa,pending,vlm-mem
+custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,low,2026-05-22 19:45:58,aaa,pending,rule
+custom,say goodbye,,low,2026-05-22 20:09:53,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-22 20:59:54,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-23 09:22:58,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-23 09:30:59,aaa,pending,vlm
+custom,pick up Orion Shuyuan non-fried potato chips for me,,high,2026-05-23 09:35:46,aaa,pending,vlm
+custom,notify student yyw to have a meeting in the 511 conference room,,medium,2026-05-23 09:38:05,aaa,pending,vlm
+custom,could you help me find a banana,,high,2026-05-23 10:23:41,aaa,pending,vlm
+custom,help me get an orange,,medium,2026-05-23 10:35:11,aaa,pending,vlm
+custom,find zkm,,medium,2026-05-23 10:55:11,aaa,pending,vlm
+custom,deliver some food for wyj,,medium,2026-05-23 11:13:06,aaa,pending,vlm
+custom,come to find zkm,,high,2026-05-23 11:14:14,aaa,pending,vlm-mem
+custom,could you help me find an apple,,low,2026-05-23 11:17:44,aaa,pending,rule
+custom,look for a banana,,low,2026-05-23 14:00:07,aaa,pending,rule
+custom,"Find wyj and zsx, tell them there's a PPT they need to make",,high,2026-05-23 14:00:55,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-23 14:18:45,aaa,pending,vlm
+custom,could you help me find a banana,,medium,2026-05-23 14:25:19,aaa,pending,rule
+custom,find a bottle of water,,medium,2026-05-23 14:37:17,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-23 14:44:00,aaa,pending,vlm-mem
+custom,where is taoshida,,high,2026-05-23 14:45:18,aaa,pending,rule
+custom,help me get my favorite fruit,,medium,2026-05-23 15:12:32,aaa,pending,vlm-mem
+custom,find yyw and say hello,,low,2026-05-23 15:16:40,aaa,pending,rule
+custom,Pick red packaged cake and place it on the table,,high,2026-05-23 15:21:48,aaa,pending,rule
+custom,"Can you check if Okng is at his workstation, then come back and let me know?",,low,2026-05-23 15:44:25,aaa,pending,vlm-mem
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-23 15:50:50,aaa,pending,rule
+custom,Pick red packaged cake and place it on the table,,low,2026-05-23 15:57:36,aaa,pending,vlm
+custom,please help me deliver the an orange to student zsx,,low,2026-05-23 16:03:32,aaa,pending,rule
+custom,Explore the office and find the snack area,,low,2026-05-23 16:09:02,aaa,pending,rule
+custom,Inspect the current environment.,,high,2026-05-23 16:12:58,aaa,pending,rule
+custom,say goodbye,,low,2026-05-23 16:29:02,aaa,pending,vlm-mem
+custom,where is taoshida,,low,2026-05-23 16:33:27,aaa,pending,vlm
+custom,help me get an apple,,low,2026-05-23 16:48:06,aaa,pending,vlm-mem
+custom,look for Oreo original flavor sandwich cookie box,,medium,2026-05-23 17:12:53,aaa,pending,rule
+custom,explore the office,,low,2026-05-23 17:13:14,aaa,pending,vlm
+custom,pick up an apple and place it to taoshida's desk,,low,2026-05-23 17:22:42,aaa,pending,vlm-mem
+custom,Find wyj.,,low,2026-05-23 17:25:35,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-23 17:28:00,aaa,pending,rule
+custom,go to the snack area and pick up coca-cola,,low,2026-05-23 17:33:28,aaa,pending,vlm
+custom,say hello,,low,2026-05-23 17:37:47,aaa,pending,vlm-mem
+custom,where is zsx,,low,2026-05-23 17:58:39,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up Orion Shuyuan non-fried potato chips for me,,medium,2026-05-23 18:06:49,aaa,pending,rule
+custom,come to find taoshida,,medium,2026-05-23 18:12:20,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zsx,,low,2026-05-23 18:32:53,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to Okng,,medium,2026-05-23 18:35:36,aaa,pending,vlm-mem
+custom,pick up a chocolate marked with Snickers for me,,low,2026-05-23 18:51:33,aaa,pending,rule
+custom,notify student zkm to have a meeting in the 511 conference room,,high,2026-05-23 18:52:51,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-23 18:55:05,aaa,pending,vlm
+custom,go home,,low,2026-05-23 19:00:27,aaa,pending,rule
+custom,say hello to taoshida,,medium,2026-05-23 19:06:45,aaa,pending,rule
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,medium,2026-05-23 19:08:53,aaa,pending,vlm
+custom,bring Orion Shuyuan non-fried potato chips to taoshida,,medium,2026-05-23 20:01:57,aaa,pending,vlm
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zkm the result",,medium,2026-05-23 20:06:36,aaa,pending,vlm
+custom,Pick a banana and place it on the table,,medium,2026-05-23 20:47:50,aaa,pending,vlm-mem
+custom,say hello,,medium,2026-05-24 09:42:35,aaa,pending,rule
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-05-24 10:31:54,aaa,pending,vlm
+custom,pick up Orion Shuyuan non-fried potato chips for zsx,,medium,2026-05-24 10:50:21,aaa,pending,vlm-mem
+custom,go home,,high,2026-05-24 11:40:27,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-24 11:49:13,aaa,pending,vlm
+custom,deliver some food for wyj,,high,2026-05-24 14:01:51,aaa,pending,vlm-mem
+custom,notify student Okng to have a meeting in the 511 conference room,,high,2026-05-24 14:03:51,aaa,pending,vlm-mem
+custom,look for coca-cola,,low,2026-05-24 14:09:03,aaa,pending,rule
+custom,look for an apple,,low,2026-05-24 14:15:14,aaa,pending,vlm
+custom,say hello,,low,2026-05-24 14:15:16,aaa,pending,vlm
+custom,bring Oreo original flavor sandwich cookie box to Okng,,low,2026-05-24 14:17:37,aaa,pending,rule
+custom,please help me deliver the a bottle of water to student taoshida,,low,2026-05-24 14:19:18,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up coca-cola for me,,low,2026-05-24 14:26:42,aaa,pending,vlm
+custom,bring an apple to zkm,,low,2026-05-24 14:27:25,aaa,pending,rule
+custom,give me a bottle of water,,high,2026-05-24 14:34:34,aaa,pending,rule
+custom,Pick a chocolate marked with Snickers and place it on the table,,low,2026-05-24 14:39:59,aaa,pending,vlm-mem
+custom,Pick a bottle of water and place it on the table,,high,2026-05-24 14:41:37,aaa,pending,rule
+custom,could you help me find a banana,,low,2026-05-24 14:49:40,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-24 14:54:49,aaa,pending,vlm
+custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,medium,2026-05-24 15:05:53,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-24 15:09:08,aaa,pending,rule
+custom,pick up a chocolate marked with Snickers for taoshida,,low,2026-05-24 15:14:51,aaa,pending,rule
+custom,go to the snack area and pick up an orange,,low,2026-05-24 15:14:57,aaa,pending,vlm
+custom,come to find zsx,,low,2026-05-24 15:17:45,aaa,pending,vlm
+custom,could you help me find Vitasoy chocolate soya drink,,low,2026-05-24 15:23:25,aaa,pending,rule
+custom,pick up an apple for me,,medium,2026-05-24 15:43:58,aaa,pending,vlm-mem
+custom,"Find yyw and zsx, tell them there's a PPT they need to make",,high,2026-05-24 15:45:24,aaa,pending,vlm
+custom,"Find wyj and taoshida, tell them there's a PPT they need to make",,low,2026-05-24 15:47:20,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up Orion Shuyuan non-fried potato chips for me,,medium,2026-05-24 16:05:38,aaa,pending,rule
+custom,help me get my favorite fruit,,high,2026-05-24 16:10:51,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-24 16:14:10,aaa,pending,rule
+custom,Pick a banana and place it on the table,,medium,2026-05-24 16:29:51,aaa,pending,vlm
+custom,bring a chocolate marked with Snickers to zsx,,low,2026-05-24 16:44:24,aaa,pending,vlm
+custom,please go to the snack area to pick up red packaged cake for me,,low,2026-05-24 16:51:30,aaa,pending,rule
+custom,Check the environment.,,low,2026-05-24 16:53:07,aaa,pending,vlm-mem
+custom,could you help me find a bottle of water,,medium,2026-05-24 17:13:39,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-24 17:20:24,aaa,pending,rule
+custom,Pick a bottle of water and place it on the table,,medium,2026-05-24 17:23:42,aaa,pending,rule
+custom,pick up a bottle of water and place it to wyj's desk,,medium,2026-05-24 17:37:44,aaa,pending,rule
+custom,Find yyw.,,low,2026-05-24 17:47:58,aaa,pending,vlm
+custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,medium,2026-05-24 18:00:17,aaa,pending,rule
+custom,please help me deliver the a banana to student zkm,,high,2026-05-24 18:19:51,aaa,pending,vlm-mem
+custom,go home,,medium,2026-05-24 18:25:31,aaa,pending,vlm
+custom,Find taoshida.,,low,2026-05-24 18:32:39,aaa,pending,vlm-mem
+custom,pick up a chocolate marked with Snickers for me,,high,2026-05-24 18:36:25,aaa,pending,vlm
+custom,Pick coca-cola and place it on the table,,medium,2026-05-24 18:36:52,aaa,pending,rule
+custom,say hello,,low,2026-05-24 19:20:18,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-24 19:46:53,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-24 19:53:50,aaa,pending,vlm-mem
+custom,Explore the office and find the snack area,,low,2026-05-24 20:54:05,aaa,pending,vlm
+custom,find a bottle of water,,high,2026-05-25 09:10:34,aaa,pending,vlm
+custom,bring an orange to taoshida,,high,2026-05-25 09:13:02,aaa,pending,rule
+custom,help me get my favorite fruit,,medium,2026-05-25 09:19:20,aaa,pending,rule
+custom,come to find wyj,,low,2026-05-25 09:37:59,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-25 09:44:29,aaa,pending,rule
+custom,find wyj and say hello,,low,2026-05-25 09:50:13,aaa,pending,vlm
+custom,where is taoshida,,medium,2026-05-25 10:07:30,aaa,pending,vlm-mem
+custom,bring a chocolate marked with Snickers to yyw,,medium,2026-05-25 10:26:51,aaa,pending,rule
+custom,notify student zsx to have a meeting in the 511 conference room,,high,2026-05-25 10:28:59,aaa,pending,rule
+custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,low,2026-05-25 11:22:38,aaa,pending,vlm-mem
+custom,"Find zsx and Okng, tell them there's a PPT they need to make",,low,2026-05-25 14:13:03,aaa,pending,vlm
+custom,pick up coca-cola and place it to wyj's desk,,high,2026-05-25 14:15:13,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,medium,2026-05-25 14:30:05,aaa,pending,rule
+custom,come to find yyw,,medium,2026-05-25 14:30:48,aaa,pending,rule
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-25 14:32:01,aaa,pending,rule
+custom,find Vitasoy chocolate soya drink,,low,2026-05-25 14:43:05,aaa,pending,rule
+custom,please go to the snack area to pick up an apple for me,,low,2026-05-25 15:08:20,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-25 15:09:26,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-25 15:18:45,aaa,pending,vlm-mem
+custom,look for red packaged cake,,low,2026-05-25 15:23:09,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-25 15:23:22,aaa,pending,vlm
+custom,Explore the office and find the snack area,,high,2026-05-25 15:26:56,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,medium,2026-05-25 15:27:31,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-25 15:33:20,aaa,pending,vlm
+custom,give me a chocolate marked with Snickers,,low,2026-05-25 15:40:32,aaa,pending,rule
+custom,give me Orion Shuyuan non-fried potato chips,,low,2026-05-25 15:50:16,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,low,2026-05-25 15:53:56,aaa,pending,vlm
+custom,find zkm,,low,2026-05-25 16:05:34,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-25 16:15:09,aaa,pending,vlm
+custom,come to find wyj,,low,2026-05-25 16:41:20,aaa,pending,vlm
+custom,deliver some food for zsx,,medium,2026-05-25 16:51:30,aaa,pending,vlm
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-25 16:55:19,aaa,pending,rule
+custom,what time is it,,low,2026-05-25 16:56:57,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-25 17:16:59,aaa,pending,vlm
+custom,help me get my favorite fruit,,medium,2026-05-25 17:18:28,aaa,pending,rule
+custom,tell me a joke,,low,2026-05-25 17:19:22,aaa,pending,vlm-mem
+custom,please help me deliver the red packaged cake to student Okng,,medium,2026-05-25 17:29:40,aaa,pending,vlm-mem
+custom,pick up an apple for zsx,,low,2026-05-25 17:46:21,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,high,2026-05-25 17:57:44,aaa,pending,vlm
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell taoshida the result",,medium,2026-05-25 18:10:00,aaa,pending,vlm-mem
+custom,go home,,medium,2026-05-25 18:12:19,aaa,pending,rule
+custom,could you help me find red packaged cake,,low,2026-05-25 18:20:40,aaa,pending,vlm
+custom,explore the office,,low,2026-05-25 18:21:15,aaa,pending,rule
+custom,go to the snack area and pick up red packaged cake,,medium,2026-05-25 18:25:56,aaa,pending,vlm-mem
+custom,please help me deliver the an apple to student yyw,,low,2026-05-25 18:41:47,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zkm,,medium,2026-05-25 18:54:05,aaa,pending,rule
+custom,give me Orion Shuyuan non-fried potato chips,,medium,2026-05-25 18:58:28,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,high,2026-05-25 20:08:33,aaa,pending,vlm-mem
+custom,could you help me find a chocolate marked with Snickers,,low,2026-05-25 20:10:05,aaa,pending,rule
+custom,pick up a bottle of water for zkm,,low,2026-05-25 20:26:04,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-05-26 09:05:20,aaa,pending,rule
+custom,please go to the snack area to pick up an orange for me,,low,2026-05-26 09:05:25,aaa,pending,vlm-mem
+custom,Pick a chocolate marked with Snickers and place it on the table,,high,2026-05-26 10:19:11,aaa,pending,vlm-mem
+custom,find taoshida and say hello,,medium,2026-05-26 10:36:26,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-05-26 10:40:13,aaa,pending,rule
+custom,please help me deliver the coca-cola to student Okng,,low,2026-05-26 10:42:36,aaa,pending,vlm-mem
+custom,"Find yyw and wyj, tell them there's a PPT they need to make",,medium,2026-05-26 10:46:11,aaa,pending,vlm-mem
+custom,say goodbye,,medium,2026-05-26 10:53:51,aaa,pending,rule
+custom,"Can you check if zkm is at his workstation, then come back and let me know?",,medium,2026-05-26 11:09:54,aaa,pending,rule
+custom,please help me deliver the a bottle of water to student zsx,,medium,2026-05-26 11:12:05,aaa,pending,vlm-mem
+custom,please help me deliver the an apple to student yyw,,low,2026-05-26 11:15:01,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-26 11:16:03,aaa,pending,vlm
+custom,pick up coca-cola and place it to zsx's desk,,medium,2026-05-26 11:18:34,aaa,pending,rule
+custom,find yyw and say hello,,medium,2026-05-26 11:46:34,aaa,pending,vlm
+custom,say hello to Okng,,medium,2026-05-26 11:53:35,aaa,pending,rule
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zkm the result",,medium,2026-05-26 14:08:29,aaa,pending,vlm
+custom,Explore the office and find the snack area,,medium,2026-05-26 14:13:12,aaa,pending,rule
+custom,notify student zsx to have a meeting in the 511 conference room,,medium,2026-05-26 14:13:42,aaa,pending,vlm
+custom,come to find zkm,,high,2026-05-26 14:14:52,aaa,pending,rule
+custom,go to the snack area and pick up an apple,,low,2026-05-26 14:30:12,aaa,pending,vlm-mem
+custom,find zkm and say hello,,high,2026-05-26 14:38:04,aaa,pending,rule
+custom,pick up a chocolate marked with Snickers and place it to taoshida's desk,,high,2026-05-26 14:43:44,aaa,pending,vlm-mem
+custom,bring Oreo original flavor sandwich cookie box to wyj,,high,2026-05-26 15:08:05,aaa,pending,vlm
+custom,please help me deliver the an apple to student taoshida,,low,2026-05-26 15:14:16,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-26 15:15:45,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-26 15:18:46,aaa,pending,vlm
+custom,what time is it,,medium,2026-05-26 15:20:44,aaa,pending,rule
+custom,what time is it,,low,2026-05-26 15:41:39,aaa,pending,vlm
+custom,explore the office,,low,2026-05-26 15:41:42,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-26 16:00:10,aaa,pending,vlm
+custom,give me Orion Shuyuan non-fried potato chips,,high,2026-05-26 16:14:39,aaa,pending,rule
+custom,help me get a banana,,low,2026-05-26 16:25:13,aaa,pending,vlm
+custom,Inspect the current environment.,,high,2026-05-26 16:26:22,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-05-26 16:38:34,aaa,pending,vlm
+custom,come to find taoshida,,low,2026-05-26 16:42:15,aaa,pending,vlm
+custom,Find yyw.,,low,2026-05-26 16:44:16,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-26 17:01:17,aaa,pending,rule
+custom,Inspect the current environment.,,high,2026-05-26 17:01:35,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-26 17:13:48,aaa,pending,rule
+custom,say hello to zsx,,low,2026-05-26 17:16:33,aaa,pending,vlm
+custom,could you help me find Vitasoy chocolate soya drink,,low,2026-05-26 17:20:17,aaa,pending,vlm
+custom,find a chocolate marked with Snickers,,high,2026-05-26 17:23:45,aaa,pending,vlm
+custom,go to the snack area and pick up red packaged cake,,medium,2026-05-26 17:31:03,aaa,pending,vlm
+custom,go to the snack area and pick up a banana,,medium,2026-05-26 17:32:16,aaa,pending,rule
+custom,please go to the snack area to pick up coca-cola for me,,low,2026-05-26 18:14:15,aaa,pending,vlm
+custom,help me get red packaged cake,,high,2026-05-26 18:22:21,aaa,pending,vlm
+custom,Pick a banana and place it on the table,,low,2026-05-26 18:30:09,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-26 18:32:25,aaa,pending,rule
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-26 18:39:42,aaa,pending,rule
+custom,give me red packaged cake,,high,2026-05-26 20:52:58,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-27 09:06:26,aaa,pending,vlm-mem
+custom,Check the environment.,,medium,2026-05-27 09:10:00,aaa,pending,vlm-mem
+custom,help me get Orion Shuyuan non-fried potato chips,,low,2026-05-27 09:23:01,aaa,pending,rule
+custom,pick up Vitasoy chocolate soya drink for zkm,,low,2026-05-27 09:23:35,aaa,pending,vlm-mem
+custom,go to the snack area and pick up a chocolate marked with Snickers,,medium,2026-05-27 09:48:18,aaa,pending,rule
+custom,find zsx,,low,2026-05-27 09:49:03,aaa,pending,vlm
+custom,"Find zsx and taoshida, tell them there's a PPT they need to make",,high,2026-05-27 09:49:18,aaa,pending,vlm-mem
+custom,pick up a banana for me,,low,2026-05-27 10:34:38,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-27 10:39:21,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-27 10:40:47,aaa,pending,rule
+custom,give me a chocolate marked with Snickers,,medium,2026-05-27 11:03:36,aaa,pending,vlm
+custom,find an apple,,low,2026-05-27 11:33:23,aaa,pending,vlm
+custom,give me a banana,,low,2026-05-27 14:14:45,aaa,pending,vlm
+custom,look for a bottle of water,,high,2026-05-27 14:16:37,aaa,pending,rule
+custom,please go to the snack area to pick up a banana for me,,medium,2026-05-27 14:17:31,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to yyw,,high,2026-05-27 14:37:48,aaa,pending,vlm-mem
+custom,give me an apple,,low,2026-05-27 14:46:19,aaa,pending,rule
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-05-27 14:49:04,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-27 14:55:05,aaa,pending,rule
+custom,Pick red packaged cake and place it on the table,,low,2026-05-27 15:12:21,aaa,pending,vlm
+custom,choose a red color fruit and deliver it to zkm,,low,2026-05-27 15:28:27,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-27 15:33:15,aaa,pending,vlm-mem
+custom,come to find wyj,,high,2026-05-27 15:56:41,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-27 16:10:25,aaa,pending,vlm
+custom,find Okng and say hello,,low,2026-05-27 16:35:39,aaa,pending,rule
+custom,pick up coca-cola and place it to yyw's desk,,low,2026-05-27 16:41:41,aaa,pending,rule
+custom,find Vitasoy chocolate soya drink,,medium,2026-05-27 16:44:41,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-05-27 16:54:47,aaa,pending,rule
+custom,notify student zkm to have a meeting in the 511 conference room,,medium,2026-05-27 17:01:21,aaa,pending,rule
+custom,choose a red color fruit and deliver it to wyj,,low,2026-05-27 17:05:07,aaa,pending,rule
+custom,bring Oreo original flavor sandwich cookie box to zkm,,low,2026-05-27 17:15:00,aaa,pending,vlm
+custom,pick up an apple for zkm,,low,2026-05-27 17:36:58,aaa,pending,rule
+custom,"Can you check if wyj is at his workstation, then come back and let me know?",,low,2026-05-27 17:50:27,aaa,pending,vlm-mem
+custom,pick up a banana for yyw,,medium,2026-05-27 18:04:29,aaa,pending,rule
+custom,Explore the office and find the snack area,,high,2026-05-27 18:06:36,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,low,2026-05-27 18:08:03,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-27 18:11:14,aaa,pending,rule
+custom,could you help me find a banana,,high,2026-05-27 18:15:38,aaa,pending,vlm
+custom,Check the environment.,,medium,2026-05-27 18:29:07,aaa,pending,vlm-mem
+custom,pick up an apple and place it to taoshida's desk,,high,2026-05-27 18:29:33,aaa,pending,vlm
+custom,look for red packaged cake,,low,2026-05-27 18:29:33,aaa,pending,vlm
+custom,look for Vitasoy chocolate soya drink,,medium,2026-05-27 18:31:01,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-27 18:59:04,aaa,pending,vlm
+custom,please help me deliver the a chocolate marked with Snickers to student taoshida,,high,2026-05-27 18:59:27,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to wyj,,high,2026-05-27 19:16:28,aaa,pending,rule
+custom,could you help me find Orion Shuyuan non-fried potato chips,,low,2026-05-27 19:54:19,aaa,pending,vlm-mem
+custom,help me get a banana,,low,2026-05-27 19:55:11,aaa,pending,rule
+custom,pick up an apple for Okng,,high,2026-05-27 19:56:36,aaa,pending,rule
+custom,bring a banana to Okng,,medium,2026-05-27 20:47:53,aaa,pending,vlm
+custom,pick up coca-cola for yyw,,low,2026-05-27 20:50:13,aaa,pending,vlm-mem
+custom,go home,,high,2026-05-28 09:22:37,aaa,pending,rule
+custom,pick up an apple and place it to wyj's desk,,low,2026-05-28 10:02:53,aaa,pending,rule
+custom,choose a red color fruit and deliver it to Okng,,medium,2026-05-28 10:34:48,aaa,pending,rule
+custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,high,2026-05-28 10:37:24,aaa,pending,rule
+custom,please help me deliver the red packaged cake to student Okng,,high,2026-05-28 10:39:31,aaa,pending,vlm-mem
+custom,what time is it,,medium,2026-05-28 11:07:38,aaa,pending,vlm
+custom,deliver some food for zkm,,medium,2026-05-28 11:29:37,aaa,pending,vlm
+custom,help me get my favorite fruit,,medium,2026-05-28 11:37:43,aaa,pending,vlm-mem
+custom,help me get coca-cola,,medium,2026-05-28 11:42:00,aaa,pending,rule
+custom,notify student wyj to have a meeting in the 511 conference room,,medium,2026-05-28 11:43:31,aaa,pending,rule
+custom,look for an apple,,low,2026-05-28 11:47:54,aaa,pending,vlm-mem
+custom,could you help me find an orange,,low,2026-05-28 14:02:51,aaa,pending,rule
+custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,high,2026-05-28 14:07:52,aaa,pending,rule
+custom,help me get a banana,,low,2026-05-28 14:13:38,aaa,pending,vlm
+custom,pick up a banana for taoshida,,high,2026-05-28 14:14:32,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-28 14:21:18,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-28 14:27:39,aaa,pending,vlm
+custom,deliver some food for zsx,,medium,2026-05-28 14:30:12,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-28 14:35:38,aaa,pending,rule
+custom,find zsx and say hello,,low,2026-05-28 14:48:36,aaa,pending,vlm-mem
+custom,bring red packaged cake to Okng,,low,2026-05-28 15:01:56,aaa,pending,rule
+custom,"Find zkm and yyw, tell them there's a PPT they need to make",,medium,2026-05-28 15:07:15,aaa,pending,vlm
+custom,please go to the snack area to pick up a banana for me,,high,2026-05-28 15:34:11,aaa,pending,vlm-mem
+custom,Find Okng.,,low,2026-05-28 15:34:47,aaa,pending,rule
+custom,find coca-cola,,low,2026-05-28 15:36:20,aaa,pending,vlm
+custom,where is yyw,,low,2026-05-28 15:44:47,aaa,pending,vlm-mem
+custom,notify student yyw to have a meeting in the 511 conference room,,high,2026-05-28 15:54:31,aaa,pending,vlm
+custom,say goodbye,,low,2026-05-28 16:08:09,aaa,pending,vlm
+custom,deliver some food for Okng,,low,2026-05-28 16:11:52,aaa,pending,rule
+custom,please help me deliver the an orange to student zkm,,medium,2026-05-28 16:36:44,aaa,pending,rule
+custom,go to the snack area and pick up a banana,,high,2026-05-28 16:41:12,aaa,pending,vlm
+custom,"A bottle of water, please.",,high,2026-05-28 16:50:32,aaa,pending,vlm-mem
+custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-28 16:54:29,aaa,pending,vlm-mem
+custom,tell me a joke,,high,2026-05-28 17:08:55,aaa,pending,rule
+custom,notify student zsx to have a meeting in the 511 conference room,,low,2026-05-28 17:20:53,aaa,pending,vlm
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-28 17:22:21,aaa,pending,rule
+custom,"A bottle of water, please.",,medium,2026-05-28 17:28:49,aaa,pending,rule
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-28 17:46:58,aaa,pending,vlm-mem
+custom,say goodbye,,low,2026-05-28 17:54:21,aaa,pending,rule
+custom,Find zsx.,,low,2026-05-28 17:59:49,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,low,2026-05-28 18:00:07,aaa,pending,vlm-mem
+custom,bring Oreo original flavor sandwich cookie box to Okng,,medium,2026-05-28 18:16:32,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-28 18:18:06,aaa,pending,vlm
+custom,could you give me something to eat?,,medium,2026-05-28 18:39:36,aaa,pending,vlm-mem
+custom,give me Oreo original flavor sandwich cookie box,,low,2026-05-28 18:39:54,aaa,pending,vlm-mem
+custom,please go to the snack area to pick up an orange for me,,medium,2026-05-28 19:07:05,aaa,pending,vlm-mem
+custom,Check the environment.,,medium,2026-05-28 19:12:01,aaa,pending,vlm-mem
+custom,help me get a bottle of water,,low,2026-05-28 19:28:44,aaa,pending,rule
+custom,explore the office,,low,2026-05-28 19:36:05,aaa,pending,vlm-mem
+custom,help me get a chocolate marked with Snickers,,high,2026-05-28 20:40:50,aaa,pending,vlm
+custom,please go to the snack area to pick up red packaged cake for me,,low,2026-05-29 09:08:28,aaa,pending,rule
+custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,high,2026-05-29 09:27:34,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-05-29 09:43:17,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,low,2026-05-29 09:54:32,aaa,pending,vlm-mem
+custom,tell me a joke,,high,2026-05-29 09:59:43,aaa,pending,vlm-mem
+custom,find an orange,,low,2026-05-29 10:31:08,aaa,pending,vlm
+custom,tell me a joke,,low,2026-05-29 10:42:08,aaa,pending,rule
+custom,Pick coca-cola and place it on the table,,medium,2026-05-29 10:43:23,aaa,pending,vlm-mem
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-29 10:45:25,aaa,pending,vlm-mem
+custom,give me an orange,,low,2026-05-29 11:10:16,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-29 11:19:08,aaa,pending,vlm
+custom,could you help me find red packaged cake,,low,2026-05-29 11:24:05,aaa,pending,vlm
+custom,explore the office,,medium,2026-05-29 11:27:45,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-05-29 11:58:31,aaa,pending,vlm
+custom,find taoshida,,low,2026-05-29 14:24:06,aaa,pending,rule
+custom,Find taoshida.,,low,2026-05-29 14:39:42,aaa,pending,vlm
+custom,notify student yyw to have a meeting in the 511 conference room,,medium,2026-05-29 14:39:42,aaa,pending,vlm
+custom,find Orion Shuyuan non-fried potato chips,,medium,2026-05-29 14:41:21,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,high,2026-05-29 15:14:51,aaa,pending,vlm-mem
+custom,say hello,,low,2026-05-29 15:29:56,aaa,pending,vlm
+custom,pick up a bottle of water for me,,medium,2026-05-29 15:37:04,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-29 15:50:08,aaa,pending,rule
+custom,pick up a bottle of water for taoshida,,low,2026-05-29 15:54:58,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-29 16:40:20,aaa,pending,vlm
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-29 16:46:54,aaa,pending,vlm-mem
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-29 16:49:07,aaa,pending,rule
+custom,Pick Vitasoy chocolate soya drink and place it on the table,,medium,2026-05-29 17:03:33,aaa,pending,rule
+custom,say hello to yyw,,low,2026-05-29 17:08:30,aaa,pending,rule
+custom,explore the office,,medium,2026-05-29 17:11:15,aaa,pending,rule
+custom,"A bottle of water, please.",,medium,2026-05-29 17:13:23,aaa,pending,rule
+custom,what time is it,,low,2026-05-29 17:31:02,aaa,pending,rule
+custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,medium,2026-05-29 17:34:12,aaa,pending,rule
+custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,low,2026-05-29 17:36:15,aaa,pending,rule
+custom,find an orange,,low,2026-05-29 17:43:50,aaa,pending,rule
+custom,"A bottle of water, please.",,low,2026-05-29 17:50:25,aaa,pending,vlm-mem
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,high,2026-05-29 17:52:04,aaa,pending,rule
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,high,2026-05-29 18:04:32,aaa,pending,vlm
+custom,could you help me find a bottle of water,,low,2026-05-29 18:05:40,aaa,pending,vlm
+custom,deliver some food for zkm,,low,2026-05-29 18:08:00,aaa,pending,vlm
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-05-29 18:13:47,aaa,pending,vlm
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-29 18:17:42,aaa,pending,vlm
+custom,where is zsx,,low,2026-05-29 18:21:16,aaa,pending,vlm
+custom,Check the environment.,,low,2026-05-29 18:22:15,aaa,pending,rule
+custom,could you help me find red packaged cake,,high,2026-05-29 18:35:42,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to wyj,,low,2026-05-29 18:53:33,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,high,2026-05-29 18:54:36,aaa,pending,vlm
+custom,find taoshida and say hello,,low,2026-05-29 18:57:07,aaa,pending,rule
+custom,explore the office,,low,2026-05-29 18:59:51,aaa,pending,rule
+custom,Pick an apple and place it on the table,,medium,2026-05-29 20:39:04,aaa,pending,rule
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zsx the result",,high,2026-05-29 20:50:20,aaa,pending,vlm
+custom,"Go to workstation 308, check if the monitor is on, then come back and tell taoshida the result",,medium,2026-05-30 09:25:17,aaa,pending,rule
+custom,tell me a joke,,low,2026-05-30 09:38:56,aaa,pending,vlm
+custom,Pick a bottle of water and place it on the table,,medium,2026-05-30 10:13:38,aaa,pending,rule
+custom,Inspect the current environment.,,high,2026-05-30 10:21:25,aaa,pending,rule
+custom,pick up Orion Shuyuan non-fried potato chips and place it to wyj's desk,,high,2026-05-30 10:37:12,aaa,pending,rule
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,low,2026-05-30 11:11:43,aaa,pending,vlm
+custom,Find zsx.,,low,2026-05-30 11:45:32,aaa,pending,vlm-mem
+custom,bring an apple to taoshida,,low,2026-05-30 11:46:51,aaa,pending,rule
+custom,what time is it,,low,2026-05-30 11:51:15,aaa,pending,vlm
+custom,go home,,low,2026-05-30 11:57:17,aaa,pending,vlm
+custom,help me get a chocolate marked with Snickers,,low,2026-05-30 14:01:59,aaa,pending,rule
+custom,say goodbye,,low,2026-05-30 14:08:53,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-05-30 14:12:40,aaa,pending,vlm
+custom,find zsx,,low,2026-05-30 14:18:06,aaa,pending,rule
+custom,look for Orion Shuyuan non-fried potato chips,,low,2026-05-30 14:29:38,aaa,pending,vlm-mem
+custom,Pick coca-cola and place it on the table,,low,2026-05-30 14:29:59,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-30 14:32:02,aaa,pending,rule
+custom,notify student zkm to have a meeting in the 511 conference room,,low,2026-05-30 15:00:17,aaa,pending,rule
+custom,Explore the office and find the snack area,,low,2026-05-30 15:20:05,aaa,pending,vlm
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-30 15:30:47,aaa,pending,vlm-mem
+custom,could you help me find an orange,,medium,2026-05-30 15:34:00,aaa,pending,vlm-mem
+custom,come to find zsx,,medium,2026-05-30 15:41:46,aaa,pending,vlm
+custom,Inspect the current environment.,,low,2026-05-30 15:42:01,aaa,pending,rule
+custom,bring red packaged cake to zkm,,low,2026-05-30 15:50:48,aaa,pending,vlm-mem
+custom,"Find zkm and wyj, tell them there's a PPT they need to make",,low,2026-05-30 16:00:59,aaa,pending,rule
+custom,Explore the office and find the snack area,,low,2026-05-30 16:29:20,aaa,pending,vlm-mem
+custom,go home,,low,2026-05-30 16:45:07,aaa,pending,vlm
+custom,find zsx and say hello,,low,2026-05-30 16:55:11,aaa,pending,vlm
+custom,pick up Orion Shuyuan non-fried potato chips for zkm,,low,2026-05-30 16:59:27,aaa,pending,vlm-mem
+custom,come to find Okng,,low,2026-05-30 17:02:03,aaa,pending,vlm
+custom,Find zkm.,,low,2026-05-30 17:06:12,aaa,pending,vlm-mem
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell zkm the result",,medium,2026-05-30 17:27:47,aaa,pending,vlm-mem
+custom,please help me deliver the a bottle of water to student Okng,,medium,2026-05-30 17:36:39,aaa,pending,vlm
+custom,"A bottle of water, please.",,medium,2026-05-30 17:54:13,aaa,pending,rule
+custom,find zsx,,low,2026-05-30 18:08:42,aaa,pending,rule
+custom,help me get an orange,,low,2026-05-30 18:17:17,aaa,pending,vlm
+custom,pick up a bottle of water and place it to yyw's desk,,low,2026-05-30 18:24:53,aaa,pending,vlm
+custom,help me get my favorite fruit,,medium,2026-05-30 18:26:05,aaa,pending,vlm
+custom,notify student wyj to have a meeting in the 511 conference room,,medium,2026-05-30 18:31:04,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-05-30 18:37:12,aaa,pending,vlm
+custom,bring coca-cola to zsx,,low,2026-05-30 18:40:48,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-30 18:47:41,aaa,pending,rule
+custom,bring Vitasoy chocolate soya drink to Okng,,medium,2026-05-30 19:21:47,aaa,pending,vlm-mem
+custom,notify student Okng to have a meeting in the 511 conference room,,low,2026-05-30 20:12:12,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-30 20:15:34,aaa,pending,vlm
+custom,say hello to Okng,,low,2026-05-30 20:16:51,aaa,pending,vlm
+custom,give me an apple,,low,2026-05-30 20:22:34,aaa,pending,vlm
+custom,please help me deliver the Orion Shuyuan non-fried potato chips to student yyw,,medium,2026-05-30 20:24:32,aaa,pending,vlm
+custom,come to find wyj,,high,2026-05-30 20:44:13,aaa,pending,vlm-mem
+custom,bring Oreo original flavor sandwich cookie box to Okng,,low,2026-05-30 20:50:09,aaa,pending,vlm-mem
+custom,"Find zkm and Okng, tell them there's a PPT they need to make",,medium,2026-05-31 09:01:49,aaa,pending,rule
+custom,tell me a joke,,low,2026-05-31 09:23:38,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-05-31 09:52:14,aaa,pending,vlm-mem
+custom,pick up an apple and place it to taoshida's desk,,low,2026-05-31 10:17:19,aaa,pending,vlm-mem
+custom,help me get my favorite fruit,,low,2026-05-31 11:11:12,aaa,pending,vlm
+custom,pick up a chocolate marked with Snickers for taoshida,,low,2026-05-31 11:16:05,aaa,pending,vlm
+custom,find taoshida and say hello,,medium,2026-05-31 11:28:39,aaa,pending,rule
+custom,find Okng,,low,2026-05-31 11:41:13,aaa,pending,vlm-mem
+custom,pick up red packaged cake for zsx,,low,2026-05-31 11:41:13,aaa,pending,rule
+custom,Check the environment.,,low,2026-05-31 11:50:45,aaa,pending,rule
+custom,pick up an orange and place it to zsx's desk,,high,2026-05-31 11:51:27,aaa,pending,rule
+custom,say hello to wyj,,low,2026-05-31 14:01:33,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-05-31 14:02:21,aaa,pending,rule
+custom,please go to the snack area to pick up a chocolate marked with Snickers for me,,medium,2026-05-31 14:16:41,aaa,pending,vlm-mem
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,high,2026-05-31 14:39:15,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-05-31 14:51:18,aaa,pending,vlm
+custom,"Go to workstation 506B, check if the monitor is on, then come back and tell taoshida the result",,medium,2026-05-31 15:01:22,aaa,pending,vlm
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell Okng the result",,medium,2026-05-31 15:50:40,aaa,pending,rule
+custom,say goodbye,,medium,2026-05-31 15:51:35,aaa,pending,vlm
+custom,go to the snack area and pick up an orange,,low,2026-05-31 15:52:30,aaa,pending,vlm-mem
+custom,look for a chocolate marked with Snickers,,low,2026-05-31 15:52:36,aaa,pending,vlm-mem
+custom,help me get coca-cola,,low,2026-05-31 16:00:02,aaa,pending,vlm-mem
+custom,"Find wyj, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-31 16:02:03,aaa,pending,rule
+custom,where is taoshida,,low,2026-05-31 16:12:26,aaa,pending,vlm
+custom,pick up an orange for me,,low,2026-05-31 16:14:51,aaa,pending,vlm-mem
+custom,look for Vitasoy chocolate soya drink,,medium,2026-05-31 16:34:01,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-31 16:48:04,aaa,pending,rule
+custom,could you give me something to eat?,,low,2026-05-31 16:52:46,aaa,pending,rule
+custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,high,2026-05-31 16:55:27,aaa,pending,vlm
+custom,tell me a joke,,high,2026-05-31 17:16:02,aaa,pending,rule
+custom,find zsx,,low,2026-05-31 17:19:40,aaa,pending,rule
+custom,deliver some food for zkm,,low,2026-05-31 17:45:11,aaa,pending,vlm-mem
+custom,could you help me find Orion Shuyuan non-fried potato chips,,low,2026-05-31 17:51:09,aaa,pending,rule
+custom,Find yyw.,,low,2026-05-31 17:52:55,aaa,pending,vlm
+custom,go home,,medium,2026-05-31 17:59:29,aaa,pending,vlm
+custom,deliver some food for zkm,,low,2026-05-31 18:02:48,aaa,pending,vlm
+custom,"Find zsx, then say to them: 'Good afternoon, work hard.'",,low,2026-05-31 18:07:27,aaa,pending,rule
+custom,Explore the office and find the snack area,,medium,2026-05-31 18:25:43,aaa,pending,rule
+custom,help me get an apple,,low,2026-05-31 18:45:20,aaa,pending,vlm
+custom,"A bottle of water, please.",,low,2026-05-31 18:48:18,aaa,pending,rule
+custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,low,2026-05-31 18:50:43,aaa,pending,vlm
+custom,Explore the office and find the snack area,,high,2026-05-31 18:54:16,aaa,pending,rule
+custom,bring Orion Shuyuan non-fried potato chips to zsx,,medium,2026-05-31 18:56:19,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,low,2026-05-31 18:57:45,aaa,pending,vlm
+custom,"Go to workstation 506L, check if the monitor is on, then come back and tell taoshida the result",,high,2026-05-31 18:58:17,aaa,pending,rule
+custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,medium,2026-05-31 19:01:36,aaa,pending,rule
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-05-31 19:15:58,aaa,pending,vlm
+custom,pick up an apple for me,,low,2026-05-31 19:45:44,aaa,pending,rule
+custom,say goodbye,,medium,2026-05-31 19:47:46,aaa,pending,vlm
+custom,find wyj and say hello,,low,2026-05-31 19:59:53,aaa,pending,rule
+custom,"Can you check if taoshida is at his workstation, then come back and let me know?",,medium,2026-06-01 09:19:20,aaa,pending,vlm
+custom,where is Okng,,high,2026-06-01 09:19:37,aaa,pending,vlm-mem
+custom,give me a bottle of water,,high,2026-06-01 09:20:34,aaa,pending,rule
+custom,look for Vitasoy chocolate soya drink,,low,2026-06-01 09:29:11,aaa,pending,rule
+custom,Pick Oreo original flavor sandwich cookie box and place it on the table,,low,2026-06-01 09:33:33,aaa,pending,rule
+custom,tell me a joke,,high,2026-06-01 09:48:56,aaa,pending,vlm
+custom,give me a banana,,low,2026-06-01 10:11:56,aaa,pending,vlm
+custom,pick up red packaged cake for wyj,,medium,2026-06-01 10:54:02,aaa,pending,rule
+custom,Pick coca-cola and place it on the table,,medium,2026-06-01 11:42:05,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to Okng,,medium,2026-06-01 14:01:40,aaa,pending,rule
+custom,pick up a bottle of water for me,,medium,2026-06-01 14:03:50,aaa,pending,rule
+custom,come to find Okng,,low,2026-06-01 14:11:41,aaa,pending,vlm-mem
+custom,find a bottle of water,,low,2026-06-01 14:12:40,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to Okng,,low,2026-06-01 14:14:21,aaa,pending,vlm
+custom,help me get my favorite fruit,,high,2026-06-01 14:20:54,aaa,pending,vlm-mem
+custom,choose a red color fruit and deliver it to Okng,,low,2026-06-01 14:22:48,aaa,pending,rule
+custom,help me get my favorite fruit,,low,2026-06-01 14:29:12,aaa,pending,vlm-mem
+custom,could you help me find Oreo original flavor sandwich cookie box,,low,2026-06-01 14:34:41,aaa,pending,vlm-mem
+custom,deliver some food for Okng,,high,2026-06-01 14:39:04,aaa,pending,vlm
+custom,please go to the snack area to pick up Vitasoy chocolate soya drink for me,,medium,2026-06-01 14:48:24,aaa,pending,rule
+custom,go to the snack area and pick up Vitasoy chocolate soya drink,,high,2026-06-01 14:50:47,aaa,pending,vlm-mem
+custom,deliver some food for wyj,,high,2026-06-01 14:58:30,aaa,pending,rule
+custom,say hello to wyj,,low,2026-06-01 15:08:50,aaa,pending,rule
+custom,could you give me something to eat?,,medium,2026-06-01 15:12:25,aaa,pending,vlm
+custom,look for Vitasoy chocolate soya drink,,medium,2026-06-01 15:14:11,aaa,pending,rule
+custom,find a chocolate marked with Snickers,,low,2026-06-01 15:30:10,aaa,pending,rule
+custom,say goodbye,,low,2026-06-01 15:43:51,aaa,pending,rule
+custom,pick up Orion Shuyuan non-fried potato chips and place it to zkm's desk,,medium,2026-06-01 15:45:08,aaa,pending,vlm-mem
+custom,find zkm,,medium,2026-06-01 16:24:04,aaa,pending,vlm
+custom,say hello,,low,2026-06-01 16:24:47,aaa,pending,vlm-mem
+custom,pick up a banana and place it to zsx's desk,,low,2026-06-01 16:25:53,aaa,pending,vlm-mem
+custom,find an apple,,low,2026-06-01 16:27:30,aaa,pending,vlm-mem
+custom,say hello,,low,2026-06-01 16:46:00,aaa,pending,vlm
+custom,help me get my favorite fruit,,low,2026-06-01 16:59:27,aaa,pending,vlm-mem
+custom,go home,,low,2026-06-01 17:03:17,aaa,pending,vlm-mem
+custom,deliver some food for yyw,,low,2026-06-01 17:17:15,aaa,pending,vlm
+custom,give me an apple,,high,2026-06-01 17:22:19,aaa,pending,rule
+custom,"Can you check if Okng is at his workstation, then come back and let me know?",,low,2026-06-01 17:23:53,aaa,pending,vlm-mem
+custom,pick up an apple and place it to taoshida's desk,,low,2026-06-01 17:42:06,aaa,pending,vlm-mem
+custom,say goodbye,,medium,2026-06-01 18:00:29,aaa,pending,vlm-mem
+custom,go to the snack area and pick up coca-cola,,low,2026-06-01 18:00:52,aaa,pending,vlm
+custom,pick up a chocolate marked with Snickers for me,,medium,2026-06-01 18:04:33,aaa,pending,vlm
+custom,pick up Oreo original flavor sandwich cookie box and place it to wyj's desk,,low,2026-06-01 18:17:14,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-06-01 18:46:13,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,high,2026-06-01 18:46:45,aaa,pending,rule
+custom,say hello to zkm,,low,2026-06-01 18:53:41,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-06-01 19:04:04,aaa,pending,vlm
+custom,find taoshida,,low,2026-06-01 19:12:54,aaa,pending,vlm
+custom,pick up a chocolate marked with Snickers and place it to zsx's desk,,medium,2026-06-01 19:30:35,aaa,pending,vlm-mem
+custom,"Find Okng and taoshida, tell them there's a PPT they need to make",,high,2026-06-01 20:08:44,aaa,pending,vlm
+custom,find zkm,,medium,2026-06-02 09:24:51,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-06-02 09:29:20,aaa,pending,vlm
+custom,deliver some food for yyw,,low,2026-06-02 09:51:27,aaa,pending,vlm
+custom,"Can you check if Okng is at his workstation, then come back and let me know?",,high,2026-06-02 09:57:39,aaa,pending,rule
+custom,say hello to wyj,,low,2026-06-02 10:04:22,aaa,pending,rule
+custom,say goodbye,,high,2026-06-02 10:11:29,aaa,pending,vlm
+custom,"Find Okng and taoshida, tell them there's a PPT they need to make",,high,2026-06-02 10:39:58,aaa,pending,rule
+custom,could you help me find red packaged cake,,low,2026-06-02 11:10:43,aaa,pending,rule
+custom,"Find Okng, then say to them: 'Good afternoon, work hard.'",,low,2026-06-02 11:21:55,aaa,pending,vlm-mem
+custom,pick up a banana for me,,low,2026-06-02 11:26:14,aaa,pending,vlm
+custom,please help me deliver the coca-cola to student wyj,,high,2026-06-02 11:47:03,aaa,pending,rule
+custom,could you help me find a banana,,low,2026-06-02 14:00:45,aaa,pending,vlm-mem
+custom,say hello to taoshida,,high,2026-06-02 14:27:54,aaa,pending,rule
+custom,"Find yyw and Okng, tell them there's a PPT they need to make",,medium,2026-06-02 14:33:19,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,low,2026-06-02 14:40:19,aaa,pending,vlm
+custom,say hello to yyw,,low,2026-06-02 14:43:41,aaa,pending,vlm
+custom,Pick Orion Shuyuan non-fried potato chips and place it on the table,,medium,2026-06-02 14:52:18,aaa,pending,rule
+custom,Find zkm.,,low,2026-06-02 14:56:02,aaa,pending,vlm-mem
+custom,find coca-cola,,low,2026-06-02 15:06:07,aaa,pending,vlm
+custom,pick up a chocolate marked with Snickers and place it to taoshida's desk,,high,2026-06-02 15:19:24,aaa,pending,rule
+custom,could you help me find a bottle of water,,medium,2026-06-02 15:26:53,aaa,pending,vlm
+custom,could you give me something to eat?,,low,2026-06-02 15:30:21,aaa,pending,vlm
+custom,find a bottle of water,,low,2026-06-02 15:30:24,aaa,pending,vlm-mem
+custom,deliver some food for yyw,,medium,2026-06-02 15:57:52,aaa,pending,vlm
+custom,"Can you check if Okng is at his workstation, then come back and let me know?",,low,2026-06-02 16:04:11,aaa,pending,rule
+custom,tell me a joke,,low,2026-06-02 16:04:47,aaa,pending,vlm-mem
+custom,say hello to Okng,,high,2026-06-02 16:07:05,aaa,pending,rule
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,low,2026-06-02 16:21:43,aaa,pending,rule
+custom,help me get my favorite fruit,,medium,2026-06-02 16:43:22,aaa,pending,rule
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-06-02 16:45:13,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-06-02 16:47:59,aaa,pending,vlm
+custom,please help me deliver the red packaged cake to student wyj,,low,2026-06-02 16:50:28,aaa,pending,vlm-mem
+custom,pick up coca-cola and place it to yyw's desk,,low,2026-06-02 17:07:44,aaa,pending,vlm
+custom,say hello,,low,2026-06-02 17:29:40,aaa,pending,vlm
+custom,please help me deliver the an apple to student taoshida,,medium,2026-06-02 17:33:47,aaa,pending,vlm-mem
+custom,Inspect the current environment.,,low,2026-06-02 17:35:22,aaa,pending,vlm
+custom,tell me a joke,,low,2026-06-02 17:37:15,aaa,pending,vlm-mem
+custom,find taoshida and say hello,,high,2026-06-02 17:42:48,aaa,pending,rule
+custom,say hello to wyj,,low,2026-06-02 17:46:39,aaa,pending,rule
+custom,pick up a bottle of water for me,,low,2026-06-02 18:02:42,aaa,pending,vlm
+custom,go to the snack area and pick up a banana,,low,2026-06-02 18:02:47,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-06-02 18:22:41,aaa,pending,rule
+custom,what time is it,,low,2026-06-02 18:27:22,aaa,pending,rule
+custom,please go to the snack area to pick up Oreo original flavor sandwich cookie box for me,,low,2026-06-02 18:49:38,aaa,pending,vlm-mem
+custom,explore the office,,low,2026-06-02 18:50:53,aaa,pending,vlm
+custom,Pick a banana and place it on the table,,medium,2026-06-02 18:53:02,aaa,pending,rule
+custom,Pick a chocolate marked with Snickers and place it on the table,,low,2026-06-02 19:02:11,aaa,pending,rule
+custom,pick up Vitasoy chocolate soya drink and place it to wyj's desk,,high,2026-06-02 19:53:15,aaa,pending,vlm
+custom,"Find yyw, then say to them: 'Good afternoon, work hard.'",,medium,2026-06-02 20:46:42,aaa,pending,vlm
+custom,deliver some food for zsx,,high,2026-06-02 20:53:37,aaa,pending,rule
+custom,Inspect the current environment.,,low,2026-06-03 09:14:38,aaa,pending,rule
+custom,say goodbye,,low,2026-06-03 09:21:22,aaa,pending,vlm
+custom,give me Vitasoy chocolate soya drink,,medium,2026-06-03 09:37:38,aaa,pending,vlm
+custom,find taoshida and say hello,,low,2026-06-03 09:56:46,aaa,pending,vlm
+custom,could you give me something to eat?,,medium,2026-06-03 10:32:03,aaa,pending,vlm
+custom,look for coca-cola,,medium,2026-06-03 10:32:19,aaa,pending,rule
+custom,tell me a joke,,low,2026-06-03 10:42:01,aaa,pending,rule
+custom,go to the snack area and pick up red packaged cake,,low,2026-06-03 10:47:50,aaa,pending,vlm
+custom,help me get a bottle of water,,high,2026-06-03 11:10:53,aaa,pending,vlm
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-06-03 11:34:20,aaa,pending,vlm-mem
+custom,pick up Vitasoy chocolate soya drink and place it to zkm's desk,,low,2026-06-03 11:50:27,aaa,pending,vlm-mem
+custom,look for a banana,,low,2026-06-03 14:12:29,aaa,pending,rule
+custom,where is taoshida,,low,2026-06-03 14:20:39,aaa,pending,vlm-mem
+custom,"Go to workstation 506J, check if the monitor is on, then come back and tell Okng the result",,low,2026-06-03 14:39:20,aaa,pending,vlm-mem
+custom,Check the environment.,,low,2026-06-03 14:39:29,aaa,pending,vlm
+custom,deliver some food for yyw,,medium,2026-06-03 14:56:14,aaa,pending,rule
+custom,please go to the snack area to pick up a bottle of water for me,,medium,2026-06-03 15:05:46,aaa,pending,vlm
+custom,find an orange,,medium,2026-06-03 15:25:12,aaa,pending,vlm
+custom,notify student yyw to have a meeting in the 511 conference room,,low,2026-06-03 15:27:47,aaa,pending,vlm-mem
+custom,pick up red packaged cake for me,,medium,2026-06-03 15:28:02,aaa,pending,rule
+custom,notify student wyj to have a meeting in the 511 conference room,,medium,2026-06-03 15:38:08,aaa,pending,vlm-mem
+custom,"A bottle of water, please.",,medium,2026-06-03 15:44:01,aaa,pending,vlm
+custom,"Find yyw and wyj, tell them there's a PPT they need to make",,high,2026-06-03 16:10:11,aaa,pending,vlm
+custom,pick up Orion Shuyuan non-fried potato chips for me,,medium,2026-06-03 16:17:47,aaa,pending,vlm-mem
+custom,"Can you check if zsx is at his workstation, then come back and let me know?",,high,2026-06-03 16:25:19,aaa,pending,vlm
+custom,say goodbye,,high,2026-06-03 16:27:21,aaa,pending,vlm-mem
+custom,I'm hungry. Can you get me a food that can quickly relieve my hunger?,,medium,2026-06-03 16:43:21,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,medium,2026-06-03 16:44:53,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-06-03 16:46:13,aaa,pending,vlm-mem
+custom,could you give me something to eat?,,medium,2026-06-03 16:52:41,aaa,pending,vlm
+custom,bring a bottle of water to zkm,,medium,2026-06-03 16:52:51,aaa,pending,vlm-mem
+custom,deliver some food for zsx,,medium,2026-06-03 17:11:57,aaa,pending,vlm-mem
+custom,tell me a joke,,low,2026-06-03 17:14:17,aaa,pending,rule
+custom,deliver some food for zkm,,low,2026-06-03 17:20:03,aaa,pending,vlm
+custom,Inspect the current environment.,,medium,2026-06-03 17:48:17,aaa,pending,rule
+custom,help me get my favorite fruit,,medium,2026-06-03 17:49:10,aaa,pending,rule
+custom,deliver some food for zkm,,medium,2026-06-03 17:50:29,aaa,pending,vlm
+custom,Explore the office and find the snack area,,low,2026-06-03 18:04:53,aaa,pending,vlm
+custom,Explore the office and find the snack area,,medium,2026-06-03 18:11:39,aaa,pending,vlm-mem
+custom,what time is it,,low,2026-06-03 18:11:48,aaa,pending,vlm
+custom,please help me deliver the a banana to student Okng,,high,2026-06-03 18:18:19,aaa,pending,vlm
+custom,deliver some food for yyw,,high,2026-06-03 18:22:07,aaa,pending,vlm
+custom,find wyj,,low,2026-06-03 18:24:06,aaa,pending,rule
+custom,come to find taoshida,,high,2026-06-03 18:25:35,aaa,pending,rule
+custom,give me an apple,,low,2026-06-03 18:29:09,aaa,pending,vlm
+custom,what time is it,,low,2026-06-03 18:56:12,aaa,pending,rule
+custom,choose a red color fruit and deliver it to yyw,,low,2026-06-03 19:19:05,aaa,pending,vlm-mem
+custom,"Find taoshida, then say to them: 'Good afternoon, work hard.'",,low,2026-06-03 19:38:08,aaa,pending,vlm-mem
+custom,deliver some food for Okng,,medium,2026-06-03 19:59:00,aaa,pending,rule
+custom,could you give me something to eat?,,medium,2026-06-03 20:56:48,aaa,pending,vlm-mem
